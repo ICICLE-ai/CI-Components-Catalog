@@ -5,24 +5,47 @@ from neo4j import GraphDatabase
 # Path to the dataset file.
 DATASET = '../components-data.yaml'
 
-# Connect to the Neo4j database.
-uri = "bolt://localhost:7687"
-driver = GraphDatabase.driver(uri, auth=("username", "password"))
 
-# Load the component data from the YAML file.
-with open(DATASET, 'r') as f:
-    data = yaml.safe_load(f)
 
-# Define the Cypher queries to create the nodes and relationships.
-component_query = """
-CREATE (:Component {id: $id, name: $name, version: $version, public_access: $public_access, restricted_to_role: $restricted_to_role})
-"""
 
-dependency_query = """
-MATCH (c1:Component {id: $from_id}), (c2:Component {id: $to_id})
-CREATE (c1)-[:DEPENDS_ON]->(c2)
-"""
+def neo4j_data():
 
+    # Neo4j pod credentials
+    user = "testing"
+    pw = "I7GWGLWLwfjXhZkD56VWmuostw5HgG"
+    url = f"bolt+s://{user}.pods.icicle.tapis.io:443"
+    # url = "bolt://localhost:7687"
+    
+    
+    # Connect to the Neo4j database.
+    driver = GraphDatabase.driver(url, auth=(user, pw))
+
+    # Load the component data from the YAML file.
+    with open(DATASET, 'r') as f:
+        data = yaml.safe_load(f)
+    
+    with driver.session() as session:
+        # Define the Cypher queries to create the nodes and relationships.
+        component_query = """
+        CREATE (:Component {id: $id, name: $name, version: $version, public_access: $public_access, restricted_to_role: $restricted_to_role})
+        """
+
+        dependency_query = """
+        MATCH (c1:Component {id: $from_id}), (c2:Component {id: $to_id})
+        CREATE (c1)-[:DEPENDS_ON]->(c2)
+        """
+    
+    session.run(component_query)
+    
+    result = session.run("MATCH (n) RETURN n")
+    for c in result:
+        return c
+    
+    
+    
+print(neo4j_data())
+    
+"""   
 # Define a function to execute the queries.
 def load_data(tx, data):
     # Create the component nodes.
@@ -36,7 +59,7 @@ def load_data(tx, data):
 with driver.session() as session:
     session.write_transaction(load_data, data)
 Note that this is just an example script, and you may need to modify it to fit your specific use case.
-
+"""
 
 
 
@@ -77,5 +100,3 @@ def filter_components_by_roles(components, user_roles):
         else:
             result.append(c)
     return result
-
-def 
