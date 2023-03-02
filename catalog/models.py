@@ -12,7 +12,7 @@ def neo4j_data():
 
     # Neo4j pod credentials
     user = "testing"
-    pw = "I7GWGLWLwfjXhZkD56VWmuostw5HgG"
+    pw = "0FFX88a80b4CMsZCmNLFPNVnrakGYe"
     url = f"bolt+s://{user}.pods.icicle.tapis.io:443"
     # url = "bolt://localhost:7687"
     
