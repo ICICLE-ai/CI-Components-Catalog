@@ -7,7 +7,7 @@ DATASET = '../components-data.yaml'
 
 
 
-
+'''
 def neo4j_data():
 
     # Neo4j pod credentials
@@ -44,8 +44,9 @@ def neo4j_data():
     
     
 print(neo4j_data())
+
     
-"""   
+
 # Define a function to execute the queries.
 def load_data(tx, data):
     # Create the component nodes.
@@ -59,13 +60,37 @@ def load_data(tx, data):
 with driver.session() as session:
     session.write_transaction(load_data, data)
 Note that this is just an example script, and you may need to modify it to fit your specific use case.
-"""
+'''
 
 
 
 
+def get_components_neo4j():
+    """
+    Proof of concept function connects to neo4j pod and returns components.
+    """
+    # Neo4j pod credentials
+    user = "cicatalog"
+    pw = "aBfjTWco9YmsuClxtirG2hK9fSCO0o"
+    url = f"bolt+s://{user}.pods.icicle.tapis.io:443"
+    
+    # Connect to the Neo4j database.
+    driver = GraphDatabase.driver(url, auth=(user, pw))
+    
+    result = []
+    
+    # note: format neo4j output in such a way to make it readable
+    with driver.session() as session:
+        catalog = session.run("MATCH (n) RETURN n")
+    
+        for c in catalog:
+            node = c["n"]
+            properties = dict(node.items())
+            result.append(properties)
+            
+    return result
 
-
+#print(get_components_neo4j())
 
 def get_components():
     """
@@ -75,6 +100,7 @@ def get_components():
         components = yaml.safe_load(f)
     return components['components']
 
+print(get_components())
 
 def get_public_components():
     """
