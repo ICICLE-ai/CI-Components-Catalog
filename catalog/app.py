@@ -114,7 +114,7 @@ def get_data():
     else:
         logged_in = True
         message = f"Username: {user}; Roles: {roles}"
-        components = models.get_components()
+        components = models.get_components_neo4j()
         # filter the components based on the user's roles:
         components = models.filter_components_by_roles(components, roles)
     
@@ -139,7 +139,7 @@ def get_component(cid):
     else:
         logged_in = True
         message = f"Username: {user}; Roles: {roles}"
-        components = models.get_components()
+        components = models.get_components_neo4j()
         # filter the components based on the user's roles:
         components = models.filter_components_by_roles(components, roles)
     # get the specific component
