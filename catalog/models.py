@@ -1,6 +1,5 @@
 import yaml
 from neo4j import GraphDatabase
-# testing things 123 123 
 
 # Path to the dataset file.
 DATASET = '/catalog/components-data.yaml'
@@ -40,13 +39,12 @@ def get_components():
         components = yaml.safe_load(f)
     return components['components']
 
-print(get_components())
 
 def get_public_components():
     """
     Returns only the components for which publicAccess is true
     """
-    return [c for c in get_components() if c['publicAccess']]
+    return [c for c in get_components_neo4j() if c['publicAccess']]
 
 
 def filter_components_by_roles(components, user_roles):
