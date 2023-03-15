@@ -117,6 +117,7 @@ components:
     publicAccess: false
     componentVersion: Unknown
     licenseUrl: Unknown
+    sourceCodeUrl: https://github.com/ICICLE-ai/harp
 
   - id: testComponent
     owner: Joe Stubbs
@@ -269,7 +270,7 @@ components:
   #   owner:
   #   name:
   #   primaryThrust: 
-  #   description:
+  #   description: 
   #   status: AlphaRelease
   #   targetIcicleRelease: VC3
   #   publicAccess: true
