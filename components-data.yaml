@@ -117,6 +117,7 @@ components:
     publicAccess: false
     componentVersion: Unknown
     licenseUrl: Unknown
+    sourceCodeUrl: https://github.com/ICICLE-ai/harp
 
   - id: testComponent
     owner: Joe Stubbs
@@ -130,6 +131,152 @@ components:
     licenseUrl: Unknown
     restrictedToRole: catalog_testComponent
 
+  - id: 30080website
+    name: ICICLE Digital Agriculture Hub
+    status: PrototypeRelease
+    website: https://go.osu.edu/icicle-ag
+    description: The Digital Agriculture Hub will be the source for end users to access data-driven, edge services such as aerial scouting and sprayer control and to initiate cloud jobs for agricultural workloads
+    owner: Christopher Stewart
+    primaryThrust: useInspired
+    sourceCodeUrl: devel@149.165.169.119:/volume/devel/icicleDABWeb.git
+    targetIcicleRelease: VC3
+    componentVersion: 1
+    licenseUrl: Apache 2.0
+    containerImage: devel@149.165.169.119:/volume/devel/30080website.git
+    codeReviewConducted: false
+    testsWritten: false
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    publicAccess: true
+    restrictedToRole: false
+
+  - id: edgecomputingsimulator
+    name: far-edge edge simulator
+    status: PrototypeRelease
+    website: 
+    description: A tool to simulate power demands, cpu usage and other far-edge metrics for aerial missions
+    owner: Jenna Kline
+    primaryThrust: useInspired
+    sourceCodeUrl: 
+    targetIcicleRelease: VC3
+    componentVersion: 1.0
+    licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+    releaseNotesUrl:
+    containerImage:
+    codeReviewConducted: false
+    testsWritten: false
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl: 
+    usageMetricsCollected: false
+    publicAccess: true
+    restrictedToRole: false
+
+  - id: imagelabelingtool
+    name: image labeling tool
+    status: PrototypeRelease
+    website: https://go.osu.edu/icicle-ag-ms-imagelabelingtool
+    description: Simple Python program that can conveniently and quickly labels crop disease in agricultural images
+    owner: Christopher Stewart
+    primaryThrust: useInspired
+    sourceCodeUrl: 
+    targetIcicleRelease: VC3
+    componentVersion: 1.0
+    licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+    releaseNotesUrl:
+    containerImage:
+    codeReviewConducted: false
+    testsWritten: false
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl: 
+    usageMetricsCollected: false
+    publicAccess: true
+    restrictedToRole: false
+
+  - id: scouthelper
+    name: in-field helper for crop scouts
+    status: PrototypeRelease
+    website: https://go.osu.edu/icicle-ag-ms-scouthelper
+    description: Given (1) a set of agricultural images labeled by a neural network and (2) a set of images on a new field, this tool explains to scouts if the images of the new field fully vet the neural network
+    owner: Eduardo Romero Gainza
+    primaryThrust: useInspired
+    sourceCodeUrl: 
+    citation: AI-Driven Validation of Digital Agriculture Models by Eduardo Romero-Gainza and Christopher Stewart
+    doi: https://doi.org/10.3390/s23031187
+    targetIcicleRelease: VC3
+    componentVersion: 1.0
+    licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+    releaseNotesUrl:
+    containerImage:
+    codeReviewConducted: false
+    testsWritten: false
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl: 
+    usageMetricsCollected: false
+    publicAccess: true
+    restrictedToRole: false
+
+  - id: 23405setgpsboundaries
+    name: set gps boundaries
+    status: PrototypeRelease
+    website: https://go.osu.edu/icicle-ag-ms-setgpsboundaries
+    description: An interactive visual tool for using Mapbox to get a polygon represented by GPS edges
+    owner: Christopher Stewart
+    primaryThrust: useInspired
+    sourceCodeUrl: 
+    targetIcicleRelease: VC3
+    componentVersion: 1.0
+    licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+    releaseNotesUrl:
+    containerImage:
+    codeReviewConducted: false
+    testsWritten: false
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl: 
+    usageMetricsCollected: false
+    publicAccess: true
+    restrictedToRole: false
+
+  - id: softwarepilot
+    name: software pilot
+    status: PrototypeRelease
+    website: https://pypi.org/project/SoftwarePilot/
+    description: Software pilot provides an API to use AI models to fly missions for unmanned aerial vehicles
+    owner: Christopher Stewart
+    primaryThrust: useInspired
+    sourceCodeUrl: https://pypi.org/project/SoftwarePilot/
+    targetIcicleRelease: VC3
+    componentVersion: 1.1
+    licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+    releaseNotesUrl:
+    pypiPackage: SoftwarePilot:1.1.0
+    codeReviewConducted: false
+    testsWritten: false
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://pypi.org/project/SoftwarePilot/
+    usageMetricsCollected: false
+    publicAccess: true
+
+  - id: hello_icicle_auth_clients
+    owner: Mary Thomas
+    name: Hello ICICLE Auth Clients
+    primaryThrust: core/Software
+    description: Repo for Authenticated Clients and Applications for ICICLE CI Services
+    status: PrototypeRelease
+    targetIcicleRelease: VC3
+    publicAccess: true
+    componentVersion: Unknown
+    licenseUrl: Unknown
+    sourceCodeUrl: https://github.com/ICICLE-ai/hello_icicle_auth_clients
 
   # - id:
   #   owner:
