@@ -191,5 +191,6 @@ enums:
     IcicleReleases:
         permissible_values:
             None:
-            VC3:
-            VC4:
+            "2023-04":
+            "2023-06":
+
