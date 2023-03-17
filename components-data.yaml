@@ -7,9 +7,22 @@ components:
     website: tapis-project.org
     description: Hosted, web-based API for managing data and executing software for research computing
     componentVersion: 1.3.0
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     licenseUrl: https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE
     publicAccess: true
+    releaseNotesUrl: https://github.com/tapis-project/tapis-deployer/blob/main/CHANGELOG.md
+    citation: "Joe Stubbs, Richard Cardone, Mike Packard, Anagha Jamthe, Smruti Padhy, Steve Terry, Julia Looney, Joseph Meiring, Steve Black, Maytal Dahan, Sean Cleveland, Gwen Jacobs. (2021) Tapis: An API Platform for Reproducible, Distributed Computational Research. In: Arai K. (eds) Advances in Information and Communication. FICC 2021. Advances in Intelligent Systems and Computing, vol 1363. Springer, Cham. https://doi.org/10.1007/978-3-030-73100-7_61"
+    containerImage: https://hub.docker.com/u/tapis
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: true 
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/
+    developerDocumentationAvailable: true 
+    developerDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/pythondev.html
+    trainingTutorialsAvailable: true 
+    trainingTutorialsUrl: https://tapis-project.github.io/tutorials/
+    usageMetricsCollected: true 
 
   - id: EventEngine
     owner: Joe Stubbs
@@ -18,7 +31,7 @@ components:
     primaryThrust: core/Software
     description: Framework for edge simulators and applications
     componentVersion: 0.2.0
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     licenseUrl: https://github.com/tapis-project/event-engine/blob/main/LICENSE
     publicAccess: true
 
@@ -29,7 +42,7 @@ components:
     status: PrototypeRelease
     website:
     description: Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     componentVersion: Unknown
     licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
     publicAccess: true
@@ -46,7 +59,7 @@ components:
     status: BetaRelease
     website: https://tapis.readthedocs.io/en/latest/technical/pods.html
     description: New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     publicAccess: true
     componentVersion: 1.3.0
     licenseUrl: https://github.com/tapis-project/pods_service/blob/prod/LICENSE
@@ -60,8 +73,8 @@ components:
     primaryThrust: useInspired/SF
     description: Webapp meant to visualize foodshed fallout from the removal of grocery stores in an area.
     status: AlphaRelease
-    targetIcicleRelease: VC3
-    publicAccess: false
+    targetIcicleRelease: 2023-04
+    publicAccess: true
     componentVersion: Unknown
     licenseUrl: Unknown
 
@@ -71,8 +84,8 @@ components:
     primaryThrust: core/VA
     description: Vue.js 2 webapp that displays Neo4j knowledge graphs with features such as filtering, searching, and drawn selections to provide users a way to read KGs.
     status: AlphaRelease
-    targetIcicleRelease: VC3
-    publicAccess: false
+    targetIcicleRelease: 2023-04
+    publicAccess: true
     componentVersion: Unknown
     licenseUrl: Unknown
     hasDependentComponents:
@@ -85,8 +98,8 @@ components:
     primaryThrust: useInspired/SF
     description: Visualizse food flows or something...
     status: AlphaRelease
-    targetIcicleRelease: VC3
-    publicAccess: false
+    targetIcicleRelease: 2023-04
+    publicAccess: true
     componentVersion: Unknown
     licenseUrl: Unknown
     hasDependentComponents:
@@ -99,7 +112,7 @@ components:
     primaryThrust: core/Software
     description: Database and dashboard for discovering ICICLE projects and products.
     status: AlphaRelease
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     publicAccess: true
     componentVersion: Unknown
     licenseUrl: Unknown
@@ -113,23 +126,11 @@ components:
     primaryThrust: core/AI4CI
     description: Pipeline for predicting application (specifically, ML) runtimes
     status: AlphaRelease
-    targetIcicleRelease: VC3
-    publicAccess: false
+    targetIcicleRelease: 2023-04
+    publicAccess: true
     componentVersion: Unknown
     licenseUrl: Unknown
     sourceCodeUrl: https://github.com/ICICLE-ai/harp
-
-  - id: testComponent
-    owner: Joe Stubbs
-    name: Test ICICLE Component
-    primaryThrust: core/Software
-    description: A test component for testing the catalog app -- not real 
-    status: PrototypeRelease
-    targetIcicleRelease: VC3
-    publicAccess: false
-    componentVersion: Unknown
-    licenseUrl: Unknown
-    restrictedToRole: catalog_testComponent
 
   - id: 30080website
     name: ICICLE Digital Agriculture Hub
@@ -137,9 +138,9 @@ components:
     website: https://go.osu.edu/icicle-ag
     description: The Digital Agriculture Hub will be the source for end users to access data-driven, edge services such as aerial scouting and sprayer control and to initiate cloud jobs for agricultural workloads
     owner: Christopher Stewart
-    primaryThrust: useInspired
+    primaryThrust: useInspired/DA
     sourceCodeUrl: devel@149.165.169.119:/volume/devel/icicleDABWeb.git
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     componentVersion: 1
     licenseUrl: Apache 2.0
     containerImage: devel@149.165.169.119:/volume/devel/30080website.git
@@ -156,9 +157,9 @@ components:
     website: 
     description: A tool to simulate power demands, cpu usage and other far-edge metrics for aerial missions
     owner: Jenna Kline
-    primaryThrust: useInspired
+    primaryThrust: useInspired/DA
     sourceCodeUrl: 
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     componentVersion: 1.0
     licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
     releaseNotesUrl:
@@ -179,9 +180,9 @@ components:
     website: https://go.osu.edu/icicle-ag-ms-imagelabelingtool
     description: Simple Python program that can conveniently and quickly labels crop disease in agricultural images
     owner: Christopher Stewart
-    primaryThrust: useInspired
+    primaryThrust: useInspired/DA
     sourceCodeUrl: 
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     componentVersion: 1.0
     licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
     releaseNotesUrl:
@@ -202,11 +203,11 @@ components:
     website: https://go.osu.edu/icicle-ag-ms-scouthelper
     description: Given (1) a set of agricultural images labeled by a neural network and (2) a set of images on a new field, this tool explains to scouts if the images of the new field fully vet the neural network
     owner: Eduardo Romero Gainza
-    primaryThrust: useInspired
+    primaryThrust: useInspired/DA
     sourceCodeUrl: 
     citation: AI-Driven Validation of Digital Agriculture Models by Eduardo Romero-Gainza and Christopher Stewart
     doi: https://doi.org/10.3390/s23031187
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     componentVersion: 1.0
     licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
     releaseNotesUrl:
@@ -227,9 +228,9 @@ components:
     website: https://go.osu.edu/icicle-ag-ms-setgpsboundaries
     description: An interactive visual tool for using Mapbox to get a polygon represented by GPS edges
     owner: Christopher Stewart
-    primaryThrust: useInspired
+    primaryThrust: useInspired/DA
     sourceCodeUrl: 
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     componentVersion: 1.0
     licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
     releaseNotesUrl:
@@ -250,9 +251,9 @@ components:
     website: https://pypi.org/project/SoftwarePilot/
     description: Software pilot provides an API to use AI models to fly missions for unmanned aerial vehicles
     owner: Christopher Stewart
-    primaryThrust: useInspired
+    primaryThrust: useInspired/DA
     sourceCodeUrl: https://pypi.org/project/SoftwarePilot/
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     componentVersion: 1.1
     licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
     releaseNotesUrl:
@@ -272,19 +273,30 @@ components:
     primaryThrust: core/Software
     description: Repo for Authenticated Clients and Applications for ICICLE CI Services
     status: PrototypeRelease
-    targetIcicleRelease: VC3
+    targetIcicleRelease: 2023-04
     publicAccess: true
     componentVersion: Unknown
     licenseUrl: Unknown
     sourceCodeUrl: https://github.com/ICICLE-ai/hello_icicle_auth_clients
 
+  - id: PPOD_FSL
+    owner: Allan Hollander
+    name: PPOD Schema - FSL Version
+    primaryThrust: useInspired/SF
+    description: A LinkML schema for PPOD (Person-Project-Organization-Dataset) information created with attributes for uses in the UC Davis Food Systems Lab.
+    status: BetaRelease
+    website: https://github.com/PPODschema/PPOD_FSL/
+    targetIcicleRelease: 2023-04
+    publicAccess: true
+    componentVersion: Unknown
+    licenseUrl: https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md
   # - id:
   #   owner:
   #   name:
   #   primaryThrust: 
   #   description: 
   #   status: AlphaRelease
-  #   targetIcicleRelease: VC3
+  #   targetIcicleRelease: 2023-04
   #   publicAccess: true
   #   componentVersion: Unknown
   #   licenseUrl: Unknown
