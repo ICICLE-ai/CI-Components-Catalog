@@ -156,14 +156,14 @@ components:
     targetIcicleRelease: 2023-04
     publicAccess: true
     componentVersion: 0.1.0
-    licenseUrl: 
+    licenseUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/LICENSE
     hasDependentComponents:
         - related_to: VAReusableGUI
           relationship_type: DependsOn
-    releaseNotesUrl:
+    releaseNotesUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/CHANGELOG.md
     citation:
-    codeReviewConducted: true
-    testsWritten: true
+    codeReviewConducted: false
+    testsWritten: false
     securityReviewConducted: false
     usageDocumentationAvailable: false
     usageDocumentationUrl:
