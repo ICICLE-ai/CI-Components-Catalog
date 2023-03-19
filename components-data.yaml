@@ -34,6 +34,23 @@ components:
     targetIcicleRelease: 2023-04
     licenseUrl: https://github.com/tapis-project/event-engine/blob/main/LICENSE
     publicAccess: true
+    releaseNotesUrl: https://crates.io/crates/event-engine
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    # In event-engine, users are developers of applications, so we point to 
+    # the docs.rs for usage documentation.
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://docs.rs/event-engine/0.2.0/event_engine/
+    developerDocumentationAvailable: false
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: false 
+    trainingTutorialsUrl:
+    usageMetricsCollected: true 
+    # Number of downloads by version and total number of downloads available at:
+    # https://crates.io/api/v1/crates/event-engine
+
 
   - id: CameraTrapsEdgeSim
     owner: Rich Cardone
@@ -51,6 +68,18 @@ components:
           relationship_type: DependsOn
         - related_to: EventEngine
           relationship_type: DependsOn
+    releaseNotesUrl:
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl:
+    developerDocumentationAvailable: false
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+    usageMetricsCollected: false 
   
   - id: PodsService
     owner: Christian Garcia
@@ -66,6 +95,18 @@ components:
     hasDependentComponents:
         - related_to: TapisBase
           relationship_type: DependsOn
+    releaseNotesUrl: https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/tapis-project/pods_service/blob/dev/README.md
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/pods.html
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://tapis-project.github.io/tutorials/pods/intro/
+    usageMetricsCollected: true 
   
   - id: KrogerStoreClosure
     owner: Ayaz Hyder
@@ -114,11 +155,23 @@ components:
     status: AlphaRelease
     targetIcicleRelease: 2023-04
     publicAccess: true
-    componentVersion: Unknown
-    licenseUrl: Unknown
+    componentVersion: 0.1.0
+    licenseUrl: 
     hasDependentComponents:
         - related_to: VAReusableGUI
           relationship_type: DependsOn
+    releaseNotesUrl:
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl:
+    developerDocumentationAvailable: true 
+    developerDocumentationUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/README.md
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+    usageMetricsCollected: false
 
   - id: HARP
     owner: Swathi Vallabhajosyula
@@ -300,3 +353,16 @@ components:
   #   publicAccess: true
   #   componentVersion: Unknown
   #   licenseUrl: Unknown
+    # releaseNotesUrl:
+    # citation:
+    # codeReviewConducted: true
+    # testsWritten: true
+    # securityReviewConducted: false
+    # usageDocumentationAvailable: true
+    # usageDocumentationUrl:
+    # developerDocumentationAvailable:
+    # developerDocumentationUrl:
+    # trainingTutorialsAvailable:
+    # trainingTutorialsUrl:
+    # usageMetricsCollected: true 
+
