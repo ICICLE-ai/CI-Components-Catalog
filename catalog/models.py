@@ -1,17 +1,17 @@
 import yaml
 from neo4j import GraphDatabase
+from config import config
 
 # Path to the dataset file.
 DATASET = '/catalog/components-data.yaml'
-
-
+    
 def get_components_neo4j():
     """
     Proof of concept function connects to neo4j pod and returns components.
     """
     # Neo4j pod credentials
-    user = "username"
-    pw = "password"
+    user = config['neo4j_user']
+    pw = config['neo4j_pw']
     url = f"bolt+s://{user}.pods.icicle.tapis.io:443"
     
     # Connect to the Neo4j database.
@@ -29,7 +29,6 @@ def get_components_neo4j():
             result.append(properties)
             
     return result
-
 
 def get_components():
     """

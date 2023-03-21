@@ -14,3 +14,7 @@ tapis_base_url: https://icicle.tapis.io
 # was registered with the Tapis OAuth client
 # Shouldn't need to update unless you are deploying the catalog to a public URL. 
 app_base_url: http://localhost:5000
+
+# Neo4j pod credentials; update with your info
+neo4j_user: 
+neo4j_pw: 
