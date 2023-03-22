@@ -12,7 +12,8 @@ def get_components_neo4j():
     # Neo4j pod credentials
     user = config['neo4j_user']
     pw = config['neo4j_pw']
-    url = f"bolt+s://{user}.pods.icicle.tapis.io:443"
+    url = config['neo4j_url']
+    # url = f"bolt+s://{user}.pods.icicle.tapis.io:443"
     
     # Connect to the Neo4j database.
     driver = GraphDatabase.driver(url, auth=(user, pw))
@@ -30,20 +31,33 @@ def get_components_neo4j():
             
     return result
 
-def get_components():
+def get_components_file():
     """
-    Proof of concept function that returns all components in the catalog.
+    Proof of concept function that returns all components in the catalog from local YAML file within repo.
     """
     with open(DATASET, 'r') as f:
         components = yaml.safe_load(f)
     return components['components']
 
 
+def get_components():
+    """
+    Proof o concept function that returns all components either from local YAML file or neo4j pod.
+    """
+    if config['neo4j_backend']:
+        return get_components_neo4j()
+    else:
+        return get_components_file()
+    
+
 def get_public_components():
     """
     Returns only the components for which publicAccess is true
     """
-    return [c for c in get_components_neo4j() if c['publicAccess']]
+    if config['neo4j_backend']:
+        return [c for c in get_components_neo4j() if c['publicAccess']]
+    else:
+        return [c for c in get_components_file() if c['publicAccess']]
 
 
 def filter_components_by_roles(components, user_roles):
