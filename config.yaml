@@ -2,8 +2,8 @@
 
 
 # The tapis OAuth client id and key; update with your info
-client_id: ci-comps-test
-client_key: 
+client_id: guzman109
+client_key: icicle4ever
 
 
 # The Tapis base URL; shouldn't need to update this unless using another tenant

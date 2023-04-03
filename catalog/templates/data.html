@@ -1,59 +1,45 @@
 {% extends "base.html" %}
 
-
 {% block content %}
 
-<div>
-  {% if not logged_in %}
-     <div> Status: Not Authenticated </div>
-     <span> {{ message }} (<a href="/login">Login</a>) </span>
-  {% else %}
-   <div> Status: Authenticated </div>
-   <span> {{ message }} (<a href="/logout">Logout</a>) </span>
-  {% endif %}
-  <div>Retrieved: {{ total }} total componets</div>
-</div>
-  
-
-<table id="data" class="table table-striped">
-<thead>
-    <tr>
-      <th>Component ID</th>
-      <th>Component Name</th>
-      <th>Owner</th>
-      <th>Thrust</th>
-      <th>Status</th>
-      <th>Description</th>
-      <th>Version</th>
-      <th>Target ICICLE Release</th>
-      <th>License</th>
-    </tr>
-  </thead>
-
-  <tbody>
-{% for c in components %}
-    <tr>
-        <td>{{ c['id'] }} (<a href="/data/{{ c['id'] }}">Details)</a></td>
-        <td>{{ c['name'] }}</td>
+<div class="catalog-table">
+  <svg height="auto" width="auto">
+    <rect height="auto" width="auto" class="table-background" />
+  </svg>
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Component Name</th>
+        <th>Owner</th>
+        <th>Thrust</th>
+        <th>Status</th>
+        <th>Description</th>
+        <th>Version</th>
+        <th>ICICLE Release</th>
+      </tr>
+    </thead>
+    <tbody class=""catalog-table>
+      {% for c in components %}
+      <tr>
+        <td>{{ c['name'] }}(<a href="/data/{{ c['id'] }}">Details)</a</td>
         <td>{{ c['owner'] }}</td>
         <td>{{ c['primaryThrust'] }}</td>
         <td>{{ c['status'] }}</td>
         <td>{{ c['description'] }}</td>
         <td>{{ c['componentVersion'] }}</td>
         <td>{{ c['targetIcicleRelease'] }}</td>
-        <td>{{ c['licenseUrl'] }}</td>
-    </tr>
-{% endfor %}
-  </tbody>
-</table>
-
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 {% endblock %}
 
 
 {% block scripts %}
-  <script>
+<script>
     $(document).ready(function () {
       $('#data').DataTable();
     });
-  </script>
+</script>
 {% endblock %}

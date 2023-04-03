@@ -105,3 +105,6 @@ venv.bak/
 .mypy_cache/
 
 config.yaml
+
+# For those using macOS
+.DS_Store
