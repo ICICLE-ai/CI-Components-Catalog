@@ -1,7 +1,10 @@
+del:
+	docker rmi -f tapis/ci-catalog:latest
+
 build:
 	docker build -t tapis/ci-catalog .
 
-run: build
+run: del build
 	docker run --name catalog --rm -p 5000:5000 tapis/ci-catalog
 
 newshell: build

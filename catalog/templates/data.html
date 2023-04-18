@@ -1,59 +1,57 @@
 {% extends "base.html" %}
 
-
 {% block content %}
 
-<div>
-  {% if not logged_in %}
-     <div> Status: Not Authenticated </div>
-     <span> {{ message }} (<a href="/login">Login</a>) </span>
-  {% else %}
-   <div> Status: Authenticated </div>
-   <span> {{ message }} (<a href="/logout">Logout</a>) </span>
-  {% endif %}
-  <div>Retrieved: {{ total }} total componets</div>
+<div class="catalog-table">
+    <table id="data" class="table table-dark table-striped" style="position:relative">
+      <thead>
+        <tr>
+          <th>Component Name</th>
+          <th>Thrust</th>
+          <th>Status</th>
+          <th>Description</th>
+          <th>Version</th>
+          <th>ICICLE Release</th>
+        </tr>
+      </thead>
+      <tbody class=""catalog-table>
+        {% for c in components %}
+        <tr>
+          <td>{{ c['name'] }}(<a href="/data/{{ c['id'] }}">Details)</a</td>
+          <td>{{ c['primaryThrust'] }}</td>
+          <td>{{ c['status'] }}</td>
+          <td>{{ c['description'] }}</td>
+          <td>{{ c['componentVersion'] }}</td>
+          <td>{{ c['targetIcicleRelease'] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
 </div>
-  
+<script>
+  let rect = document.createElementNS("http://www.http://www.w3.org/2000/svg", "rect");
+  let table = document.getElementById("data");
+  const svg = document.getElementsById("table-bg")
 
-<table id="data" class="table table-striped">
-<thead>
-    <tr>
-      <th>Component ID</th>
-      <th>Component Name</th>
-      <th>Owner</th>
-      <th>Thrust</th>
-      <th>Status</th>
-      <th>Description</th>
-      <th>Version</th>
-      <th>Target ICICLE Release</th>
-      <th>License</th>
-    </tr>
-  </thead>
+  rect.setAttribute("x", svg.offsetLeft);
+  rect.setAttribute("y", svg.offsetTop);
+  rect.setAttribute("width", table.offsetWidth);
+  rect.setAttribute("height", table.offsetHeight);
+  rect.setAttribute("fill", "gray");
+  rect.setAttribute("stroke", "azure");
+  rect.setAttribute("stroke-width", "5");
+  rect.setAttribute("opacity", "0.8");
 
-  <tbody>
-{% for c in components %}
-    <tr>
-        <td>{{ c['id'] }} (<a href="/data/{{ c['id'] }}">Details)</a></td>
-        <td>{{ c['name'] }}</td>
-        <td>{{ c['owner'] }}</td>
-        <td>{{ c['primaryThrust'] }}</td>
-        <td>{{ c['status'] }}</td>
-        <td>{{ c['description'] }}</td>
-        <td>{{ c['componentVersion'] }}</td>
-        <td>{{ c['targetIcicleRelease'] }}</td>
-        <td>{{ c['licenseUrl'] }}</td>
-    </tr>
-{% endfor %}
-  </tbody>
-</table>
-
+  svg.appendChild(rect);
+</script>
 {% endblock %}
 
 
+
 {% block scripts %}
-  <script>
+<script>
     $(document).ready(function () {
       $('#data').DataTable();
     });
-  </script>
+</script>
 {% endblock %}

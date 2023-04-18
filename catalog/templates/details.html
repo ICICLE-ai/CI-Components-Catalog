@@ -7,8 +7,8 @@
 <a href="/data">Return to Component List</a>
 
 <div> {{ message }}</div>
-
-<table id="details" class="table table-striped">
+<div class="catalog-table">
+<table id="details" class="table table-dark table-striped" style="position:relative">
     <thead>
         <tr>
           <th>Property</th>
@@ -146,7 +146,7 @@
         </tr>
     </tbody>
 </table>
-
+</div>
 <!--div class="details">
   <div> ID: {{ component['id'] }}</div>
   <div> Name: {{ component['name'] }}</div>
@@ -156,5 +156,4 @@
 
 </div-->
 
-<a href="/data">Return to Component List</a>
 {% endblock %}
