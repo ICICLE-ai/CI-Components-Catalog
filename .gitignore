@@ -74,7 +74,7 @@ target/
 .ipynb_checkpoints
 
 # pyenv
-.python-version
+.python-version…ith pod later
 
 # celery beat schedule file
 celerybeat-schedule
@@ -106,5 +106,4 @@ venv.bak/
 
 config.yaml
 
-# For those using macOS
-.DS_Store
+testing.ipynb

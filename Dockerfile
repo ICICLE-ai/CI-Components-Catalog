@@ -5,6 +5,8 @@ RUN pip install Flask==2.2
 RUN pip install pyyaml==6.0
 RUN pip install requests==2.28.2
 RUN pip install tapipy==1.2.20
+RUN pip install neo4j
+RUN pip install pytest
 
 # application directory
 RUN mkdir /catalog

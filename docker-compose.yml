@@ -1,0 +1,27 @@
+version: "3.4"
+
+networks:
+    catalog-network:
+        driver: bridge
+
+services:
+    catalog:
+        image: tapis/ci-catalog
+        ports:
+            - "5000:5000"
+        environment:
+            neo4j_test_user: neo4j
+            neo4j_test_pw: newPassword
+            neo4j_test_url: bolt://test-neo4j:7687
+        networks:
+            - catalog-network
+    test-neo4j:
+        image: notchristiangarcia/neo4j:4.4
+        environment:
+            neo4j_auth: neo4j/newPassword
+            apoc.initializer.system.1: "CREATE USER neo4j IF NOT EXISTS SET PLAINTEXT PASSWORD 'newPassword' SET PASSWORD CHANGE NOT REQUIRED"
+            #entrypoint: bash -c "export NEO4J_dbms_default__advertised__address=$$(hostname -f) && exec /docker-entrypoint.sh 'neo4j'"
+        ports:
+            - "7688:7687"
+        networks:
+            - catalog-network
