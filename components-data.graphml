@@ -220,6 +220,7 @@
   <data key="targetIcicleRelease">2023-04</data>
   <data key="publicAccess">True</data>
   <data key="componentVersion">1.0.0</data>
+  <data key="citation">S. Vallabhajosyula and R. Ramnath, 'Establishing a Generalizable Framework for Generating Cost-Aware Training Data and Building Unique Context-Aware Walltime Prediction Regression Models,' 2022 IEEE Intl Conf on Parallel &amp; Distributed Processing with Applications, Big Data &amp; Cloud Computing, Sustainable Computing &amp; Communications, Social Computing &amp; Networking (ISPA/BDCloud/SocialCom/SustainCom), Melbourne, Australia, 2022, pp. 497-506, doi: 10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00070</data>
   <data key="licenseUrl">https://github.com/manikyaswathi/harp/blob/main/LICENSE</data>
   <data key="sourceCodeUrl">https://github.com/ICICLE-ai/harp</data>
   <data key="labels">:Component</data>
