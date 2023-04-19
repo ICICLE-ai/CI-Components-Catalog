@@ -187,12 +187,13 @@ components:
     owner: Swathi Vallabhajosyula
     name: HPC Application Runtime Predictor (HARP)
     primaryThrust: core/AI4CI
-    description: Pipeline for predicting application (specifically, ML) runtimes
-    status: AlphaRelease
+    description: Pipeline for predicting application (specifically, ML) runtimes.
+    status: Prototype
     targetIcicleRelease: 2023-04
     publicAccess: true
-    componentVersion: Unknown
-    licenseUrl: Unknown
+    componentVersion: 1.0.0
+    licenseUrl: https://github.com/manikyaswathi/harp/blob/main/LICENSE
+    citation: "S. Vallabhajosyula and R. Ramnath, "Establishing a Generalizable Framework for Generating Cost-Aware Training Data and Building Unique Context-Aware Walltime Prediction Regression Models," 2022 IEEE Intl Conf on Parallel & Distributed Processing with Applications, Big Data & Cloud Computing, Sustainable Computing & Communications, Social Computing & Networking (ISPA/BDCloud/SocialCom/SustainCom), Melbourne, Australia, 2022, pp. 497-506, doi: 10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00070"
     sourceCodeUrl: https://github.com/ICICLE-ai/harp
 
   - id: 30080website
