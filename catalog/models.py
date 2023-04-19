@@ -1,27 +1,37 @@
 import yaml
+import os
 from neo4j import GraphDatabase
 from config import config
+from app import app
 
 # Path to the dataset file.
 DATASET = '/catalog/components-data.yaml'
-    
+
 def get_components_neo4j():
     """
     Proof of concept function connects to neo4j pod and returns components.
     """
+    
     # Neo4j pod credentials
     user = config['neo4j_user']
     pw = config['neo4j_pw']
     url = config['neo4j_url']
+        
     # url = f"bolt+s://{user}.pods.icicle.tapis.io:443"
     
-    # Connect to the Neo4j database.
-    driver = GraphDatabase.driver(url, auth=(user, pw))
+    # Connect to the Neo4j database (added logging statements)
+    try:
+        app.logger.info("Connecting to Neo4j database...")
+        driver = GraphDatabase.driver(url, auth=(user, pw))
+        app.logger.info("Successfully connected to Neo4j pod")
+    except Exception as e:
+        raise Exception(f"Failed to connect to Neo4j database; debug: {e}")
     
     result = []
     
     # note: format neo4j output in such a way to make it readable
     with driver.session() as session:
+        app.logger.info("Running query to get components from Neo4j...")
         catalog = session.run("MATCH (n) RETURN n")
     
         for c in catalog:
@@ -29,7 +39,12 @@ def get_components_neo4j():
             properties = dict(node.items()) # get dict of node's properties/vals
             result.append(properties)
             
+        session.close()
+        
+    app.logger.info("Successfully retrieved components from Neo4j")
     return result
+    
+    driver.close()
 
 def get_components_file():
     """
@@ -37,12 +52,14 @@ def get_components_file():
     """
     with open(DATASET, 'r') as f:
         components = yaml.safe_load(f)
+        
+    app.logger.info("Successfully retrieved components from local YAML file")   
     return components['components']
 
 
 def get_components():
     """
-    Proof o concept function that returns all components either from local YAML file or neo4j pod.
+    Proof of concept function that returns all components either from local YAML file or neo4j pod.
     """
     if config['neo4j_backend']:
         return get_components_neo4j()

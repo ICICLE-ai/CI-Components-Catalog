@@ -2,8 +2,8 @@
 
 
 # The tapis OAuth client id and key; update with your info
-client_id: ci-comps-test
-client_key: 
+client_id: ci-comps-test3
+client_key: icicle4ever
 
 
 # The Tapis base URL; shouldn't need to update this unless using another tenant
@@ -16,9 +16,11 @@ tapis_base_url: https://icicle.tapis.io
 app_base_url: http://localhost:5000
 
 # Neo4j pod credentials; update with your info
-neo4j_user: 
+neo4j_user:  
 neo4j_pw: 
 neo4j_url: 
 
 # Whether to use neo4j_backend or not (boolean value)
 neo4j_backend: True
+
+ 

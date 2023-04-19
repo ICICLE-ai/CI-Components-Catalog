@@ -33,7 +33,27 @@ if 'app_base_url' not in config:
 else: 
     app.logger.info(f"using app_base_url: {config['app_base_url']}")
 
+# Log the neo4j backend flag
+if 'neo4j_backend' not in config:
+    raise Exception("no neo4j_backend in config. Quitting..")
+else: 
+    app.logger.info(f"using neo4j_backend: {config['neo4j_backend']}")
 
+# Log the neo4j credentials
+if 'neo4j_user' not in config:
+    raise Exception("no neo4j_user in config. Quitting..")
+else: 
+    app.logger.info(f"using neo4j_user: {config['neo4j_user']}")
+if 'neo4j_pw' not in config:
+    raise Exception("no neo4j_pw in config. Quitting..")
+else: 
+    app.logger.info(f"using neo4j_pw: ********")  # Mask the password
+if 'neo4j_url' not in config:
+    raise Exception("no neo4j_url in config. Quitting..")
+else: 
+    app.logger.info(f"using neo4j_url: {config['neo4j_url']}")
+
+    
 # Set the secret key to some random bytes. 
 # TODO: this key should be updated
 app.secret_key = b'dsckj32487sj238193626%^#$'
@@ -162,3 +182,5 @@ def get_component(cid):
 # run the development server when started from the command line
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
+    
+test_client = app.test_client()
