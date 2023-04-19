@@ -9,3 +9,14 @@ newshell: build
 
 shell:
 	docker exec -it catalog bash
+
+down:
+	docker-compose down
+    
+up:
+	docker-compose up -d
+
+test:
+	docker-compose run --rm catalog pytest
+
+restart: down build up
