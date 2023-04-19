@@ -215,7 +215,7 @@ components:
     restrictedToRole: false
 
   - id: edgecomputingsimulator
-    name: far-edge edge simulator
+    name: Far-Edge Edge Dimulator
     status: PrototypeRelease
     website: 
     description: A tool to simulate power demands, cpu usage and other far-edge metrics for aerial missions
@@ -238,7 +238,7 @@ components:
     restrictedToRole: false
 
   - id: imagelabelingtool
-    name: image labeling tool
+    name: Image Labeling Tool
     status: PrototypeRelease
     website: https://go.osu.edu/icicle-ag-ms-imagelabelingtool
     description: Simple Python program that can conveniently and quickly labels crop disease in agricultural images
@@ -261,7 +261,7 @@ components:
     restrictedToRole: false
 
   - id: scouthelper
-    name: in-field helper for crop scouts
+    name: In-Field Helper for Crop Scouts
     status: PrototypeRelease
     website: https://go.osu.edu/icicle-ag-ms-scouthelper
     description: Given (1) a set of agricultural images labeled by a neural network and (2) a set of images on a new field, this tool explains to scouts if the images of the new field fully vet the neural network
@@ -286,7 +286,7 @@ components:
     restrictedToRole: false
 
   - id: 23405setgpsboundaries
-    name: set gps boundaries
+    name: Set GPS Boundaries
     status: PrototypeRelease
     website: https://go.osu.edu/icicle-ag-ms-setgpsboundaries
     description: An interactive visual tool for using Mapbox to get a polygon represented by GPS edges
@@ -309,7 +309,7 @@ components:
     restrictedToRole: false
 
   - id: softwarepilot
-    name: software pilot
+    name: Software Pilot
     status: PrototypeRelease
     website: https://pypi.org/project/SoftwarePilot/
     description: Software pilot provides an API to use AI models to fly missions for unmanned aerial vehicles
