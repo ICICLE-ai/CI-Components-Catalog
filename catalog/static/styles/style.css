@@ -20,6 +20,7 @@ h2,
     height: 85vh;
     position: relative;
     overflow-y: auto;
+    width: 100%;
 }
 
 .title,
@@ -52,5 +53,5 @@ h2,
     float: left;
     align-items: baseline;
     text-align: left;
-    width: auto;
+    width: 60vh;
 }

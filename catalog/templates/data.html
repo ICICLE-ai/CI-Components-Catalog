@@ -16,6 +16,7 @@
       </thead>
       <tbody class=""catalog-table>
         {% for c in components %}
+        {% if c['publicAccess'] == True %}
         <tr>
           <td>{{ c['name'] }} (<a href="/data/{{ c['id'] }}">Details</a>)</td>
           <td>{{ c['primaryThrust'] }}</td>
@@ -24,6 +25,7 @@
           <td>{{ c['componentVersion'] }}</td>
           <td>{{ c['targetIcicleRelease'] }}</td>
         </tr>
+        {% endif %}
         {% endfor %}
       </tbody>
     </table>
