@@ -388,7 +388,7 @@
       <data key="licenseUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE</data>
       <data key="sourceCodeUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
       <data key="releaseNotesUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
-      <data key="targetIcicleRelease">VC3</data>
+      <data key="targetIcicleRelease">2023-04</data>
       <data key="publicAccess">True</data>
       <data key="containerImage">False</data>
       <data key="codeReviewConducted">True</data>
@@ -426,7 +426,7 @@
       <data key="description">Intelligent Sparse Kernels for Machine Learning</data>
       <data key="componentVersion">1.0</data>
       <data key="licenseUrl">BSD-3-clause</data>
-      <data key="targetIcicleRelease">VC3</data>
+      <data key="targetIcicleRelease">2023-04</data>
       <data key="publicAccess">True</data>
       <data key="sourceCodeUrl">https://github.com/HipGraph/iSpLib</data>
       <data key="labels">:Component</data>
