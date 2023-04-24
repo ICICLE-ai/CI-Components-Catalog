@@ -380,6 +380,7 @@ components:
     name: PPOD Schema - FSL Version
     primaryThrust: useInspired/SF
     description: A LinkML schema for PPOD (Person-Project-Organization-Dataset) information created with attributes for uses in the UC Davis Food Systems Lab.
+    componentVersion: 0.9.1
     status: BetaRelease
     website: https://github.com/PPODschema/PPOD_FSL/
     targetIcicleRelease: 2023-04
