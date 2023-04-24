@@ -396,7 +396,7 @@
   <data key="website">https://github.com/PPODschema/PPOD_FSL/</data>
   <data key="targetIcicleRelease">2023-04</data>
   <data key="publicAccess">True</data>
-  <data key="componentVersion">Unknown</data>
+  <data key="componentVersion">0.9.1</data>
   <data key="licenseUrl">https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md</data>
   <data key="labels">:Component</data>
 </node>
