@@ -123,7 +123,7 @@ components:
     description: Webapp meant to visualize foodshed fallout from the removal of grocery stores in an area.
     status: AlphaRelease
     targetIcicleRelease: 2023-04
-    publicAccess: true
+    publicAccess: false
     componentVersion: Unknown
     licenseUrl: Unknown
 
@@ -134,7 +134,7 @@ components:
     description: Vue.js 2 webapp that displays Neo4j knowledge graphs with features such as filtering, searching, and drawn selections to provide users a way to read KGs.
     status: AlphaRelease
     targetIcicleRelease: 2023-04
-    publicAccess: true
+    publicAccess: false
     componentVersion: Unknown
     licenseUrl: Unknown
     hasDependentComponents:
@@ -149,7 +149,7 @@ components:
     status: AlphaRelease
     targetIcicleRelease: 2023-04
     publicAccess: true
-    componentVersion: Unknown
+    componentVersion: 0.1
     licenseUrl: Unknown
     hasDependentComponents:
         - related_to: VAReusableGUI
@@ -205,14 +205,14 @@ components:
     primaryThrust: useInspired/DA
     sourceCodeUrl: devel@149.165.169.119:/volume/devel/icicleDABWeb.git
     targetIcicleRelease: 2023-04
-    componentVersion: 1
+    componentVersion: 1.0
     licenseUrl: Apache 2.0
     containerImage: devel@149.165.169.119:/volume/devel/30080website.git
     codeReviewConducted: false
     testsWritten: false
     securityReviewConducted: false
     biasAssessmentConducted: false
-    publicAccess: true
+    publicAccess: false
     restrictedToRole: false
 
   - id: edgecomputingsimulator
@@ -235,8 +235,11 @@ components:
     usageDocumentationAvailable: false
     usageDocumentationUrl: 
     usageMetricsCollected: false
-    publicAccess: true
+    publicAccess: false
     restrictedToRole: false
+    hasDependentComponents:
+        - related_to: 30080website
+          relationship_type: DependsOn
 
   - id: imagelabelingtool
     name: Image Labeling Tool
@@ -258,8 +261,11 @@ components:
     usageDocumentationAvailable: false
     usageDocumentationUrl: 
     usageMetricsCollected: false
-    publicAccess: true
+    publicAccess: false
     restrictedToRole: false
+    hasDependentComponents:
+        - related_to: 30080website
+          relationship_type: DependsOn
 
   - id: scouthelper
     name: In-Field Helper for Crop Scouts
@@ -283,8 +289,11 @@ components:
     usageDocumentationAvailable: false
     usageDocumentationUrl: 
     usageMetricsCollected: false
-    publicAccess: true
+    publicAccess: false
     restrictedToRole: false
+    hasDependentComponents:
+        - related_to: 30080website
+          relationship_type: DependsOn
 
   - id: 23405setgpsboundaries
     name: Set GPS Boundaries
@@ -306,8 +315,11 @@ components:
     usageDocumentationAvailable: false
     usageDocumentationUrl: 
     usageMetricsCollected: false
-    publicAccess: true
+    publicAccess: false
     restrictedToRole: false
+    hasDependentComponents:
+        - related_to: 30080website
+          relationship_type: DependsOn
 
   - id: softwarepilot
     name: Software Pilot
@@ -318,7 +330,7 @@ components:
     primaryThrust: useInspired/DA
     sourceCodeUrl: https://pypi.org/project/SoftwarePilot/
     targetIcicleRelease: 2023-04
-    componentVersion: 1.1
+    componentVersion: 1.2.5
     licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
     releaseNotesUrl:
     pypiPackage: SoftwarePilot:1.1.0
@@ -332,28 +344,62 @@ components:
     publicAccess: true
 
   - id: hello_icicle_auth_clients
-    owner: Mary Thomas
     name: Hello ICICLE Auth Clients
+    componentVersion: 0.0.1
+    status: PrototypeRelease
+    owner: Mary Thomas
     primaryThrust: core/Software
     description: Repo for Authenticated Clients and Applications for ICICLE CI Services
-    status: PrototypeRelease
-    targetIcicleRelease: 2023-04
-    publicAccess: true
-    componentVersion: Unknown
-    licenseUrl: Unknown
-    sourceCodeUrl: https://github.com/ICICLE-ai/hello_icicle_auth_clients
+    citation: 
+    pypiPackage: TapisCL-ICICLE 0.0.26
+    website: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+    licenseUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE
+    sourceCodeUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+    releaseNotesUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+    targetIcicleRelease: VC3
+    hasDependentComponents:
+      - related_to: TapisBase
+        relationship_type: DependsOn
+      - related_to: PodsService
+        relationship_type: DependsOn
+    publicAccess: True
+    containerImage: False
+    codeReviewConducted: True
+    testsWritten: False
+    securityReviewConducted: False 
+    usageDocumentationAvailable: True
+    usageDocumentationUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+    developerDocumentationAvailable: False
+    developerDocumentationUrl: NA
+    trainingTutorialsAvailable: False
+    trainingTutorialsUrl: NA
+    usageMetricsCollected: False
 
   - id: PPOD_FSL
     owner: Allan Hollander
     name: PPOD Schema - FSL Version
     primaryThrust: useInspired/SF
     description: A LinkML schema for PPOD (Person-Project-Organization-Dataset) information created with attributes for uses in the UC Davis Food Systems Lab.
+    componentVersion: 0.9.1
     status: BetaRelease
     website: https://github.com/PPODschema/PPOD_FSL/
     targetIcicleRelease: 2023-04
     publicAccess: true
     componentVersion: Unknown
     licenseUrl: https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md
+
+  - id: iSpLib
+    owner: Ariful Azad
+    name: Intelligent Sparse Library (iSpLib)
+    primaryThrust: core/AI4CI
+    status: PrototypeRelease
+    description: Intelligent Sparse Kernels for Machine Learning
+    componentVersion: 1.0
+    licenseUrl: BSD-3-clause
+    targetIcicleRelease: VC3
+    publicAccess: true
+    sourceCodeUrl: https://github.com/HipGraph/iSpLib
+        
   # - id:
   #   owner:
   #   name:
