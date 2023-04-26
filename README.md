@@ -157,3 +157,6 @@ curl -H "x-tapis-token: $token" https://icicle.tapis.io/v3/pods -H "content-type
 
 Here, ``$token`` must be a valid Tapis JWT in the icicle tenant for a user authorized for the ``components``
 pod.
+
+# Acknowledgements
+*This work has been funded by grants from the National Science Foundation, including the ICICLE AI Institute (OAC 2112606)*
