@@ -44,7 +44,7 @@ def add_user_to_session(username, token):
     # also, look up user's roles
     t = Tapis(base_url=config['tapis_base_url'], access_token=token)
     try:
-        result = t.sk.getUserRoles(user=username, tenant="icicle")
+        result = t.sk.getUserRoles(user=username, tenant=config['tenant'])
         session['roles'] = result.names
     except Exception as e:
         raise Exception(f"Error getting user's roles; debug: {e}")
