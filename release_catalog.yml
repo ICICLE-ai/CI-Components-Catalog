@@ -1,0 +1,575 @@
+components:
+# 2023-04 Release
+- id: TapisBase:1.3.0
+  owner: Joe Stubbs
+  primaryThrust: core/Software
+  name: Base ICICLE Tapis Software
+  status: Production
+  website: tapis-project.org
+  description: Hosted, web-based API for managing data and executing software for research computing
+  componentVersion: 1.3.0
+  targetIcicleRelease: 2023-04
+  licenseUrl: https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE
+  publicAccess: true
+  sourceCodeUrl: https://github.com/tapis-project
+  releaseNotesUrl: https://github.com/tapis-project/tapis-deployer/blob/main/CHANGELOG.md
+  citation: "Joe Stubbs, Richard Cardone, Mike Packard, Anagha Jamthe, Smruti Padhy, Steve Terry, Julia Looney, Joseph Meiring, Steve Black, Maytal Dahan, Sean Cleveland, Gwen Jacobs. (2021) Tapis: An API Platform for Reproducible, Distributed Computational Research. In: Arai K. (eds) Advances in Information and Communication. FICC 2021. Advances in Intelligent Systems and Computing, vol 1363. Springer, Cham. https://doi.org/10.1007/978-3-030-73100-7_61"
+  containerImage: https://hub.docker.com/u/tapis
+  codeReviewConducted: true
+  testsWritten: true
+  securityReviewConducted: true 
+  usageDocumentationAvailable: true
+  usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/
+  developerDocumentationAvailable: true 
+  developerDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/pythondev.html
+  trainingTutorialsAvailable: true 
+  trainingTutorialsUrl: https://tapis-project.github.io/tutorials/
+  usageMetricsCollected: true 
+
+- id: EventEngine:0.2.0
+  owner: Joe Stubbs
+  name: Event Engine
+  status: Alpha
+  primaryThrust: core/Software
+  description: Framework for edge simulators and applications
+  componentVersion: 0.2.0
+  targetIcicleRelease: 2023-04
+  licenseUrl: https://github.com/tapis-project/event-engine/blob/main/LICENSE
+  publicAccess: true
+  releaseNotesUrl: https://crates.io/crates/event-engine
+  sourceCodeUrl: https://github.com/tapis-project/event-engine
+  containerImage: 
+  citation:
+  codeReviewConducted: true
+  testsWritten: true
+  securityReviewConducted: false
+  # In event-engine, users are developers of applications, so we point to 
+  # the docs.rs for usage documentation.
+  usageDocumentationAvailable: true
+  usageDocumentationUrl: https://docs.rs/event-engine/0.2.0/event_engine/
+  developerDocumentationAvailable: false
+  developerDocumentationUrl:
+  trainingTutorialsAvailable: false 
+  trainingTutorialsUrl:
+  usageMetricsCollected: true 
+  # Number of downloads by version and total number of downloads available at:
+  # https://crates.io/api/v1/crates/event-engine
+
+
+- id: CameraTrapsEdgeSim:0.3.0
+  owner: Rich Cardone
+  name: Camera Traps Edge Simulator
+  primaryThrust: useInspired/AE
+  status: Prototype
+  website:
+  description: Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project
+  targetIcicleRelease: 2023-04
+  componentVersion: 0.3.0
+  licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
+  publicAccess: true
+  sourceCodeUrl: https://github.com/tapis-project/camera-traps
+  containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
+  hasDependentComponents:
+      - related_to: TapisBase
+        relationship_type: DependsOn
+      - related_to: EventEngine
+        relationship_type: DependsOn
+  releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
+  citation:
+  codeReviewConducted: true
+  testsWritten: true
+  securityReviewConducted: false
+  biasAssessmentConducted: false
+  usageDocumentationAvailable: false
+  usageDocumentationUrl:
+  developerDocumentationAvailable: false
+  developerDocumentationUrl:
+  trainingTutorialsAvailable: false
+  trainingTutorialsUrl:
+  usageMetricsCollected: false 
+
+- id: PodsService:1.3.0
+  owner: Christian Garcia
+  name: Tapis Pods Service API
+  primaryThrust: core/Software
+  status: Beta
+  website: https://tapis.readthedocs.io/en/latest/technical/pods.html
+  description: New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.
+  targetIcicleRelease: 2023-04
+  publicAccess: true
+  componentVersion: 1.3.0
+  licenseUrl: https://github.com/tapis-project/pods_service/blob/prod/LICENSE
+  sourceCodeUrl: https://github.com/tapis-project/pods_service
+  containerImage: https://hub.docker.com/r/tapis/pods-api
+  hasDependentComponents:
+      - related_to: TapisBase
+        relationship_type: DependsOn
+  releaseNotesUrl: https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md
+  citation:
+  codeReviewConducted: true
+  testsWritten: true
+  securityReviewConducted: false
+  developerDocumentationAvailable: true
+  developerDocumentationUrl: https://github.com/tapis-project/pods_service/blob/dev/README.md
+  usageDocumentationAvailable: true
+  usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/pods.html
+  trainingTutorialsAvailable: true
+  trainingTutorialsUrl: https://tapis-project.github.io/tutorials/pods/intro/
+  usageMetricsCollected: true 
+
+- id: SFVADashboard:0.1
+  owner: Matthew Lange
+  name: Smart Foodsheds VA Dashboard
+  primaryThrust: useInspired/SF
+  description: Visualizse food flows or something...
+  status: Alpha
+  targetIcicleRelease: 2023-04
+  publicAccess: true
+  componentVersion: 0.1
+  licenseUrl: Unknown
+  hasDependentComponents:
+      - related_to: VAReusableGUI
+        relationship_type: DependsOn
+
+- id: ComponentCatalog:0.1.0
+  owner: Joe Stubbs
+  name: ICICLE CI Component Catalog
+  primaryThrust: core/Software
+  description: Database and dashboard for discovering ICICLE projects and products.
+  status: Alpha
+  targetIcicleRelease: 2023-04
+  publicAccess: true
+  componentVersion: 0.1.0
+  licenseUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/LICENSE
+  sourceCodeUrl: https://github.com/ICICLE-ai/CI-Components-Catalog
+  containerImage: https://hub.docker.com/r/tapis/ci-catalog
+  hasDependentComponents:
+      - related_to: VAReusableGUI
+        relationship_type: DependsOn
+  releaseNotesUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/CHANGELOG.md
+  citation:
+  codeReviewConducted: false
+  testsWritten: false
+  securityReviewConducted: false
+  usageDocumentationAvailable: false
+  usageDocumentationUrl:
+  developerDocumentationAvailable: true 
+  developerDocumentationUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/README.md
+  trainingTutorialsAvailable: false
+  trainingTutorialsUrl:
+  usageMetricsCollected: false
+
+- id: HARP:1.0.0
+  owner: Swathi Vallabhajosyula
+  name: HPC Application Runtime Predictor (HARP)
+  primaryThrust: core/AI4CI
+  description: Pipeline for predicting application (specifically, ML) runtimes.
+  status: Prototype
+  targetIcicleRelease: 2023-04
+  publicAccess: true
+  componentVersion: 1.0.0
+  citation: "S. Vallabhajosyula and R. Ramnath, 'Establishing a Generalizable Framework for Generating Cost-Aware Training Data and Building Unique Context-Aware Walltime Prediction Regression Models,' 2022 IEEE Intl Conf on Parallel & Distributed Processing with Applications, Big Data & Cloud Computing, Sustainable Computing & Communications, Social Computing & Networking (ISPA/BDCloud/SocialCom/SustainCom), Melbourne, Australia, 2022, pp. 497-506, doi: 10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00070"
+  licenseUrl: https://github.com/manikyaswathi/harp/blob/main/LICENSE
+  sourceCodeUrl: https://github.com/ICICLE-ai/harp
+
+- id: SoftwarePilot:1.2.5
+  name: Software Pilot
+  status: Prototype
+  website: https://pypi.org/project/SoftwarePilot/
+  description: Software pilot provides an API to use AI models to fly missions for unmanned aerial vehicles
+  owner: Christopher Stewart
+  primaryThrust: useInspired/DA
+  sourceCodeUrl: https://pypi.org/project/SoftwarePilot/
+  targetIcicleRelease: 2023-04
+  componentVersion: 1.2.5
+  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+  releaseNotesUrl:
+  pypiPackage: SoftwarePilot:1.1.0
+  codeReviewConducted: false
+  testsWritten: false
+  securityReviewConducted: false
+  biasAssessmentConducted: false
+  usageDocumentationAvailable: true
+  usageDocumentationUrl: https://pypi.org/project/SoftwarePilot/
+  usageMetricsCollected: false
+  publicAccess: true
+
+- id: HelloICICLEAuthClients:0.0.1
+  name: Hello ICICLE Auth Clients
+  componentVersion: 0.0.1
+  status: Prototype
+  owner: Mary Thomas
+  primaryThrust: core/Software
+  description: Repo for Authenticated Clients and Applications for ICICLE CI Services
+  citation: 
+  pypiPackage: TapisCL-ICICLE 0.0.26
+  website: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+  licenseUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE
+  sourceCodeUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+  releaseNotesUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+  targetIcicleRelease: 2023-04
+  hasDependentComponents:
+    - related_to: TapisBase
+      relationship_type: DependsOn
+    - related_to: PodsService
+      relationship_type: DependsOn
+  publicAccess: True
+  containerImage: False
+  codeReviewConducted: True
+  testsWritten: False
+  securityReviewConducted: False 
+  usageDocumentationAvailable: True
+  usageDocumentationUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+  developerDocumentationAvailable: False
+  developerDocumentationUrl: NA
+  trainingTutorialsAvailable: False
+  trainingTutorialsUrl: NA
+  usageMetricsCollected: False
+
+- id: PPODFSL:0.9.1
+  owner: Allan Hollander
+  name: PPOD Schema - FSL Version
+  primaryThrust: useInspired/SF
+  description: A LinkML schema for PPOD (Person-Project-Organization-Dataset) information created with attributes for uses in the UC Davis Food Systems Lab.
+  componentVersion: 0.9.1
+  status: Beta
+  website: https://github.com/PPODschema/PPOD_FSL/
+  targetIcicleRelease: 2023-04
+  publicAccess: true
+  componentVersion: Unknown
+  licenseUrl: https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md
+
+- id: iSpLib:1.0
+  owner: Ariful Azad
+  name: Intelligent Sparse Library (iSpLib)
+  primaryThrust: core/AI4CI
+  status: Prototype
+  description: Intelligent Sparse Kernels for Machine Learning
+  componentVersion: 1.0
+  licenseUrl: BSD-3-clause
+  targetIcicleRelease: 2023-04
+  publicAccess: true
+  sourceCodeUrl: https://github.com/HipGraph/iSpLib
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------#
+# 2023-06 Release
+
+- id: CameraTrapsEdgeSim:0.3.1
+  owner: Rich Cardone
+  name: Camera Traps Edge Simulator
+  primaryThrust: useInspired/AE
+  status: Prototype
+  website:
+  description: Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project
+  targetIcicleRelease: 2023-06
+  componentVersion: 0.3.1
+  licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
+  publicAccess: true
+  sourceCodeUrl: https://github.com/tapis-project/camera-traps
+  containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
+  hasDependentComponents:
+      - related_to: TapisBase
+        relationship_type: DependsOn
+      - related_to: EventEngine
+        relationship_type: DependsOn
+  releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
+  citation:
+  codeReviewConducted: true
+  testsWritten: true
+  securityReviewConducted: false
+  biasAssessmentConducted: false
+  usageDocumentationAvailable: false
+  usageDocumentationUrl:
+  developerDocumentationAvailable: false
+  developerDocumentationUrl:
+  trainingTutorialsAvailable: false
+  trainingTutorialsUrl:
+  usageMetricsCollected: false 
+
+- id: PodsService:1.3.2
+  owner: Christian Garcia
+  name: Tapis Pods Service API
+  primaryThrust: core/Software
+  status: Beta
+  website: https://tapis.readthedocs.io/en/latest/technical/pods.html
+  description: New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.
+  targetIcicleRelease: 2023-06
+  publicAccess: true
+  componentVersion: 1.3.2
+  licenseUrl: https://github.com/tapis-project/pods_service/blob/prod/LICENSE
+  sourceCodeUrl: https://github.com/tapis-project/pods_service
+  containerImage: https://hub.docker.com/r/tapis/pods-api
+  hasDependentComponents:
+      - related_to: TapisBase
+        relationship_type: DependsOn
+  releaseNotesUrl: https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md
+  citation:
+  codeReviewConducted: true
+  testsWritten: true
+  securityReviewConducted: false
+  developerDocumentationAvailable: true
+  developerDocumentationUrl: https://github.com/tapis-project/pods_service/blob/dev/README.md
+  usageDocumentationAvailable: true
+  usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/pods.html
+  trainingTutorialsAvailable: true
+  trainingTutorialsUrl: https://tapis-project.github.io/tutorials/pods/intro/
+  usageMetricsCollected: true 
+
+- id: KrogerStoreClosure:0.1
+  owner: Ayaz Hyder
+  name: Kroger Grocery Store Closure Simulator Dashboard
+  primaryThrust: useInspired/SF
+  description: Webapp meant to visualize foodshed fallout from the removal of grocery stores in an area.
+  status: Prototype
+  targetIcicleRelease: 2023-06
+  componentVersion: 0.1
+  publicAccess: true
+  componentVersion: 0.1
+  sourceCodeUrl: https://github.com/ICICLE-ai/Store_Closure_Website
+  licenseUrl: 
+
+- id: ICICLEFoodshedParser:0.1
+  owner: 
+  name: ICICLEFoodshedParser
+  primaryThrust: useInspired/SF
+  description: Conversational AI for Kroger Store Closure Application
+  status: Alpha
+  targetIcicleRelease: 2023-06
+  componentVersion: 0.1
+  publicAccess: true
+  sourceCodeUrl:https://github.com/ICICLE-ai/ICICLE_Foodshed_Parser
+  licenseUrl: https://github.com/ICICLE-ai/ICICLE_Foodshed_Parser/blob/main/LICENSE
+
+- id: SFVADashboard:0.2
+  owner: Matthew Lange
+  name: Smart Foodsheds VA Dashboard
+  primaryThrust: useInspired/SF
+  description: Visualizse food flows or something...
+  status: Alpha
+  targetIcicleRelease: 2023-06
+  publicAccess: true
+  componentVersion: 0.2
+  licenseUrl: Unknown
+  hasDependentComponents:
+      - related_to: VAReusableGUI
+        relationship_type: DependsOn
+
+- id: DigitalAgHub:1.0
+  name: ICICLE Digital Agriculture Hub
+  status: Prototype
+  website: https://go.osu.edu/icicle-ag
+  description: The Digital Agriculture Hub will be the source for end users to access data-driven, edge services such as aerial scouting and sprayer control and to initiate cloud jobs for agricultural workloads
+  owner: Christopher Stewart
+  primaryThrust: useInspired/DA
+  sourceCodeUrl: devel@149.165.169.119:/volume/devel/icicleDABWeb.git
+  targetIcicleRelease: 2023-06
+  componentVersion: 1.0
+  licenseUrl: Apache 2.0
+  containerImage: devel@149.165.169.119:/volume/devel/30080website.git
+  codeReviewConducted: false
+  testsWritten: false
+  securityReviewConducted: false
+  biasAssessmentConducted: false
+  publicAccess: false
+  restrictedToRole: false
+
+- id: FarEdgeEdgeSimulator:1.0
+  name: Far-Edge Edge Simulator
+  status: Prototype
+  website: 
+  description: A tool to simulate power demands, cpu usage and other far-edge metrics for aerial missions
+  owner: Jenna Kline
+  primaryThrust: useInspired/DA
+  sourceCodeUrl: 
+  targetIcicleRelease: 2023-06
+  componentVersion: 1.0
+  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+  releaseNotesUrl:
+  containerImage:
+  codeReviewConducted: false
+  testsWritten: false
+  securityReviewConducted: false
+  biasAssessmentConducted: false
+  usageDocumentationAvailable: false
+  usageDocumentationUrl: 
+  usageMetricsCollected: false
+  publicAccess: false
+  restrictedToRole: false
+  hasDependentComponents:
+      - related_to: 30080website
+        relationship_type: DependsOn
+
+- id: InFieldHelperForCropScouts:1.0
+  name: In-Field Helper for Crop Scouts
+  status: Prototype
+  website: https://go.osu.edu/icicle-ag-ms-scouthelper
+  description: Given (1) a set of agricultural images labeled by a neural network and (2) a set of images on a new field, this tool explains to scouts if the images of the new field fully vet the neural network
+  owner: Eduardo Romero Gainza
+  primaryThrust: useInspired/DA
+  sourceCodeUrl: 
+  citation: AI-Driven Validation of Digital Agriculture Models by Eduardo Romero-Gainza and Christopher Stewart
+  doi: https://doi.org/10.3390/s23031187
+  targetIcicleRelease: 2023-06
+  componentVersion: 1.0
+  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+  releaseNotesUrl:
+  containerImage:
+  codeReviewConducted: false
+  testsWritten: false
+  securityReviewConducted: false
+  biasAssessmentConducted: false
+  usageDocumentationAvailable: false
+  usageDocumentationUrl: 
+  usageMetricsCollected: false
+  publicAccess: false
+  restrictedToRole: false
+  hasDependentComponents:
+      - related_to: 30080website
+        relationship_type: DependsOn
+
+- id: ICICONSOLE:0.0.10
+  name: ICICONSOLE
+  componentVersion: 0.0.10
+  status: Alpha
+  owner: Mary Thomas
+  primaryThrust: core/Software
+  description: Repo for Authenticated Clients and Applications for ICICLE CI Services
+  citation: 
+  pypiPackage: ICICONSOLE
+  website: https://pypi.org/project/ICICONSOLE/
+  licenseUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE
+  sourceCodeUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+  releaseNotesUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+  targetIcicleRelease: 2023-06
+  hasDependentComponents:
+    - related_to: TapisBase
+      relationship_type: DependsOn
+    - related_to: PodsService
+      relationship_type: DependsOn
+    - related_to: HelloICICLEAuthClients
+      relationship_type: DependsOn
+  publicAccess: True
+  containerImage: False
+  codeReviewConducted: True
+  testsWritten: False
+  securityReviewConducted: False 
+  usageDocumentationAvailable: True
+  usageDocumentationUrl: https://pypi.org/project/ICICONSOLE/
+  developerDocumentationAvailable: False
+  developerDocumentationUrl: NA
+  trainingTutorialsAvailable: False
+  trainingTutorialsUrl: NA
+  usageMetricsCollected: False
+
+
+- id: TapisCL-ICICLE:0.1.4
+  name: TapisCL-ICICLE
+  componentVersion: 0.1.4
+  status: Prototype
+  owner: Mary Thomas
+  primaryThrust: core/Software
+  description: Repo for Authenticated Clients and Applications for ICICLE CI Services
+  citation: 
+  pypiPackage: TapisCL-ICICLE 
+  website: https://pypi.org/project/TapisCL-ICICLE/
+  licenseUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE
+  sourceCodeUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+  releaseNotesUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
+  targetIcicleRelease: 2023-06
+  hasDependentComponents:
+    - related_to: TapisBase
+      relationship_type: DependsOn
+    - related_to: PodsService
+      relationship_type: DependsOn
+    - related_to: HelloICICLEAuthClients
+      relationship_type: DependsOn
+  publicAccess: True
+  containerImage: False
+  codeReviewConducted: True
+  testsWritten: False
+  securityReviewConducted: False 
+  usageDocumentationAvailable: True
+  usageDocumentationUrl: https://pypi.org/project/TapisCL-ICICLE/
+  developerDocumentationAvailable: False
+  developerDocumentationUrl: NA
+  trainingTutorialsAvailable: False
+  trainingTutorialsUrl: NA
+  usageMetricsCollected: False
+
+- id: PPODCA:23.06
+  owner: Allan Hollander
+  name: California PPOD knowledge graph data.
+  primaryThrust: useInspired/SF
+  description: A LinkML schema for PPOD (Person-Project-Organization-Dataset) information created with attributes for uses in the UC Davis Food Systems Lab.
+  componentVersion: 23.06
+  status: Beta
+  website: https://github.com/PPODschema/PPOD_CA
+  targetIcicleRelease: 2023-06
+  publicAccess: true
+  licenseUrl: https://github.com/PPODschema/PPOD_CA/blob/main/LICENSE
+
+- id: FederatedAuthService:1.3.4
+  owner: Joe Stubbs
+  name: Tapis Federated Authentication Service
+  primaryThrust: core/Software
+  status: Beta
+  website: https://tapis.readthedocs.io/en/latest/technical/authentication.html#id2
+  description: OAuth2-based authentication module allowing third-party applications to authenticate users from different identity providers, including university credentials, HPC center accounts (e.g., TACC accounts), and web and social login (e.g., GitHub, Google, etc).
+  targetIcicleRelease: 2023-06
+  publicAccess: true
+  componentVersion: 1.3.4
+  licenseUrl: https://github.com/tapis-project/authenticator/blob/prod/LICENSE
+  sourceCodeUrl: https://github.com/tapis-project/authenticator/tree/prod
+  containerImage: https://hub.docker.com/r/tapis/authenticator
+  hasDependentComponents:
+      - related_to: TapisBase
+        relationship_type: DependsOn
+  releaseNotesUrl: https://github.com/tapis-project/authenticator/blob/prod/CHANGELOG.md
+  citation:
+  codeReviewConducted: true
+  testsWritten: true
+  securityReviewConducted: false
+  developerDocumentationAvailable: true
+  developerDocumentationUrl: https://github.com/tapis-project/authenticator/blob/prod/README.md
+  usageDocumentationAvailable: true
+  usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/authentication.html#id2
+  trainingTutorialsAvailable: false
+  trainingTutorialsUrl:
+  usageMetricsCollected: true
+
+- id: Region2vec:1.0
+  owner: Song Gao  primaryThrust: core/FoundationAI
+  name: Region2vec
+  status: Alpha
+  website: https://github.com/ICICLE-ai/Region2vec
+  description: Region2vec Community Detection on Spatial Networks Using Graph Embedding with Node Attributes and Spatial Interactions
+  componentVersion: 1.0
+  targetIcicleRelease: 2023-06
+  licenseUrl: MIT-License
+  publicAccess: true
+  sourceCodeUrl: https://github.com/ICICLE-ai/Region2vec/tree/master
+  doi: https://doi.org/10.1145/3557915.3560974
+
+- id: CameraTrapMultimodalKG:0.1.0
+  owner: Vardaan Pahuja
+  name: Species Classification using Multimodal Heterogeneous Context
+  primaryThrust: core/FoundationAI
+  description: A species classification model that utilizes heterogeneous image contexts organized in a multimodal knowledge graph.
+  status: AlphaRelease
+  targetIcicleRelease: 2023-06
+  publicAccess: true
+  componentVersion: 0.1.0
+  licenseUrl: https://github.com/vardaan123/Species-Classification-Multimodal-Context/blob/main/LICENSE
+  releaseNotesUrl:
+  citation:
+  codeReviewConducted: 
+  testsWritten: 
+  securityReviewConducted: 
+  usageDocumentationAvailable: true
+  usageDocumentationUrl: https://github.com/vardaan123/Species-Classification-Multimodal-Context/blob/main/README.md
+  developerDocumentationAvailable:
+  developerDocumentationUrl:
+  trainingTutorialsAvailable:
+  trainingTutorialsUrl:
+  usageMetricsCollected: 
+  

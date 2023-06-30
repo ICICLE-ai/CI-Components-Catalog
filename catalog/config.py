@@ -39,4 +39,5 @@ if os.environ.get('neo4j_test_pw'):
 if os.environ.get('neo4j_test_url'):
     config['neo4j_url'] = os.environ.get('neo4j_test_url')
     
-
+if os.environ.get('tenant'):
+    config['tenant'] = os.environ.get('tenant')

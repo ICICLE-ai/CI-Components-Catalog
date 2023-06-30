@@ -52,6 +52,10 @@ if 'neo4j_url' not in config:
     raise Exception("no neo4j_url in config. Quitting..")
 else: 
     app.logger.info(f"using neo4j_url: {config['neo4j_url']}")
+    
+# Log the tenant
+if 'tenant' not in config:
+    raise Exception("no tenant in config. Quitting..")
 
     
 # Set the secret key to some random bytes. 
