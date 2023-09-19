@@ -1,14 +1,10 @@
-# Configuration file for the ICICLE CI Component Catalog 
-
-
-# The tapis OAuth client id and key; update with your info
-client_id: ci-comps-test3
-client_key: icicle4ever
+client_id: components-dev
+client_key: 7b12be43febc6e18259dd77c004315b4143d570234e0f15acf5f9d7b79c371b5
 
 
 # The Tapis base URL; shouldn't need to update this unless using another tenant
-tapis_base_url: https://icicle.tapis.io
-
+tapis_base_url: https://icicleai.tapis.io
+tenant: icicleai
 
 # The base URL that the catalog app is getting served on; this needs to match what
 # was registered with the Tapis OAuth client
@@ -20,7 +16,6 @@ neo4j_user:
 neo4j_pw: 
 neo4j_url: 
 
+
 # Whether to use neo4j_backend or not (boolean value)
 neo4j_backend: True
-
- 
