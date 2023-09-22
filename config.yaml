@@ -2,8 +2,8 @@
 
 
 # The tapis OAuth client id and key; update with your info
-client_id: components-dev
-client_key: 7b12be43febc6e18259dd77c004315b4143d570234e0f15acf5f9d7b79c371b5
+client_id: components
+client_key: 4ac0ec5d77e0b00e4a85045508c0e69b5032139e0a972cbea942dd45564e0a04
 
 
 # The Tapis base URL; shouldn't need to update this unless using another tenant
@@ -14,7 +14,7 @@ tenant: icicleai
 # The base URL that the catalog app is getting served on; this needs to match what
 # was registered with the Tapis OAuth client
 # Shouldn't need to update unless you are deploying the catalog to a public URL. 
-app_base_url: http://localhost:5000
+app_base_url: https://components.pods.icicle.tapis.io
 
 # Neo4j pod credentials; update with your info
 neo4j_user:  
