@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> {{ component_name }} </h2>
+
+<a href="/data">Return to Component List</a>
+
+<div> {{ message }}</div>
+<div class="catalog-table">
+<table id="details" class="table table-dark table-striped" style="position:relative">
+    <thead>
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Component ID</th>
+            <th>{{ component['id'] }}</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>{{ component['name'] }}</th>
+        </tr>
+        <tr>
+            <th>Owner</th>
+            <th>{{ component['owner'] }}</th>
+        </tr>
+        <tr>
+            <th>Project/Thrust</th>
+            <th>{{ component['primaryThrust'] }}</th>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <th>{{ component['status'] }}</th>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <th>{{ component['description'] }}</th>
+        </tr>
+        <tr>
+            <th>Component Version</th>
+            <th>{{ component['componentVersion'] }}</th>
+        </tr>
+        <tr>
+            <th>Target ICICLE Release</th>
+            <th>{{ component['targetIcicleRelease'] }}</th>
+        </tr>
+        <tr>
+            <th>License</th>
+            <th>{{ component['licenseUrl'] }}</th>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <th>{{ component['website'] }}</th>
+        </tr>
+        <tr>
+            <th>Source Code</th>
+            <th>{{ component['sourceCodeUrl'] }}</th>
+        </tr>
+        <tr>
+            <th>Release Notes</th>
+            <th>{{ component['releaseNotesUrl'] }}</th>
+        </tr>
+        <tr>
+            <th>DOI</th>
+            <th>{{ component['doi'] }}</th>
+        </tr>
+        <tr>
+            <th>Citation</th>
+            <th>{{ component['citation'] }}</th>
+        </tr>
+        <tr>
+            <th>PyPI Package</th>
+            <th>{{ component['pypiPackage'] }}</th>
+        </tr>
+        <tr>
+            <th>Container Image</th>
+            <th>{{ component['containerImage'] }}</th>
+        </tr>
+        <tr>
+            <th>HPC Module</th>
+            <th>{{ component['hpcModule'] }}</th>
+        </tr>
+        <tr>
+            <th>Unix Package</th>
+            <th>{{ component['unixPackage'] }}</th>
+        </tr>
+        <tr>
+            <th>Rust Crate</th>
+            <th>{{ component['rustCrate'] }}</th>
+        </tr>
+        <tr>
+            <th>Java Jar</th>
+            <th>{{ component['javaJar'] }}</th>
+        </tr>
+        <tr>
+            <th>Artifact (Other)</th>
+            <th>{{ component['artifactOther'] }}</th>
+        </tr>
+        <tr>
+            <th>Code Review Conducted</th>
+            <th>{{ component['codeReviewConducted'] }}</th>
+        </tr>
+        <tr>
+            <th>Tests Written</th>
+            <th>{{ component['testsWritten'] }}</th>
+        </tr>
+        <tr>
+            <th>Security Review Conducted</th>
+            <th>{{ component['securityReviewConducted'] }}</th>
+        </tr>
+        <tr>
+            <th>Bias Assessment Conducted</th>
+            <th>{{ component['biasAssessmentConducted'] }}</th>
+        </tr>
+        <tr>
+            <th>Usage Documentation Available</th>
+            <th>{{ component['usageDocumentationAvailable'] }}</th>
+        </tr>
+        <tr>
+            <th>Usage Documentation URL</th>
+            <th>{{ component['usageDocumentationUrl'] }}</th>
+        </tr>
+        <tr>
+            <th>Developer Documentation Available</th>
+            <th>{{ component['developerDocumentationAvailable'] }}</th>
+        </tr>
+        <tr>
+            <th>Developer Documentation URL</th>
+            <th>{{ component['developerDocumentationUrl'] }}</th>
+        </tr>
+        <tr>
+            <th>Training Tutorials Available</th>
+            <th>{{ component['trainingTutorialsAvailable'] }}</th>
+        </tr>
+        <tr>
+            <th>Training Tutorials URL</th>
+            <th>{{ component['trainingTutorialsUrl'] }}</th>
+        </tr>
+        <tr>
+            <th>Usage Metrics Collected</th>
+            <th>{{ component['usageMetricsCollected'] }}</th>
+        </tr>
+    </tbody>
+</table>
+</div>
+<!--div class="details">
+  <div> ID: {{ component['id'] }}</div>
+  <div> Name: {{ component['name'] }}</div>
+  <div> Owner: {{ component['owner'] }}</div>
+  <div> Project/Thrust: {{ component['primaryThrust'] }}</div>
+  <div> Status: {{ component['status'] }}</div>
+
+</div-->
+
+{% endblock %}

@@ -2,6 +2,8 @@
 
 FROM python:3.10
 
+ENV APP_CONFIG_PATH=/catalog/config.yaml
+
 RUN pip install Flask==2.2
 RUN pip install pyyaml==6.0
 RUN pip install requests==2.28.2
@@ -22,5 +24,4 @@ ADD catalog /catalog
 
 WORKDIR /catalog
 
-ENV APP_CONFIG_PATH /catalog/config.yaml
 CMD ["python", "app.py"]
