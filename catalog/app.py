@@ -2,11 +2,10 @@ from flask import Flask, render_template, redirect, request
 import json
 import requests
 
+from iciflaskn import icicle_flaskn, auth
 from config import config
 import logging
 import models
-
-from iciflaskn import icicle_flaskn, auth
 
 app = Flask(__name__)
 app.register_blueprint(icicle_flaskn)
@@ -39,7 +38,8 @@ else:
     
 # Set the secret key to some random bytes. 
 # TODO: this key should be updated
-app.secret_key = b'dsckj32487sj238193626%^#$'
+app.secret_key = b'dsckj32487sj238193626%^#$' 
+
 
 @app.route('/', methods=['GET'])
 def root():
