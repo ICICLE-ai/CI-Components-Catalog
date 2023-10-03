@@ -1,7 +1,7 @@
 import os
 import yaml
 
-with open('config.yaml', 'r') as f:
+with open('/catalog/config.yaml', 'r') as f:
     config = yaml.safe_load(f)
 
 
@@ -26,3 +26,4 @@ if os.environ.get('neo4j_test_pw'):
     
 if os.environ.get('neo4j_test_url'):
     config['neo4j_url'] = os.environ.get('neo4j_test_url')
+
