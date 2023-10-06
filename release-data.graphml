@@ -608,7 +608,7 @@
       <data key="primaryThrust">core/Software</data>
       <data key="description">The iciflaskn package provides a Flask blueprint that can be registered with your Flask application to endow it with authentication based on OAuth2.</data>
       <data key="componentVersion">0.1.0</data>
-      <data key="targetIcicleRelease">2023.1</data>
+      <data key="targetIcicleRelease">2023.10</data>
       <data key="licenseUrl">https://github.com/ICICLE-ai/flaskauthn/blob/master/LICENSE</data>
       <data key="publicAccess">True</data>
       <data key="releaseNotesUrl">https://github.com/ICICLE-ai/flaskauthn/blob/master/RELEASE_NOTES.md</data>
@@ -637,7 +637,7 @@
       <data key="owner">Miguel Rosas</data>
       <data key="primaryThrust">core/AI4CI2</data>
       <data key="sourceCodeUrl">https://datacommons.tdai.osu.edu/dataset.xhtml?persistentId=doi:10.5072/FK2/CQUURW</data>
-      <data key="targetIcicleRelease">2023.1</data>
+      <data key="targetIcicleRelease">2023.10</data>
       <data key="componentVersion">1.0</data>
       <data key="licenseUrl">https://datacommons.tdai.osu.edu/file.xhtml?fileId=5405&amp;version=DRAFT</data>
       <data key="publicAccess">True</data>
@@ -651,7 +651,7 @@
       <data key="primaryThrust">core/AI4CI</data>
       <data key="description">Pipeline for predicting application (specifically, ML) runtimes.</data>
       <data key="status">Prototype</data>
-      <data key="targetIcicleRelease">2023.1</data>
+      <data key="targetIcicleRelease">2023.10</data>
       <data key="publicAccess">True</data>
       <data key="componentVersion">2.0.0</data>
       <data key="citation">S. Vallabhajosyula and R. Ramnath, 'Establishing a Generalizable Framework for Generating Cost-Aware Training Data and Building Unique Context-Aware Walltime Prediction Regression Models,' 2022 IEEE Intl Conf on Parallel &amp; Distributed Processing with Applications, Big Data &amp; Cloud Computing, Sustainable Computing &amp; Communications, Social Computing &amp; Networking (ISPA/BDCloud/SocialCom/SustainCom), Melbourne, Australia, 2022, pp. 497-506, doi: 10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00070</data>
@@ -673,7 +673,7 @@
       <data key="licenseUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE</data>
       <data key="sourceCodeUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
       <data key="releaseNotesUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
-      <data key="targetIcicleRelease">2023.1</data>
+      <data key="targetIcicleRelease">2023.10</data>
       <data key="publicAccess">True</data>
       <data key="containerImage">False</data>
       <data key="codeReviewConducted">True</data>
@@ -702,7 +702,7 @@
       <data key="licenseUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE</data>
       <data key="sourceCodeUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
       <data key="releaseNotesUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
-      <data key="targetIcicleRelease">2023.1</data>
+      <data key="targetIcicleRelease">2023.10</data>
       <data key="publicAccess">True</data>
       <data key="containerImage">False</data>
       <data key="codeReviewConducted">True</data>
@@ -725,7 +725,7 @@
       <data key="status">Prototype</data>
       <data key="website" />
       <data key="description">Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project</data>
-      <data key="targetIcicleRelease">2023.1</data>
+      <data key="targetIcicleRelease">2023.10</data>
       <data key="componentVersion">0.3.2</data>
       <data key="licenseUrl">https://github.com/tapis-project/camera-traps/blob/main/LICENSE</data>
       <data key="publicAccess">True</data>
@@ -753,7 +753,7 @@
       <data key="primaryThrust">useInspired/SF</data>
       <data key="description">Visualizse food flows or something...</data>
       <data key="status">Alpha</data>
-      <data key="targetIcicleRelease">2023.1</data>
+      <data key="targetIcicleRelease">2023.10</data>
       <data key="publicAccess">True</data>
       <data key="componentVersion">0.3</data>
       <data key="licenseUrl">Unknown</data>
