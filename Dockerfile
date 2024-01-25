@@ -1,6 +1,6 @@
 # Image: tapis/ci-catalog
 
-FROM python:3.10
+FROM python:3.10.13-slim-bullseye
 
 ENV APP_CONFIG_PATH=/catalog/config.yaml
 

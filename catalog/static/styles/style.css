@@ -22,36 +22,42 @@ h2,
     overflow-y: auto;
     width: 100%;
 }
-
-.title,
-.login,
-.logo {
-    height: 70px;
-}
-.title {
-    position: relative;
-    text-align: right;
-    font-weight: bold;
-    color: azure;
-    width: 100%;
+button:focus {
+    outline: 0;
 }
 
-.login {
-    float: right;
-    width: auto;
-    text-align: right;
-    font-size: medium;
-    background-color: rgba(44,49,53, 0.9);
-    border-radius: 10px;
-    border: 2px solid rgb(33,36,40);
-    align-items: baseline;
+.navbar .dropdown-menu .form-control {
+    width: 200px;
 }
+/* .title, */
+/* .login, */
+/* .logo { */
+/*     height: 70px; */
+/* } */
+/* .title { */
+/*     position: relative; */
+/*     text-align: right; */
+/*     font-weight: bold; */
+/*     color: azure; */
+/*     width: 100%; */
+/* } */
+/**/
+/* .login { */
+/*     float: right; */
+/*     width: auto; */
+/*     text-align: right; */
+/*     font-size: medium; */
+/*     background-color: rgba(44,49,53, 0.9); */
+/*     border-radius: 10px; */
+/*     border: 2px solid rgb(33,36,40); */
+/*     align-items: baseline; */
+/* } */
 
-.logo {
-    /* float: left; */
-    position: absolute;
-    float: left;
-    align-items: baseline;
-    text-align: left;
-    width: 60vh;
-}
+/* .logo { */
+/*     /* float: left; */ */
+/*     position: absolute; */
+/*     float: left; */
+/*     align-items: baseline; */
+/*     text-align: left; */
+/*     width: 60vh; */
+/* } */
