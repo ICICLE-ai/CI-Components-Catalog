@@ -36,7 +36,7 @@ jobs:
       - name: Grab config file
         shell: bash
         env: 
-          CONFIG_FILE: ${{ contains('refs/heads/main', github.ref) && secrets.OAUTH_CONFIG_PROD || secrets.DEV_CONFIG_FILE }}
+          CONFIG_FILE: ${{ contains('refs/heads/main', github.ref) && secrets.OAUTH_CONFIG_PROD || secrets.OAUTH_CONFIG_DEV }}
         run: echo ${CONFIG_FILE} | base64 -d > config.yaml
 
       - name: Setup Docker Buildx
