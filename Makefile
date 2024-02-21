@@ -2,6 +2,7 @@ del:
 	docker rmi -f tapis/ci-catalog:latest
 
 build:
+	base64 -i catalog/config.yaml
 	docker build -t tapis/ci-catalog .
 
 run: del build
