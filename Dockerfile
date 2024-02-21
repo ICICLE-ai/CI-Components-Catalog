@@ -17,7 +17,7 @@ RUN mkdir /catalog
 
 # data & default config
 ADD components-data.yaml /catalog/components-data.yaml
-ADD config.yaml /catalog/config.yaml
+# ADD config.yaml /catalog/config.yaml
 
 # code 
 ADD catalog /catalog

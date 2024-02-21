@@ -37,7 +37,7 @@ jobs:
         shell: bash
         env: 
           CONFIG_FILE: ${{ contains('refs/heads/master', github.ref) && secrets.OAUTH_CONFIG_PROD || secrets.OAUTH_CONFIG_DEV }}
-        run: echo ${CONFIG_FILE} | base64 -d > config.yaml
+        run: echo ${CONFIG_FILE} | base64 -d > catalog/config.yaml
 
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v2
