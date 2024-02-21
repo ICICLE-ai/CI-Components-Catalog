@@ -1,0 +1,84 @@
+-   id: PodsService:1.5.3
+    owner: Christian Garcia
+    name: Tapis Pods Service API
+    primaryThrust: core/Software
+    status: Beta
+    website: https://tapis.readthedocs.io/en/latest/technical/pods.html
+    description: New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.
+    targetIcicleRelease: 2024-01
+    publicAccess: true
+    componentVersion: 1.5.3
+    licenseUrl: https://github.com/tapis-project/pods_service/blob/prod/LICENSE
+    sourceCodeUrl: https://github.com/tapis-project/pods_service
+    containerImage: https://hub.docker.com/r/tapis/pods-api
+    hasDependentComponents:
+        - related_to: TapisBase
+            relationship_type: DependsOn
+    releaseNotesUrl: https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/tapis-project/pods_service/blob/dev/README.md
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/pods.html
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://tapis-project.github.io/tutorials/pods/intro/
+    usageMetricsCollected: true
+
+-   id: FederatedAuthService:1.5.0
+    owner: Joe Stubbs
+    name: Tapis Federated Authentication Service
+    primaryThrust: core/Software
+    status: Beta
+    website: https://tapis.readthedocs.io/en/latest/technical/authentication.html#id2
+    description: OAuth2-based authentication module allowing third-party applications to authenticate users from different identity providers, including university credentials, HPC center accounts (e.g., TACC accounts), and web and social login (e.g., GitHub, Google, etc).
+    targetIcicleRelease: 2024-01
+    publicAccess: true
+    componentVersion: 1.5.0
+    licenseUrl: https://github.com/tapis-project/authenticator/blob/prod/LICENSE
+    sourceCodeUrl: https://github.com/tapis-project/authenticator/tree/prod
+    containerImage: https://hub.docker.com/r/tapis/authenticator
+    hasDependentComponents:
+        - related_to: TapisBase
+            relationship_type: DependsOn
+    releaseNotesUrl: https://github.com/tapis-project/authenticator/blob/prod/CHANGELOG.md
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/tapis-project/authenticator/blob/prod/README.md
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/authentication.html#id2
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+    usageMetricsCollected: true
+
+-   id: Iluvatar:1.0.0
+    name: Iluvatar Functions as a Service (FaaS) Control Plane
+    status: Beta
+    website: https://github.com/COS-IN/iluvatar-faas
+    description: Iluvatar is an open Serverless platform built with the goal of jumpstarting and streamlining FaaS research. It provides a system that is easy and consistent to use, highly modifiable, and directly reports experimental results.
+    owner: Prateek Sharma
+    primaryThrust: core/AI4CI
+    sourceCodeUrl: https://github.com/COS-IN/iluvatar-faas/tree/icicle-release-v1
+    targetIcicleRelease: 2024-01
+    componentVersion: 1.0.0
+    licenseUrl: https://github.com/COS-IN/iluvatar-faas/blob/master/LICENSE
+    releaseNotesUrl: https://github.com/COS-IN/iluvatar-faas/blob/master/src/Il%C3%BAvatar/docs/DESIGN.md
+    doi: https://doi.org/10.1145/3588195.3592995
+    citation: Alexander Fuerst, Abdul Rehman, and Prateek Sharma. 2023. Ilúvatar: A Fast Control Plane for Serverless Computing. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC ’23), June 16–23, 2023, Orlando, FL, USA. ACM, New York, NY, USA, 14 pages.
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/COS-IN/iluvatar-faas/tree/master/src/Il%C3%BAvatar/docs
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/COS-IN/iluvatar-faas/tree/master/src/Il%C3%BAvatar/docs
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl: false
+    usageMetricsCollected: false
+    publicAccess: true

@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request
 import json
 import requests
 
+
 from iciflaskn import icicle_flaskn, auth
 from config import config
 import logging

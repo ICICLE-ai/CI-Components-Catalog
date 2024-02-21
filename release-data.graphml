@@ -1,0 +1,838 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="label" for="edge" attr.name="label" attr.type="string" />
+  <key id="usageMetricsCollected" for="node" attr.name="usageMetricsCollected" attr.type="string" />
+  <key id="trainingTutorialsAvailable" for="node" attr.name="trainingTutorialsAvailable" attr.type="string" />
+  <key id="developerDocumentationAvailable" for="node" attr.name="developerDocumentationAvailable" attr.type="string" />
+  <key id="securityReviewConducted" for="node" attr.name="securityReviewConducted" attr.type="string" />
+  <key id="testsWritten" for="node" attr.name="testsWritten" attr.type="string" />
+  <key id="codeReviewConducted" for="node" attr.name="codeReviewConducted" attr.type="string" />
+  <key id="doi" for="node" attr.name="doi" attr.type="string" />
+  <key id="restrictedToRole" for="node" attr.name="restrictedToRole" attr.type="boolean" />
+  <key id="containerImage" for="node" attr.name="containerImage" attr.type="boolean" />
+  <key id="pypiPackage" for="node" attr.name="pypiPackage" attr.type="string" />
+  <key id="componentVersion" for="node" attr.name="componentVersion" attr.type="double" />
+  <key id="biasAssessmentConducted" for="node" attr.name="biasAssessmentConducted" attr.type="boolean" />
+  <key id="labels" for="node" attr.name="labels" attr.type="string" />
+  <key id="usageMetricsCollected" for="node" attr.name="usageMetricsCollected" attr.type="boolean" />
+  <key id="trainingTutorialsUrl" for="node" attr.name="trainingTutorialsUrl" attr.type="string" />
+  <key id="trainingTutorialsAvailable" for="node" attr.name="trainingTutorialsAvailable" attr.type="boolean" />
+  <key id="developerDocumentationUrl" for="node" attr.name="developerDocumentationUrl" attr.type="string" />
+  <key id="developerDocumentationAvailable" for="node" attr.name="developerDocumentationAvailable" attr.type="boolean" />
+  <key id="usageDocumentationUrl" for="node" attr.name="usageDocumentationUrl" attr.type="string" />
+  <key id="usageDocumentationAvailable" for="node" attr.name="usageDocumentationAvailable" attr.type="boolean" />
+  <key id="securityReviewConducted" for="node" attr.name="securityReviewConducted" attr.type="boolean" />
+  <key id="testsWritten" for="node" attr.name="testsWritten" attr.type="boolean" />
+  <key id="codeReviewConducted" for="node" attr.name="codeReviewConducted" attr.type="boolean" />
+  <key id="containerImage" for="node" attr.name="containerImage" attr.type="string" />
+  <key id="citation" for="node" attr.name="citation" attr.type="string" />
+  <key id="releaseNotesUrl" for="node" attr.name="releaseNotesUrl" attr.type="string" />
+  <key id="sourceCodeUrl" for="node" attr.name="sourceCodeUrl" attr.type="string" />
+  <key id="publicAccess" for="node" attr.name="publicAccess" attr.type="boolean" />
+  <key id="licenseUrl" for="node" attr.name="licenseUrl" attr.type="string" />
+  <key id="targetIcicleRelease" for="node" attr.name="targetIcicleRelease" attr.type="double" />
+  <key id="componentVersion" for="node" attr.name="componentVersion" attr.type="string" />
+  <key id="description" for="node" attr.name="description" attr.type="string" />
+  <key id="website" for="node" attr.name="website" attr.type="string" />
+  <key id="status" for="node" attr.name="status" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <key id="primaryThrust" for="node" attr.name="primaryThrust" attr.type="string" />
+  <key id="owner" for="node" attr.name="owner" attr.type="string" />
+  <key id="id" for="node" attr.name="id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="1">
+      <data key="id">TapisBase:1.3.0</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="name">Base ICICLE Tapis Software</data>
+      <data key="status">Production</data>
+      <data key="website">tapis-project.org</data>
+      <data key="description">Hosted, web-based API for managing data and executing software for research computing</data>
+      <data key="componentVersion">1.3.0</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="licenseUrl">https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/tapis-deployer/blob/main/CHANGELOG.md</data>
+      <data key="citation">Joe Stubbs, Richard Cardone, Mike Packard, Anagha Jamthe, Smruti Padhy, Steve Terry, Julia Looney, Joseph Meiring, Steve Black, Maytal Dahan, Sean Cleveland, Gwen Jacobs. (2021) Tapis: An API Platform for Reproducible, Distributed Computational Research. In: Arai K. (eds) Advances in Information and Communication. FICC 2021. Advances in Intelligent Systems and Computing, vol 1363. Springer, Cham. https://doi.org/10.1007/978-3-030-73100-7_61</data>
+      <data key="containerImage">https://hub.docker.com/u/tapis</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">True</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/pythondev.html</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://tapis-project.github.io/tutorials/</data>
+      <data key="usageMetricsCollected">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="2">
+      <data key="id">EventEngine:0.2.0</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="name">Event Engine</data>
+      <data key="status">Alpha</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="description">Framework for edge simulators and applications</data>
+      <data key="componentVersion">0.2.0</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="licenseUrl">https://github.com/tapis-project/event-engine/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="releaseNotesUrl">https://crates.io/crates/event-engine</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/event-engine</data>
+      <data key="containerImage" />
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://docs.rs/event-engine/0.2.0/event_engine/</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="3">
+      <data key="id">CameraTrapsEdgeSim:0.3.0</data>
+      <data key="owner">Rich Cardone</data>
+      <data key="name">Camera Traps Edge Simulator</data>
+      <data key="primaryThrust">useInspired/AE</data>
+      <data key="status">Prototype</data>
+      <data key="website" />
+      <data key="description">Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="componentVersion">0.3.0</data>
+      <data key="licenseUrl">https://github.com/tapis-project/camera-traps/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/camera-traps</data>
+      <data key="containerImage">https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="4">
+      <data key="id">PodsService:1.3.0</data>
+      <data key="owner">Christian Garcia</data>
+      <data key="name">Tapis Pods Service API</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="status">Beta</data>
+      <data key="website">https://tapis.readthedocs.io/en/latest/technical/pods.html</data>
+      <data key="description">New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">1.3.0</data>
+      <data key="licenseUrl">https://github.com/tapis-project/pods_service/blob/prod/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/pods_service</data>
+      <data key="containerImage">https://hub.docker.com/r/tapis/pods-api</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/tapis-project/pods_service/blob/dev/README.md</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/pods.html</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://tapis-project.github.io/tutorials/pods/intro/</data>
+      <data key="usageMetricsCollected">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="5">
+      <data key="id">SFVADashboard:0.1</data>
+      <data key="owner">Matthew Lange</data>
+      <data key="name">Smart Foodsheds VA Dashboard</data>
+      <data key="primaryThrust">useInspired/SF</data>
+      <data key="description">Visualizse food flows or something...</data>
+      <data key="status">Alpha</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">0.1</data>
+      <data key="licenseUrl">Unknown</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="6">
+      <data key="id">ComponentCatalog:0.1.0</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="name">ICICLE CI Component Catalog</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="description">Database and dashboard for discovering ICICLE projects and products.</data>
+      <data key="status">Alpha</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/CI-Components-Catalog</data>
+      <data key="containerImage">https://hub.docker.com/r/tapis/ci-catalog</data>
+      <data key="releaseNotesUrl">https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/CHANGELOG.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/README.md</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="7">
+      <data key="id">HARP:1.0.0</data>
+      <data key="owner">Swathi Vallabhajosyula</data>
+      <data key="name">HPC Application Runtime Predictor (HARP)</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="description">Pipeline for predicting application (specifically, ML) runtimes.</data>
+      <data key="status">Prototype</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">1.0.0</data>
+      <data key="citation">S. Vallabhajosyula and R. Ramnath, 'Establishing a Generalizable Framework for Generating Cost-Aware Training Data and Building Unique Context-Aware Walltime Prediction Regression Models,' 2022 IEEE Intl Conf on Parallel &amp; Distributed Processing with Applications, Big Data &amp; Cloud Computing, Sustainable Computing &amp; Communications, Social Computing &amp; Networking (ISPA/BDCloud/SocialCom/SustainCom), Melbourne, Australia, 2022, pp. 497-506, doi: 10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00070</data>
+      <data key="licenseUrl">https://github.com/manikyaswathi/harp/blob/main/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/harp</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="8">
+      <data key="id">SoftwarePilot:1.2.5</data>
+      <data key="name">Software Pilot</data>
+      <data key="status">Prototype</data>
+      <data key="website">https://pypi.org/project/SoftwarePilot/</data>
+      <data key="description">Software pilot provides an API to use AI models to fly missions for unmanned aerial vehicles</data>
+      <data key="owner">Christopher Stewart</data>
+      <data key="primaryThrust">useInspired/DA</data>
+      <data key="sourceCodeUrl">https://pypi.org/project/SoftwarePilot/</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="componentVersion">1.2.5</data>
+      <data key="licenseUrl">https://www.apache.org/licenses/LICENSE-2.0</data>
+      <data key="releaseNotesUrl" />
+      <data key="pypiPackage">SoftwarePilot:1.1.0</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://pypi.org/project/SoftwarePilot/</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="9">
+      <data key="id">HelloICICLEAuthClients:0.0.1</data>
+      <data key="name">Hello ICICLE Auth Clients</data>
+      <data key="componentVersion">0.0.1</data>
+      <data key="status">Prototype</data>
+      <data key="owner">Mary Thomas</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="description">Repo for Authenticated Clients and Applications for ICICLE CI Services</data>
+      <data key="citation" />
+      <data key="pypiPackage">TapisCL-ICICLE 0.0.26</data>
+      <data key="website">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="licenseUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="releaseNotesUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="publicAccess">True</data>
+      <data key="containerImage">False</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl">NA</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">NA</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="10">
+      <data key="id">PPODFSL:0.9.1</data>
+      <data key="owner">Allan Hollander</data>
+      <data key="name">PPOD Schema - FSL Version</data>
+      <data key="primaryThrust">useInspired/SF</data>
+      <data key="description">A LinkML schema for PPOD (Person-Project-Organization-Dataset) information created with attributes for uses in the UC Davis Food Systems Lab.</data>
+      <data key="componentVersion">Unknown</data>
+      <data key="status">Beta</data>
+      <data key="website">https://github.com/PPODschema/PPOD_FSL/</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="publicAccess">True</data>
+      <data key="licenseUrl">https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="11">
+      <data key="id">iSpLib:1.0</data>
+      <data key="owner">Ariful Azad</data>
+      <data key="name">Intelligent Sparse Library (iSpLib)</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="status">Prototype</data>
+      <data key="description">Intelligent Sparse Kernels for Machine Learning</data>
+      <data key="componentVersion">1.0</data>
+      <data key="licenseUrl">BSD-3-clause</data>
+      <data key="targetIcicleRelease">2023.04</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/HipGraph/iSpLib</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="12">
+      <data key="id">CameraTrapsEdgeSim:0.3.1</data>
+      <data key="owner">Rich Cardone</data>
+      <data key="name">Camera Traps Edge Simulator</data>
+      <data key="primaryThrust">useInspired/AE</data>
+      <data key="status">Prototype</data>
+      <data key="website" />
+      <data key="description">Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="componentVersion">0.3.1</data>
+      <data key="licenseUrl">https://github.com/tapis-project/camera-traps/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/camera-traps</data>
+      <data key="containerImage">https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="13">
+      <data key="id">PodsService:1.3.2</data>
+      <data key="owner">Christian Garcia</data>
+      <data key="name">Tapis Pods Service API</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="status">Beta</data>
+      <data key="website">https://tapis.readthedocs.io/en/latest/technical/pods.html</data>
+      <data key="description">New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">1.3.2</data>
+      <data key="licenseUrl">https://github.com/tapis-project/pods_service/blob/prod/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/pods_service</data>
+      <data key="containerImage">https://hub.docker.com/r/tapis/pods-api</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/tapis-project/pods_service/blob/dev/README.md</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/pods.html</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://tapis-project.github.io/tutorials/pods/intro/</data>
+      <data key="usageMetricsCollected">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="14">
+      <data key="id">KrogerStoreClosure:0.1</data>
+      <data key="owner">Ayaz Hyder</data>
+      <data key="name">Kroger Grocery Store Closure Simulator Dashboard</data>
+      <data key="primaryThrust">useInspired/SF</data>
+      <data key="description">Webapp meant to visualize foodshed fallout from the removal of grocery stores in an area.</data>
+      <data key="status">Prototype</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="componentVersion">0.1</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/Store_Closure_Website</data>
+      <data key="licenseUrl" />
+      <data key="labels">:Component</data>
+    </node>
+    <node id="15">
+      <data key="id">ICICLEFoodshedParser:0.1</data>
+      <data key="owner" />
+      <data key="name">ICICLEFoodshedParser</data>
+      <data key="primaryThrust">useInspired/SF</data>
+      <data key="description">Conversational AI for Kroger Store Closure Application</data>
+      <data key="status">Alpha</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="componentVersion">0.1</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/ICICLE_Foodshed_Parser</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/ICICLE_Foodshed_Parser/blob/main/LICENSE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="16">
+      <data key="id">SFVADashboard:0.2</data>
+      <data key="owner">Matthew Lange</data>
+      <data key="name">Smart Foodsheds VA Dashboard</data>
+      <data key="primaryThrust">useInspired/SF</data>
+      <data key="description">Visualizse food flows or something...</data>
+      <data key="status">Alpha</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">0.2</data>
+      <data key="licenseUrl">Unknown</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="17">
+      <data key="id">DigitalAgHub:1.0</data>
+      <data key="name">ICICLE Digital Agriculture Hub</data>
+      <data key="status">Prototype</data>
+      <data key="website">https://go.osu.edu/icicle-ag</data>
+      <data key="description">The Digital Agriculture Hub will be the source for end users to access data-driven, edge services such as aerial scouting and sprayer control and to initiate cloud jobs for agricultural workloads</data>
+      <data key="owner">Christopher Stewart</data>
+      <data key="primaryThrust">useInspired/DA</data>
+      <data key="sourceCodeUrl">devel@149.165.169.119:/volume/devel/icicleDABWeb.git</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="componentVersion">1.0</data>
+      <data key="licenseUrl">Apache 2.0</data>
+      <data key="containerImage">devel@149.165.169.119:/volume/devel/30080website.git</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="publicAccess">False</data>
+      <data key="restrictedToRole">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="18">
+      <data key="id">FarEdgeEdgeSimulator:1.0</data>
+      <data key="name">Far-Edge Edge Simulator</data>
+      <data key="status">Prototype</data>
+      <data key="website" />
+      <data key="description">A tool to simulate power demands, cpu usage and other far-edge metrics for aerial missions</data>
+      <data key="owner">Jenna Kline</data>
+      <data key="primaryThrust">useInspired/DA</data>
+      <data key="sourceCodeUrl" />
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="componentVersion">1.0</data>
+      <data key="licenseUrl">https://www.apache.org/licenses/LICENSE-2.0</data>
+      <data key="releaseNotesUrl" />
+      <data key="containerImage" />
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">False</data>
+      <data key="restrictedToRole">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="19">
+      <data key="id">InFieldHelperForCropScouts:1.0</data>
+      <data key="name">In-Field Helper for Crop Scouts</data>
+      <data key="status">Prototype</data>
+      <data key="website">https://go.osu.edu/icicle-ag-ms-scouthelper</data>
+      <data key="description">Given (1) a set of agricultural images labeled by a neural network and (2) a set of images on a new field, this tool explains to scouts if the images of the new field fully vet the neural network</data>
+      <data key="owner">Eduardo Romero Gainza</data>
+      <data key="primaryThrust">useInspired/DA</data>
+      <data key="sourceCodeUrl" />
+      <data key="citation">AI-Driven Validation of Digital Agriculture Models by Eduardo Romero-Gainza and Christopher Stewart</data>
+      <data key="doi">https://doi.org/10.3390/s23031187</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="componentVersion">1.0</data>
+      <data key="licenseUrl">https://www.apache.org/licenses/LICENSE-2.0</data>
+      <data key="releaseNotesUrl" />
+      <data key="containerImage" />
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">False</data>
+      <data key="restrictedToRole">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="20">
+      <data key="id">ICICONSOLE:0.0.10</data>
+      <data key="name">ICICONSOLE</data>
+      <data key="componentVersion">0.0.10</data>
+      <data key="status">Alpha</data>
+      <data key="owner">Mary Thomas</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="description">Repo for Authenticated Clients and Applications for ICICLE CI Services</data>
+      <data key="citation" />
+      <data key="pypiPackage">ICICONSOLE</data>
+      <data key="website">https://pypi.org/project/ICICONSOLE/</data>
+      <data key="licenseUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="releaseNotesUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="publicAccess">True</data>
+      <data key="containerImage">False</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://pypi.org/project/ICICONSOLE/</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl">NA</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">NA</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="21">
+      <data key="id">TapisCL-ICICLE:0.1.4</data>
+      <data key="name">TapisCL-ICICLE</data>
+      <data key="componentVersion">0.1.4</data>
+      <data key="status">Prototype</data>
+      <data key="owner">Mary Thomas</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="description">Repo for Authenticated Clients and Applications for ICICLE CI Services</data>
+      <data key="citation" />
+      <data key="pypiPackage">TapisCL-ICICLE</data>
+      <data key="website">https://pypi.org/project/TapisCL-ICICLE/</data>
+      <data key="licenseUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="releaseNotesUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="publicAccess">True</data>
+      <data key="containerImage">False</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://pypi.org/project/TapisCL-ICICLE/</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl">NA</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">NA</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="22">
+      <data key="id">PPODCA:23.06</data>
+      <data key="owner">Allan Hollander</data>
+      <data key="name">California PPOD knowledge graph data.</data>
+      <data key="primaryThrust">useInspired/SF</data>
+      <data key="description">A LinkML schema for PPOD (Person-Project-Organization-Dataset) information created with attributes for uses in the UC Davis Food Systems Lab.</data>
+      <data key="componentVersion">23.06</data>
+      <data key="status">Beta</data>
+      <data key="website">https://github.com/PPODschema/PPOD_CA</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="publicAccess">True</data>
+      <data key="licenseUrl">https://github.com/PPODschema/PPOD_CA/blob/main/LICENSE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="23">
+      <data key="id">FederatedAuthService:1.3.4</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="name">Tapis Federated Authentication Service</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="status">Beta</data>
+      <data key="website">https://tapis.readthedocs.io/en/latest/technical/authentication.html#id2</data>
+      <data key="description">OAuth2-based authentication module allowing third-party applications to authenticate users from different identity providers, including university credentials, HPC center accounts (e.g., TACC accounts), and web and social login (e.g., GitHub, Google, etc).</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">1.3.4</data>
+      <data key="licenseUrl">https://github.com/tapis-project/authenticator/blob/prod/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/authenticator/tree/prod</data>
+      <data key="containerImage">https://hub.docker.com/r/tapis/authenticator</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/authenticator/blob/prod/CHANGELOG.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/tapis-project/authenticator/blob/prod/README.md</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/authentication.html#id2</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="24">
+      <data key="id">Region2vec:1.0</data>
+      <data key="owner">Song Gao</data>
+      <data key="primaryThrust">core/FoundationAI</data>
+      <data key="name">Region2vec</data>
+      <data key="status">Alpha</data>
+      <data key="website">https://github.com/ICICLE-ai/Region2vec</data>
+      <data key="description">Region2vec Community Detection on Spatial Networks Using Graph Embedding with Node Attributes and Spatial Interactions</data>
+      <data key="componentVersion">1.0</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="licenseUrl">MIT-License</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/Region2vec/tree/master</data>
+      <data key="doi">https://doi.org/10.1145/3557915.3560974</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="25">
+      <data key="id">CameraTrapMultimodalKG:0.1.0</data>
+      <data key="owner">Vardaan Pahuja</data>
+      <data key="name">Species Classification using Multimodal Heterogeneous Context</data>
+      <data key="primaryThrust">core/FoundationAI</data>
+      <data key="description">A species classification model that utilizes heterogeneous image contexts organized in a multimodal knowledge graph.</data>
+      <data key="status">AlphaRelease</data>
+      <data key="targetIcicleRelease">2023.06</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="licenseUrl">https://github.com/vardaan123/Species-Classification-Multimodal-Context/blob/main/LICENSE</data>
+      <data key="releaseNotesUrl" />
+      <data key="citation" />
+      <data key="codeReviewConducted" />
+      <data key="testsWritten" />
+      <data key="securityReviewConducted" />
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/vardaan123/Species-Classification-Multimodal-Context/blob/main/README.md</data>
+      <data key="developerDocumentationAvailable" />
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable" />
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected" />
+      <data key="labels">:Component</data>
+    </node>
+    <node id="26">
+      <data key="id">iciflaskn:0.1.0</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="name">iciflaskn</data>
+      <data key="status">AlphaRelease</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="description">The iciflaskn package provides a Flask blueprint that can be registered with your Flask application to endow it with authentication based on OAuth2.</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="targetIcicleRelease">2023.10</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/flaskauthn/blob/master/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="releaseNotesUrl">https://github.com/ICICLE-ai/flaskauthn/blob/master/RELEASE_NOTES.md</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/flaskauthn</data>
+      <data key="pypiPackage">iciflaskn</data>
+      <data key="containerImage" />
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/ICICLE-ai/flaskauthn/tree/master#detailed-usage</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="27">
+      <data key="id">hpdataset:1.0</data>
+      <data key="name">Dataset of Static and Dynamic features for High Performance Computing Applications.</data>
+      <data key="status">PrototypeRelease.</data>
+      <data key="website">none</data>
+      <data key="description">Dataset of static and Dynaimic for High Performance Computing Applications</data>
+      <data key="owner">Miguel Rosas</data>
+      <data key="primaryThrust">core/AI4CI2</data>
+      <data key="sourceCodeUrl">https://datacommons.tdai.osu.edu/dataset.xhtml?persistentId=doi:10.5072/FK2/CQUURW</data>
+      <data key="targetIcicleRelease">2023.10</data>
+      <data key="componentVersion">1.0</data>
+      <data key="licenseUrl">https://datacommons.tdai.osu.edu/file.xhtml?fileId=5405&amp;version=DRAFT</data>
+      <data key="publicAccess">True</data>
+      <data key="restrictedToRole">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="28">
+      <data key="id">HARP:2.0.0</data>
+      <data key="owner">Swathi Vallabhajosyula</data>
+      <data key="name">HPC Application Runtime Predictor (HARP)</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="description">Pipeline for predicting application (specifically, ML) runtimes.</data>
+      <data key="status">Prototype</data>
+      <data key="targetIcicleRelease">2023.10</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">2.0.0</data>
+      <data key="citation">S. Vallabhajosyula and R. Ramnath, 'Establishing a Generalizable Framework for Generating Cost-Aware Training Data and Building Unique Context-Aware Walltime Prediction Regression Models,' 2022 IEEE Intl Conf on Parallel &amp; Distributed Processing with Applications, Big Data &amp; Cloud Computing, Sustainable Computing &amp; Communications, Social Computing &amp; Networking (ISPA/BDCloud/SocialCom/SustainCom), Melbourne, Australia, 2022, pp. 497-506, doi: 10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00070</data>
+      <data key="licenseUrl">https://github.com/manikyaswathi/harp/blob/main/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/harp</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="29">
+      <data key="id">ICICONSOLE:0.8.0</data>
+      <data key="name">ICICONSOLE</data>
+      <data key="componentVersion">0.8.0</data>
+      <data key="status">Alpha</data>
+      <data key="owner">Mary Thomas</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="description">Repo for Authenticated Clients and Applications for ICICLE CI Services</data>
+      <data key="citation" />
+      <data key="pypiPackage">ICICONSOLE</data>
+      <data key="website">https://pypi.org/project/ICICONSOLE/</data>
+      <data key="licenseUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="releaseNotesUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="targetIcicleRelease">2023.10</data>
+      <data key="publicAccess">True</data>
+      <data key="containerImage">False</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://pypi.org/project/ICICONSOLE/</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl">NA</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">NA</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="30">
+      <data key="id">TapisCL-ICICLE:1.0.11</data>
+      <data key="name">TapisCL-ICICLE</data>
+      <data key="componentVersion">1.0.11</data>
+      <data key="status">Prototype</data>
+      <data key="owner">Mary Thomas</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="description">Repo for Authenticated Clients and Applications for ICICLE CI Services</data>
+      <data key="citation" />
+      <data key="pypiPackage">TapisCL-ICICLE</data>
+      <data key="website">https://pypi.org/project/TapisCL-ICICLE/</data>
+      <data key="licenseUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients/blob/main/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="releaseNotesUrl">https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients</data>
+      <data key="targetIcicleRelease">2023.10</data>
+      <data key="publicAccess">True</data>
+      <data key="containerImage">False</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://pypi.org/project/TapisCL-ICICLE/</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl">NA</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">NA</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="31">
+      <data key="id">CameraTrapsEdgeSim:0.3.2</data>
+      <data key="owner">Rich Cardone</data>
+      <data key="name">Camera Traps Edge Simulator</data>
+      <data key="primaryThrust">useInspired/AE</data>
+      <data key="status">Prototype</data>
+      <data key="website" />
+      <data key="description">Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project</data>
+      <data key="targetIcicleRelease">2023.10</data>
+      <data key="componentVersion">0.3.2</data>
+      <data key="licenseUrl">https://github.com/tapis-project/camera-traps/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/camera-traps</data>
+      <data key="containerImage">https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="32">
+      <data key="id">SFVADashboard:0.3</data>
+      <data key="owner">Matthew Lange</data>
+      <data key="name">Smart Foodsheds VA Dashboard</data>
+      <data key="primaryThrust">useInspired/SF</data>
+      <data key="description">Visualizse food flows or something...</data>
+      <data key="status">Alpha</data>
+      <data key="targetIcicleRelease">2023.10</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">0.3</data>
+      <data key="licenseUrl">Unknown</data>
+      <data key="labels">:Component</data>
+    </node>
+    <edge source="1" target="3">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="4">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="9">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="12">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="13">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="20">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="21">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="23">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="29">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="30">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="31">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="2" target="3">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="2" target="12">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="2" target="31">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="4" target="9">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="4" target="20">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="4" target="21">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="4" target="29">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="4" target="30">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="9" target="20">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="9" target="21">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="9" target="29">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="9" target="30">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="17" target="18">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="17" target="19">
+      <data key="label">DependsOn</data>
+    </edge>
+  </graph>
+</graphml>

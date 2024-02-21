@@ -1,8 +1,9 @@
 # Image: tapis/ci-catalog
 
-FROM python:3.10
+FROM python:3.10.13-slim-bullseye
 
 ENV APP_CONFIG_PATH=/catalog/config.yaml
+ENV CONFIG_FILE=$CONFIG_FILE
 
 RUN pip install Flask==2.2
 RUN pip install pyyaml==6.0
@@ -17,7 +18,7 @@ RUN mkdir /catalog
 
 # data & default config
 ADD components-data.yaml /catalog/components-data.yaml
-ADD config.yaml /catalog/config.yaml
+RUN echo ${CONFIG_FILE} | base64 -d > /catalog/config.yaml
 
 # code 
 ADD catalog /catalog
