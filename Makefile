@@ -2,6 +2,7 @@ del:
 	docker rmi -f tapis/ci-catalog:latest
 
 build:
+	base64 -i catalog/config.yaml
 	docker build -t tapis/ci-catalog .
 
 run: del build
@@ -14,12 +15,12 @@ shell:
 	docker exec -it catalog bash
 
 down:
-	docker-compose down
+	docker compose down
     
 up:
-	docker-compose up -d
+	docker compose up -d
 
 test:
-	docker-compose run --rm catalog pytest
+	docker compose run --rm catalog pytest
 
 restart: down build up

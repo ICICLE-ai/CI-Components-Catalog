@@ -62,8 +62,8 @@ components:
     status: PrototypeRelease
     website:
     description: Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project
-    targetIcicleRelease: 2023-04
-    componentVersion: 0.3.0
+    targetIcicleRelease: 2023-06
+    componentVersion: 0.3.1
     licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
     publicAccess: true
     sourceCodeUrl: https://github.com/tapis-project/camera-traps

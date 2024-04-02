@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="label" for="edge" attr.name="label" attr.type="string"/>
+<key id="trainingTutorialsUrl" for="node" attr.name="trainingTutorialsUrl" attr.type="boolean"/>
+<key id="biasAssessmentConducted" for="node" attr.name="biasAssessmentConducted" attr.type="boolean"/>
+<key id="doi" for="node" attr.name="doi" attr.type="string"/>
+<key id="labels" for="node" attr.name="labels" attr.type="string"/>
+<key id="usageMetricsCollected" for="node" attr.name="usageMetricsCollected" attr.type="boolean"/>
+<key id="trainingTutorialsUrl" for="node" attr.name="trainingTutorialsUrl" attr.type="string"/>
+<key id="trainingTutorialsAvailable" for="node" attr.name="trainingTutorialsAvailable" attr.type="boolean"/>
+<key id="usageDocumentationUrl" for="node" attr.name="usageDocumentationUrl" attr.type="string"/>
+<key id="usageDocumentationAvailable" for="node" attr.name="usageDocumentationAvailable" attr.type="boolean"/>
+<key id="developerDocumentationUrl" for="node" attr.name="developerDocumentationUrl" attr.type="string"/>
+<key id="developerDocumentationAvailable" for="node" attr.name="developerDocumentationAvailable" attr.type="boolean"/>
+<key id="securityReviewConducted" for="node" attr.name="securityReviewConducted" attr.type="boolean"/>
+<key id="testsWritten" for="node" attr.name="testsWritten" attr.type="boolean"/>
+<key id="codeReviewConducted" for="node" attr.name="codeReviewConducted" attr.type="boolean"/>
+<key id="citation" for="node" attr.name="citation" attr.type="string"/>
+<key id="releaseNotesUrl" for="node" attr.name="releaseNotesUrl" attr.type="string"/>
+<key id="containerImage" for="node" attr.name="containerImage" attr.type="string"/>
+<key id="sourceCodeUrl" for="node" attr.name="sourceCodeUrl" attr.type="string"/>
+<key id="licenseUrl" for="node" attr.name="licenseUrl" attr.type="string"/>
+<key id="componentVersion" for="node" attr.name="componentVersion" attr.type="string"/>
+<key id="publicAccess" for="node" attr.name="publicAccess" attr.type="boolean"/>
+<key id="targetIcicleRelease" for="node" attr.name="targetIcicleRelease" attr.type="double"/>
+<key id="description" for="node" attr.name="description" attr.type="string"/>
+<key id="website" for="node" attr.name="website" attr.type="string"/>
+<key id="status" for="node" attr.name="status" attr.type="string"/>
+<key id="primaryThrust" for="node" attr.name="primaryThrust" attr.type="string"/>
+<key id="name" for="node" attr.name="name" attr.type="string"/>
+<key id="owner" for="node" attr.name="owner" attr.type="string"/>
+<key id="id" for="node" attr.name="id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="1">
+  <data key="id">PodsService:1.5.3</data>
+  <data key="owner">Christian Garcia</data>
+  <data key="name">Tapis Pods Service API</data>
+  <data key="primaryThrust">core/Software</data>
+  <data key="status">Beta</data>
+  <data key="website">https://tapis.readthedocs.io/en/latest/technical/pods.html</data>
+  <data key="description">New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.</data>
+  <data key="targetIcicleRelease">2024.01</data>
+  <data key="publicAccess">True</data>
+  <data key="componentVersion">1.5.3</data>
+  <data key="licenseUrl">https://github.com/tapis-project/pods_service/blob/prod/LICENSE</data>
+  <data key="sourceCodeUrl">https://github.com/tapis-project/pods_service</data>
+  <data key="containerImage">https://hub.docker.com/r/tapis/pods-api</data>
+  <data key="releaseNotesUrl">https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md</data>
+  <data key="citation"></data>
+  <data key="codeReviewConducted">True</data>
+  <data key="testsWritten">True</data>
+  <data key="securityReviewConducted">False</data>
+  <data key="developerDocumentationAvailable">True</data>
+  <data key="developerDocumentationUrl">https://github.com/tapis-project/pods_service/blob/dev/README.md</data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/pods.html</data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://tapis-project.github.io/tutorials/pods/intro/</data>
+  <data key="usageMetricsCollected">True</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="TapisBase:1.3.0"/>
+<node id="2">
+  <data key="id">FederatedAuthService:1.5.0</data>
+  <data key="owner">Joe Stubbs</data>
+  <data key="name">Tapis Federated Authentication Service</data>
+  <data key="primaryThrust">core/Software</data>
+  <data key="status">Beta</data>
+  <data key="website">https://tapis.readthedocs.io/en/latest/technical/authentication.html#id2</data>
+  <data key="description">OAuth2-based authentication module allowing third-party applications to authenticate users from different identity providers, including university credentials, HPC center accounts (e.g., TACC accounts), and web and social login (e.g., GitHub, Google, etc).</data>
+  <data key="targetIcicleRelease">2024.01</data>
+  <data key="publicAccess">True</data>
+  <data key="componentVersion">1.5.0</data>
+  <data key="licenseUrl">https://github.com/tapis-project/authenticator/blob/prod/LICENSE</data>
+  <data key="sourceCodeUrl">https://github.com/tapis-project/authenticator/tree/prod</data>
+  <data key="containerImage">https://hub.docker.com/r/tapis/authenticator</data>
+  <data key="releaseNotesUrl">https://github.com/tapis-project/authenticator/blob/prod/CHANGELOG.md</data>
+  <data key="citation"></data>
+  <data key="codeReviewConducted">True</data>
+  <data key="testsWritten">True</data>
+  <data key="securityReviewConducted">False</data>
+  <data key="developerDocumentationAvailable">True</data>
+  <data key="developerDocumentationUrl">https://github.com/tapis-project/authenticator/blob/prod/README.md</data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/authentication.html#id2</data>
+  <data key="trainingTutorialsAvailable">False</data>
+  <data key="trainingTutorialsUrl"></data>
+  <data key="usageMetricsCollected">True</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="3">
+  <data key="id">Iluvatar:1.0.0</data>
+  <data key="name">Iluvatar Functions as a Service (FaaS) Control Plane</data>
+  <data key="status">Beta</data>
+  <data key="website">https://github.com/COS-IN/iluvatar-faas</data>
+  <data key="description">Iluvatar is an open Serverless platform built with the goal of jumpstarting and streamlining FaaS research. It provides a system that is easy and consistent to use, highly modifiable, and directly reports experimental results.</data>
+  <data key="owner">Prateek Sharma</data>
+  <data key="primaryThrust">core/AI4CI</data>
+  <data key="sourceCodeUrl">https://github.com/COS-IN/iluvatar-faas/tree/icicle-release-v1</data>
+  <data key="targetIcicleRelease">2024.01</data>
+  <data key="componentVersion">1.0.0</data>
+  <data key="licenseUrl">https://github.com/COS-IN/iluvatar-faas/blob/master/LICENSE</data>
+  <data key="releaseNotesUrl">https://github.com/COS-IN/iluvatar-faas/blob/master/src/Il%C3%BAvatar/docs/DESIGN.md</data>
+  <data key="doi">https://doi.org/10.1145/3588195.3592995</data>
+  <data key="citation">Alexander Fuerst, Abdul Rehman, and Prateek Sharma. 2023. Ilúvatar: A Fast Control Plane for Serverless Computing. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC ’23), June 16–23, 2023, Orlando, FL, USA. ACM, New York, NY, USA, 14 pages.</data>
+  <data key="codeReviewConducted">True</data>
+  <data key="testsWritten">True</data>
+  <data key="securityReviewConducted">False</data>
+  <data key="biasAssessmentConducted">False</data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl">https://github.com/COS-IN/iluvatar-faas/tree/master/src/Il%C3%BAvatar/docs</data>
+  <data key="developerDocumentationAvailable">True</data>
+  <data key="developerDocumentationUrl">https://github.com/COS-IN/iluvatar-faas/tree/master/src/Il%C3%BAvatar/docs</data>
+  <data key="trainingTutorialsAvailable">False</data>
+  <data key="trainingTutorialsUrl">False</data>
+  <data key="usageMetricsCollected">False</data>
+  <data key="publicAccess">True</data>
+  <data key="labels">:Component</data>
+</node>
+<edge source="1" target="TapisBase:1.3.0">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="TapisBase:1.3.0" target="2">
+  <data key="label">DependsOn</data>
+</edge>
+</graph></graphml>
