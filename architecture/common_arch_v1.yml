@@ -1,6 +1,17 @@
-- id: ui
-  name: ICICLE User Interface
-  hasDependentComponents:
+components:
+        
+  - id: dataset_labeling_dash
+    name: Interactive Dataset Labeling Dashboard (DA)
+    owner: Joe Stubbs
+
+
+  - id: VAReusableGUI
+    name: Visual Analytics Reusable GUI
+    owner: Joe Stubbs
+
+  - id: ui
+    name: ICICLE User Interface
+    hasDependentComponents:
     - related_to: dataset_labeling_dash
       relationship_type: contains
     - related_to: VAReusableGUI
@@ -17,9 +28,7 @@
       relationship_type: DependsOn
     - related_to: mc
       relationship_type: DependsOn
-      
-- id: dataset_labeling_dash
-  name: Interactive Dataset Labeling Dashboard (DA)
+    owner: Joe Stubbs
 
 - id: ikle_actions
   name: IKLE Actions Editor
@@ -48,51 +57,64 @@
     - related_to: mc
       relationship_type: DependsOn
 
-- id: data_dash
-  name: Dataset Management Dashboard (DA)
-  hasDependentComponents:
+  - id: model_dash
+    name: Model Training Dashboard (DA)
+    hasDependentComponents:
     - related_to: mc
       relationship_type: DependsOn
 
-- id: model_dash
-  name: Model Training Dashboard (DA)
-  hasDependentComponents:
-    - related_to: mc
-      relationship_type: DependsOn
-  
-- id: authn_z  
-  name: Authentication and Authorization Middleware
-  hasDependentComponents:
+    
+  - id: authn
+    name: ICICLE Tapis OAuth2-based Authentication Service
+    
+  - id: authz
+    name: ICICLE Tapis Security & Authorization Service
+
+
+  - id: authn_z  
+    name: Authentication and Authorization Middleware
+    hasDependentComponents:
     - related_to: authn
       relationship_type: contains
     - related_to: authz
       relationship_type: contains
-  
-- id: authn
-  name: ICICLE Tapis OAuth2-based Authentication Service
-  
-- id: authz
-  name: ICICLE Tapis Security & Authorization Service
-  
-- id: mc
-  name: Model Commons 
-  hasDependentComponents:
+
+  - id: mc_model_repo
+    name: Model Commons Model Repository 
+
+  - id: mc_data_repo
+    name: Model Commons Data Repository 
+
+
+  - id: mc
+    name: Model Commons 
+    hasDependentComponents:
     - related_to: mc_model_repo
       relationship_type: contains
     - related_to: mc_data_repo
       relationship_type: contains
     - related_to: authn_z
       relationship_type: DependsOn
-  
-- id: mc_model_repo
-  name: Model Commons Model Repository 
+    
+  - id: adaptive_ai
+    name: Adaptive AI Server
+    
+  - id: harp
+    name: HARP Application Resource Predictor
 
-- id: mc_data_repo
-  name: Model Commons Data Repository 
+  - id: tapis_jobs
+    name: Tapis Jobs API
 
-- id: int_plane
-  name: Intelligence Plane
-  hasDependentComponents:
+  - id: tapis_apps
+    name: Tapis Apps API
+
+  - id: tapis_systems
+    name: Tapis Systems API
+
+
+  - id: int_plane
+    name: Intelligence Plane
+    hasDependentComponents:
     - related_to: mc
       relationship_type: DependsOn
     - related_to: authn_z
@@ -104,35 +126,23 @@
     - related_to: Tapis_HPC_middelware
       relationship_type: DependsOn
 
-- id: adaptive_ai
-  name: Adaptive AI Server
-  
-- id: harp
-  name: HARP Application Resource Predictor
-   
-- id: Tapis_HPC_middelware
-  name: Tapis HPC Middelware
+
+
+  - id: Tapis_HPC_middelware
+    name: Tapis HPC Middelware
     hasDependentComponents:
     - related_to: authn_z
       relationship_type: DependsOn
-     - related_to: tapis_jobs
-       relationship_type: contains
-     - related_to: tapis_apps
-       relationship_type: contains
-     - related_to: tapis_systems
-       relationship_type: contains
-   
-- id: tapis_jobs
-  name: Tapis Jobs API
+    - related_to: tapis_jobs
+      relationship_type: contains
+    - related_to: tapis_apps
+      relationship_type: contains
+    - related_to: tapis_systems
+      relationship_type: contains
+    
 
-- id: tapis_apps
-  name: Tapis Apps API
-
-- id: tapis_systems
-  name: Tapis Systems API
-
-- id: ml_host_middleware
-  name: ICICLE ML Hosting Middleware
+  - id: ml_host_middleware
+    name: ICICLE ML Hosting Middleware
     hasDependentComponents:
     - related_to: authn_z
       relationship_type: DependsOn
@@ -143,20 +153,20 @@
     - related_to: illuvar
       relationship_type: contains
 
-- id: tapis_pods
-  name: Tapis Pods API
-  description: Hosted Knowledge Graphs, Inference Servers, and related containers
+  - id: tapis_pods
+    name: Tapis Pods API
+    description: Hosted Knowledge Graphs, Inference Servers, and related containers
 
-- id: illuvar
-  name: Illuvar functions-as-a-service (FaaS) (RIISS)
-  description: Hosted Knowledge Graphs, Inference Servers, and related containers
+  - id: illuvar
+    name: Illuvar functions-as-a-service (FaaS) (RIISS)
+    description: Hosted Knowledge Graphs, Inference Servers, and related containers
 
-- id: tapis_workflows
-  name: Tapis Workflows API
-  description: Supports the IKLE ETL and caching service 
+  - id: tapis_workflows
+    name: Tapis Workflows API
+    description: Supports the IKLE ETL and caching service 
 
-- id: ml_edge_to_center_middleware
-  name: ICICLE ML Edge-to-Center Middleware
+  - id: ml_edge_to_center_middleware
+    name: ICICLE ML Edge-to-Center Middleware
     hasDependentComponents:
     - related_to: authn_z
       relationship_type: DependsOn
@@ -170,8 +180,8 @@
       relationship_type: contains      
       
 
-- id: mon_plane
-  name: Monitoring Plane
+  - id: mon_plane
+    name: Monitoring Plane
     hasDependentComponents:
     - related_to: authn_z
       relationship_type: DependsOn
@@ -184,24 +194,23 @@
     - related_to: ckn_actuator
       relationship_type: contains
 
-- id: ckn_kb
-  name: CKN Knowledge Base (datacenter)
-  
-- id: ckn_cep
-  name: CKN CEP Engine (datacenter)
-  
-- id: ckn_cap
-  name: CKN Capture Daemon (edge)
+  - id: ckn_kb
+    name: CKN Knowledge Base (datacenter)
+    
+  - id: ckn_cep
+    name: CKN CEP Engine (datacenter)
+    
+  - id: ckn_cap
+    name: CKN Capture Daemon (edge)
 
-- id: ckn_actuator
-  name: CKN Actuator (edge)
+  - id: ckn_actuator
+    name: CKN Actuator (edge)
 
-- id: red_edge
-  name: RED Edge Placement Planner
+  - id: red_edge
+    name: RED Edge Placement Planner
 
-- id: edge_hardware_prov
-  name: Dynamic Edge Hardware Provisioning Service (AE)
-  
-- id: edge_app_deploy
-  name: Edge Application Deployment Service (AE)
-
+  - id: edge_hardware_prov
+    name: Dynamic Edge Hardware Provisioning Service (AE)
+    
+  - id: edge_app_deploy
+    name: Edge Application Deployment Service (AE)
