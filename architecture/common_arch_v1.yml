@@ -57,7 +57,9 @@ components:
     - related_to: mc
       relationship_type: DependsOn
 
-    
+  - id: data_dash
+    name: Data Dashboard
+
   - id: authn
     name: ICICLE Tapis OAuth2-based Authentication Service
     
