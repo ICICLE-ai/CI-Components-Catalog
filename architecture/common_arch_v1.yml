@@ -1,9 +1,7 @@
 components:
-        
   - id: dataset_labeling_dash
     name: Interactive Dataset Labeling Dashboard (DA)
     owner: Joe Stubbs
-
 
   - id: VAReusableGUI
     name: Visual Analytics Reusable GUI
@@ -30,32 +28,28 @@ components:
       relationship_type: DependsOn
     owner: Joe Stubbs
 
-- id: ikle_actions
-  name: IKLE Actions Editor
-  hasDependentComponents:
-    - related_to: ikle_etl
-      relationship_type: DependsOn
+  - id: ikle_actions
+    name: IKLE Actions Editor
+    hasDependentComponents:
+      - related_to: ikle_etl
+        relationship_type: DependsOn
 
-- id: ikle_etl
-  name: IKLE ETL and Caching Infrastructure
-  hasDependentComponents:
-    - related_to: ikle_know_harvest
-      relationship_type: DependsOn
-    - related_to: tapis_workflows
-      relationship_type: DependsOn
+  - id: ikle_etl
+    name: IKLE ETL and Caching Infrastructure
+    hasDependentComponents:
+      - related_to: ikle_know_harvest
+        relationship_type: DependsOn
+      - related_to: tapis_workflows
+        relationship_type: DependsOn
 
-- id: ikle_know_harvest
-  name: IKLE Knowledge Harvester Engine  
+  - id: ikle_know_harvest
+    name: IKLE Knowledge Harvester Engine  
 
-- id: VAReusableGUI
-  name: Visual Analytics Reusable GUI
-
-
-- id: ct_dash
-  name: Camera Traps Model Evaluation and Capacity Planning Dashboard (AE)
-  hasDependentComponents:
-    - related_to: mc
-      relationship_type: DependsOn
+  - id: ct_dash
+    name: Camera Traps Model Evaluation and Capacity Planning Dashboard (AE)
+    hasDependentComponents:
+      - related_to: mc
+        relationship_type: DependsOn
 
   - id: model_dash
     name: Model Training Dashboard (DA)
