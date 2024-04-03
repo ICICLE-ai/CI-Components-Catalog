@@ -21,7 +21,7 @@ You can test the schema by validating the local example dataset ``components-dat
 included in the repository, by doing the following:
 
 ```
-docker run -v $(pwd):/work  -w /work/ --rm -it jstubbs/linkml linkml-validate -sci-component.yaml components-data.yaml
+docker run -v $(pwd):/work  -w /work/ --rm -it jstubbs/linkml linkml-validate -s ci-component.yaml components-data.yaml
 ```
 
 If no errors are returned, the message ``None`` will be output. 
