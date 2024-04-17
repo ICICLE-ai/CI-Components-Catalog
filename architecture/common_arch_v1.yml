@@ -47,12 +47,14 @@ components:
 
   - id: ct_dash
     name: Camera Traps Model Evaluation and Capacity Planning Dashboard (AE)
+    primaryThrust: useInspired/AE
     hasDependentComponents:
       - related_to: mc
         relationship_type: DependsOn
 
   - id: model_dash
     name: Model Training Dashboard (DA)
+    primaryThrust: useInspired/DA
     hasDependentComponents:
     - related_to: mc
       relationship_type: DependsOn
@@ -75,13 +77,15 @@ components:
 
   - id: mc_model_repo
     name: Model Commons Model Repository 
+    primaryThrust: useInspired/AE
 
   - id: mc_data_repo
     name: Model Commons Data Repository 
-
+    primaryThrust: useInspired/AE
 
   - id: mc
     name: Model Commons 
+    primaryThrust: useInspired/AE
     hasDependentComponents:
     - related_to: mc_model_repo
       relationship_type: contains
@@ -89,12 +93,22 @@ components:
       relationship_type: contains
     - related_to: authn_z
       relationship_type: DependsOn
-    
+
+  - id: da_mr
+    name: Digital Ag Model Registry 
+    primaryThrust: useInspired/DA
+    hasDependentComponents:
+    - related_to: mc
+      relationship_type: isInstance
+
+
   - id: adaptive_ai
     name: Adaptive AI Server
+    primaryThrust: useInspired/AE
     
   - id: harp
     name: HARP Application Resource Predictor
+    primaryThrust: core/RIISS
 
   - id: tapis_jobs
     name: Tapis Jobs API
@@ -105,9 +119,9 @@ components:
   - id: tapis_systems
     name: Tapis Systems API
 
-
   - id: int_plane
     name: Intelligence Plane
+    primaryThrust: core/RIISS
     hasDependentComponents:
     - related_to: mc
       relationship_type: DependsOn
@@ -119,7 +133,6 @@ components:
       relationship_type: contains
     - related_to: Tapis_HPC_middelware
       relationship_type: DependsOn
-
 
 
   - id: Tapis_HPC_middelware
@@ -134,7 +147,6 @@ components:
     - related_to: tapis_systems
       relationship_type: contains
     
-
   - id: ml_host_middleware
     name: ICICLE ML Hosting Middleware
     hasDependentComponents:
@@ -202,9 +214,24 @@ components:
 
   - id: red_edge
     name: RED Edge Placement Planner
+    primaryThrust: useInspired/AE
 
   - id: edge_hardware_prov
-    name: Dynamic Edge Hardware Provisioning Service (AE)
+    name: Dynamic Edge Hardware Provisioning Service
+
+  - id: ae_edge_hardware_prov
+    name: Camera Traps Hardware Provisioning Service
+    primaryThrust: useInspired/AE
+    hasDependentComponents:
+       - related_to: edge_hardware_prov
+         relationship_type: isInstance 
     
   - id: edge_app_deploy
-    name: Edge Application Deployment Service (AE)
+    name: Edge Application Deployment Service
+
+  - id: ae_edge_app_deploy
+    name: ECamera Traps Control Software
+    primaryThrust: useInspired/AE    
+    hasDependentComponents:
+       - related_to: edge_app_deploy
+         relationship_type: isInstance 

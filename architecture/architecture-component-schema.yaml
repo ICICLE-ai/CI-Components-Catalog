@@ -95,7 +95,7 @@ slots:
         description: URL to source code repository; e.g., in GitHub, Gitlab, etc. 
     targetIcicleRelease:
         range: IcicleReleases
-        description: The ICICLE release that this component belongs to, e.g., None, VC3, etc. See enum. 
+        description: The ICICLE release that this component belo,ngs to, e.g., None, VC3, etc. See enum. 
     componentVersion:
         description: The version of the component itself; e.g., 22.04, 3.1.3.0, etc.
     licenseUrl:
@@ -160,6 +160,7 @@ enums:
         permissible_values:
             DependsOn:
             contains:
+            isInstance:
     ComponentStatus:
         permissible_values:
             Unreleased:
@@ -180,6 +181,7 @@ enums:
             core/FoundationAI:
             core/PADI:
             core/VA:
+            core/RIISS:
             useInspired/DA:
             useInspired/AE:
             useInspired/SF:
