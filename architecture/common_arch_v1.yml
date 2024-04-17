@@ -1,11 +1,13 @@
 components:
   - id: dataset_labeling_dash
     name: Interactive Dataset Labeling Dashboard (DA)
-    owner: Joe Stubbs
+    primaryThrust: useInspired/DA
+    owner: Hari Subramoni
 
   - id: VAReusableGUI
     name: Visual Analytics Reusable GUI
-    owner: Joe Stubbs
+    primaryThrust: useInspired/SF
+    owner: Patrick huber
 
   - id: ui
     name: ICICLE User Interface
@@ -30,12 +32,14 @@ components:
 
   - id: ikle_actions
     name: IKLE Actions Editor
+    primaryThrust: useInspired/SF
     hasDependentComponents:
       - related_to: ikle_etl
         relationship_type: DependsOn
 
   - id: ikle_etl
     name: IKLE ETL and Caching Infrastructure
+    primaryThrust: useInspired/SF
     hasDependentComponents:
       - related_to: ikle_know_harvest
         relationship_type: DependsOn
@@ -43,7 +47,8 @@ components:
         relationship_type: DependsOn
 
   - id: ikle_know_harvest
-    name: IKLE Knowledge Harvester Engine  
+    name: IKLE Knowledge Harvester Engine
+    primaryThrust: useInspired/SF
 
   - id: ct_dash
     name: Camera Traps Model Evaluation and Capacity Planning Dashboard (AE)
@@ -167,6 +172,7 @@ components:
 
   - id: illuvar
     name: Illuvar functions-as-a-service (FaaS) (RIISS)
+    primaryThrust: core/RIISS
     description: Hosted Knowledge Graphs, Inference Servers, and related containers
 
   - id: tapis_workflows
@@ -190,6 +196,7 @@ components:
 
   - id: mon_plane
     name: Monitoring Plane
+    primaryThrust: core/RIISS
     hasDependentComponents:
     - related_to: authn_z
       relationship_type: DependsOn
@@ -204,15 +211,19 @@ components:
 
   - id: ckn_kb
     name: CKN Knowledge Base (datacenter)
+    primaryThrust: core/RIISS
     
   - id: ckn_cep
     name: CKN CEP Engine (datacenter)
+    primaryThrust: core/RIISS
     
   - id: ckn_cap
     name: CKN Capture Daemon (edge)
+    primaryThrust: core/RIISS
 
   - id: ckn_actuator
     name: CKN Actuator (edge)
+    primaryThrust: core/RIISS
 
   - id: red_edge
     name: RED Edge Placement Planner
