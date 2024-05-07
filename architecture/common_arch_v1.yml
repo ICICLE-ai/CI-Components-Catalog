@@ -98,8 +98,29 @@ components:
       relationship_type: contains
     - related_to: mc_data_repo
       relationship_type: contains
+    - related_to: mc_artifact_storage
+      relationship_type: contains
+    - related_to: mc_metadata_storage
+      relationship_type: contains
+    - related_to: mc_dataset_api
+      relationship_type: contains
+    - related_to: mc_model_api
+      relationship_type: contains
     - related_to: authn_z
       relationship_type: DependsOn
+
+  - id: mc_model_api
+    name: Model Commons Model API
+
+  - id: mc_dataset_api
+    name: Model Commons Datasets API
+
+
+  - id: mc_artifact_storage
+    name: Model Commons Artifact Storage
+
+  - id: mc_metadata_storage
+    name: Model Commons Metadata Storage
 
   - id: da_mr
     name: Digital Ag Model Registry 
@@ -112,7 +133,12 @@ components:
   - id: adaptive_ai
     name: Adaptive AI Server
     primaryThrust: useInspired/AE
-    
+
+  - id: neural_arch_slim
+    name: Neural Architecture Slimming Framework
+    primaryThrust: useInspired/AE
+
+
   - id: harp
     name: HARP Application Resource Predictor
     primaryThrust: core/RIISS
@@ -243,7 +269,7 @@ components:
     name: Edge Application Deployment Service
 
   - id: ae_edge_app_deploy
-    name: ECamera Traps Control Software
+    name: Camera Traps Control Software
     primaryThrust: useInspired/AE    
     hasDependentComponents:
        - related_to: edge_app_deploy
