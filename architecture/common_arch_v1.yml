@@ -57,15 +57,27 @@ components:
       - related_to: mc
         relationship_type: DependsOn
 
+  - id: model_management_dash
+    name: Model Management Dashboard
+    primaryThrust: useInspired/AE
+    hasDependentComponents:
+    - related_to: mc
+      relationship_type: DependsOn
+
+
   - id: model_dash
-    name: Model Training Dashboard (DA)
+    name: Model Training Dashboard
     primaryThrust: useInspired/DA
     hasDependentComponents:
     - related_to: mc
       relationship_type: DependsOn
 
   - id: data_dash
-    name: Data Dashboard
+    name: Dataset Management Dashboard
+    primaryThrust: useInspired/AE
+    hasDependentComponents:
+    - related_to: mc
+      relationship_type: DependsOn
 
   - id: authn
     name: ICICLE Tapis OAuth2-based Authentication Service
