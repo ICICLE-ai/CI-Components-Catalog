@@ -13,3 +13,28 @@ It contains the following files:
 ```
 docker run -v $(pwd):/work  -w /work/ --rm -it jstubbs/linkml linkml-validate -s architecture/architecture-component-schema.yaml architecture/common_arch_v1.yml
 ```
+
+## Visualization in Neo4j
+
+You can visualize the architecture data using the hosted Neo4j instance serving the most recent 
+version of the data. The connection information is as follows: 
+
+* URL: bolt+s://cicatalog.pods.icicle.tapis.io
+* Port: 443
+* User: cicatalog 
+* Password: Ask on the ICICLE Slack channel.
+
+The data can be visualized in a browser using the 
+https://browser.neo4j.io/ website. 
+
+### Common Queries
+
+When working with the data, the following 
+queries may be helpful: 
+
+* Select all nodes: ``match (n) return n``
+* Select the nodes for a specific project: ``MATCH (n) WHERE n.primaryThrust = 'useInspired/DA' RETURN n``
+* Select all nodes from two projects: ``MATCH (n) WHERE (n.primaryThrust = 'useInspired/DA') OR (n.primaryThrust = 'useInspired/AE')  RETURN n``
+* Select the nodes for a project or nodes that are
+  common (i.e., not part of a specific project)
+  ``MATCH (n) WHERE (n.primaryThrust = 'useInspired/DA') OR (NOT EXISTS(n.primaryThrust))  RETURN n``
