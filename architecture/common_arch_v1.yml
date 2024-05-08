@@ -141,6 +141,17 @@ components:
     - related_to: mc
       relationship_type: isInstance
 
+  - id: model_training_and_adpatation
+    name: Model Training and Adaptation 
+    hasDependentComponents:
+     - related_to: adaptive_ai
+       relationship_type: contains
+     - related_to: neural_arch_slim
+       relationship_type: contains
+     - related_to: intelligent_training_service
+       relationship_type: contains
+       
+   
 
   - id: adaptive_ai
     name: Adaptive AI Server
@@ -150,7 +161,14 @@ components:
     name: Neural Architecture Slimming Framework
     primaryThrust: useInspired/AE
 
-
+  - id: intelligent_training_service
+    name: Intelligent Training Service
+    hasDependentComponents:
+    - related_to: harp
+      relationship_type: DependsOn
+    - related_to: Tapis_HPC_middelware
+      relationship_type: DependsOn
+    
   - id: harp
     name: HARP Application Resource Predictor
     primaryThrust: core/RIISS
@@ -176,9 +194,8 @@ components:
       relationship_type: contains
     - related_to: harp
       relationship_type: contains
-    - related_to: Tapis_HPC_middelware
-      relationship_type: DependsOn
-
+    - related_to: intelligent_training_service
+      relationship_type: contains
 
   - id: Tapis_HPC_middelware
     name: Tapis HPC Middelware
