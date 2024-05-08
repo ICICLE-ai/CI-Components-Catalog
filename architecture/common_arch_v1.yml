@@ -28,7 +28,8 @@ components:
       relationship_type: DependsOn
     - related_to: mc
       relationship_type: DependsOn
-    owner: Joe Stubbs
+    - related_to: model_training_and_adaptation
+      relationship_type: DependsOn
 
   - id: ikle_actions
     name: IKLE Actions Editor
@@ -141,7 +142,7 @@ components:
     - related_to: mc
       relationship_type: isInstance
 
-  - id: model_training_and_adpatation
+  - id: model_training_and_adaptation
     name: Model Training and Adaptation 
     hasDependentComponents:
      - related_to: adaptive_ai
