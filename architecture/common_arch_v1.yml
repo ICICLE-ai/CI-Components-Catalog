@@ -197,6 +197,9 @@ components:
       relationship_type: contains
     - related_to: intelligent_training_service
       relationship_type: contains
+    - related_to: red_edge
+      relationship_type: contains      
+
 
   - id: Tapis_HPC_middelware
     name: Tapis HPC Middelware
@@ -242,8 +245,6 @@ components:
       relationship_type: DependsOn
     - related_to: mon_plane
       relationship_type: contains
-    - related_to: red_edge
-      relationship_type: contains      
     - related_to: edge_hardware_prov
       relationship_type: contains      
     - related_to: edge_app_deploy
