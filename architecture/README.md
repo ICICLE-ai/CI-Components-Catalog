@@ -38,3 +38,14 @@ queries may be helpful:
 * Select the nodes for a project or nodes that are
   common (i.e., not part of a specific project)
   ``MATCH (n) WHERE (n.primaryThrust = 'useInspired/DA') OR (NOT EXISTS(n.primaryThrust))  RETURN n``
+* Provide the list of components to pull in, by id: ``MATCH (n) WHERE (n.id = 'mc') OR (n.id = 'ui') OR (n.id = 'int_plane') OR (n.id = 'authn_z') OR (n.id = 'ml_edge_to_center_middleware') RETURN n``
+
+
+### Updating the Data (Admins)
+We have automated the ETL pipeline that updates the Neo4j instance above from the current dataset in the 
+git repository. It is a Tapis workflow and can be launched from the Tapis UI:
+
+1. Log in to the Tapis UI with your TACC account: https://icicle.tapis.io/tapis-ui/#
+2. Navigate to the pipelines: https://icicle.tapis.io/tapis-ui/#/workflows/pipelines/IKLE/
+3. Click ``Run`` for the  ``reference_architecture_pipeline`` 
+
