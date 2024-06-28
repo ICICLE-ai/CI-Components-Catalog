@@ -198,7 +198,7 @@ components:
     releaseNotesUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
     targetIcicleRelease: 2023-04
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
       - related_to: PodsService
         relationship_type: DependsOn
@@ -255,7 +255,7 @@ components:
     sourceCodeUrl: https://github.com/tapis-project/camera-traps
     containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
       - related_to: EventEngine
         relationship_type: DependsOn
@@ -287,7 +287,7 @@ components:
     sourceCodeUrl: https://github.com/tapis-project/pods_service
     containerImage: https://hub.docker.com/r/tapis/pods-api
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md
     codeReviewConducted: true
@@ -378,7 +378,7 @@ components:
     publicAccess: false
     restrictedToRole: false
     hasDependentComponents:
-      - related_to: 30080website
+      - related_to: DigitalAgHub:1.0
         relationship_type: DependsOn
 
   - id: InFieldHelperForCropScouts:1.0
@@ -406,7 +406,7 @@ components:
     publicAccess: false
     restrictedToRole: false
     hasDependentComponents:
-      - related_to: 30080website
+      - related_to: DigitalAgHub:1.0
         relationship_type: DependsOn
 
   - id: ICICONSOLE:0.0.10
@@ -424,7 +424,7 @@ components:
     releaseNotesUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
     targetIcicleRelease: 2023-06
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
       - related_to: PodsService
         relationship_type: DependsOn
@@ -458,7 +458,7 @@ components:
     releaseNotesUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
     targetIcicleRelease: 2023-06
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
       - related_to: PodsService
         relationship_type: DependsOn
@@ -503,7 +503,7 @@ components:
     sourceCodeUrl: https://github.com/tapis-project/authenticator/tree/prod
     containerImage: https://hub.docker.com/r/tapis/authenticator
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/authenticator/blob/prod/CHANGELOG.md
     citation:
@@ -602,7 +602,7 @@ components:
     releaseNotesUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
     targetIcicleRelease: 2023-10
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
       - related_to: PodsService
         relationship_type: DependsOn
@@ -636,7 +636,7 @@ components:
     releaseNotesUrl: https://github.com/sdsc-hpc-training-org/hello_icicle_auth_clients
     targetIcicleRelease: 2023-10
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
       - related_to: PodsService
         relationship_type: DependsOn
@@ -669,7 +669,7 @@ components:
     sourceCodeUrl: https://github.com/tapis-project/camera-traps
     containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
       - related_to: EventEngine
         relationship_type: DependsOn
@@ -715,7 +715,7 @@ components:
     sourceCodeUrl: https://github.com/tapis-project/pods_service
     containerImage: https://hub.docker.com/r/tapis/pods-api
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md
     citation:
@@ -744,7 +744,7 @@ components:
     sourceCodeUrl: https://github.com/tapis-project/authenticator/tree/prod
     containerImage: https://hub.docker.com/r/tapis/authenticator
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/authenticator/blob/prod/CHANGELOG.md
     citation:
@@ -827,7 +827,7 @@ components:
     sourceCodeUrl: https://github.com/tapis-project/pods_service
     containerImage: https://hub.docker.com/r/tapis/pods-api
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md
     citation:
