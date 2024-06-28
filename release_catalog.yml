@@ -10,7 +10,7 @@ components:
     componentVersion: 1.3.0
     targetIcicleRelease: 2023-04
     licenseUrl: https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE
-    publicAccess: true
+    publicAccess: True
     sourceCodeUrl: https://github.com/tapis-project
     releaseNotesUrl: https://github.com/tapis-project/tapis-deployer/blob/main/CHANGELOG.md
     citation: "Joe Stubbs, Richard Cardone, Mike Packard, Anagha Jamthe, Smruti Padhy, Steve Terry, Julia Looney, Joseph Meiring, Steve Black, Maytal Dahan, Sean Cleveland, Gwen Jacobs. (2021) Tapis: An API Platform for Reproducible, Distributed Computational Research. In: Arai K. (eds) Advances in Information and Communication. FICC 2021. Advances in Intelligent Systems and Computing, vol 1363. Springer, Cham. https://doi.org/10.1007/978-3-030-73100-7_61"
@@ -35,7 +35,7 @@ components:
     componentVersion: 0.2.0
     targetIcicleRelease: 2023-04
     licenseUrl: https://github.com/tapis-project/event-engine/blob/main/LICENSE
-    publicAccess: true
+    publicAccess: True
     releaseNotesUrl: https://crates.io/crates/event-engine
     sourceCodeUrl: https://github.com/tapis-project/event-engine
     containerImage:
@@ -61,7 +61,7 @@ components:
     targetIcicleRelease: 2023-04
     componentVersion: 0.3.0
     licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
-    publicAccess: true
+    publicAccess: True
     sourceCodeUrl: https://github.com/tapis-project/camera-traps
     containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
     hasDependentComponents:
@@ -91,7 +91,7 @@ components:
     website: https://tapis.readthedocs.io/en/latest/technical/pods.html
     description: New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.
     targetIcicleRelease: 2023-04
-    publicAccess: true
+    publicAccess: True
     componentVersion: 1.3.0
     licenseUrl: https://github.com/tapis-project/pods_service/blob/prod/LICENSE
     sourceCodeUrl: https://github.com/tapis-project/pods_service
@@ -119,7 +119,7 @@ components:
     description: Visualizse food flows or something...
     status: Alpha
     targetIcicleRelease: 2023-04
-    publicAccess: true
+    publicAccess: True
     componentVersion: 0.1
     licenseUrl: Unknown
 
@@ -130,7 +130,7 @@ components:
     description: Database and dashboard for discovering ICICLE projects and products.
     status: Alpha
     targetIcicleRelease: 2023-04
-    publicAccess: true
+    publicAccess: True
     componentVersion: 0.1.0
     licenseUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/LICENSE
     sourceCodeUrl: https://github.com/ICICLE-ai/CI-Components-Catalog
@@ -155,7 +155,7 @@ components:
     description: Pipeline for predicting application (specifically, ML) runtimes.
     status: Prototype
     targetIcicleRelease: 2023-04
-    publicAccess: true
+    publicAccess: True
     componentVersion: 1.0.0
     citation: "S. Vallabhajosyula and R. Ramnath, 'Establishing a Generalizable Framework for Generating Cost-Aware Training Data and Building Unique Context-Aware Walltime Prediction Regression Models,' 2022 IEEE Intl Conf on Parallel & Distributed Processing with Applications, Big Data & Cloud Computing, Sustainable Computing & Communications, Social Computing & Networking (ISPA/BDCloud/SocialCom/SustainCom), Melbourne, Australia, 2022, pp. 497-506, doi: 10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00070"
     licenseUrl: https://github.com/manikyaswathi/harp/blob/main/LICENSE
@@ -181,7 +181,7 @@ components:
     usageDocumentationAvailable: true
     usageDocumentationUrl: https://pypi.org/project/SoftwarePilot/
     usageMetricsCollected: false
-    publicAccess: true
+    publicAccess: True
 
   - id: HelloICICLEAuthClients:0.0.1
     name: Hello ICICLE Auth Clients
@@ -224,7 +224,7 @@ components:
     status: Beta
     website: https://github.com/PPODschema/PPOD_FSL/
     targetIcicleRelease: 2023-04
-    publicAccess: true
+    publicAccess: True
     licenseUrl: https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md
 
   - id: iSpLib:1.0
@@ -236,7 +236,7 @@ components:
     componentVersion: 1.0
     licenseUrl: BSD-3-clause
     targetIcicleRelease: 2023-04
-    publicAccess: true
+    publicAccess: True
     sourceCodeUrl: https://github.com/HipGraph/iSpLib
   #
 
@@ -251,7 +251,7 @@ components:
     targetIcicleRelease: 2023-06
     componentVersion: 0.3.1
     licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
-    publicAccess: true
+    publicAccess: True
     sourceCodeUrl: https://github.com/tapis-project/camera-traps
     containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
     hasDependentComponents:
@@ -281,7 +281,7 @@ components:
     website: https://tapis.readthedocs.io/en/latest/technical/pods.html
     description: New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.
     targetIcicleRelease: 2023-06
-    publicAccess: true
+    publicAccess: True
     componentVersion: 1.3.2
     licenseUrl: https://github.com/tapis-project/pods_service/blob/prod/LICENSE
     sourceCodeUrl: https://github.com/tapis-project/pods_service
@@ -309,7 +309,7 @@ components:
     status: Prototype
     targetIcicleRelease: 2023-06
     componentVersion: 0.1
-    publicAccess: true
+    publicAccess: True
     sourceCodeUrl: https://github.com/ICICLE-ai/Store_Closure_Website
     licenseUrl:
 
@@ -321,7 +321,7 @@ components:
     status: Alpha
     targetIcicleRelease: 2023-06
     componentVersion: 0.1
-    publicAccess: true
+    publicAccess: True
     sourceCodeUrl: https://github.com/ICICLE-ai/ICICLE_Foodshed_Parser
     licenseUrl: https://github.com/ICICLE-ai/ICICLE_Foodshed_Parser/blob/main/LICENSE
 
@@ -332,7 +332,7 @@ components:
     description: Visualizse food flows or something...
     status: Alpha
     targetIcicleRelease: 2023-06
-    publicAccess: true
+    publicAccess: True
     componentVersion: 0.2
     licenseUrl: Unknown
 
@@ -352,7 +352,7 @@ components:
     testsWritten: false
     securityReviewConducted: false
     biasAssessmentConducted: false
-    publicAccess: false
+    publicAccess: True
     restrictedToRole: false
 
   - id: FarEdgeEdgeSimulator:1.0
@@ -375,7 +375,7 @@ components:
     usageDocumentationAvailable: false
     usageDocumentationUrl:
     usageMetricsCollected: false
-    publicAccess: false
+    publicAccess: True
     restrictedToRole: false
     hasDependentComponents:
       - related_to: DigitalAgHub:1.0
@@ -403,7 +403,7 @@ components:
     usageDocumentationAvailable: false
     usageDocumentationUrl:
     usageMetricsCollected: false
-    publicAccess: false
+    publicAccess: True
     restrictedToRole: false
     hasDependentComponents:
       - related_to: DigitalAgHub:1.0
@@ -486,7 +486,7 @@ components:
     status: Beta
     website: https://github.com/PPODschema/PPOD_CA
     targetIcicleRelease: 2023-06
-    publicAccess: true
+    publicAccess: True
     licenseUrl: https://github.com/PPODschema/PPOD_CA/blob/main/LICENSE
 
   - id: FederatedAuthService:1.3.4
@@ -497,7 +497,7 @@ components:
     website: https://tapis.readthedocs.io/en/latest/technical/authentication.html#id2
     description: OAuth2-based authentication module allowing third-party applications to authenticate users from different identity providers, including university credentials, HPC center accounts (e.g., TACC accounts), and web and social login (e.g., GitHub, Google, etc).
     targetIcicleRelease: 2023-06
-    publicAccess: true
+    publicAccess: True
     componentVersion: 1.3.4
     licenseUrl: https://github.com/tapis-project/authenticator/blob/prod/LICENSE
     sourceCodeUrl: https://github.com/tapis-project/authenticator/tree/prod
@@ -528,7 +528,7 @@ components:
     componentVersion: 1.0
     targetIcicleRelease: 2023-06
     licenseUrl: MIT-License
-    publicAccess: true
+    publicAccess: True
     sourceCodeUrl: https://github.com/ICICLE-ai/Region2vec/tree/master
     doi: https://doi.org/10.1145/3557915.3560974
 
@@ -539,7 +539,7 @@ components:
     description: A species classification model that utilizes heterogeneous image contexts organized in a multimodal knowledge graph.
     status: AlphaRelease
     targetIcicleRelease: 2023-06
-    publicAccess: true
+    publicAccess: True
     componentVersion: 0.1.0
     licenseUrl: https://github.com/vardaan123/Species-Classification-Multimodal-Context/blob/main/LICENSE
     usageDocumentationAvailable: true
@@ -558,7 +558,7 @@ components:
     targetIcicleRelease: 2023-10
     componentVersion: 1.0
     licenseUrl: https://datacommons.tdai.osu.edu/file.xhtml?fileId=5405&version=DRAFT
-    publicAccess: true
+    publicAccess: True
     restrictedToRole: false
 
   - id: iciflaskn:1.0
@@ -571,7 +571,7 @@ components:
     targetIcicleRelease: 2023-10
     componentVersion: 1.0
     licenseUrl: https://github.com/ICICLE-ai/flaskauthn/blob/main/LICENSE
-    publicAccess: true
+    publicAccess: True
     restrictedToRole: false
 
   - id: HARP:2.0.0
@@ -581,7 +581,7 @@ components:
     description: Pipeline for predicting application (specifically, ML) runtimes.
     status: Prototype
     targetIcicleRelease: 2023-10
-    publicAccess: true
+    publicAccess: True
     componentVersion: 2.0.0
     citation: "S. Vallabhajosyula and R. Ramnath, 'Establishing a Generalizable Framework for Generating Cost-Aware Training Data and Building Unique Context-Aware Walltime Prediction Regression Models,' 2022 IEEE Intl Conf on Parallel & Distributed Processing with Applications, Big Data & Cloud Computing, Sustainable Computing & Communications, Social Computing & Networking (ISPA/BDCloud/SocialCom/SustainCom), Melbourne, Australia, 2022, pp. 497-506, doi: 10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00070"
     licenseUrl: https://github.com/manikyaswathi/harp/blob/main/LICENSE
@@ -665,7 +665,7 @@ components:
     targetIcicleRelease: 2023-10
     componentVersion: 0.3.2
     licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
-    publicAccess: true
+    publicAccess: True
     sourceCodeUrl: https://github.com/tapis-project/camera-traps
     containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
     hasDependentComponents:
@@ -694,7 +694,7 @@ components:
     description: Visualizse food flows or something...
     status: Alpha
     targetIcicleRelease: 2023-10
-    publicAccess: true
+    publicAccess: True
     componentVersion: 0.3
     licenseUrl: Unknown
 
@@ -709,7 +709,7 @@ components:
     website: https://tapis.readthedocs.io/en/latest/technical/pods.html
     description: New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.
     targetIcicleRelease: 2024-01
-    publicAccess: true
+    publicAccess: True
     componentVersion: 1.5.3
     licenseUrl: https://github.com/tapis-project/pods_service/blob/prod/LICENSE
     sourceCodeUrl: https://github.com/tapis-project/pods_service
@@ -738,7 +738,7 @@ components:
     website: https://tapis.readthedocs.io/en/latest/technical/authentication.html#id2
     description: OAuth2-based authentication module allowing third-party applications to authenticate users from different identity providers, including university credentials, HPC center accounts (e.g., TACC accounts), and web and social login (e.g., GitHub, Google, etc).
     targetIcicleRelease: 2024-01
-    publicAccess: true
+    publicAccess: True
     componentVersion: 1.5.0
     licenseUrl: https://github.com/tapis-project/authenticator/blob/prod/LICENSE
     sourceCodeUrl: https://github.com/tapis-project/authenticator/tree/prod
@@ -784,6 +784,8 @@ components:
     trainingTutorialsAvailable: false
     trainingTutorialsUrl: false
     usageMetricsCollected: false
+    publicAccess: True
+
   #
 
   # 24-06 Release
@@ -797,7 +799,7 @@ components:
     componentVersion: 1.6.0
     targetIcicleRelease: 2024-06
     licenseUrl:
-    publicAccess: true
+    publicAccess: True
     sourceCodeUrl: https://github.com/tapis-project/tapis-ui
     releaseNotesUrl:
     citation: "Joe Stubbs, Richard Cardone, Mike Packard, Anagha Jamthe, Smruti Padhy, Steve Terry, Julia Looney, Joseph Meiring, Steve Black, Maytal Dahan, Sean Cleveland, Gwen Jacobs. (2021) Tapis: An API Platform for Reproducible, Distributed Computational Research. In: Arai K. (eds) Advances in Information and Communication. FICC 2021. Advances in Intelligent Systems and Computing, vol 1363. Springer, Cham. https://doi.org/10.1007/978-3-030-73100-7_61"
@@ -821,7 +823,7 @@ components:
     website: https://tapis.readthedocs.io/en/latest/technical/pods.html
     description: New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.
     targetIcicleRelease: 2024-06
-    publicAccess: true
+    publicAccess: True
     componentVersion: 1.6.0
     licenseUrl: https://github.com/tapis-project/pods_service/blob/prod/LICENSE
     sourceCodeUrl: https://github.com/tapis-project/pods_service
@@ -853,6 +855,6 @@ components:
     usageDocumentationAvailable: true
     usageDocumentationUrl: https://ppodschema.github.io/PPOD_Core/
     targetIcicleRelease: 2024-06
-    publicAccess: true
+    publicAccess: True
     licenseUrl: https://github.com/PPODschema/PPOD_Core/blob/main/LICENSE
 #

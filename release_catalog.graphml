@@ -397,7 +397,7 @@
       <data key="testsWritten">False</data>
       <data key="securityReviewConducted">False</data>
       <data key="biasAssessmentConducted">False</data>
-      <data key="publicAccess">False</data>
+      <data key="publicAccess">True</data>
       <data key="restrictedToRole">False</data>
       <data key="labels">:Component</data>
     </node>
@@ -422,7 +422,7 @@
       <data key="usageDocumentationAvailable">False</data>
       <data key="usageDocumentationUrl" />
       <data key="usageMetricsCollected">False</data>
-      <data key="publicAccess">False</data>
+      <data key="publicAccess">True</data>
       <data key="restrictedToRole">False</data>
       <data key="labels">:Component</data>
     </node>
@@ -449,7 +449,7 @@
       <data key="usageDocumentationAvailable">False</data>
       <data key="usageDocumentationUrl" />
       <data key="usageMetricsCollected">False</data>
-      <data key="publicAccess">False</data>
+      <data key="publicAccess">True</data>
       <data key="restrictedToRole">False</data>
       <data key="labels">:Component</data>
     </node>
@@ -812,6 +812,7 @@
       <data key="trainingTutorialsAvailable">False</data>
       <data key="trainingTutorialsUrl">False</data>
       <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">True</data>
       <data key="labels">:Component</data>
     </node>
     <node id="36">
