@@ -55,7 +55,7 @@
       <data key="testsWritten">True</data>
       <data key="securityReviewConducted">True</data>
       <data key="usageDocumentationAvailable">True</data>
-      <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/</data>
+      <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/:w</data>
       <data key="developerDocumentationAvailable">True</data>
       <data key="developerDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/pythondev.html</data>
       <data key="trainingTutorialsAvailable">True</data>
