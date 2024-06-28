@@ -65,9 +65,9 @@ components:
     sourceCodeUrl: https://github.com/tapis-project/camera-traps
     containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
-      - related_to: EventEngine
+      - related_to: EventEngine:0.2.0
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
     citation:
@@ -97,7 +97,7 @@ components:
     sourceCodeUrl: https://github.com/tapis-project/pods_service
     containerImage: https://hub.docker.com/r/tapis/pods-api
     hasDependentComponents:
-      - related_to: TapisBase
+      - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md
     citation:
@@ -122,9 +122,6 @@ components:
     publicAccess: true
     componentVersion: 0.1
     licenseUrl: Unknown
-    hasDependentComponents:
-      - related_to: VAReusableGUI
-        relationship_type: DependsOn
 
   - id: ComponentCatalog:0.1.0
     owner: Joe Stubbs
@@ -138,9 +135,6 @@ components:
     licenseUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/LICENSE
     sourceCodeUrl: https://github.com/ICICLE-ai/CI-Components-Catalog
     containerImage: https://hub.docker.com/r/tapis/ci-catalog
-    hasDependentComponents:
-      - related_to: VAReusableGUI
-        relationship_type: DependsOn
     releaseNotesUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/CHANGELOG.md
     citation:
     codeReviewConducted: false
@@ -296,7 +290,6 @@ components:
       - related_to: TapisBase
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md
-    citation:
     codeReviewConducted: true
     testsWritten: true
     securityReviewConducted: false
@@ -342,9 +335,6 @@ components:
     publicAccess: true
     componentVersion: 0.2
     licenseUrl: Unknown
-    hasDependentComponents:
-      - related_to: VAReusableGUI
-        relationship_type: DependsOn
 
   - id: DigitalAgHub:1.0
     name: ICICLE Digital Agriculture Hub
@@ -707,9 +697,7 @@ components:
     publicAccess: true
     componentVersion: 0.3
     licenseUrl: Unknown
-    hasDependentComponents:
-      - related_to: VAReusableGUI
-        relationship_type: DependsOn
+
   #
 
   # 24-01 Release
