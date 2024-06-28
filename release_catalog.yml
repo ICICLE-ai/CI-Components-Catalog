@@ -200,7 +200,7 @@ components:
     hasDependentComponents:
       - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
-      - related_to: PodsService
+      - related_to: PodsService:1.3.0
         relationship_type: DependsOn
     publicAccess: True
     containerImage: False
@@ -257,7 +257,7 @@ components:
     hasDependentComponents:
       - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
-      - related_to: EventEngine
+      - related_to: EventEngine:0.2.0
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
     citation:
@@ -426,9 +426,9 @@ components:
     hasDependentComponents:
       - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
-      - related_to: PodsService
+      - related_to: PodsService:1.3.2
         relationship_type: DependsOn
-      - related_to: HelloICICLEAuthClients
+      - related_to: HelloICICLEAuthClients:0.0.1
         relationship_type: DependsOn
     publicAccess: True
     containerImage: False
@@ -460,9 +460,9 @@ components:
     hasDependentComponents:
       - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
-      - related_to: PodsService
+      - related_to: PodsService:1.3.2
         relationship_type: DependsOn
-      - related_to: HelloICICLEAuthClients
+      - related_to: HelloICICLEAuthClients:0.0.1
         relationship_type: DependsOn
     publicAccess: True
     containerImage: False
@@ -604,9 +604,9 @@ components:
     hasDependentComponents:
       - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
-      - related_to: PodsService
+      - related_to: PodsService:1.3.2
         relationship_type: DependsOn
-      - related_to: HelloICICLEAuthClients
+      - related_to: HelloICICLEAuthClients:0.0.1
         relationship_type: DependsOn
     publicAccess: True
     containerImage: False
@@ -638,9 +638,9 @@ components:
     hasDependentComponents:
       - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
-      - related_to: PodsService
+      - related_to: PodsService:1.3.2
         relationship_type: DependsOn
-      - related_to: HelloICICLEAuthClients
+      - related_to: HelloICICLEAuthClients:0.0.1
         relationship_type: DependsOn
     publicAccess: True
     containerImage: False
@@ -671,7 +671,7 @@ components:
     hasDependentComponents:
       - related_to: TapisBase:1.3.0
         relationship_type: DependsOn
-      - related_to: EventEngine
+      - related_to: EventEngine:0.2.0
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
     citation:
