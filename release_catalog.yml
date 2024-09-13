@@ -861,13 +861,27 @@ components:
   - id: SFVADashboard:0.4
     owner: Matthew Lange
     name: Smart Foodsheds VA Dashboard
+    website: https://vadash.pods.icicleai.tapis.io
     primaryThrust: useInspired/SF
     description: Software tool for visualizing knowledge graph information and question answering based on user queries
     componentVersion: 3
     status: Alpha
-    targetIcicleRelease: 2024-06
+    targetIcicleRelease: 2024-09
     publicAccess: true
     componentVersion: 0.3
     licenseUrl: Unknown
     sourceCodeUrl: https://github.com/ICICLE-ai/VA_Dashboard_V3/blob/main/README.md
+
+  - id: ctcontroller:0.1
+    owner: Samuel Khuvis
+    primaryThrust: core/Software
+    name: Hardware & Software Provisioning Service
+    status: AlphaRelease
+    componentVersion: 0.1
+    targetIcicleRelease: 2024-09
+    licenseUrl: https://github.com/ICICLE-ai/ct-controller/blob/main/LICENSE
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/ct-controller.git
+    containerImage: https://hub.docker.com/r/tapis/ctcontroller
+
 #
