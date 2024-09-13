@@ -861,7 +861,6 @@ components:
   #
 
   # 24-09 Release
-
   - id: SFVADashboard:0.4
     owner: Matthew Lange
     name: Smart Foodsheds VA Dashboard
