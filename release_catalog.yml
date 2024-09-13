@@ -857,4 +857,17 @@ components:
     targetIcicleRelease: 2024-06
     publicAccess: true
     licenseUrl: https://github.com/PPODschema/PPOD_Core/blob/main/LICENSE
+
+  - id: SFVADashboard:0.4
+    owner: Matthew Lange
+    name: Smart Foodsheds VA Dashboard
+    primaryThrust: useInspired/SF
+    description: Software tool for visualizing knowledge graph information and question answering based on user queries
+    componentVersion: 3
+    status: Alpha
+    targetIcicleRelease: 2024-06
+    publicAccess: true
+    componentVersion: 0.3
+    licenseUrl: Unknown
+    sourceCodeUrl: https://github.com/ICICLE-ai/VA_Dashboard_V3/blob/main/README.md
 #
