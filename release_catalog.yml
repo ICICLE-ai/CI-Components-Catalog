@@ -884,4 +884,15 @@ components:
     sourceCodeUrl: https://github.com/ICICLE-ai/ct-controller.git
     containerImage: https://hub.docker.com/r/tapis/ctcontroller
 
-#
+# 24-09 Release
+  - id: TextToQuery:1.0
+    owner: Yu Su
+    name: Text to Query
+    status: Alpha
+    description: Converting natural language queries into formal SPARQL queries that can be executed on RDF knowledge graphs
+    primaryThrust: core/Software
+    targetIcicleRelease: 2024-09
+    componentVersion: 1.0
+    licenseUrl: 
+    publicAccess: true
+    website: https://github.com/ICICLE-ai/VA_Dashboard_V3/tree/main/backend/text_to_query
