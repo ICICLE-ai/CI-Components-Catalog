@@ -902,7 +902,7 @@ components:
     developerDocumentationAvailable: false
     trainingTutorialsAvailable: false
     status: AlphaRelease
-
+  
   - id: ArrayMorph:1.0
     owner: Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas
     name: ArryMorph For Cloud HDF5
@@ -914,7 +914,7 @@ components:
     publicAccess: true
     licenseUrl: Unknown
     sourceCodeUrl: https://github.com/ICICLE-ai/ArrayMorph.git
-
+  
   - id: IntelligencePlaneScheduling:0.0.1
     owner: Swathi Vallabhajosyula
     primaryThrust: core/AI4CI
@@ -964,7 +964,7 @@ components:
     usageDocumentationAvailable: false
     usageMetricsCollected: false
     publicAccess: true
-
+  
   - id: ProfilingComp:1.0
     name: Profiling Compiler.
     status: AlphaRelease.
@@ -978,12 +978,12 @@ components:
     licenseUrl: https://opensource.org/license/bsd-3-clause
     publicAccess: true
     restrictedToRole: false
-
+  
   - id: TapisBase:1.7.0
     owner: Joe Stubbs
     primaryThrust: core/Software
     name: Base ICICLE Tapis Software
-    status: Production
+    status: ProductionRelease
     website: tapis-project.org
     description: Hosted, web-based API for managing data and executing software for research computing
     componentVersion: 1.7.0
@@ -1004,19 +1004,53 @@ components:
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: https://tapis-project.github.io/tutorials/
     usageMetricsCollected: true
-
-  - id: CameraTrapsEdgeDashboard:0.2.0
+  
+  - id: CameraTrapsEdgeSimDashboard:0.3.3
     owner: Joe Stubbs
-    name: Camera Traps Edge Dashboard
+    name: Camera Traps Edge Simulator Dashboard
     primaryThrust: useInspired/AE
     status: Prototype
     website:
-    description: TapisUI integrated dashboard for analyzing edge-to-center tradeoffs within the Camera Traps project
+    description: TapisUI integrated dashboard for analyzing edge-to-center tradeoffs within the Camera Traps project, making use of Tapis Jobs for function calls.
     targetIcicleRelease: 2024-09
-    componentVersion: 0.2.0
+    componentVersion: 0.3.3
     licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
     publicAccess: true
     sourceCodeUrl: https://github.com/tapis-project/camera-traps
+    hasDependentComponents:
+      - related_to: TapisBase:1.7.0
+        relationship_type: DependsOn
+      - related_to: EventEngine:0.2.0
+        relationship_type: DependsOn
+      - related_to: CameraTrapsEdgeSim:0.3.3
+        relationship_type: DependsOn
+    releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl:
+    developerDocumentationAvailable: false
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+    usageMetricsCollected: false
+  
+  - id: CameraTrapsEdgeSim:0.3.3
+    owner: Rich Cardone
+    name: Camera Traps Edge Simulator
+    primaryThrust: useInspired/AE
+    status: Prototype
+    website:
+    description: Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project
+    targetIcicleRelease: 2024-09
+    componentVersion: 0.3.3
+    licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
+    publicAccess: true
+    sourceCodeUrl: https://github.com/tapis-project/camera-traps
+    containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
     hasDependentComponents:
       - related_to: TapisBase:1.7.0
         relationship_type: DependsOn
@@ -1035,7 +1069,7 @@ components:
     trainingTutorialsAvailable: false
     trainingTutorialsUrl:
     usageMetricsCollected: false
-
+  
   - id: PodsService:1.7.0
     owner: Christian Garcia
     name: Tapis Pods Service API
@@ -1063,8 +1097,8 @@ components:
     usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/pods.html
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: https://tapis-project.github.io/tutorials/pods/intro/
-    usageMetricsCollected: true
-
+    usageMetricsCollected: false
+  
   - id: TapisUI:1.7.0
     owner: Joe Stubbs
     primaryThrust: core/Software
@@ -1084,9 +1118,11 @@ components:
         relationship_type: DependsOn
       - related_to: PodsService:1.7.0
         relationship_type: DependsOn
+      - related_to: TapisWorkflows:1.7.0
+        relationship_type: DependsOn
       - related_to: TapisBase:1.7.0
         relationship_type: DependsOn
-      - releated_to: CameraTrapsEdgeDashboard:0.2.0
+      - releated_to: CameraTrapsEdgeDashboard:0.3.3
         relationship_type: DependsOn
     codeReviewConducted: false
     testsWritten: true
@@ -1098,7 +1134,7 @@ components:
     trainingTutorialsAvailable: false
     trainingTutorialsUrl:
     usageMetricsCollected: false
-
+  
   - id: TapisMLHub:0.2.0
     owner: Joe Stubbs
     primaryThrust: core/Software
@@ -1127,7 +1163,32 @@ components:
     trainingTutorialsAvailable: false
     trainingTutorialsUrl:
     usageMetricsCollected: false
-
+  
+  - id: TapisWorkflows:1.7.0
+    owner: Nathan Freeman
+    name: Tapis Workflows Service
+    primaryThrust: core/Software
+    status: ProductionRelease
+    website: https://tapis.readthedocs.io/en/latest/technical/workflows.html
+    description: The Workflows Service is an API and Workflow Engine with which Tapis users can create and execute their research computing workflows.
+    targetIcicleRelease: 2024-09
+    publicAccess: true
+    componentVersion: 1.7.0
+    sourceCodeUrl: https://github.com/tapis-project/tapis-workflows
+    containerImage: https://hub.docker.com/r/tapis/workflows-api
+    hasDependentComponents:
+      - related_to: TapisBase:1.7.0
+        relationship_type: DependsOn
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/workflows.html
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+    usageMetricsCollected: false
+  
   - id: PlugAndPlaySpeech:0.1
     owner: Eric Fosler-Lussier
     name: Plug-and-Play Speech Interfaces
@@ -1142,5 +1203,43 @@ components:
     codeReviewConducted: false
     testsWritten: false
     securityReviewConducted: false
-
+  
+  - id: ReferenceArchitectureDataSchema:0.1.0
+    owner: Joe Stubbs
+    primaryThrust: core/ReferenceArchitecture
+    name: Reference Architecture Data Schema
+    status: PrototypeRelease
+    website: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/architecture/architecture-component-schema.yaml
+    description: Data schema for describing the architecture of a component in the ICICLE component catalog.
+    componentVersion: 0.1.0
+    targetIcicleRelease: 2024-09
+    licenseUrl: https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/architecture/architecture-component-schema.yaml
+    releaseNotesUrl:
+    codeReviewConducted: false
+    testsWritten: false
+    securityReviewConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl:
+    developerDocumentationAvailable: false
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+    usageMetricsCollected: false
+  
+  - id: AUTOLYCUS:1.0
+    owner: Abdullah Caglar Oksuz
+    name: AUTOLYCUS Model Extraction Attack against Interpretable Models
+    primaryThrust: core/PADI
+    status: Release
+    website: https://github.com/ICICLE-ai/AUTOLYCUS/
+    description: Plug and play components for conducting model extraction attack on interpretable models like logistic regression, decision trees
+    targetIcicleRelease: 2024-09
+    publicAccess: true
+    componentVersion: 1.0
+    licenseUrl: https://github.com/ICICLE-ai/AUTOLYCUS/blob/main/LICENSE
+    codeReviewConducted: true
+    testsWritten: false
+    securityReviewConducted: false
   #
