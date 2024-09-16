@@ -867,11 +867,10 @@ components:
     website: https://vadash.pods.icicleai.tapis.io
     primaryThrust: useInspired/SF
     description: Software tool for visualizing knowledge graph information and question answering based on user queries
-    componentVersion: 3
     status: Alpha
     targetIcicleRelease: 2024-09
     publicAccess: true
-    componentVersion: 0.3
+    componentVersion: 0.4
     licenseUrl: Unknown
     sourceCodeUrl: https://github.com/ICICLE-ai/VA_Dashboard_V3/blob/main/README.md
 
