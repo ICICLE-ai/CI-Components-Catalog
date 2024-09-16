@@ -800,7 +800,7 @@
       <data key="licenseUrl">https://github.com/COS-IN/iluvatar-faas/blob/master/LICENSE</data>
       <data key="releaseNotesUrl">https://github.com/COS-IN/iluvatar-faas/blob/master/src/Il%C3%BAvatar/docs/DESIGN.md</data>
       <data key="doi">https://doi.org/10.1145/3588195.3592995</data>
-      <data key="citation">Alexander Fuerst, Abdul Rehman, and Prateek Sharma. 2023. Ilúvatar':' A Fast Control Plane for Serverless Computing. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC ’23), June 16–23, 2023, Orlando, FL, USA. ACM, New York, NY, USA, 14 pages.</data>
+      <data key="citation">Alexander Fuerst, Abdul Rehman, and Prateek Sharma. 2023. Il�vatar':' A Fast Control Plane for Serverless Computing. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC \u201923), June 16\u201323, 2023, Orlando, FL, USA. ACM, New York, NY, USA, 14 pages.</data>
       <data key="codeReviewConducted">True</data>
       <data key="testsWritten">True</data>
       <data key="securityReviewConducted">False</data>
@@ -887,6 +887,382 @@
       <data key="licenseUrl">https://github.com/PPODschema/PPOD_Core/blob/main/LICENSE</data>
       <data key="labels">:Component</data>
     </node>
+    <node id="39">
+      <data key="id">SFVADashboard:0.4</data>
+      <data key="owner">Matthew Lange</data>
+      <data key="name">Smart Foodsheds VA Dashboard</data>
+      <data key="website">https://vadash.pods.icicleai.tapis.io</data>
+      <data key="primaryThrust">useInspired/SF</data>
+      <data key="description">Software tool for visualizing knowledge graph information and question answering based on user queries</data>
+      <data key="componentVersion">0.3</data>
+      <data key="status">Alpha</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="publicAccess">True</data>
+      <data key="licenseUrl">Unknown</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/VA_Dashboard_V3/blob/main/README.md</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="40">
+      <data key="id">ctcontroller:0.1</data>
+      <data key="owner">Samuel Khuvis</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="name">Hardware &amp; Software Provisioning Service</data>
+      <data key="status">AlphaRelease</data>
+      <data key="componentVersion">0.1</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/ct-controller/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/ct-controller.git</data>
+      <data key="containerImage">https://hub.docker.com/r/tapis/ctcontroller</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="41">
+      <data key="id">HARVEST:0.9</data>
+      <data key="name">HARVEST</data>
+      <data key="owner">Hari Subramoni</data>
+      <data key="primaryThrust">useInspired/DA</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="componentVersion">0.9</data>
+      <data key="licenseUrl">https://icicle.osu.edu/media/document/2024-09-12/license.txt</data>
+      <data key="releaseNotesUrl" />
+      <data key="doi">10.1109/BigData59044.2023.10386339</data>
+      <data key="citation">N. Alnaasan, M. Lieber, A. Shafi, H. Subramoni, S. Shearer, and DK Panda, 'HARVEST: High-Performance Artificial Vision Framework for Expert Labeling using Semi-Supervised Training,' 2023 IEEE International Conference on Big Data (BigData), Sorrento, Italy, 2023, pp. 139-148</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://icicle.osu.edu/media/document/2024-09-13/harvest-user-guide.pdf</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="status">AlphaRelease</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="42">
+      <data key="id">ArrayMorph:1.0</data>
+      <data key="owner">Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas</data>
+      <data key="name">ArryMorph For Cloud HDF5</data>
+      <data key="primaryThrust">core/CI4AI</data>
+      <data key="description">ArrayMorph stores and retrieves HDF5 data from the AWS S3 cloud object store</data>
+      <data key="componentVersion">1.0</data>
+      <data key="status">Prototype</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="publicAccess">True</data>
+      <data key="licenseUrl">Unknown</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/ArrayMorph.git</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="43">
+      <data key="id">IntelligencePlaneScheduling:0.0.1</data>
+      <data key="owner">Swathi Vallabhajosyula</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="name">Intelligence Plane with Smart Scheduler Use case</data>
+      <data key="status">Prototype</data>
+      <data key="website">https://intelligence-plane.tacc.cloud</data>
+      <data key="description">A Colab notebook to test all IntelligencePlane and Smart Scheduler services. These services were hosted on a server that facilitates the creation of new monitoring topics and job scheduling. The jobs are monitored by IntelligencePlane, which tracks their performance and utilization, and reschedules them based on the data captured from the monitoring topics.</data>
+      <data key="componentVersion">0.0.1</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="licenseUrl">N/A</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://intelligence-plane.tacc.cloud</data>
+      <data key="citation">Manikya Swathi Vallabhajosyula, Sandeep Satish Budhya, and Rajiv Ramnath. 2024. Reference Implementation of Smart Scheduler: A CI-Aware, AI-Driven Scheduling Framework for HPC Workloads. In Practice and Experience in Advanced Research Computing 2024: Human Powered Computing (PEARC '24). Association for Computing Machinery, New York, NY, USA, Article 75, 1–4. https://doi.org/10.1145/3626203.3670555</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl">https://colab.research.google.com/drive/1bCfPnasMrgJhW53ZC2wxb-7Ogck43TrO?usp=sharing</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl">N/A</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">N/A</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="44">
+      <data key="id">OpenPASS:1.0.0</data>
+      <data key="name">OpenPASS</data>
+      <data key="status">PrototypeRelease</data>
+      <data key="website">https://go.osu.edu/icicle-installopenpass</data>
+      <data key="description">OpenPASS provides a platform to launch easy-use pre-built missions for unmanned aerial vehicles with AI integration.</data>
+      <data key="owner">Christopher Stewart</data>
+      <data key="primaryThrust">useInspired/DA</data>
+      <data key="sourceCodeUrl">https://go.osu.edu/icicle-installopenpass</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="componentVersion">1.0.0</data>
+      <data key="licenseUrl">https://opensource.org/license/afl-3-0-php</data>
+      <data key="releaseNotesUrl" />
+      <data key="pypiPackage">SoftwarePilot:1.1.0</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="45">
+      <data key="id">ProfilingComp:1.0</data>
+      <data key="name">Profiling Compiler.</data>
+      <data key="status">AlphaRelease.</data>
+      <data key="website">none</data>
+      <data key="description">The Profiling compiler V1.0 collects critical data such as loop upper bounds, data types, the number of mathematical operations, and other static features to enhance performance insights.</data>
+      <data key="owner">Miguel Rosas, Miguel Torres</data>
+      <data key="primaryThrust">CI4AI</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/ProfilingCompiler</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="componentVersion">1.0</data>
+      <data key="licenseUrl">https://opensource.org/license/bsd-3-clause</data>
+      <data key="publicAccess">True</data>
+      <data key="restrictedToRole">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="46">
+      <data key="id">TapisBase:1.7.0</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="name">Base ICICLE Tapis Software</data>
+      <data key="status">ProductionRelease</data>
+      <data key="website">tapis-project.org</data>
+      <data key="description">Hosted, web-based API for managing data and executing software for research computing</data>
+      <data key="componentVersion">1.7.0</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="licenseUrl">https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/tapis-deployer/blob/main/CHANGELOG.md</data>
+      <data key="citation">Joe Stubbs, Richard Cardone, Mike Packard, Anagha Jamthe, Smruti Padhy, Steve Terry, Julia Looney, Joseph Meiring, Steve Black, Maytal Dahan, Sean Cleveland, Gwen Jacobs. (2021) Tapis: An API Platform for Reproducible, Distributed Computational Research. In: Arai K. (eds) Advances in Information and Communication. FICC 2021. Advances in Intelligent Systems and Computing, vol 1363. Springer, Cham. https://doi.org/10.1007/978-3-030-73100-7_61</data>
+      <data key="containerImage">https://hub.docker.com/u/tapis</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">True</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/:w</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/pythondev.html</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://tapis-project.github.io/tutorials/</data>
+      <data key="usageMetricsCollected">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="47">
+      <data key="id">CameraTrapsEdgeSim:0.3.3</data>
+      <data key="owner">Rich Cardone</data>
+      <data key="name">Camera Traps Edge Simulator</data>
+      <data key="primaryThrust">useInspired/AE</data>
+      <data key="status">Prototype</data>
+      <data key="website" />
+      <data key="description">Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="componentVersion">0.3.3</data>
+      <data key="licenseUrl">https://github.com/tapis-project/camera-traps/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/camera-traps</data>
+      <data key="containerImage">https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="48">
+      <data key="id">CameraTrapsEdgeSimDashboard:0.3.3</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="name">Camera Traps Edge Simulator Dashboard</data>
+      <data key="primaryThrust">useInspired/AE</data>
+      <data key="status">Prototype</data>
+      <data key="website" />
+      <data key="description">TapisUI integrated dashboard for analyzing edge-to-center tradeoffs within the Camera Traps project, making use of Tapis Jobs for function calls.</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="componentVersion">0.3.3</data>
+      <data key="licenseUrl">https://github.com/tapis-project/camera-traps/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/camera-traps</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="49">
+      <data key="id">PodsService:1.7.0</data>
+      <data key="owner">Christian Garcia</data>
+      <data key="name">Tapis Pods Service API</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="status">ProductionRelease</data>
+      <data key="website">https://tapis.readthedocs.io/en/latest/technical/pods.html</data>
+      <data key="description">API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">1.7.0</data>
+      <data key="licenseUrl">https://github.com/tapis-project/pods_service/blob/prod/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/pods_service</data>
+      <data key="containerImage">https://hub.docker.com/r/tapis/pods-api</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/pods_service/blob/dev/CHANGELOG.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/tapis-project/pods_service/blob/dev/README.md</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/pods.html</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://tapis-project.github.io/tutorials/pods/intro/</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="50">
+      <data key="id">TapisUI:1.7.0</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="name">Tapis User Interface</data>
+      <data key="status">ProductionRelease</data>
+      <data key="website">https://icicleai.tapis.io/</data>
+      <data key="description">Hosted, browser-based user interface for managing Tapis APIs with authentication and usability features.</data>
+      <data key="componentVersion">1.7.0</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="licenseUrl">https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/tapis-ui</data>
+      <data key="releaseNotesUrl" />
+      <data key="containerImage">https://hub.docker.com/r/tapis/tapisui</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/tapis-project/tapis-ui/wiki</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="51">
+      <data key="id">TapisMLHub:0.2.0</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="name">Tapis ML-Hub</data>
+      <data key="status">AlphaRelease</data>
+      <data key="website">https://icicleai.tapis.io/</data>
+      <data key="description">Hosted, browser-based user interface for interacting with HuggingFace models, datasets, and inference servers.</data>
+      <data key="componentVersion">0.2.0</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="licenseUrl">https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/ml-hub</data>
+      <data key="releaseNotesUrl" />
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="52">
+      <data key="id">TapisWorkflows:1.7.0</data>
+      <data key="owner">Nathan Freeman</data>
+      <data key="name">Tapis Workflows Service</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="status">ProductionRelease</data>
+      <data key="website">https://tapis.readthedocs.io/en/latest/technical/workflows.html</data>
+      <data key="description">The Workflows Service is an API and Workflow Engine with which Tapis users can create and execute their research computing workflows.</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">1.7.0</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/tapis-workflows</data>
+      <data key="containerImage">https://hub.docker.com/r/tapis/workflows-api</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/workflows.html</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="53">
+      <data key="id">PlugAndPlaySpeech:0.1</data>
+      <data key="owner">Eric Fosler-Lussier</data>
+      <data key="name">Plug-and-Play Speech Interfaces</data>
+      <data key="primaryThrust">core/FoundationalAI</data>
+      <data key="status">Beta</data>
+      <data key="website">https://github.com/OSU-slatelab/SpeechGUI-AlignmentFramework</data>
+      <data key="description">Plug and play components for speech front ends, including wakeword detection, transcription, and endpoint detection</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">0.1</data>
+      <data key="licenseUrl">https://github.com/OSU-slatelab/SpeechGUI-AlignmentFramework/blob/main/LICENSE</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="54">
+      <data key="id">ReferenceArchitectureDataSchema:0.1.0</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="primaryThrust">core/ReferenceArchitecture</data>
+      <data key="name">Reference Architecture Data Schema</data>
+      <data key="status">PrototypeRelease</data>
+      <data key="website">https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/architecture/architecture-component-schema.yaml</data>
+      <data key="description">Data schema for describing the architecture of a component in the ICICLE component catalog.</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="licenseUrl">https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/architecture/architecture-component-schema.yaml</data>
+      <data key="releaseNotesUrl" />
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="55">
+      <data key="id">AUTOLYCUS:1.0</data>
+      <data key="owner">Abdullah Caglar Oksuz</data>
+      <data key="name">AUTOLYCUS Model Extraction Attack against Interpretable Models</data>
+      <data key="primaryThrust">core/PADI</data>
+      <data key="status">Release</data>
+      <data key="website">https://github.com/ICICLE-ai/AUTOLYCUS/</data>
+      <data key="description">Plug and play components for conducting model extraction attack on interpretable models like logistic regression, decision trees</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">1.0</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/AUTOLYCUS/blob/main/LICENSE</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="labels">:Component</data>
+    </node>
     <edge source="1" target="3">
       <data key="label">DependsOn</data>
     </edge>
@@ -929,6 +1305,9 @@
     <edge source="1" target="37">
       <data key="label">DependsOn</data>
     </edge>
+    <edge source="1" target="43">
+      <data key="label">DependsOn</data>
+    </edge>
     <edge source="2" target="3">
       <data key="label">DependsOn</data>
     </edge>
@@ -936,6 +1315,12 @@
       <data key="label">DependsOn</data>
     </edge>
     <edge source="2" target="31">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="2" target="47">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="2" target="48">
       <data key="label">DependsOn</data>
     </edge>
     <edge source="4" target="9">
@@ -965,10 +1350,40 @@
     <edge source="13" target="30">
       <data key="label">DependsOn</data>
     </edge>
+    <edge source="13" target="43">
+      <data key="label">DependsOn</data>
+    </edge>
     <edge source="17" target="18">
       <data key="label">DependsOn</data>
     </edge>
     <edge source="17" target="19">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="46" target="47">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="46" target="48">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="46" target="49">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="46" target="50">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="46" target="51">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="46" target="52">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="47" target="48">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="49" target="50">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="49" target="51">
       <data key="label">DependsOn</data>
     </edge>
   </graph>
