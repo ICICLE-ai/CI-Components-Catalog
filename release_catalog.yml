@@ -894,6 +894,7 @@ components:
     componentVersion: 0.9
     licenseUrl: https://icicle.osu.edu/media/document/2024-09-12/license.txt
     releaseNotesUrl:
+    publicAccess: true
     doi: 10.1109/BigData59044.2023.10386339
     citation: "N. Alnaasan, M. Lieber, A. Shafi, H. Subramoni, S. Shearer, and DK Panda, 'HARVEST: High-Performance Artificial Vision Framework for Expert Labeling using Semi-Supervised Training,' 2023 IEEE International Conference on Big Data (BigData), Sorrento, Italy, 2023, pp. 139-148"
     usageDocumentationAvailable: true
