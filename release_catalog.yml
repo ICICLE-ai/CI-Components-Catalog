@@ -1099,42 +1099,6 @@ components:
     trainingTutorialsUrl: https://tapis-project.github.io/tutorials/pods/intro/
     usageMetricsCollected: false
   
-  - id: TapisUI:1.7.0
-    owner: Joe Stubbs
-    primaryThrust: core/Software
-    name: Tapis User Interface
-    status: ProductionRelease
-    website: https://icicleai.tapis.io/
-    description: Hosted, browser-based user interface for managing Tapis APIs with authentication and usability features.
-    componentVersion: 1.7.0
-    targetIcicleRelease: 2024-09
-    licenseUrl: https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE
-    publicAccess: true
-    sourceCodeUrl: https://github.com/tapis-project/tapis-ui
-    releaseNotesUrl:
-    containerImage: https://hub.docker.com/r/tapis/tapisui
-    hasDependentComponents:
-      - related_to: TapisBase:1.7.0
-        relationship_type: DependsOn
-      - related_to: PodsService:1.7.0
-        relationship_type: DependsOn
-      - related_to: TapisWorkflows:1.7.0
-        relationship_type: DependsOn
-      - related_to: TapisBase:1.7.0
-        relationship_type: DependsOn
-      - releated_to: CameraTrapsEdgeDashboard:0.3.3
-        relationship_type: DependsOn
-    codeReviewConducted: false
-    testsWritten: true
-    securityReviewConducted: false
-    usageDocumentationAvailable: false
-    usageDocumentationUrl:
-    developerDocumentationAvailable: true
-    developerDocumentationUrl: https://github.com/tapis-project/tapis-ui/wiki
-    trainingTutorialsAvailable: false
-    trainingTutorialsUrl:
-    usageMetricsCollected: false
-  
   - id: TapisMLHub:0.2.0
     owner: Joe Stubbs
     primaryThrust: core/Software
@@ -1185,6 +1149,42 @@ components:
     securityReviewConducted: false
     usageDocumentationAvailable: true
     usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/workflows.html
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+    usageMetricsCollected: false
+
+  - id: TapisUI:1.7.0
+    owner: Joe Stubbs
+    primaryThrust: core/Software
+    name: Tapis User Interface
+    status: ProductionRelease
+    website: https://icicleai.tapis.io/
+    description: Hosted, browser-based user interface for managing Tapis APIs with authentication and usability features.
+    componentVersion: 1.7.0
+    targetIcicleRelease: 2024-09
+    licenseUrl: https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE
+    publicAccess: true
+    sourceCodeUrl: https://github.com/tapis-project/tapis-ui
+    releaseNotesUrl:
+    containerImage: https://hub.docker.com/r/tapis/tapisui
+    hasDependentComponents:
+      - related_to: TapisBase:1.7.0
+        relationship_type: DependsOn
+      - related_to: PodsService:1.7.0
+        relationship_type: DependsOn
+      - related_to: TapisWorkflows:1.7.0
+        relationship_type: DependsOn
+      - related_to: TapisBase:1.7.0
+        relationship_type: DependsOn
+      - related_to: CameraTrapsEdgeSimDashboard:0.3.3
+        relationship_type: DependsOn
+    codeReviewConducted: false
+    testsWritten: true
+    securityReviewConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl:
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/tapis-project/tapis-ui/wiki
     trainingTutorialsAvailable: false
     trainingTutorialsUrl:
     usageMetricsCollected: false
