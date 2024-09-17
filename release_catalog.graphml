@@ -800,7 +800,7 @@
       <data key="licenseUrl">https://github.com/COS-IN/iluvatar-faas/blob/master/LICENSE</data>
       <data key="releaseNotesUrl">https://github.com/COS-IN/iluvatar-faas/blob/master/src/Il%C3%BAvatar/docs/DESIGN.md</data>
       <data key="doi">https://doi.org/10.1145/3588195.3592995</data>
-      <data key="citation">Alexander Fuerst, Abdul Rehman, and Prateek Sharma. 2023. Il�vatar':' A Fast Control Plane for Serverless Computing. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC \u201923), June 16\u201323, 2023, Orlando, FL, USA. ACM, New York, NY, USA, 14 pages.</data>
+      <data key="citation">Alexander Fuerst, Abdul Rehman, and Prateek Sharma. 2023. Ilúvatar':' A Fast Control Plane for Serverless Computing. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC ’23), June 16–23, 2023, Orlando, FL, USA. ACM, New York, NY, USA, 14 pages.</data>
       <data key="codeReviewConducted">True</data>
       <data key="testsWritten">True</data>
       <data key="securityReviewConducted">False</data>
@@ -894,10 +894,10 @@
       <data key="website">https://vadash.pods.icicleai.tapis.io</data>
       <data key="primaryThrust">useInspired/SF</data>
       <data key="description">Software tool for visualizing knowledge graph information and question answering based on user queries</data>
-      <data key="componentVersion">0.3</data>
       <data key="status">Alpha</data>
       <data key="targetIcicleRelease">2024-09</data>
       <data key="publicAccess">True</data>
+      <data key="componentVersion">0.4</data>
       <data key="licenseUrl">Unknown</data>
       <data key="sourceCodeUrl">https://github.com/ICICLE-ai/VA_Dashboard_V3/blob/main/README.md</data>
       <data key="labels">:Component</data>
@@ -925,6 +925,7 @@
       <data key="componentVersion">0.9</data>
       <data key="licenseUrl">https://icicle.osu.edu/media/document/2024-09-12/license.txt</data>
       <data key="releaseNotesUrl" />
+      <data key="publicAccess">True</data>
       <data key="doi">10.1109/BigData59044.2023.10386339</data>
       <data key="citation">N. Alnaasan, M. Lieber, A. Shafi, H. Subramoni, S. Shearer, and DK Panda, 'HARVEST: High-Performance Artificial Vision Framework for Expert Labeling using Semi-Supervised Training,' 2023 IEEE International Conference on Big Data (BigData), Sorrento, Italy, 2023, pp. 139-148</data>
       <data key="usageDocumentationAvailable">True</data>
@@ -1127,33 +1128,6 @@
       <data key="labels">:Component</data>
     </node>
     <node id="50">
-      <data key="id">TapisUI:1.7.0</data>
-      <data key="owner">Joe Stubbs</data>
-      <data key="primaryThrust">core/Software</data>
-      <data key="name">Tapis User Interface</data>
-      <data key="status">ProductionRelease</data>
-      <data key="website">https://icicleai.tapis.io/</data>
-      <data key="description">Hosted, browser-based user interface for managing Tapis APIs with authentication and usability features.</data>
-      <data key="componentVersion">1.7.0</data>
-      <data key="targetIcicleRelease">2024-09</data>
-      <data key="licenseUrl">https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE</data>
-      <data key="publicAccess">True</data>
-      <data key="sourceCodeUrl">https://github.com/tapis-project/tapis-ui</data>
-      <data key="releaseNotesUrl" />
-      <data key="containerImage">https://hub.docker.com/r/tapis/tapisui</data>
-      <data key="codeReviewConducted">False</data>
-      <data key="testsWritten">True</data>
-      <data key="securityReviewConducted">False</data>
-      <data key="usageDocumentationAvailable">False</data>
-      <data key="usageDocumentationUrl" />
-      <data key="developerDocumentationAvailable">True</data>
-      <data key="developerDocumentationUrl">https://github.com/tapis-project/tapis-ui/wiki</data>
-      <data key="trainingTutorialsAvailable">False</data>
-      <data key="trainingTutorialsUrl" />
-      <data key="usageMetricsCollected">False</data>
-      <data key="labels">:Component</data>
-    </node>
-    <node id="51">
       <data key="id">TapisMLHub:0.2.0</data>
       <data key="owner">Joe Stubbs</data>
       <data key="primaryThrust">core/Software</data>
@@ -1179,7 +1153,7 @@
       <data key="usageMetricsCollected">False</data>
       <data key="labels">:Component</data>
     </node>
-    <node id="52">
+    <node id="51">
       <data key="id">TapisWorkflows:1.7.0</data>
       <data key="owner">Nathan Freeman</data>
       <data key="name">Tapis Workflows Service</data>
@@ -1198,6 +1172,33 @@
       <data key="securityReviewConducted">False</data>
       <data key="usageDocumentationAvailable">True</data>
       <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/workflows.html</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="52">
+      <data key="id">TapisUI:1.7.0</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="name">Tapis User Interface</data>
+      <data key="status">ProductionRelease</data>
+      <data key="website">https://icicleai.tapis.io/</data>
+      <data key="description">Hosted, browser-based user interface for managing Tapis APIs with authentication and usability features.</data>
+      <data key="componentVersion">1.7.0</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="licenseUrl">https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/tapis-ui</data>
+      <data key="releaseNotesUrl" />
+      <data key="containerImage">https://hub.docker.com/r/tapis/tapisui</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/tapis-project/tapis-ui/wiki</data>
       <data key="trainingTutorialsAvailable">False</data>
       <data key="trainingTutorialsUrl" />
       <data key="usageMetricsCollected">False</data>
@@ -1380,10 +1381,16 @@
     <edge source="47" target="48">
       <data key="label">DependsOn</data>
     </edge>
+    <edge source="48" target="52">
+      <data key="label">DependsOn</data>
+    </edge>
     <edge source="49" target="50">
       <data key="label">DependsOn</data>
     </edge>
-    <edge source="49" target="51">
+    <edge source="49" target="52">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="51" target="52">
       <data key="label">DependsOn</data>
     </edge>
   </graph>
