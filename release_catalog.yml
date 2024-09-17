@@ -1004,6 +1004,38 @@ components:
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: https://tapis-project.github.io/tutorials/
     usageMetricsCollected: true
+
+  - id: CameraTrapsEdgeSim:0.3.3
+    owner: Rich Cardone
+    name: Camera Traps Edge Simulator
+    primaryThrust: useInspired/AE
+    status: Prototype
+    website:
+    description: Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project
+    targetIcicleRelease: 2024-09
+    componentVersion: 0.3.3
+    licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
+    publicAccess: true
+    sourceCodeUrl: https://github.com/tapis-project/camera-traps
+    containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
+    hasDependentComponents:
+      - related_to: TapisBase:1.7.0
+        relationship_type: DependsOn
+      - related_to: EventEngine:0.2.0
+        relationship_type: DependsOn
+    releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl:
+    developerDocumentationAvailable: false
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+    usageMetricsCollected: false
   
   - id: CameraTrapsEdgeSimDashboard:0.3.3
     owner: Joe Stubbs
@@ -1023,38 +1055,6 @@ components:
       - related_to: EventEngine:0.2.0
         relationship_type: DependsOn
       - related_to: CameraTrapsEdgeSim:0.3.3
-        relationship_type: DependsOn
-    releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
-    citation:
-    codeReviewConducted: true
-    testsWritten: true
-    securityReviewConducted: false
-    biasAssessmentConducted: false
-    usageDocumentationAvailable: false
-    usageDocumentationUrl:
-    developerDocumentationAvailable: false
-    developerDocumentationUrl:
-    trainingTutorialsAvailable: false
-    trainingTutorialsUrl:
-    usageMetricsCollected: false
-  
-  - id: CameraTrapsEdgeSim:0.3.3
-    owner: Rich Cardone
-    name: Camera Traps Edge Simulator
-    primaryThrust: useInspired/AE
-    status: Prototype
-    website:
-    description: Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project
-    targetIcicleRelease: 2024-09
-    componentVersion: 0.3.3
-    licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
-    publicAccess: true
-    sourceCodeUrl: https://github.com/tapis-project/camera-traps
-    containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
-    hasDependentComponents:
-      - related_to: TapisBase:1.7.0
-        relationship_type: DependsOn
-      - related_to: EventEngine:0.2.0
         relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
     citation:
