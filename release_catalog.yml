@@ -1242,4 +1242,31 @@ components:
     codeReviewConducted: true
     testsWritten: false
     securityReviewConducted: false
+
+  - id: Iluvatar:1.1.0
+    name: Iluvatar Functions as a Service (FaaS) Control Plane
+    status: Beta
+    website: https://github.com/COS-IN/iluvatar-faas
+    description: Iluvatar is an open Serverless platform built with the goal of jumpstarting and streamlining FaaS research. It provides a system that is easy and consistent to use, highly modifiable, and directly reports experimental results.
+    owner: Prateek Sharma
+    primaryThrust: core/AI4CI
+    sourceCodeUrl: https://github.com/COS-IN/iluvatar-faas/tree/gpu-support
+    targetIcicleRelease: 2024-09
+    componentVersion: 1.1.0
+    licenseUrl: https://github.com/COS-IN/iluvatar-faas/blob/master/LICENSE
+    releaseNotesUrl: https://github.com/COS-IN/iluvatar-faas/blob/master/src/Il%C3%BAvatar/docs/DESIGN.md
+    doi: https://doi.org/10.1145/3588195.3592995
+    citation: Alexander Fuerst, Abdul Rehman, and Prateek Sharma. 2023. Ilúvatar':' A Fast Control Plane for Serverless Computing. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC ’23), June 16–23, 2023, Orlando, FL, USA. ACM, New York, NY, USA, 14 pages.
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/COS-IN/iluvatar-faas/tree/master/src/Il%C3%BAvatar/docs
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/COS-IN/iluvatar-faas/tree/master/src/Il%C3%BAvatar/docs
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl: false
+    usageMetricsCollected: false
+    publicAccess: true
   #
