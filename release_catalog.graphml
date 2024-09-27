@@ -1264,6 +1264,35 @@
       <data key="securityReviewConducted">False</data>
       <data key="labels">:Component</data>
     </node>
+    <node id="56">
+      <data key="id">Iluvatar:1.1.0</data>
+      <data key="name">Iluvatar Functions as a Service (FaaS) Control Plane</data>
+      <data key="status">Beta</data>
+      <data key="website">https://github.com/COS-IN/iluvatar-faas</data>
+      <data key="description">Iluvatar is an open Serverless platform built with the goal of jumpstarting and streamlining FaaS research. It provides a system that is easy and consistent to use, highly modifiable, and directly reports experimental results.</data>
+      <data key="owner">Prateek Sharma</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="sourceCodeUrl">https://github.com/COS-IN/iluvatar-faas/tree/gpu-support</data>
+      <data key="targetIcicleRelease">2024-09</data>
+      <data key="componentVersion">1.1.0</data>
+      <data key="licenseUrl">https://github.com/COS-IN/iluvatar-faas/blob/master/LICENSE</data>
+      <data key="releaseNotesUrl">https://github.com/COS-IN/iluvatar-faas/blob/master/src/Il%C3%BAvatar/docs/DESIGN.md</data>
+      <data key="doi">https://doi.org/10.1145/3588195.3592995</data>
+      <data key="citation">Alexander Fuerst, Abdul Rehman, and Prateek Sharma. 2023. Ilúvatar':' A Fast Control Plane for Serverless Computing. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC ’23), June 16–23, 2023, Orlando, FL, USA. ACM, New York, NY, USA, 14 pages.</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/COS-IN/iluvatar-faas/tree/master/src/Il%C3%BAvatar/docs</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/COS-IN/iluvatar-faas/tree/master/src/Il%C3%BAvatar/docs</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">False</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">True</data>
+      <data key="labels">:Component</data>
+    </node>
     <edge source="1" target="3">
       <data key="label">DependsOn</data>
     </edge>
