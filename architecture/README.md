@@ -40,6 +40,7 @@ queries may be helpful:
   ``MATCH (n) WHERE (n.primaryThrust = 'useInspired/DA') OR (NOT EXISTS(n.primaryThrust))  RETURN n``
 * Provide the list of components to pull in, by id: ``MATCH (n) WHERE (n.id = 'mc') OR (n.id = 'ui') OR (n.id = 'int_plane') OR (n.id = 'authn_z') OR (n.id = 'ml_edge_to_center_middleware') RETURN n``
 
+* ``MATCH (n) WHERE (n.id = 'mc') OR (n.id = 'ui') OR (n.id = 'int_plane') OR (n.id = 'authn_z') OR (n.id = 'ml_edge_to_center_middleware') OR (n.id = 'model_training_and_adaptation') OR (n.id = '') RETURN n``
 
 ### Updating the Data (Admins)
 We have automated the ETL pipeline that updates the Neo4j instance above from the current dataset in the 
