@@ -23,7 +23,7 @@ before the release data.
 
 ### Guidelines on Specific Component Attributes 
 
-Many of the fields in the Component schema are self-explanatory, e.g., name, description, owner, sourceCodeUrl, etc. In this section we provide additional guidance on specific fields.
+Many of the fields in the Component schema are self-explanatory, e.g., ``name``, ``description``, ``owner``, etc. In this section we provide additional guidance on specific fields.
 
 ``licenseUrl``: It is important that the team developing the 
 component identify the license that will be used. Ideally, this
