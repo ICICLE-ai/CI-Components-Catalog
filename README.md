@@ -19,7 +19,14 @@ a component to be included in a release, the following high-level steps must be 
 3. Be available for feedback from the Release Team. Feedback could include issues with accessing the component or
   source code, building/installation issues, failing tests, etc. 
 4. Make any necessary modifications to the component
-before the release data.
+before the release date.
+5. Add the following snippit to your Readme.md file and include all NSF funding resources that were used for your component.
+
+'''markdown
+# Acknowledgements
+
+*This work has been funded by grants from the National Science Foundation, including the ICICLE AI Institute (OAC 2112606)
+'''
 
 ### Guidelines on Specific Component Attributes 
 
