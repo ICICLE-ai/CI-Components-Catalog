@@ -22,11 +22,11 @@ a component to be included in a release, the following high-level steps must be 
 before the release date.
 5. Add the following snippit to your Readme.md file and include all NSF funding resources that were used for your component.
 
-'''markdown
+```
 # Acknowledgements
 
 *This work has been funded by grants from the National Science Foundation, including the ICICLE AI Institute (OAC 2112606)
-'''
+```
 
 ### Guidelines on Specific Component Attributes 
 
