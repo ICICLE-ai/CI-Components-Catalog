@@ -1471,3 +1471,178 @@ components:
     usageDocumentationUrl:
     developerDocumentationAvailable: false
     developerDocumentationUrl:
+#
+
+# 25-05 Release
+  - id: arraymorph:1.1
+    owner: Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas
+    name: ArrayMorph for Cloud HDF5
+    primaryThrust: core/CI4AI
+    description: >
+      ArrayMorph enables efficient storage and retrieval of array data from cloud object stores,
+      supporting platforms including AWS S3 and Azure Blob Storage. It is designed to accelerate
+      scientific and AI workloads that rely on partial array access.
+    componentVersion: 1.1
+    status: Prototype
+    targetIcicleRelease: 2025-05
+    publicAccess: true
+    licenseUrl: https://opensource.org/licenses/MIT
+    sourceCodeUrl: https://github.com/ICICLE-ai/ArrayMorph
+  
+  - id: Forte:0.1.0
+    name: Forte 
+    status: AlphaRelease
+    website: https://github.com/DebarghaG/forte-api
+    description: 
+      A robust out-of-distribution (OOD) detection middleware that protects ML models
+      from processing data they weren't trained to handle. Forte uses a multi-stage
+      approach leveraging pretrained vision models (CLIP, ViT-MSN, DINOv2) to extract
+      features, compute topology-aware representations, and detect anomalies without
+      requiring OOD examples during training.
+    owner: DebarghaG
+    primaryThrust: core/FoundationAI
+    sourceCodeUrl: https://github.com/DebarghaG/forte-api
+    targetIcicleRelease: 2025-05
+    componentVersion: 0.1.0
+    licenseUrl: https://github.com/DebarghaG/forte-api/blob/main/LICENSE
+    releaseNotesUrl: https://github.com/DebarghaG/forte-api/blob/main/CHANGELOG.md
+    citation: Ganguly, Debargha, Warren Richard Morningstar, Andrew Seohwan Yu, and Vipin Chaudhary. Forte: Finding Outliers with Representation Typicality Estimation. The Thirteenth International Conference on Learning Representations, 2025. https://openreview.net/forum?id=7XNgVPxCiA.
+    pypiPackage: false
+    containerImage: false
+    codeReviewConducted: true
+    testsWritten: false
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/DebarghaG/forte-api/README.md
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://github.com/DebarghaG/forte-api/blob/main/forte_demo.py
+    usageMetricsCollected: false
+    publicAccess: true
+  
+  - id: FoodFlowGNN:1.0.0
+    name: Food Flow Prediction GNN
+    status: Prototype
+    primaryThrust: useInspired/SF
+    targetIcicleRelease: 2025-05
+    componentVersion: 1.0.0
+    licenseUrl: https://huggingface.co/ICICLE-AI/FoodFlow_GNN_Model
+    publicAccess: true
+    owner: Qianheng Zhang
+    website: https://huggingface.co/ICICLE-AI/FoodFlow_GNN_Model
+    description: Graph Neural Network models for predicting food flow between FAF zones using GAT and GCN architectures
+    sourceCodeUrl: https://huggingface.co/ICICLE-AI/FoodFlow_GNN_Model/tree/main
+  
+  - id: HLOFeatureDataset:0.0.1
+    owner: Swathi Vallabhajosyula
+    primaryThrust: core/AI4CI
+    name: HLO Feature Dataset for AI Resource Estimation
+    status: Prototype
+    website: https://huggingface.co/datasets/ICICLE-AI/ResourceEstimation_HLOGenCNN/
+    description:
+      A dataset containing High-Level Optimizer (HLO) graph features and metadata
+      extracted from deep learning training workloads. It supports tasks such as runtime
+      prediction, resource estimation, graph machine learning, and HPC scheduling optimization.
+      Each entry includes model configuration metadata and associated HLO graph data stored
+      in `.npz` format.
+    componentVersion: 0.0.1
+    targetIcicleRelease: 2025-05
+    licenseUrl: https://www.apache.org/licenses/LICENSE-2.0
+    publicAccess: true
+    hasDependentComponents:
+      - related_to: HARP:2.0.0
+        relationship_type: GeneratedWith
+      - related_to: IntelligencePlaneScheduling:0.0.1
+        relationship_type: Supports
+    sourceCodeUrl: https://huggingface.co/datasets/ICICLE-AI/ResourceEstimation_HLOGenCNN/blob/main/Baseline_XGBoost_Resource_Estimation.ipynb
+    codeReviewConducted: false
+    testsWritten: false
+    securityReviewConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://huggingface.co/datasets/ICICLE-AI/ResourceEstimation_HLOGenCNN/
+    developerDocumentationAvailable: false
+    developerDocumentationUrl: N/A
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://huggingface.co/datasets/ICICLE-AI/ResourceEstimation_HLOGenCNN/blob/main/Baseline_XGBoost_Resource_Estimation.ipynb
+    usageMetricsCollected: false
+  
+  - id: SmartCompiler:1.0
+    name: Smart Compiler
+    status: AlphaRelease
+    website: https://github.com/ICICLE-ai/SMART-COMPILER
+    description: This Smart Compiler uses AI models and traditional compiler techniques to enhance the performance scalability of C programs and Python programs. By profiling, and finding approaches for optimizations.
+    owner: Miguel Rosas, Miguel Torres
+    primaryThrust: core/AI4CI
+    targetIcicleRelease: 2025-05
+    componentVersion: 1.0
+    sourceCodeUrl: https://github.com/ICICLE-ai/SMART-COMPILER
+    licenseUrl: https://opensource.org/license/bsd-3-clause
+    publicAccess: true
+    restrictedToRole: false
+  
+  - id: icicleai-tapisui-extension:0.1.0
+    name: ICICLEAI TapisUI Extension 
+    status: PrototypeRelease
+    website: https://github.com/ICICLE-ai/tapisui-extension-icicle
+    description: A TapisUI extension written in Typescript/React for exposing ICICLEAI functionality to TapisUI deployments for the 'icicleai' tenant
+    owner: 
+    primaryThrust: core/CI4AI
+    sourceCodeUrl: https://github.com/ICICLE-ai/tapisui-extension-icicle
+    targetIcicleRelease: 2025-05
+    componentVersion: 0.1.0
+    licenseUrl: https://opensource.org/license/bsd-3-clause
+    codeReviewConducted: true
+    publicAccess: true
+  
+  - id: ctcontroller:0.2
+    owner: Samuel Khuvis
+    primaryThrust: core/Software
+    name: Hardware & Software Provisioning Service
+    status: AlphaRelease
+    componentVersion: 0.2
+    targetIcicleRelease: 2025-05
+    licenseUrl: https://github.com/ICICLE-ai/ct-controller/blob/main/LICENSE
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/ct-controller.git
+    containerImage: https://hub.docker.com/r/tapis/ctcontroller
+  
+  - id: TapisBase:1.8.2
+    owner: Joe Stubbs
+    primaryThrust: core/Software
+    name: Base ICICLE Tapis Software
+    status: ProductionRelease
+    website: tapis-project.org
+    description: Hosted, web-based API for managing data and executing software for research computing
+    componentVersion: 1.8.2
+    targetIcicleRelease: 2025-05
+    licenseUrl: https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE
+    publicAccess: true
+    sourceCodeUrl: https://github.com/tapis-project
+    releaseNotesUrl: https://github.com/tapis-project/tapis-deployer/blob/main/CHANGELOG.md
+    citation: "Joe Stubbs, Richard Cardone, Mike Packard, Anagha Jamthe, Smruti Padhy, Steve Terry, Julia Looney, Joseph Meiring, Steve Black, Maytal Dahan, Sean Cleveland, Gwen Jacobs. (2021) Tapis: An API Platform for Reproducible, Distributed Computational Research. In: Arai K. (eds) Advances in Information and Communication. FICC 2021. Advances in Intelligent Systems and Computing, vol 1363. Springer, Cham. https://doi.org/10.1007/978-3-030-73100-7_61"
+    containerImage: https://hub.docker.com/u/tapis
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: true
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://tapis.readthedocs.io/en/latest/:w
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://tapis.readthedocs.io/en/latest/technical/pythondev.html
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://tapis-project.github.io/tutorials/
+    usageMetricsCollected: true
+  
+  - id: PEFTVision:0.1
+    name: PEFT Vision
+    status: AlphaRelease
+    website: https://github.com/ICICLE-ai/PEFT_Vision
+    description: A Systematic Framework for Parameter-Efficient Fine Tuning (PEFT) in Visual Recognition. PEFT Vision implements 16 parameter-efficient fine-tuning (PEFT) methods, and enables consistent, reproducible evaluations of PEFT techniques across computer-vision workloads.
+    owner: Zheda Mai
+    primaryThrust: core/AI4CI
+    targetIcicleRelease: 2025-05
+    componentVersion: 1.0
+    sourceCodeUrl: https://github.com/ICICLE-ai/PEFT_Vision
+    licenseUrl: https://opensource.org/license/MIT
+    publicAccess: true
+    restrictedToRole: false
