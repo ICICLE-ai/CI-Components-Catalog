@@ -905,7 +905,7 @@ components:
   
   - id: ArrayMorph:1.0
     owner: Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas
-    name: ArryMorph For Cloud HDF5
+    name: ArrayMorph For Cloud HDF5
     primaryThrust: core/CI4AI
     description: ArrayMorph stores and retrieves HDF5 data from the AWS S3 cloud object store
     componentVersion: 1.0
