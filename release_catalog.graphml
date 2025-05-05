@@ -1508,12 +1508,11 @@
       <data key="labels">:Component</data>
     </node>
     <node id="66">
-      <data key="id">arraymorph:1.1</data>
+      <data key="id">ArrayMorph:1.1</data>
       <data key="owner">Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas</data>
-      <data key="name">ArrayMorph for Cloud HDF5</data>
+      <data key="name">ArrayMorph For Cloud HDF5</data>
       <data key="primaryThrust">core/CI4AI</data>
-      <data key="description">ArrayMorph enables efficient storage and retrieval of array data from cloud object stores, supporting platforms including AWS S3 and Azure Blob Storage. It is designed to accelerate scientific and AI workloads that rely on partial array access.
-</data>
+      <data key="description">ArrayMorph enables efficient storage and retrieval of array data from cloud object stores, supporting platforms including AWS S3 and Azure Blob Storage. It is designed to accelerate scientific and AI workloads that rely on partial array access.</data>
       <data key="componentVersion">1.1</data>
       <data key="status">Prototype</data>
       <data key="targetIcicleRelease">2025-05</data>
