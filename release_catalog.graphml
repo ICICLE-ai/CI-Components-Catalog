@@ -939,7 +939,7 @@
     <node id="42">
       <data key="id">ArrayMorph:1.0</data>
       <data key="owner">Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas</data>
-      <data key="name">ArryMorph For Cloud HDF5</data>
+      <data key="name">ArrayMorph For Cloud HDF5</data>
       <data key="primaryThrust">core/CI4AI</data>
       <data key="description">ArrayMorph stores and retrieves HDF5 data from the AWS S3 cloud object store</data>
       <data key="componentVersion">1.0</data>
