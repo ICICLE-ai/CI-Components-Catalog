@@ -1506,7 +1506,7 @@ components:
     componentVersion: 0.1.0
     licenseUrl: https://github.com/DebarghaG/forte-api/blob/main/LICENSE
     releaseNotesUrl: https://github.com/DebarghaG/forte-api/blob/main/CHANGELOG.md
-    citation: Ganguly, Debargha, Warren Richard Morningstar, Andrew Seohwan Yu, and Vipin Chaudhary. Forte: Finding Outliers with Representation Typicality Estimation. The Thirteenth International Conference on Learning Representations, 2025. https://openreview.net/forum?id=7XNgVPxCiA.
+    citation: "Ganguly, Debargha, Warren Richard Morningstar, Andrew Seohwan Yu, and Vipin Chaudhary. Forte: Finding Outliers with Representation Typicality Estimation. The Thirteenth International Conference on Learning Representations, 2025. https://openreview.net/forum?id=7XNgVPxCiA."
     pypiPackage: false
     containerImage: false
     codeReviewConducted: true
@@ -1586,7 +1586,7 @@ components:
     status: PrototypeRelease
     website: https://github.com/ICICLE-ai/tapisui-extension-icicle
     description: A TapisUI extension written in Typescript/React for exposing ICICLEAI functionality to TapisUI deployments for the 'icicleai' tenant
-    owner: 
+    owner: Christian Garcia, Nathan Freeman
     primaryThrust: core/CI4AI
     sourceCodeUrl: https://github.com/ICICLE-ai/tapisui-extension-icicle
     targetIcicleRelease: 2025-05
