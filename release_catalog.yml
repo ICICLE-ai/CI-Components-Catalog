@@ -1474,11 +1474,11 @@ components:
 #
 
 # 25-05 Release
-  - id: arraymorph:1.1
+  - id: ArrayMorph:1.1
     owner: Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas
-    name: ArrayMorph for Cloud HDF5
+    name: ArrayMorph For Cloud HDF5
     primaryThrust: core/CI4AI
-    description: >
+    description:
       ArrayMorph enables efficient storage and retrieval of array data from cloud object stores,
       supporting platforms including AWS S3 and Azure Blob Storage. It is designed to accelerate
       scientific and AI workloads that rely on partial array access.
