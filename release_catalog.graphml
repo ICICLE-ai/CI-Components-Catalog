@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
   <key id="label" for="edge" attr.name="label" attr.type="string" />
+  <key id="pypiPackage" for="node" attr.name="pypiPackage" attr.type="boolean" />
   <key id="trainingTutorialsUrl" for="node" attr.name="trainingTutorialsUrl" attr.type="boolean" />
   <key id="doi" for="node" attr.name="doi" attr.type="string" />
   <key id="restrictedToRole" for="node" attr.name="restrictedToRole" attr.type="boolean" />
@@ -1288,9 +1289,396 @@
       <data key="developerDocumentationAvailable">True</data>
       <data key="developerDocumentationUrl">https://github.com/COS-IN/iluvatar-faas/tree/master/src/Il%C3%BAvatar/docs</data>
       <data key="trainingTutorialsAvailable">False</data>
-      <data key="trainingTutorialsUrl">False</data>
       <data key="usageMetricsCollected">False</data>
       <data key="publicAccess">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="57">
+      <data key="id">PatraToolkit:0.1.2</data>
+      <data key="name">Patra Model Card Toolkit</data>
+      <data key="status">ProductionRelease</data>
+      <data key="website">https://github.com/Data-to-Insight-Center/patra-toolkit</data>
+      <data key="description">Toolkit for semi-automated modelcard creation for AI/ML models.</data>
+      <data key="owner">Beth Plale</data>
+      <data key="primaryThrust">core/FoundationalAI</data>
+      <data key="sourceCodeUrl">https://github.com/Data-to-Insight-Center/patra-toolkit</data>
+      <data key="targetIcicleRelease">2024-12</data>
+      <data key="componentVersion">0.1.2</data>
+      <data key="licenseUrl">https://github.com/Data-to-Insight-Center/patra-toolkit/blob/main/LICENSE</data>
+      <data key="releaseNotesUrl" />
+      <data key="doi">https://doi.org/10.1109/e-Science62913.2024.10678710</data>
+      <data key="citation">S. Withana and B. Plale, Patra ModelCards':' AI/ML Accountability in the Edge-Cloud Continuum</data>
+      <data key="pypiPackage">patra-toolkit:0.1.2</data>
+      <data key="containerImage" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/Data-to-Insight-Center/patra-toolkit/blob/main/README.md</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://patra-toolkit.readthedocs.io/en/latest/</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="58">
+      <data key="id">PatraKG:0.1.0</data>
+      <data key="name">Patra Model Card Knowledge Graph</data>
+      <data key="status">ProductionRelease</data>
+      <data key="website">https://github.com/Data-to-Insight-Center/patra-kg</data>
+      <data key="description">Knowledge Graph to capture AI/ML model lifecycle from creation through deployments.</data>
+      <data key="owner">Beth Plale</data>
+      <data key="primaryThrust">core/FoundationalAI</data>
+      <data key="sourceCodeUrl">https://github.com/Data-to-Insight-Center/patra-kg</data>
+      <data key="targetIcicleRelease">2024-12</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="licenseUrl">https://github.com/Data-to-Insight-Center/patra-kg/blob/main/LICENSE</data>
+      <data key="releaseNotesUrl" />
+      <data key="doi">https://doi.org/10.1109/e-Science62913.2024.10678710</data>
+      <data key="citation">S. Withana and B. Plale, Patra ModelCards':' AI/ML Accountability in the Edge-Cloud Continuum</data>
+      <data key="pypiPackage" />
+      <data key="containerImage">https://hub.docker.com/r/iud2i/patra-server</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/Data-to-Insight-Center/patra-kg/blob/main/README.md</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="59">
+      <data key="id">PlugAndPlaySpeech:0.2</data>
+      <data key="owner">Eric Fosler-Lussier</data>
+      <data key="name">Plug-and-Play Speech Interfaces</data>
+      <data key="primaryThrust">core/FoundationalAI</data>
+      <data key="status">Beta</data>
+      <data key="website">https://</data>
+      <data key="description">Plug and play components for speech front ends, including wakeword detection, transcription, and endpoint detection</data>
+      <data key="targetIcicleRelease">2024-12</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">0.2</data>
+      <data key="licenseUrl">https://github.com/OSU-slatelab/SpeechGUI-AlignmentFramework/blob/main/LICENSE</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="60">
+      <data key="id">ScienceAgent:1.0</data>
+      <data key="owner">Huan Sun</data>
+      <data key="name">Science Agent</data>
+      <data key="primaryThrust">core/FoundationAI</data>
+      <data key="description">A language agent for solving data-driven scientific discovery tasks, powered by large language models.</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/ScienceAgent</data>
+      <data key="status">BetaRelease</data>
+      <data key="targetIcicleRelease">2024-12</data>
+      <data key="publicAccess">True</data>
+      <data key="componentVersion">1.0</data>
+      <data key="licenseUrl">https://opensource.org/license/MIT</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="61">
+      <data key="id">CKN:0.1.0</data>
+      <data key="name">Cyberinfrastructure Knowledge Network</data>
+      <data key="status">ProductionRelease</data>
+      <data key="website">https://github.com/Data-to-Insight-Center/cyberinfrastructure-knowledge-network</data>
+      <data key="description">The Cyberinfrastructure Knowledge Network is a distributed framework designed to optimize AI at the edge.</data>
+      <data key="owner">Beth Plale</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="sourceCodeUrl">https://github.com/Data-to-Insight-Center/cyberinfrastructure-knowledge-network</data>
+      <data key="targetIcicleRelease">2024-12</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="licenseUrl">https://github.com/Data-to-Insight-Center/cyberinfrastructure-knowledge-network/blob/main/LICENSE</data>
+      <data key="releaseNotesUrl" />
+      <data key="doi">https://doi.org/10.1109/e-Science58273.2023.10254827</data>
+      <data key="citation">S. Withana and B. Plale, CKN':' An Edge AI Distributed Framework</data>
+      <data key="pypiPackage" />
+      <data key="containerImage">https://hub.docker.com/u/iud2i</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/Data-to-Insight-Center/cyberinfrastructure-knowledge-network/blob/main/README.md</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://cyberinfrastructure-knowledge-network.readthedocs.io/en/latest/</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="62">
+      <data key="id">CameraTrapsEdgeSim:0.4.0</data>
+      <data key="owner">Rich Cardone</data>
+      <data key="name">Camera Traps Edge Simulator</data>
+      <data key="primaryThrust">useInspired/AE</data>
+      <data key="status">Prototype</data>
+      <data key="website" />
+      <data key="description">Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project</data>
+      <data key="targetIcicleRelease">2024-12</data>
+      <data key="componentVersion">0.3.0</data>
+      <data key="licenseUrl">https://github.com/tapis-project/camera-traps/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/camera-traps</data>
+      <data key="containerImage">https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl" />
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="63">
+      <data key="id">FASS:0.1</data>
+      <data key="name">Food Access Strategy Simulator (FASS)</data>
+      <data key="owner">Alfonso Morales</data>
+      <data key="status">AlphaRelease</data>
+      <data key="website">https://fass.pods.icicleai.tapis.io</data>
+      <data key="primaryThrust">useInspired/SF</data>
+      <data key="targetIcicleRelease">2024-12</data>
+      <data key="componentVersion">0.1</data>
+      <data key="licenseUrl">pending</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="64">
+      <data key="id">ADAE:1.0</data>
+      <data key="name">AI-Driven Animal Ecology Workload Model</data>
+      <data key="status">PrototypeRelease</data>
+      <data key="website">https://github.com/jennamk14/adae_model</data>
+      <data key="description">Software for modeling workloads from AI-Driven Animal Ecology (ADAE) studies. Provides tools for extracting arrival rates from real ADAE studies and modeling them as time-varying Poisson processes. These simulated workloads can be used to test different scaling techniques and validate edge computing systems for ADAE studies in the field.</data>
+      <data key="owner">Jenna Kline</data>
+      <data key="primaryThrust">useInspired/AE</data>
+      <data key="sourceCodeUrl">https://github.com/jennamk14/adae_model</data>
+      <data key="targetIcicleRelease">2024-12</data>
+      <data key="componentVersion">1.0.0</data>
+      <data key="licenseUrl">https://github.com/jennamk14/adae_model/blob/main/LICENSE</data>
+      <data key="citation">Kline, J., O'Quinn, A., Berger-Wolf, T., &amp; Stewart, C. (2024). Characterizing and Modeling AI-Driven Animal Ecology Studies at the Edge. In Proceedings of the 2024 ACM/IEEE Symposium on Edge Computing.</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/jennamk14/adae_model/blob/main/README.md</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/jennamk14/adae_model/blob/main/README.md</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="65">
+      <data key="id">fastkg:0.1.0</data>
+      <data key="owner">Md Saidul Hoque Anik</data>
+      <data key="name">FastKG</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="status">Prototype</data>
+      <data key="website" />
+      <data key="description">An efficient Knowledge Graph Embedding training library in PyTorch</data>
+      <data key="targetIcicleRelease">2024-04</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/fastkg-icicle/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/fastkg-icicle/tree/main</data>
+      <data key="citation" />
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="labels">:Component</data>
+    </node>
+    <node id="66">
+      <data key="id">arraymorph:1.1</data>
+      <data key="owner">Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas</data>
+      <data key="name">ArrayMorph for Cloud HDF5</data>
+      <data key="primaryThrust">core/CI4AI</data>
+      <data key="description">ArrayMorph enables efficient storage and retrieval of array data from cloud object stores, supporting platforms including AWS S3 and Azure Blob Storage. It is designed to accelerate scientific and AI workloads that rely on partial array access.
+</data>
+      <data key="componentVersion">1.1</data>
+      <data key="status">Prototype</data>
+      <data key="targetIcicleRelease">2025-05</data>
+      <data key="publicAccess">True</data>
+      <data key="licenseUrl">https://opensource.org/licenses/MIT</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/ArrayMorph</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="67">
+      <data key="id">Forte:0.1.0</data>
+      <data key="name">Forte</data>
+      <data key="status">AlphaRelease</data>
+      <data key="website">https://github.com/DebarghaG/forte-api</data>
+      <data key="description">A robust out-of-distribution (OOD) detection middleware that protects ML models from processing data they weren't trained to handle. Forte uses a multi-stage approach leveraging pretrained vision models (CLIP, ViT-MSN, DINOv2) to extract features, compute topology-aware representations, and detect anomalies without requiring OOD examples during training.</data>
+      <data key="owner">DebarghaG</data>
+      <data key="primaryThrust">core/FoundationAI</data>
+      <data key="sourceCodeUrl">https://github.com/DebarghaG/forte-api</data>
+      <data key="targetIcicleRelease">2025-05</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="licenseUrl">https://github.com/DebarghaG/forte-api/blob/main/LICENSE</data>
+      <data key="releaseNotesUrl">https://github.com/DebarghaG/forte-api/blob/main/CHANGELOG.md</data>
+      <data key="citation">Ganguly, Debargha, Warren Richard Morningstar, Andrew Seohwan Yu, and Vipin Chaudhary. Forte: Finding Outliers with Representation Typicality Estimation. The Thirteenth International Conference on Learning Representations, 2025. https://openreview.net/forum?id=7XNgVPxCiA.</data>
+      <data key="pypiPackage">False</data>
+      <data key="containerImage">False</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/DebarghaG/forte-api/README.md</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://github.com/DebarghaG/forte-api/blob/main/forte_demo.py</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="publicAccess">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="68">
+      <data key="id">FoodFlowGNN:1.0.0</data>
+      <data key="name">Food Flow Prediction GNN</data>
+      <data key="status">Prototype</data>
+      <data key="primaryThrust">useInspired/SF</data>
+      <data key="targetIcicleRelease">2025-05</data>
+      <data key="componentVersion">1.0.0</data>
+      <data key="licenseUrl">https://huggingface.co/ICICLE-AI/FoodFlow_GNN_Model</data>
+      <data key="publicAccess">True</data>
+      <data key="owner">Qianheng Zhang</data>
+      <data key="website">https://huggingface.co/ICICLE-AI/FoodFlow_GNN_Model</data>
+      <data key="description">Graph Neural Network models for predicting food flow between FAF zones using GAT and GCN architectures</data>
+      <data key="sourceCodeUrl">https://huggingface.co/ICICLE-AI/FoodFlow_GNN_Model/tree/main</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="69">
+      <data key="id">HLOFeatureDataset:0.0.1</data>
+      <data key="owner">Swathi Vallabhajosyula</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="name">HLO Feature Dataset for AI Resource Estimation</data>
+      <data key="status">Prototype</data>
+      <data key="website">https://huggingface.co/datasets/ICICLE-AI/ResourceEstimation_HLOGenCNN/</data>
+      <data key="description">A dataset containing High-Level Optimizer (HLO) graph features and metadata extracted from deep learning training workloads. It supports tasks such as runtime prediction, resource estimation, graph machine learning, and HPC scheduling optimization. Each entry includes model configuration metadata and associated HLO graph data stored in `.npz` format.</data>
+      <data key="componentVersion">0.0.1</data>
+      <data key="targetIcicleRelease">2025-05</data>
+      <data key="licenseUrl">https://www.apache.org/licenses/LICENSE-2.0</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://huggingface.co/datasets/ICICLE-AI/ResourceEstimation_HLOGenCNN/blob/main/Baseline_XGBoost_Resource_Estimation.ipynb</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://huggingface.co/datasets/ICICLE-AI/ResourceEstimation_HLOGenCNN/</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl">N/A</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://huggingface.co/datasets/ICICLE-AI/ResourceEstimation_HLOGenCNN/blob/main/Baseline_XGBoost_Resource_Estimation.ipynb</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="70">
+      <data key="id">SmartCompiler:1.0</data>
+      <data key="name">Smart Compiler</data>
+      <data key="status">AlphaRelease</data>
+      <data key="website">https://github.com/ICICLE-ai/SMART-COMPILER</data>
+      <data key="description">This Smart Compiler uses AI models and traditional compiler techniques to enhance the performance scalability of C programs and Python programs. By profiling, and finding approaches for optimizations.</data>
+      <data key="owner">Miguel Rosas, Miguel Torres</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="targetIcicleRelease">2025-05</data>
+      <data key="componentVersion">1.0</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/SMART-COMPILER</data>
+      <data key="licenseUrl">https://opensource.org/license/bsd-3-clause</data>
+      <data key="publicAccess">True</data>
+      <data key="restrictedToRole">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="71">
+      <data key="id">icicleai-tapisui-extension:0.1.0</data>
+      <data key="name">ICICLEAI TapisUI Extension</data>
+      <data key="status">PrototypeRelease</data>
+      <data key="website">https://github.com/ICICLE-ai/tapisui-extension-icicle</data>
+      <data key="description">A TapisUI extension written in Typescript/React for exposing ICICLEAI functionality to TapisUI deployments for the 'icicleai' tenant</data>
+      <data key="owner">Christian Garcia, Nathan Freeman</data>
+      <data key="primaryThrust">core/CI4AI</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/tapisui-extension-icicle</data>
+      <data key="targetIcicleRelease">2025-05</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="licenseUrl">https://opensource.org/license/bsd-3-clause</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="publicAccess">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="72">
+      <data key="id">ctcontroller:0.2</data>
+      <data key="owner">Samuel Khuvis</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="name">Hardware &amp; Software Provisioning Service</data>
+      <data key="status">AlphaRelease</data>
+      <data key="componentVersion">0.2</data>
+      <data key="targetIcicleRelease">2025-05</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/ct-controller/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/ct-controller.git</data>
+      <data key="containerImage">https://hub.docker.com/r/tapis/ctcontroller</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="73">
+      <data key="id">TapisBase:1.8.2</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="name">Base ICICLE Tapis Software</data>
+      <data key="status">ProductionRelease</data>
+      <data key="website">tapis-project.org</data>
+      <data key="description">Hosted, web-based API for managing data and executing software for research computing</data>
+      <data key="componentVersion">1.8.2</data>
+      <data key="targetIcicleRelease">2025-05</data>
+      <data key="licenseUrl">https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/tapis-deployer/blob/main/CHANGELOG.md</data>
+      <data key="citation">Joe Stubbs, Richard Cardone, Mike Packard, Anagha Jamthe, Smruti Padhy, Steve Terry, Julia Looney, Joseph Meiring, Steve Black, Maytal Dahan, Sean Cleveland, Gwen Jacobs. (2021) Tapis: An API Platform for Reproducible, Distributed Computational Research. In: Arai K. (eds) Advances in Information and Communication. FICC 2021. Advances in Intelligent Systems and Computing, vol 1363. Springer, Cham. https://doi.org/10.1007/978-3-030-73100-7_61</data>
+      <data key="containerImage">https://hub.docker.com/u/tapis</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">True</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://tapis.readthedocs.io/en/latest/:w</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://tapis.readthedocs.io/en/latest/technical/pythondev.html</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://tapis-project.github.io/tutorials/</data>
+      <data key="usageMetricsCollected">True</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="74">
+      <data key="id">PEFTVision:0.1</data>
+      <data key="name">PEFT Vision</data>
+      <data key="status">AlphaRelease</data>
+      <data key="website">https://github.com/ICICLE-ai/PEFT_Vision</data>
+      <data key="description">A Systematic Framework for Parameter-Efficient Fine Tuning (PEFT) in Visual Recognition. PEFT Vision implements 16 parameter-efficient fine-tuning (PEFT) methods, and enables consistent, reproducible evaluations of PEFT techniques across computer-vision workloads.</data>
+      <data key="owner">Zheda Mai</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="targetIcicleRelease">2025-05</data>
+      <data key="componentVersion">1.0</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/PEFT_Vision</data>
+      <data key="licenseUrl">https://opensource.org/license/MIT</data>
+      <data key="publicAccess">True</data>
+      <data key="restrictedToRole">False</data>
       <data key="labels">:Component</data>
     </node>
     <edge source="1" target="3">
@@ -1338,6 +1726,9 @@
     <edge source="1" target="43">
       <data key="label">DependsOn</data>
     </edge>
+    <edge source="1" target="62">
+      <data key="label">DependsOn</data>
+    </edge>
     <edge source="2" target="3">
       <data key="label">DependsOn</data>
     </edge>
@@ -1351,6 +1742,9 @@
       <data key="label">DependsOn</data>
     </edge>
     <edge source="2" target="48">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="2" target="62">
       <data key="label">DependsOn</data>
     </edge>
     <edge source="4" target="9">
