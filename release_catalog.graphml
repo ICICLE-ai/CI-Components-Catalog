@@ -939,7 +939,7 @@
     <node id="42">
       <data key="id">ArrayMorph:1.0</data>
       <data key="owner">Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas</data>
-      <data key="name">ArrayMorph For Cloud HDF5</data>
+      <data key="name">ArrayMorph</data>
       <data key="primaryThrust">core/CI4AI</data>
       <data key="description">ArrayMorph stores and retrieves HDF5 data from the AWS S3 cloud object store</data>
       <data key="componentVersion">1.0</data>
@@ -1510,7 +1510,7 @@
     <node id="66">
       <data key="id">ArrayMorph:1.1</data>
       <data key="owner">Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas</data>
-      <data key="name">ArrayMorph For Cloud HDF5</data>
+      <data key="name">ArrayMorph</data>
       <data key="primaryThrust">core/CI4AI</data>
       <data key="description">ArrayMorph enables efficient storage and retrieval of array data from cloud object stores, supporting platforms including AWS S3 and Azure Blob Storage. It is designed to accelerate scientific and AI workloads that rely on partial array access.</data>
       <data key="componentVersion">1.1</data>
