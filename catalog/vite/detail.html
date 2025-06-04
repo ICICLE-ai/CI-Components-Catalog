@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Detail</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.css"
+    />
+
+</head>
+<body>
+    <div id="heading" style="height: 10vh; display:flex; align-items: center; background-color: #000927;">
+        <img src="src/ICICLE_logo.jpg" alt="ICICLE Logo" style="height: 100%; width: auto;">
+        <h1 style="color: white; margin-left: 20px;">Component Catalog</h1>
+        <button id="returnList" style="margin-left: auto; margin-right: 20px; padding: 10px 15px; background-color: #315f91; color: white; border: none; border-radius: 5px; cursor: pointer;">Return to Component List</button>
+    </div>
+    <div id="detailList" style="display: flex; height: 90vh; width: 100%; justify-content: center; padding: 10px">
+        <table id="dataTable" class="table table-dark table-striped" style="width: 100%;">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      <script type="module" src="./src/detail.js"></script>
+</body>
+</html>
