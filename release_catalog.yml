@@ -1663,9 +1663,9 @@ components:
     sourceCodeUrl: https://github.com/tapis-project/camera-traps
     containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
     hasDependentComponents:
-        - related_to: TapisBase
+        - related_to: TapisBase:1.8.2
           relationship_type: DependsOn
-        - related_to: EventEngine
+        - related_to: EventEngine:0.2.0
           relationship_type: DependsOn
     releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
     citation:
