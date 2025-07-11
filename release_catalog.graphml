@@ -2025,6 +2025,26 @@
   <data key="usageMetricsCollected">False</data>
   <data key="labels">:Component</data>
 </node>
+<node id="88">
+  <data key="id">HARVEST:0.10</data>
+  <data key="name">HARVEST</data>
+  <data key="owner">Hari Subramoni</data>
+  <data key="primaryThrust">useInspired/DA</data>
+  <data key="targetIcicleRelease">2025-07</data>
+  <data key="componentVersion">0.1</data>
+  <data key="licenseUrl">https://icicle.osu.edu/media/document/2024-09-12/license.txt</data>
+  <data key="releaseNotesUrl"></data>
+  <data key="publicAccess">True</data>
+  <data key="doi">10.1109/BigData59044.2023.10386339</data>
+  <data key="citation">N. Alnaasan, M. Lieber, A. Shafi, H. Subramoni, S. Shearer, and DK Panda, 'HARVEST: High-Performance Artificial Vision Framework for Expert Labeling using Semi-Supervised Training,' 2023 IEEE International Conference on Big Data (BigData), Sorrento, Italy, 2023, pp. 139-148</data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl">https://icicle-ai.github.io/training-catalog/docs/category/harvest</data>
+  <data key="developerDocumentationAvailable">False</data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/Harvest</data>
+  <data key="status">AlphaRelease</data>
+  <data key="labels">:Component</data>
+</node>
 <edge source="1" target="3">
   <data key="label">DependsOn</data>
 </edge>
