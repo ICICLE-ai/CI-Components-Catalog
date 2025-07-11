@@ -1552,9 +1552,9 @@ components:
     publicAccess: true
     hasDependentComponents:
       - related_to: HARP:2.0.0
-        relationship_type: GeneratedWith
+        relationship_type: DependsOn
       - related_to: IntelligencePlaneScheduling:0.0.1
-        relationship_type: Supports
+        relationship_type: DependsOn
     sourceCodeUrl: https://huggingface.co/datasets/ICICLE-AI/ResourceEstimation_HLOGenCNN/blob/main/Baseline_XGBoost_Resource_Estimation.ipynb
     codeReviewConducted: false
     testsWritten: false
@@ -1681,7 +1681,7 @@ components:
     trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Camera%20Traps%20Edge%20Simulator
     usageMetricsCollected: false
   
-  - id: LLMTrainingCostEstimator
+  - id: LLMTrainingCostEstimator:0.0.1
     owner: Biyao Zhang
     name: LLM Training Cost Estimator
     status: Alpha
@@ -1799,7 +1799,7 @@ components:
     website: https://github.com/Data-to-Insight-Center/patra-toolkit
     description: Toolkit for semi-automated modelcard creation for AI/ML models.
     owner: Beth Plale
-    primaryThrust: core/AI4CI
+    primaryThrust: core/FoundationAI
     sourceCodeUrl: https://github.com/Data-to-Insight-Center/patra-toolkit
     targetIcicleRelease: 2025-07
     componentVersion: 0.2.0
@@ -1828,7 +1828,7 @@ components:
     website: https://github.com/Data-to-Insight-Center/patra-kg
     description: Knowledge Graph to capture AI/ML model lifecycle from creation through deployments.
     owner: Beth Plale
-    primaryThrust: core/AI4CI
+    primaryThrust: core/FoundationAI
     sourceCodeUrl: https://github.com/Data-to-Insight-Center/patra-kg
     targetIcicleRelease: 2025-07
     componentVersion: 0.2.0
@@ -1914,7 +1914,7 @@ components:
     
   - id: OrganizationSicClassifierForSmartFoodsheds:0.0.1
     owner: Fahmida Alam, Ellen Riloff
-    name: organization-sic-classifier-for-smart-foodsheds
+    name: Organization SIC Classifier for SmartFoodsheds
     status: Alpha
     primaryThrust: useInspired/SF
     description: Standard Industrial Classification (SIC) code classifier for organizations
@@ -1950,4 +1950,28 @@ components:
     licenseUrl: https://opensource.org/license/MIT
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/ScienceAgent%20Interface
+
+  - id: ComponentCatalog:0.2.0
+    owner: Joe Stubbs
+    name: ICICLE CI Component Catalog
+    primaryThrust: core/Software
+    description: Database and dashboard for discovering ICICLE projects and products.
+    status: Alpha
+    targetIcicleRelease: 2025-07
+    publicAccess: true
+    componentVersion: 0.2.0
+    licenseUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/LICENSE
+    sourceCodeUrl: https://github.com/ICICLE-ai/CI-Components-Catalog
+    releaseNotesUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/CHANGELOG.md
+    citation:
+    codeReviewConducted: false
+    testsWritten: false
+    securityReviewConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl:
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/README.md
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+    usageMetricsCollected: false
   
