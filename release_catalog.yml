@@ -1974,4 +1974,22 @@ components:
     trainingTutorialsAvailable: false
     trainingTutorialsUrl:
     usageMetricsCollected: false
+
+  - id: HARVEST:0.10
+    name: HARVEST
+    owner: Hari Subramoni
+    primaryThrust: useInspired/DA
+    targetIcicleRelease: 2025-07
+    componentVersion: 0.10
+    licenseUrl: https://icicle.osu.edu/media/document/2024-09-12/license.txt
+    releaseNotesUrl:
+    publicAccess: true
+    doi: 10.1109/BigData59044.2023.10386339
+    citation: "N. Alnaasan, M. Lieber, A. Shafi, H. Subramoni, S. Shearer, and DK Panda, 'HARVEST: High-Performance Artificial Vision Framework for Expert Labeling using Semi-Supervised Training,' 2023 IEEE International Conference on Big Data (BigData), Sorrento, Italy, 2023, pp. 139-148"
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://icicle-ai.github.io/training-catalog/docs/category/harvest
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: True
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Harvest
+    status: AlphaRelease
   
