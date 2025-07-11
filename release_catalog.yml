@@ -1975,12 +1975,13 @@ components:
     trainingTutorialsUrl:
     usageMetricsCollected: false
 
-  - id: HARVEST:0.10
+  - id: HARVEST:0.11
     name: HARVEST
     owner: Hari Subramoni
     primaryThrust: useInspired/DA
+    description: Harvest is a novel tool designed to democratize AI for Digital Agriculture.  It Combines Geospatial data preprocessing, Semi-Supervised Learning,  Inferencing, and Visualization.  Allowing users to quickly get insights into ground conditions.
     targetIcicleRelease: 2025-07
-    componentVersion: 0.10
+    componentVersion: 0.11
     licenseUrl: https://icicle.osu.edu/media/document/2024-09-12/license.txt
     releaseNotesUrl:
     publicAccess: true
