@@ -553,7 +553,7 @@ components:
     website: none
     description: Dataset of static and Dynaimic for High Performance Computing Applications
     owner: Miguel Rosas
-    primaryThrust: core/AI4CI2
+    primaryThrust: core/AI4CI
     sourceCodeUrl: https://datacommons.tdai.osu.edu/dataset.xhtml?persistentId=doi:10.5072/FK2/CQUURW
     targetIcicleRelease: 2023-10
     componentVersion: 1.0
@@ -971,7 +971,7 @@ components:
     website: none
     description: The Profiling compiler V1.0 collects critical data such as loop upper bounds, data types, the number of mathematical operations, and other static features to enhance performance insights.
     owner: Miguel Rosas, Miguel Torres
-    primaryThrust: CI4AI
+    primaryThrust: core/CI4AI
     sourceCodeUrl: https://github.com/ICICLE-ai/ProfilingCompiler
     targetIcicleRelease: 2024-09
     componentVersion: 1.0
@@ -1192,7 +1192,7 @@ components:
   - id: PlugAndPlaySpeech:0.1
     owner: Eric Fosler-Lussier
     name: Plug-and-Play Speech Interfaces
-    primaryThrust: core/FoundationalAI
+    primaryThrust: core/FoundationAI
     status: Beta
     website: https://github.com/OSU-slatelab/SpeechGUI-AlignmentFramework
     description: Plug and play components for speech front ends, including wakeword detection, transcription, and endpoint detection
@@ -1206,7 +1206,7 @@ components:
   
   - id: ReferenceArchitectureDataSchema:0.1.0
     owner: Joe Stubbs
-    primaryThrust: core/ReferenceArchitecture
+    primaryThrust: core/Software
     name: Reference Architecture Data Schema
     status: PrototypeRelease
     website: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/architecture/architecture-component-schema.yaml
@@ -1277,7 +1277,7 @@ components:
     website: https://github.com/Data-to-Insight-Center/patra-toolkit
     description: Toolkit for semi-automated modelcard creation for AI/ML models.
     owner: Beth Plale
-    primaryThrust: core/FoundationalAI
+    primaryThrust: core/FoundationAI
     sourceCodeUrl: https://github.com/Data-to-Insight-Center/patra-toolkit
     targetIcicleRelease: 2024-12
     componentVersion: 0.1.2
@@ -1306,7 +1306,7 @@ components:
     website: https://github.com/Data-to-Insight-Center/patra-kg
     description: Knowledge Graph to capture AI/ML model lifecycle from creation through deployments.
     owner: Beth Plale
-    primaryThrust: core/FoundationalAI
+    primaryThrust: core/FoundationAI
     sourceCodeUrl: https://github.com/Data-to-Insight-Center/patra-kg
     targetIcicleRelease: 2024-12
     componentVersion: 0.1.0
@@ -1332,7 +1332,7 @@ components:
   - id: PlugAndPlaySpeech:0.2
     owner: Eric Fosler-Lussier
     name: Plug-and-Play Speech Interfaces
-    primaryThrust: core/FoundationalAI
+    primaryThrust: core/FoundationAI
     status: Beta
     website: https://
     description: Plug and play components for speech front ends, including wakeword detection, transcription, and endpoint detection
@@ -1952,7 +1952,7 @@ components:
     trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/ScienceAgent%20Interface
 
   - id: ComponentCatalog:0.2.0
-    owner: Joe Stubbs
+    owner: Joe Stubbs, Zeyu Yuan
     name: ICICLE CI Component Catalog
     primaryThrust: core/Software
     description: Database and dashboard for discovering ICICLE projects and products.
