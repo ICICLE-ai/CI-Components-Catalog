@@ -42,6 +42,8 @@ with the git repository for the project).
 ``sourceCodeUrl``: A URL to a repository where the component 
 source is hosted. When possibly, we recommend using the [ICICLE GitHub project](https://github.com/ICICLE-ai) to host the repository. 
 
+``‎targetIcicleRelease``: A date when the component is scheduled to be released. The date should be corresponding to the ICICLE release, and the format should be yyyy-mm(e.g., 2024-09 for ICICLE release planned in September 2024).
+
  ``status``: This field tracks the maturity of the 
  component. Here are some guidelines for each of the possible values:
   -  ``Unreleased``: This value should not be used for components
