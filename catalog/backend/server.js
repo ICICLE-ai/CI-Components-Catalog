@@ -17,6 +17,20 @@ const driver = neo4j.driver(process.env.NEO4J_URL,
     neo4j.auth.basic(process.env.NEO4J_USER, process.env.NEO4J_PASSWORD)
 );
 
+// Color mapping from primary thusts
+const thrustColor = {
+  "core/Software": "#f80808ff",
+  "core/CI4AI": "#76fa65ff",
+  "core/AI4CI": "#4D96FF",
+  "core/FoundationAI": "#ee923dff",
+  "core/PADI": "#845EC2",
+  "core/VA": "#ff7871ff",
+  "useInspired/DA": "#efef12ff",
+  "useInspired/AE": "#39e495ff",
+  "useInspired/SF": "#003e85ff",
+  "Other": "#000000ff"
+};
+
 
 // fetch virtual nodes(aggregated by name)
 async function fetchVirtualNodes() {
@@ -34,12 +48,16 @@ async function fetchVirtualNodes() {
     nodeResult.records.forEach(record => {
       const node = record.get("n");
       const name = node.properties.name.toString();
+      const thrust = node.properties.primaryThrust || "Other";
+      console.log("virtual nodes fetchinging");
+      console.log(thrust);
+      const color = thrustColor[thrust] || thrustColor["Other"];
       if(!node_map.has(name)){
         node_map.set(name, {
           id: name,
           size: 100,
           properties: {name: name, versions:[node.properties.componentVersion.toString()]},
-          color: "#71b4fc",
+          color: color,
           caption: name
         });
       }
@@ -92,12 +110,17 @@ async function fetchData() {
   
       nodeResult.records.forEach(record => {
         const node = record.get("n");
+        console.log("getting nodes");
+        console.log(node);
         // add node into nodes(auto deduplicate)
+        const thrust = node.properties.primaryThrust || "Other";
+        console.log(thrust);
+        const color = thrustColor[thrust] || thrustColor["Other"];
         nodes_map.set(node.identity.toString(), {
             id: node.identity.toString(),
             properties: node.properties,
             size: 100,
-            color: "#71b4fc",
+            color: color,
             caption: node.properties.name.toString()
         });
       });
@@ -146,11 +169,13 @@ async function fetchExpandedNode(nodeName){
 
     nodeResult.records.forEach(record => {
       const node = record.get("n");
+      const thrust = node.properties.primaryThrust || "Other";
+      const color = thrustColor[thrust] || thrustColor["Other"];
       const nodeData = {
         id: node.identity.toString(),
         properties: node.properties,
         size: 100,
-        color: "#71b4fc",
+        color: color,
         caption: node.properties.name.toString()
       }
       nodes_map.set(node.identity.toString(), nodeData);
@@ -186,18 +211,22 @@ async function fetchExpandedNode(nodeName){
           width: 5
       });
         // add nodes
+        const thrust1 = node1.properties.primaryThrust || "Other";
+        const color1 = thrustColor[thrust1] || thrustColor["Other"];
+        const thrust2 = node2.properties.primaryThrust || "Other";
+        const color2 = thrustColor[thrust2] || thrustColor["Other"];
         nodes_map.set(node1.identity.toString(), {
           id: node1.identity.toString(),
           properties: node1.properties,
           size: 100,
-          color: "#71b4fc",
+          color: color1,
           caption: node1.properties.name.toString()
       });
       nodes_map.set(node2.identity.toString(), {
         id: node2.identity.toString(),
         properties: node2.properties,
         size: 100,
-        color: "#71b4fc",
+        color: color2,
         caption: node2.properties.name.toString()
     });
     });
