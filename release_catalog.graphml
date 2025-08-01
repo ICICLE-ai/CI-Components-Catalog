@@ -592,7 +592,7 @@
       <data key="website">none</data>
       <data key="description">Dataset of static and Dynaimic for High Performance Computing Applications</data>
       <data key="owner">Miguel Rosas</data>
-      <data key="primaryThrust">core/AI4CI2</data>
+      <data key="primaryThrust">core/AI4CI</data>
       <data key="sourceCodeUrl">https://datacommons.tdai.osu.edu/dataset.xhtml?persistentId=doi:10.5072/FK2/CQUURW</data>
       <data key="targetIcicleRelease">2023-10</data>
       <data key="componentVersion">1.0</data>
@@ -1006,7 +1006,7 @@
       <data key="website">none</data>
       <data key="description">The Profiling compiler V1.0 collects critical data such as loop upper bounds, data types, the number of mathematical operations, and other static features to enhance performance insights.</data>
       <data key="owner">Miguel Rosas, Miguel Torres</data>
-      <data key="primaryThrust">CI4AI</data>
+      <data key="primaryThrust">core/CI4AI</data>
       <data key="sourceCodeUrl">https://github.com/ICICLE-ai/ProfilingCompiler</data>
       <data key="targetIcicleRelease">2024-09</data>
       <data key="componentVersion">1.0</data>
@@ -1209,7 +1209,7 @@
       <data key="id">PlugAndPlaySpeech:0.1</data>
       <data key="owner">Eric Fosler-Lussier</data>
       <data key="name">Plug-and-Play Speech Interfaces</data>
-      <data key="primaryThrust">core/FoundationalAI</data>
+      <data key="primaryThrust">core/FoundationAI</data>
       <data key="status">Beta</data>
       <data key="website">https://github.com/OSU-slatelab/SpeechGUI-AlignmentFramework</data>
       <data key="description">Plug and play components for speech front ends, including wakeword detection, transcription, and endpoint detection</data>
@@ -1225,7 +1225,7 @@
     <node id="54">
       <data key="id">ReferenceArchitectureDataSchema:0.1.0</data>
       <data key="owner">Joe Stubbs</data>
-      <data key="primaryThrust">core/ReferenceArchitecture</data>
+      <data key="primaryThrust">core/Software</data>
       <data key="name">Reference Architecture Data Schema</data>
       <data key="status">PrototypeRelease</data>
       <data key="website">https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/architecture/architecture-component-schema.yaml</data>
@@ -1300,7 +1300,7 @@
       <data key="website">https://github.com/Data-to-Insight-Center/patra-toolkit</data>
       <data key="description">Toolkit for semi-automated modelcard creation for AI/ML models.</data>
       <data key="owner">Beth Plale</data>
-      <data key="primaryThrust">core/FoundationalAI</data>
+      <data key="primaryThrust">core/FoundationAI</data>
       <data key="sourceCodeUrl">https://github.com/Data-to-Insight-Center/patra-toolkit</data>
       <data key="targetIcicleRelease">2024-12</data>
       <data key="componentVersion">0.1.2</data>
@@ -1331,7 +1331,7 @@
       <data key="website">https://github.com/Data-to-Insight-Center/patra-kg</data>
       <data key="description">Knowledge Graph to capture AI/ML model lifecycle from creation through deployments.</data>
       <data key="owner">Beth Plale</data>
-      <data key="primaryThrust">core/FoundationalAI</data>
+      <data key="primaryThrust">core/FoundationAI</data>
       <data key="sourceCodeUrl">https://github.com/Data-to-Insight-Center/patra-kg</data>
       <data key="targetIcicleRelease">2024-12</data>
       <data key="componentVersion">0.1.0</data>
@@ -1359,7 +1359,7 @@
       <data key="id">PlugAndPlaySpeech:0.2</data>
       <data key="owner">Eric Fosler-Lussier</data>
       <data key="name">Plug-and-Play Speech Interfaces</data>
-      <data key="primaryThrust">core/FoundationalAI</data>
+      <data key="primaryThrust">core/FoundationAI</data>
       <data key="status">Beta</data>
       <data key="website">https://</data>
       <data key="description">Plug and play components for speech front ends, including wakeword detection, transcription, and endpoint detection</data>
@@ -2003,7 +2003,7 @@
     </node>
     <node id="87">
       <data key="id">ComponentCatalog:0.2.0</data>
-      <data key="owner">Joe Stubbs</data>
+      <data key="owner">Joe Stubbs, Zeyu Yuan</data>
       <data key="name">ICICLE CI Component Catalog</data>
       <data key="primaryThrust">core/Software</data>
       <data key="description">Database and dashboard for discovering ICICLE projects and products.</data>
