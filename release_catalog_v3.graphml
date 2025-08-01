@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="label" for="edge" attr.name="label" attr.type="string" />
+  <key id="labels" for="node" attr.name="labels" attr.type="string" />
+  <key id="primary_thrust" for="node" attr.name="primary_thrust" attr.type="string" />
+  <key id="maturity" for="node" attr.name="maturity" attr.type="string" />
+  <key id="name" for="node" attr.name="name" attr.type="string" />
+  <key id="id" for="node" attr.name="id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="1">
+      <data key="id">TapisBase</data>
+      <data key="name">Base ICICLE Tapis SOFTWARE</data>
+      <data key="maturity">PRODUCTION</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="2">
+      <data key="id">EventEngine</data>
+      <data key="name">Event Engine</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="3">
+      <data key="id">PPODFSL</data>
+      <data key="name">PPOD Schema - FSL Version</data>
+      <data key="maturity">BETA</data>
+      <data key="primary_thrust">SMART FOODSHEDS</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="4">
+      <data key="id">PPOD_Core</data>
+      <data key="name">PPOD Core LinkML Schema</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">SMART FOODSHEDS</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="5">
+      <data key="id">iSpLib</data>
+      <data key="name">Intelligent Sparse Library (iSpLib)</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">AI4CI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="6">
+      <data key="id">SOFTWAREPilot</data>
+      <data key="name">SOFTWARE Pilot</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">DIGITAL AGRICULTURE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="7">
+      <data key="id">DigitalAgHub</data>
+      <data key="name">ICICLE Digital Agriculture Hub</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">DIGITAL AGRICULTURE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="8">
+      <data key="id">Region2Vec</data>
+      <data key="name">Region2Vec</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">FoundationAI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="9">
+      <data key="id">SpeciesClassificationMultimodalContext</data>
+      <data key="name">Species Classification using Multimodal Heterogeneous Context</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">FoundationAI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="10">
+      <data key="id">HPDataset</data>
+      <data key="name">Dataset of Static and Dynamic features for High Performance Computing Applications.</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">AI4CI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="11">
+      <data key="id">Iluvatar</data>
+      <data key="name">Iluvatar Functions as a Service (FaaS) Control Plane</data>
+      <data key="maturity">BETA</data>
+      <data key="primary_thrust">AI4CI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="12">
+      <data key="id">ctcontroller</data>
+      <data key="name">Hardware &amp; SOFTWARE Provisioning Service</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="13">
+      <data key="id">HARVEST</data>
+      <data key="name">HARVEST</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">DIGITAL AGRICULTURE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="14">
+      <data key="id">ArrayMorph</data>
+      <data key="name">ArryMorph For Cloud HDF5</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">CI4AI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="15">
+      <data key="id">ProfilingComp</data>
+      <data key="name">Profiling Compiler.</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">CI4AI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="16">
+      <data key="id">PlugAndPlaySpeech</data>
+      <data key="name">Plug-and-Play Speech Interfaces</data>
+      <data key="maturity">BETA</data>
+      <data key="primary_thrust">FOUNDATIONAL AI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="17">
+      <data key="id">ReferenceArchitectureDataSchema</data>
+      <data key="name">Reference Architecture Data Schema</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">REFERENCE ARCHITECTURE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="18">
+      <data key="id">AUTOLYCUS</data>
+      <data key="name">AUTOLYCUS Model Extraction Attack against Interpretable Models</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">PADI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="19">
+      <data key="id">FederatedAuthService</data>
+      <data key="name">Tapis Federated Authentication Service</data>
+      <data key="maturity">BETA</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="20">
+      <data key="id">iciflaskn</data>
+      <data key="name">iciflaskn</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="21">
+      <data key="id">CameraTrapsEdgeSim</data>
+      <data key="name">Camera Traps Edge Simulator</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">ANIMAL ECOLOGY</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="22">
+      <data key="id">PodsService</data>
+      <data key="name">Tapis Pods Service API</data>
+      <data key="maturity">BETA</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="23">
+      <data key="id">PPODCA</data>
+      <data key="name">California PPOD knowledge graph data.</data>
+      <data key="maturity">BETA</data>
+      <data key="primary_thrust">SMART FOODSHEDS</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="24">
+      <data key="id">SFVADashboard</data>
+      <data key="name">Smart Foodsheds VA Dashboard</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">SMART FOODSHEDS</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="25">
+      <data key="id">ComponentCatalog</data>
+      <data key="name">ICICLE CI Component Catalog</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="26">
+      <data key="id">HARP</data>
+      <data key="name">HPC Application Runtime Predictor (HARP)</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">AI4CI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="27">
+      <data key="id">HelloICICLEAuthClients</data>
+      <data key="name">Hello ICICLE Auth Clients</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="28">
+      <data key="id">ICICLEFoodshedParser</data>
+      <data key="name">ICICLEFoodshedParser</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">SMART FOODSHEDS</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="29">
+      <data key="id">KrogerStoreClosure</data>
+      <data key="name">Kroger Grocery Store Closure Simulator Dashboard</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">SMART FOODSHEDS</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="30">
+      <data key="id">FarEdgeEdgeSimulator</data>
+      <data key="name">Far-Edge Edge Simulator</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">DIGITAL AGRICULTURE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="31">
+      <data key="id">InFieldHelperForCropScouts</data>
+      <data key="name">In-Field Helper for Crop Scouts</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">DIGITAL AGRICULTURE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="32">
+      <data key="id">ICICONSOLE</data>
+      <data key="name">ICICONSOLE</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="33">
+      <data key="id">TapisCL-ICICLE</data>
+      <data key="name">TapisCL-ICICLE</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="34">
+      <data key="id">TapisUI</data>
+      <data key="name">Tapis User Interface</data>
+      <data key="maturity">PRODUCTION</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="35">
+      <data key="id">IntelligencePlaneScheduling</data>
+      <data key="name">Intelligence Plane with Smart Scheduler Use case</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">AI4CI</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="36">
+      <data key="id">OpenPASS</data>
+      <data key="name">OpenPASS</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">DIGITAL AGRICULTURE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="37">
+      <data key="id">CameraTrapsEdgeSimDashboard</data>
+      <data key="name">Camera Traps Edge Simulator Dashboard</data>
+      <data key="maturity">PROTOTYPE</data>
+      <data key="primary_thrust">ANIMAL ECOLOGY</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="38">
+      <data key="id">TapisMLHub</data>
+      <data key="name">Tapis ML-Hub</data>
+      <data key="maturity">ALPHA</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="39">
+      <data key="id">TapisWorkflows</data>
+      <data key="name">Tapis Workflows Service</data>
+      <data key="maturity">PRODUCTION</data>
+      <data key="primary_thrust">SOFTWARE</data>
+      <data key="labels">:Component</data>
+    </node>
+    <edge source="1" target="19">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="21">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="22">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="26">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="27">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="32">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="33">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="34">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="35">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="38">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="1" target="39">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="2" target="21">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="3" target="23">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="4" target="23">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="6" target="36">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="7" target="30">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="7" target="31">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="7" target="36">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="19" target="20">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="19" target="32">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="19" target="33">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="19" target="34">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="20" target="24">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="20" target="25">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="21" target="37">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="22" target="24">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="22" target="25">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="22" target="27">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="22" target="28">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="22" target="29">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="22" target="32">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="22" target="33">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="22" target="34">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="22" target="35">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="22" target="38">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="23" target="24">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="23" target="32">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="25" target="32">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="26" target="35">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="27" target="32">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="27" target="33">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="28" target="29">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="34" target="37">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="34" target="39">
+      <data key="label">DependsOn</data>
+    </edge>
+  </graph>
+</graphml>
