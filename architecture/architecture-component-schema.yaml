@@ -1,0 +1,193 @@
+id: https://github.com/ICICLE-ai/CI-Components-Catalog/ci-components.yaml
+name: icicle-ci-component
+prefixes:
+  linkml: https://w3id.org/linkml/
+imports:
+  - linkml:types
+default_range: string
+  
+classes:
+    Component:
+        slots:
+            - id
+            - name
+            - status
+            - website
+            - description
+            - owner
+            - primaryThrust
+            - sourceCodeUrl
+            - targetIcicleRelease
+            - componentVersion
+            - licenseUrl
+            - releaseNotesUrl 
+            - doi
+            - citation
+            - pypiPackage
+            - containerImage
+            - hpcModule
+            - unixPackage
+            - rustCrate
+            - javaJar
+            - artifactOther
+            - codeReviewConducted
+            - testsWritten
+            - securityReviewConducted
+            - biasAssessmentConducted
+            - usageDocumentationAvailable
+            - usageDocumentationUrl
+            - developerDocumentationAvailable
+            - developerDocumentationUrl
+            - trainingTutorialsAvailable
+            - trainingTutorialsUrl
+            - usageMetricsCollected
+            - publicAccess
+            - restrictedToRole
+        unique_keys:
+            name:
+                unique_key_slots:
+                    - name
+        attributes:
+            hasDependentComponents:
+                multivalued: true
+                inlined_as_list: true
+                range: ComponentRelationship
+
+
+    Container:
+        tree_root: true
+        attributes:
+            components:
+                multivalued: true
+                inlined_as_list: true
+                range: Component
+    
+    ComponentRelationship:
+        attributes:
+            related_to:
+                range: Component
+                required: true
+            relationship_type:
+                range: ComponentRelationshipType
+
+
+slots:
+    id:
+        identifier: true
+        required: true
+        description: Unique identifier for the component. Alpha-numeric, URL-safe field.
+    name:
+        required: true
+        description: A human-readable name for the component. Must be unique across the catalog. 
+    status:
+        range: ComponentStatus
+        description: Release status of the component, such as Unreleased, PrototypeRelease, etc. See enum.
+    website:
+        description: Valid URL to a website dedicated to the component.
+    description:
+        description: A high-level description of the component.
+    owner:
+        description: Institute member ultimately responsible for component, including the metadata contained in the catalog.
+    primaryThrust:
+        range: Thrusts
+        description: The thrust or project primarily responsible for the component. The valid values are delineated into "core" and "useInspired", see enum.
+    sourceCodeUrl:
+        description: URL to source code repository; e.g., in GitHub, Gitlab, etc. 
+    targetIcicleRelease:
+        range: IcicleReleases
+        description: The ICICLE release that this component belo,ngs to, e.g., None, VC3, etc. See enum. 
+    componentVersion:
+        description: The version of the component itself; e.g., 22.04, 3.1.3.0, etc.
+    licenseUrl:
+        description: URL to a description of the license governing the acceptable use of this component. 
+    releaseNotesUrl:
+        description: URL to a description of the release notes related to the component. 
+    doi:
+        description: Digital object identifier that can be used to uniquely reference the component.
+    citation:
+        description: The citation to use when referencing the component.
+    pypiPackage:
+        description: A valid package name on PyPI.org, e.g., "numpy:1.24.2"
+    containerImage:
+        description: A valid reference to a container image; e.g., "docker://tapis/event-engine:0.2"
+    hpcModule:
+        description: An HPC module, installable via a module system.
+    unixPackage:
+        description: A Unix package, such as an rpm or deb file, installable via a package manager, such as apt or yum. 
+    rustCrate:
+        description: A Rust crate, installable via Cargo. Ideally, Rust crates would be published to crates.io
+    javaJar:
+        description: A Java jar package.
+    artifactOther:
+        description: A free-form field for describing other kinds of artifacts. Ideally, the schema would be updated to include dedicated attributes for other classes of artifacts instead of making use of this attribute.
+    codeReviewConducted:
+        range: boolean
+        description: Whether a code review was conducted for this release of the component.
+    testsWritten:
+        range: boolean
+        description: Whether tests have been written covering the major functionality comprising this release of the component. 
+    securityReviewConducted:
+        range: boolean
+        description: Whether a security review was conducted for this release of the component. 
+    biasAssessmentConducted:
+        range: boolean
+        description: Whether a bias assessment was conducted for this release of the component. 
+    usageDocumentationAvailable:
+        range: boolean
+        description: Whether usage documentation (i.e., documentation for end users) is available. 
+    usageDocumentationUrl:
+        description: A URL to the usage documentation. 
+    developerDocumentationAvailable:
+        range: boolean
+        description: Whether developer documentation (i.e., documentation for individuals planning to develop the component further) is available. 
+    developerDocumentationUrl:
+    trainingTutorialsAvailable:
+        range: boolean
+        description: Whether training materials, including tutorials, are available for this release of the component. 
+    trainingTutorialsUrl:
+        description: A URL to the training materials. 
+    usageMetricsCollected:
+        range: boolean
+        description: Whether usage metrics, such as number of downloads, number of API requests, number of page loads, etc., are being collected for this component.
+    publicAccess:
+        range: boolean
+        description: Whether this component should be visible to the general public within the CI Components Catalog. Setting this attribute to `false` will restrict the visibility to ICICLE members when browsing the catalog.
+    restrictedToRole:
+        required: false
+        description: The name of a role to restrict visibility of this component in the catalog. When used, the value of restrictedToRole should be a string corresponding to a role name. Note that when using restrictedToRole, members of ICICLE will not have visibility of the component unless they occupy that role. The restrictedToRole and publicAccess attributes cannot both be set to `true`.
+enums:
+    ComponentRelationshipType:
+        permissible_values:
+            DependsOn:
+            contains:
+            isInstance:
+    ComponentStatus:
+        permissible_values:
+            Unreleased:
+                description: The component is not available for use. Unreleased components may still be tracked in the catalog to help with cross-component design and architectural planning.
+            PrototypeRelease:
+                description: Prototype components typically include releases for which little to no formal testing has occurred.
+            AlphaRelease:
+                description: Alpha releases include components with incomplete functionality and/or the significant potential for breaking API changes. Some testing has occurred, but often minimal external user testing. 
+            BetaRelease:
+                description: Beta releases typically include software which is functionally complete, or almost functionality complete. Significant internal testing has occurred to ensure correctness. Some external testing is likely to have also occurred. Bugs and/or performance issues may exist. Breaking API changes could still occur but are less likely.
+            ProductionRelease:
+                description: Production releases (or stable releases) include software with no known significant defects and with stable interfaces/APIs. Backwards incompatible changes to production releases should result in new release versions.
+    Thrusts:
+        permissible_values:
+            core/Software:
+            core/CI4AI:
+            core/AI4CI:
+            core/FoundationAI:
+            core/PADI:
+            core/VA:
+            core/RIISS:
+            useInspired/DA:
+            useInspired/AE:
+            useInspired/SF:
+    IcicleReleases:
+        permissible_values:
+            None:
+            "2023-04":
+            "2023-06":
+

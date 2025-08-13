@@ -6,6 +6,50 @@ This repository contains metadata and code for the ICICLE CI Components Catalog.
 products developed by the ICICLE AI Institute. Using the Catalog, members within ICICLE as well as their collaborators and
 the general public can learn about the products being produced. 
 
+## ICICLE Software Releases
+
+The release of ICICLE CI components, including software components, are tracked in this component catalog. In order for 
+a component to be included in a release, the following high-level steps must be performed:
+
+1. Write a component definition for the component to be released. This definition should conform to the CI 
+   Component Catalog Schema. Descriptions for all the attributes in the schema are available from the LinkML
+   file [here](https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/ci-component.yaml#L74) and some 
+   guidelines for some specific attributes are included in the subsequent section.
+2. Engage the ICICLE Release Team to discuss your component and work out a validation plan, preferably at one of the regular ICICLE Component Release meetings.
+3. Be available for feedback from the Release Team. Feedback could include issues with accessing the component or
+  source code, building/installation issues, failing tests, etc. 
+4. Make any necessary modifications to the component
+before the release date.
+5. Add the following snippit to your Readme.md file and include all NSF funding resources that were used for your component.
+
+```
+# Acknowledgements
+
+*This work has been funded by grants from the National Science Foundation, including the ICICLE AI Institute (OAC 2112606)
+```
+
+### Guidelines on Specific Component Attributes 
+
+Many of the fields in the Component schema are self-explanatory, e.g., ``name``, ``description``, ``owner``, etc. In this section we provide additional guidance on specific fields.
+
+``licenseUrl``: It is important that the team developing the 
+component identify the license that will be used. Ideally, this
+license would be available on some URL (e.g., a URL associated 
+with the git repository for the project).
+
+``testsWritten``: Whether automated tests have been written. These should be included for releases at the alpha level and above (see ``status`` below).
+
+``sourceCodeUrl``: A URL to a repository where the component 
+source is hosted. When possibly, we recommend using the [ICICLE GitHub project](https://github.com/ICICLE-ai) to host the repository. 
+
+ ``status``: This field tracks the maturity of the 
+ component. Here are some guidelines for each of the possible values:
+  -  ``Unreleased``: This value should not be used for components
+    that will be included in a release.
+  - ``PrototypeRelease``: Prototype components are minimal working examples that may be lacking in robustness, reliability, or other quality aspects. They likely target only one or a minimal number of use cases.
+  - ``AlphaRelease``: Alpha components have matured beyond the prototype phase to provide more reliability. The inclusion of tests and some usage documentation should be provided for all alpha components. Minor bugs and other defects may exist. Typically, alpha components have been designed to generalize beyond a single use case, though interface changes are expected as the component gets usage and additional generalizations are identified. 
+  - ``BetaRelease``: Beta components have matured beyond the alpha phase and should include automated tests, user documentation and support for multiple use cases. Interfaces/APIs for beta components should be considered "mostly" stable (e.g., already designed for multiple use cases) -- that is, stable baring some unexpected discovery during usage after the release. The component may exhibit failures under heavy load, scalability limits, or other minor defects/limitations, but should otherwise have no known issues.
+  - ``ProductionRelease``: Production components have matured beyond the beta phase to be hardened, defect free and highly scalability solutions. The interfaces/APIs should be stable with breaking changes only introduced as part of subsequent releases that include a plan for upgrades and/or backward compatibility. High-quality user documentation should be publicly available. 
 
 ## Catalog Schema
 
@@ -21,7 +65,7 @@ You can test the schema by validating the local example dataset ``components-dat
 included in the repository, by doing the following:
 
 ```
-docker run -v $(pwd):/work  -w /work/ --rm -it jstubbs/linkml linkml-validate -sci-component.yaml components-data.yaml
+docker run -v $(pwd):/work  -w /work/ --rm -it jstubbs/linkml linkml-validate -s ci-component.yaml components-data.yaml
 ```
 
 If no errors are returned, the message ``None`` will be output. 

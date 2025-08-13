@@ -1,0 +1,307 @@
+components:
+  - id: dataset_labeling_dash
+    name: Interactive Dataset Labeling Dashboard (DA)
+    primaryThrust: useInspired/DA
+    owner: Hari Subramoni
+
+  - id: VAReusableGUI
+    name: Visual Analytics Reusable GUI
+    primaryThrust: useInspired/SF
+    owner: Patrick huber
+
+  - id: ui
+    name: ICICLE User Interface
+    hasDependentComponents:
+    - related_to: dataset_labeling_dash
+      relationship_type: contains
+    - related_to: VAReusableGUI
+      relationship_type: contains
+    - related_to: ikle_actions
+      relationship_type: contains
+    - related_to: ct_dash
+      relationship_type: contains
+    - related_to: model_dash
+      relationship_type: contains
+    - related_to: data_dash
+      relationship_type: contains
+    - related_to: authn_z
+      relationship_type: DependsOn
+    - related_to: mc
+      relationship_type: DependsOn
+    - related_to: model_training_and_adaptation
+      relationship_type: DependsOn
+
+  - id: ikle_actions
+    name: IKLE Actions Editor
+    primaryThrust: useInspired/SF
+    hasDependentComponents:
+      - related_to: ikle_etl
+        relationship_type: DependsOn
+
+  - id: ikle_etl
+    name: IKLE ETL and Caching Infrastructure
+    primaryThrust: useInspired/SF
+    hasDependentComponents:
+      - related_to: ikle_know_harvest
+        relationship_type: DependsOn
+      - related_to: tapis_workflows
+        relationship_type: DependsOn
+
+  - id: ikle_know_harvest
+    name: IKLE Knowledge Harvester Engine
+    primaryThrust: useInspired/SF
+
+  - id: ct_dash
+    name: Camera Traps Model Evaluation and Capacity Planning Dashboard (AE)
+    primaryThrust: useInspired/AE
+    hasDependentComponents:
+      - related_to: mc
+        relationship_type: DependsOn
+
+  - id: model_management_dash
+    name: Model Management Dashboard
+    primaryThrust: useInspired/AE
+    hasDependentComponents:
+    - related_to: mc
+      relationship_type: DependsOn
+
+
+  - id: model_dash
+    name: Model Training Dashboard
+    primaryThrust: useInspired/DA
+    hasDependentComponents:
+    - related_to: mc
+      relationship_type: DependsOn
+
+  - id: data_dash
+    name: Dataset Management Dashboard
+    primaryThrust: useInspired/AE
+    hasDependentComponents:
+    - related_to: mc
+      relationship_type: DependsOn
+
+  - id: authn
+    name: ICICLE Tapis OAuth2-based Authentication Service
+    
+  - id: authz
+    name: ICICLE Tapis Security & Authorization Service
+
+
+  - id: authn_z  
+    name: Authentication and Authorization Middleware
+    hasDependentComponents:
+    - related_to: authn
+      relationship_type: contains
+    - related_to: authz
+      relationship_type: contains
+
+  - id: mc_model_repo
+    name: Model Commons Model Repository 
+    primaryThrust: useInspired/AE
+
+  - id: mc_data_repo
+    name: Model Commons Data Repository 
+    primaryThrust: useInspired/AE
+
+  - id: mc
+    name: Model Commons 
+    primaryThrust: useInspired/AE
+    hasDependentComponents:
+    - related_to: mc_model_repo
+      relationship_type: contains
+    - related_to: mc_data_repo
+      relationship_type: contains
+    - related_to: mc_artifact_storage
+      relationship_type: contains
+    - related_to: mc_metadata_storage
+      relationship_type: contains
+    - related_to: mc_dataset_api
+      relationship_type: contains
+    - related_to: mc_model_api
+      relationship_type: contains
+    - related_to: authn_z
+      relationship_type: DependsOn
+
+  - id: mc_model_api
+    name: Model Commons Model API
+
+  - id: mc_dataset_api
+    name: Model Commons Datasets API
+
+
+  - id: mc_artifact_storage
+    name: Model Commons Artifact Storage
+
+  - id: mc_metadata_storage
+    name: Model Commons Metadata Storage
+
+  - id: da_mr
+    name: Digital Ag Model Registry 
+    primaryThrust: useInspired/DA
+    hasDependentComponents:
+    - related_to: mc
+      relationship_type: isInstance
+
+  - id: model_training_and_adaptation
+    name: Model Training and Adaptation 
+    hasDependentComponents:
+     - related_to: adaptive_ai
+       relationship_type: contains
+     - related_to: neural_arch_slim
+       relationship_type: contains
+     - related_to: intelligent_training_service
+       relationship_type: contains
+       
+   
+
+  - id: adaptive_ai
+    name: Adaptive AI Server
+    primaryThrust: useInspired/AE
+
+  - id: neural_arch_slim
+    name: Neural Architecture Slimming Framework
+    primaryThrust: useInspired/AE
+
+  - id: intelligent_training_service
+    name: Intelligent Training Service
+    hasDependentComponents:
+    - related_to: harp
+      relationship_type: DependsOn
+    - related_to: Tapis_HPC_middelware
+      relationship_type: DependsOn
+    
+  - id: harp
+    name: HARP Application Resource Predictor
+    primaryThrust: core/RIISS
+
+  - id: tapis_jobs
+    name: Tapis Jobs API
+
+  - id: tapis_apps
+    name: Tapis Apps API
+
+  - id: tapis_systems
+    name: Tapis Systems API
+
+  - id: int_plane
+    name: Intelligence Plane
+    primaryThrust: core/RIISS
+    hasDependentComponents:
+    - related_to: mc
+      relationship_type: DependsOn
+    - related_to: authn_z
+      relationship_type: DependsOn
+    - related_to: adaptive_ai
+      relationship_type: contains
+    - related_to: harp
+      relationship_type: contains
+    - related_to: intelligent_training_service
+      relationship_type: contains
+    - related_to: red_edge
+      relationship_type: contains      
+
+
+  - id: Tapis_HPC_middelware
+    name: Tapis HPC Middelware
+    hasDependentComponents:
+    - related_to: authn_z
+      relationship_type: DependsOn
+    - related_to: tapis_jobs
+      relationship_type: contains
+    - related_to: tapis_apps
+      relationship_type: contains
+    - related_to: tapis_systems
+      relationship_type: contains
+    
+  - id: ml_host_middleware
+    name: ICICLE ML Hosting Middleware
+    hasDependentComponents:
+    - related_to: authn_z
+      relationship_type: DependsOn
+    - related_to: tapis_pods
+      relationship_type: contains
+    - related_to: tapis_workflows
+      relationship_type: contains
+    - related_to: illuvar
+      relationship_type: contains
+
+  - id: tapis_pods
+    name: Tapis Pods API
+    description: Hosted Knowledge Graphs, Inference Servers, and related containers
+
+  - id: illuvar
+    name: Illuvar functions-as-a-service (FaaS) (RIISS)
+    primaryThrust: core/RIISS
+    description: Hosted Knowledge Graphs, Inference Servers, and related containers
+
+  - id: tapis_workflows
+    name: Tapis Workflows API
+    description: Supports the IKLE ETL and caching service 
+
+  - id: ml_edge_to_center_middleware
+    name: ICICLE ML Edge-to-Center Middleware
+    hasDependentComponents:
+    - related_to: authn_z
+      relationship_type: DependsOn
+    - related_to: mon_plane
+      relationship_type: contains
+    - related_to: edge_hardware_prov
+      relationship_type: contains      
+    - related_to: edge_app_deploy
+      relationship_type: contains      
+      
+
+  - id: mon_plane
+    name: Monitoring Plane
+    primaryThrust: core/RIISS
+    hasDependentComponents:
+    - related_to: authn_z
+      relationship_type: DependsOn
+    - related_to: ckn_kb
+      relationship_type: contains
+    - related_to: ckn_cep
+      relationship_type: contains
+    - related_to: ckn_cap
+      relationship_type: contains
+    - related_to: ckn_actuator
+      relationship_type: contains
+
+  - id: ckn_kb
+    name: CKN Knowledge Base (datacenter)
+    primaryThrust: core/RIISS
+    
+  - id: ckn_cep
+    name: CKN CEP Engine (datacenter)
+    primaryThrust: core/RIISS
+    
+  - id: ckn_cap
+    name: CKN Capture Daemon (edge)
+    primaryThrust: core/RIISS
+
+  - id: ckn_actuator
+    name: CKN Actuator (edge)
+    primaryThrust: core/RIISS
+
+  - id: red_edge
+    name: RED Edge Placement Planner
+    primaryThrust: useInspired/AE
+
+  - id: edge_hardware_prov
+    name: Dynamic Edge Hardware Provisioning Service
+
+  - id: ae_edge_hardware_prov
+    name: Camera Traps Hardware Provisioning Service
+    primaryThrust: useInspired/AE
+    hasDependentComponents:
+       - related_to: edge_hardware_prov
+         relationship_type: isInstance 
+    
+  - id: edge_app_deploy
+    name: Edge Application Deployment Service
+
+  - id: ae_edge_app_deploy
+    name: Camera Traps Control Software
+    primaryThrust: useInspired/AE    
+    hasDependentComponents:
+       - related_to: edge_app_deploy
+         relationship_type: isInstance 

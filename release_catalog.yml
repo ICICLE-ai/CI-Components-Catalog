@@ -553,7 +553,7 @@ components:
     website: none
     description: Dataset of static and Dynaimic for High Performance Computing Applications
     owner: Miguel Rosas
-    primaryThrust: core/AI4CI2
+    primaryThrust: core/AI4CI
     sourceCodeUrl: https://datacommons.tdai.osu.edu/dataset.xhtml?persistentId=doi:10.5072/FK2/CQUURW
     targetIcicleRelease: 2023-10
     componentVersion: 1.0
@@ -971,7 +971,7 @@ components:
     website: none
     description: The Profiling compiler V1.0 collects critical data such as loop upper bounds, data types, the number of mathematical operations, and other static features to enhance performance insights.
     owner: Miguel Rosas, Miguel Torres
-    primaryThrust: CI4AI
+    primaryThrust: core/CI4AI
     sourceCodeUrl: https://github.com/ICICLE-ai/ProfilingCompiler
     targetIcicleRelease: 2024-09
     componentVersion: 1.0
@@ -1192,7 +1192,7 @@ components:
   - id: PlugAndPlaySpeech:0.1
     owner: Eric Fosler-Lussier
     name: Plug-and-Play Speech Interfaces
-    primaryThrust: core/FoundationalAI
+    primaryThrust: core/FoundationAI
     status: Beta
     website: https://github.com/OSU-slatelab/SpeechGUI-AlignmentFramework
     description: Plug and play components for speech front ends, including wakeword detection, transcription, and endpoint detection
@@ -1206,7 +1206,7 @@ components:
   
   - id: ReferenceArchitectureDataSchema:0.1.0
     owner: Joe Stubbs
-    primaryThrust: core/ReferenceArchitecture
+    primaryThrust: core/Software
     name: Reference Architecture Data Schema
     status: PrototypeRelease
     website: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/architecture/architecture-component-schema.yaml
@@ -1277,7 +1277,7 @@ components:
     website: https://github.com/Data-to-Insight-Center/patra-toolkit
     description: Toolkit for semi-automated modelcard creation for AI/ML models.
     owner: Beth Plale
-    primaryThrust: core/FoundationalAI
+    primaryThrust: core/FoundationAI
     sourceCodeUrl: https://github.com/Data-to-Insight-Center/patra-toolkit
     targetIcicleRelease: 2024-12
     componentVersion: 0.1.2
@@ -1306,7 +1306,7 @@ components:
     website: https://github.com/Data-to-Insight-Center/patra-kg
     description: Knowledge Graph to capture AI/ML model lifecycle from creation through deployments.
     owner: Beth Plale
-    primaryThrust: core/FoundationalAI
+    primaryThrust: core/FoundationAI
     sourceCodeUrl: https://github.com/Data-to-Insight-Center/patra-kg
     targetIcicleRelease: 2024-12
     componentVersion: 0.1.0
@@ -1332,7 +1332,7 @@ components:
   - id: PlugAndPlaySpeech:0.2
     owner: Eric Fosler-Lussier
     name: Plug-and-Play Speech Interfaces
-    primaryThrust: core/FoundationalAI
+    primaryThrust: core/FoundationAI
     status: Beta
     website: https://
     description: Plug and play components for speech front ends, including wakeword detection, transcription, and endpoint detection
@@ -1552,9 +1552,9 @@ components:
     publicAccess: true
     hasDependentComponents:
       - related_to: HARP:2.0.0
-        relationship_type: GeneratedWith
+        relationship_type: DependsOn
       - related_to: IntelligencePlaneScheduling:0.0.1
-        relationship_type: Supports
+        relationship_type: DependsOn
     sourceCodeUrl: https://huggingface.co/datasets/ICICLE-AI/ResourceEstimation_HLOGenCNN/blob/main/Baseline_XGBoost_Resource_Estimation.ipynb
     codeReviewConducted: false
     testsWritten: false
@@ -1646,3 +1646,351 @@ components:
     licenseUrl: https://opensource.org/license/MIT
     publicAccess: true
     restrictedToRole: false
+#
+
+# 2025-07 Release
+  - id: CameraTrapsEdgeSim:0.5.0
+    owner: Joe Stubbs
+    name: Camera Traps Edge Simulator
+    primaryThrust: useInspired/AE
+    status: Prototype
+    website:
+    description: Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project
+    targetIcicleRelease: 2025-07
+    componentVersion: 0.5.0
+    licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
+    publicAccess: true
+    sourceCodeUrl: https://github.com/tapis-project/camera-traps
+    containerImage: https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general
+    hasDependentComponents:
+        - related_to: TapisBase:1.8.2
+          relationship_type: DependsOn
+        - related_to: EventEngine:0.2.0
+          relationship_type: DependsOn
+    releaseNotesUrl: https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl:
+    developerDocumentationAvailable: false
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Camera%20Traps%20Edge%20Simulator
+    usageMetricsCollected: false
+  
+  - id: LLMTrainingCostEstimator:0.0.1
+    owner: Biyao Zhang
+    name: LLM Training Cost Estimator
+    status: Alpha
+    primaryThrust: core/AI4CI
+    description: Time cost estimator for distributed training of LLMs
+    componentVersion: 0.0.1
+    targetIcicleRelease: 2025-07
+    licenseUrl: https://github.com/ICICLE-ai/distributed_training_estimator_of_LLM/blob/main/LICENSE
+    publicAccess: false
+    releaseNotesUrl:
+    sourceCodeUrl: https://github.com/ICICLE-ai/distributed_training_estimator_of_LLM/tree/main
+    containerImage:
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/distributed_training_estimator_of_LLM/blob/main/README.md
+    developerDocumentationAvailable: false
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Distributed%20Training%20Estimator%20of%20LLMs
+    usageMetricsCollected: false
+  
+  - id: CKN:0.2.0
+    name: Cyberinfrastructure Knowledge Network
+    status: ProductionRelease
+    website: https://github.com/Data-to-Insight-Center/cyberinfrastructure-knowledge-network
+    description: The Cyberinfrastructure Knowledge Network is a distributed framework designed to optimize AI at the edge.
+    owner: Beth Plale
+    primaryThrust: core/AI4CI
+    sourceCodeUrl: https://github.com/Data-to-Insight-Center/cyberinfrastructure-knowledge-network
+    targetIcicleRelease: 2025-07
+    componentVersion: 0.2.0
+    licenseUrl: https://github.com/Data-to-Insight-Center/cyberinfrastructure-knowledge-network/blob/main/LICENSE
+    releaseNotesUrl:
+    doi: https://doi.org/10.1109/e-Science58273.2023.10254827
+    citation: S. Withana and B. Plale, CKN':' An Edge AI Distributed Framework
+    pypiPackage:
+    containerImage: https://hub.docker.com/u/iud2i
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/Data-to-Insight-Center/cyberinfrastructure-knowledge-network/blob/main/README.md
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://cyberinfrastructure-knowledge-network.readthedocs.io/en/latest/
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Cyberinfrastructure%20Knowledge%20Network/Cyber%20Knowledge%20Network
+    usageMetricsCollected: false
+    publicAccess: true
+  
+  - id: FAF-Frontend:0.1.0
+    name: Angular Frontend for the Freight Analysis Framework
+    status: ProductionRelease
+    website: https://faffrontend.pods.icicleai.tapis.io/
+    description: An Angular frontend for visualizing freight transportation data from the US Freight Analysis Framework.
+    owner: Beth Plale
+    primaryThrust: core/AI4CI
+    sourceCodeUrl: https://github.com/Data-to-Insight-Center/faf-frontend-ICICLE
+    targetIcicleRelease: 2025-07
+    componentVersion: 0.1.0
+    licenseUrl: https://github.com/Data-to-Insight-Center/faf-frontend-ICICLE/blob/main/LICENSE
+    releaseNotesUrl:
+    doi:
+    citation: I. Gamage , S. Withana and B. Plale, FAF-API':' API access to the FAF
+    pypiPackage:
+    containerImage: https://hub.docker.com/u/iud2i
+    codeReviewConducted: true
+    testsWritten: false
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/Data-to-Insight-Center/faf-frontend-ICICLE/blob/main/README.md
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/Data-to-Insight-Center/faf-frontend-ICICLE/blob/main/README.md
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/FafFrontend
+    usageMetricsCollected: false
+    publicAccess: true
+  
+  - id: FAF-API:0.1.0
+    name: API access to the Freight Analysis Framework dataset
+    status: ProductionRelease
+    website: https://fafserver.pods.icicleai.tapis.io/api/schema/swagger-ui/#/
+    description: REST APIs that provide access to freight transportation data from the US Freight Analysis Framework, using a MySQL database.
+    owner: Beth Plale
+    primaryThrust: core/AI4CI
+    sourceCodeUrl: https://github.com/Data-to-Insight-Center/faf-api-ICICLE
+    targetIcicleRelease: 2025-07
+    componentVersion: 0.1.0
+    licenseUrl: https://github.com/Data-to-Insight-Center/faf-api-ICICLE/blob/main/LICENSE
+    releaseNotesUrl:
+    doi:
+    citation: I. Gamage , S. Withana and B. Plale, FAF-API':' API access to the FAF
+    pypiPackage:
+    containerImage: https://hub.docker.com/u/iud2i
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/Data-to-Insight-Center/faf-api-ICICLE/blob/main/API_README.md
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/Data-to-Insight-Center/faf-api-ICICLE/blob/main/DEV_README.md
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/api/FAF%20APIs/faf-apis
+    usageMetricsCollected: false
+    publicAccess: true
+  
+  - id: PatraToolkit:0.2.0
+    name: Patra Model Card Toolkit
+    status: ProductionRelease
+    website: https://github.com/Data-to-Insight-Center/patra-toolkit
+    description: Toolkit for semi-automated modelcard creation for AI/ML models.
+    owner: Beth Plale
+    primaryThrust: core/FoundationAI
+    sourceCodeUrl: https://github.com/Data-to-Insight-Center/patra-toolkit
+    targetIcicleRelease: 2025-07
+    componentVersion: 0.2.0
+    licenseUrl: https://github.com/Data-to-Insight-Center/patra-toolkit/blob/main/LICENSE
+    releaseNotesUrl:
+    doi: https://doi.org/10.1109/e-Science62913.2024.10678710
+    citation: S. Withana and B. Plale, Patra ModelCards':' AI/ML Accountability in the Edge-Cloud Continuum
+    pypiPackage: patra-toolkit:0.1.2
+    containerImage:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/Data-to-Insight-Center/patra-toolkit/blob/main/README.md
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://patra-toolkit.readthedocs.io/en/latest/
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Patra%20Model%20Card%20Toolkit/patra
+    usageMetricsCollected: false
+    publicAccess: true
+  
+  - id: PatraKG:0.2.0
+    name: Patra Model Card Toolkit
+    status: ProductionRelease
+    website: https://github.com/Data-to-Insight-Center/patra-kg
+    description: Knowledge Graph to capture AI/ML model lifecycle from creation through deployments.
+    owner: Beth Plale
+    primaryThrust: core/FoundationAI
+    sourceCodeUrl: https://github.com/Data-to-Insight-Center/patra-kg
+    targetIcicleRelease: 2025-07
+    componentVersion: 0.2.0
+    licenseUrl: https://github.com/Data-to-Insight-Center/patra-kg/blob/main/LICENSE
+    releaseNotesUrl:
+    doi: https://doi.org/10.1109/e-Science62913.2024.10678710
+    citation: S. Withana and B. Plale, Patra ModelCards':' AI/ML Accountability in the Edge-Cloud Continuum
+    pypiPackage:
+    containerImage: https://hub.docker.com/r/iud2i/patra-server
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/Data-to-Insight-Center/patra-kg/blob/main/README.md
+    developerDocumentationAvailable: false
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Patra%20KG
+    usageMetricsCollected: false
+    publicAccess: true
+  
+  - id: arraymorph:1.2
+    owner: Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas
+    name: ArrayMorph for Cloud HDF5
+    primaryThrust: core/CI4AI
+    description: ArrayMorph enables efficient storage and retrieval of array data from cloud object stores, supporting platforms including AWS S3 and Azure Blob Storage. It is designed to accelerate scientific and AI workloads that rely on partial array access. Now available in conda package.
+    componentVersion: 1.2
+    status: Prototype
+    targetIcicleRelease: 2025-07
+    publicAccess: true
+    licenseUrl: https://opensource.org/licenses/MIT
+    sourceCodeUrl: https://github.com/ICICLE-ai/ArrayMorph
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/arraymorph-2
+    usageMetricsCollected: false
+  
+  - id: ag_routing_data_generator:0.1.0
+    name: Agricultural Routing Synthetic Data Generation
+    status: ProductionRelease
+    website: https://github.com/ICICLE-ai/ag_routing_data_generator
+    description: This repository provides a python script to generate synthetic location and vehicle data (csv files) for developers and researchers aiming to train ML Models.
+    owner: Michelle Miller
+    primaryThrust: useInspired/SF
+    sourceCodeUrl: https://github.com/ICICLE-ai/ag_routing_data_generator
+    targetIcicleRelease: 2025-07
+    componentVersion: 0.1.0
+    licenseUrl: https://github.com/ICICLE-ai/ag_routing_data_generator?tab=GPL-3.0-1-ov-file
+    releaseNotesUrl:
+    doi:
+    citation: Michelle Miller, Rosemarie Santa Gonzalez, Amit Vyas
+    pypiPackage:
+    containerImage:
+    codeReviewConducted: true
+    testsWritten: false
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/ag_routing_data_generator/blob/main/README.md
+    developerDocumentationAvailable: true
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: True
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/agricultural-routing-synthetic-data-generation-2
+    usageMetricsCollected: false
+    publicAccess: true
+  
+  - id: FoodWasteWhiz:0.1
+    name: FoodWasteWhiz
+    status: AlphaRelease
+    website: https://github.com/ICICLE-ai/FoodWasteWhiz
+    description: FoodWasteWhiz is a Streamlit-based chatbot for building and exploring food waste ontologies. It uses LLMs with Retrieval-Augmented Generation (RAG) to answer questions from uploaded PDFs and supports editable feedback stored in a local database.
+    owner: Karthik Jain
+    primaryThrust: useInspired/SF
+    targetIcicleRelease: 2025-07
+    componentVersion: 1.0
+    sourceCodeUrl: https://github.com/ICICLE-ai/FoodWasteWhiz
+    licenseUrl: https://opensource.org/license/MIT
+    publicAccess: true
+    restrictedToRole: false
+    trainingTutorialsAvailable: True
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Food%20Waste%20Ontology%20Chatbot
+    usageMetricsCollected: false
+    
+  - id: OrganizationSicClassifierForSmartFoodsheds:0.0.1
+    owner: Fahmida Alam, Ellen Riloff
+    name: Organization SIC Classifier for SmartFoodsheds
+    status: Alpha
+    primaryThrust: useInspired/SF
+    description: Standard Industrial Classification (SIC) code classifier for organizations
+    componentVersion: 0.0.1
+    targetIcicleRelease: 2025-07
+    licenseUrl: https://github.com/ICICLE-ai/organization-sic-classifier-for-smart-foodsheds/blob/main/LICENSE
+    publicAccess: false
+    releaseNotesUrl:
+    sourceCodeUrl: https://github.com/ICICLE-ai/organization-sic-classifier-for-smart-foodsheds/tree/main
+    containerImage:
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/organization-sic-classifier-for-smart-foodsheds/blob/main/README.md
+    developerDocumentationAvailable: false
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/organization-sic-classifier-for-smart-foodsheds
+    usageMetricsCollected: false
+  
+  - id: ScienceAgent:2.0
+    owner: Huan Sun
+    name: Science Agent
+    primaryThrust: core/FoundationAI
+    description: A language agent and web interface for solving data-driven scientific discovery tasks, powered by large language models.
+    sourceCodeUrl: https://github.com/ICICLE-ai/ScienceAgentInterface
+    status: BetaRelease
+    targetIcicleRelease: 2025-07
+    publicAccess: true
+    componentVersion: 2.0
+    licenseUrl: https://opensource.org/license/MIT
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/ScienceAgent%20Interface
+
+  - id: ComponentCatalog:0.2.0
+    owner: Joe Stubbs, Zeyu Yuan
+    name: ICICLE CI Component Catalog
+    primaryThrust: core/Software
+    description: Database and dashboard for discovering ICICLE projects and products.
+    status: Alpha
+    targetIcicleRelease: 2025-07
+    publicAccess: true
+    componentVersion: 0.2.0
+    licenseUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/LICENSE
+    sourceCodeUrl: https://github.com/ICICLE-ai/CI-Components-Catalog
+    releaseNotesUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/CHANGELOG.md
+    citation:
+    codeReviewConducted: false
+    testsWritten: false
+    securityReviewConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl:
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/ICICLE-ai/CI-Components-Catalog/blob/master/README.md
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl:
+    usageMetricsCollected: false
+
+  - id: HARVEST:1.0
+    name: HARVEST
+    owner: Hari Subramoni
+    primaryThrust: useInspired/DA
+    description: Harvest is a novel tool designed to democratize AI for Digital Agriculture.  It Combines Geospatial data preprocessing, Semi-Supervised Learning,  Inferencing, and Visualization.  Allowing users to quickly get insights into ground conditions.
+    targetIcicleRelease: 2025-07
+    componentVersion: 1.0
+    licenseUrl: https://icicle.osu.edu/media/document/2024-09-12/license.txt
+    releaseNotesUrl:
+    publicAccess: true
+    doi: 10.1109/BigData59044.2023.10386339
+    citation: "N. Alnaasan, M. Lieber, A. Shafi, H. Subramoni, S. Shearer, and DK Panda, 'HARVEST: High-Performance Artificial Vision Framework for Expert Labeling using Semi-Supervised Training,' 2023 IEEE International Conference on Big Data (BigData), Sorrento, Italy, 2023, pp. 139-148"
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://icicle-ai.github.io/training-catalog/docs/category/harvest
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: True
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Harvest
+    status: AlphaRelease
+  

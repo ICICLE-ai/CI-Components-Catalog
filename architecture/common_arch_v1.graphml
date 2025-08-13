@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="label" for="edge" attr.name="label" attr.type="string"/>
+<key id="description" for="node" attr.name="description" attr.type="string"/>
+<key id="labels" for="node" attr.name="labels" attr.type="string"/>
+<key id="owner" for="node" attr.name="owner" attr.type="string"/>
+<key id="primaryThrust" for="node" attr.name="primaryThrust" attr.type="string"/>
+<key id="name" for="node" attr.name="name" attr.type="string"/>
+<key id="id" for="node" attr.name="id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="1">
+  <data key="id">dataset_labeling_dash</data>
+  <data key="name">Interactive Dataset Labeling Dashboard (DA)</data>
+  <data key="primaryThrust">useInspired/DA</data>
+  <data key="owner">Hari Subramoni</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="2">
+  <data key="id">VAReusableGUI</data>
+  <data key="name">Visual Analytics Reusable GUI</data>
+  <data key="primaryThrust">useInspired/SF</data>
+  <data key="owner">Patrick huber</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="3">
+  <data key="id">ui</data>
+  <data key="name">ICICLE User Interface</data>
+  <data key="owner">Joe Stubbs</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="4">
+  <data key="id">ikle_actions</data>
+  <data key="name">IKLE Actions Editor</data>
+  <data key="primaryThrust">useInspired/SF</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="7">
+  <data key="id">ct_dash</data>
+  <data key="name">Camera Traps Model Evaluation and Capacity Planning Dashboard (AE)</data>
+  <data key="primaryThrust">useInspired/AE</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="8">
+  <data key="id">model_dash</data>
+  <data key="name">Model Training Dashboard (DA)</data>
+  <data key="primaryThrust">useInspired/DA</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="9">
+  <data key="id">data_dash</data>
+  <data key="name">Data Dashboard</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="12">
+  <data key="id">authn_z</data>
+  <data key="name">Authentication and Authorization Middleware</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="15">
+  <data key="id">mc</data>
+  <data key="name">Model Commons</data>
+  <data key="primaryThrust">useInspired/AE</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="5">
+  <data key="id">ikle_etl</data>
+  <data key="name">IKLE ETL and Caching Infrastructure</data>
+  <data key="primaryThrust">useInspired/SF</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="6">
+  <data key="id">ikle_know_harvest</data>
+  <data key="name">IKLE Knowledge Harvester Engine</data>
+  <data key="primaryThrust">useInspired/SF</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="27">
+  <data key="id">tapis_workflows</data>
+  <data key="name">Tapis Workflows API</data>
+  <data key="description">Supports the IKLE ETL and caching service</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="10">
+  <data key="id">authn</data>
+  <data key="name">ICICLE Tapis OAuth2-based Authentication Service</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="11">
+  <data key="id">authz</data>
+  <data key="name">ICICLE Tapis Security &amp; Authorization Service</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="13">
+  <data key="id">mc_model_repo</data>
+  <data key="name">Model Commons Model Repository</data>
+  <data key="primaryThrust">useInspired/AE</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="14">
+  <data key="id">mc_data_repo</data>
+  <data key="name">Model Commons Data Repository</data>
+  <data key="primaryThrust">useInspired/AE</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="16">
+  <data key="id">da_mr</data>
+  <data key="name">Digital Ag Model Registry</data>
+  <data key="primaryThrust">useInspired/DA</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="17">
+  <data key="id">adaptive_ai</data>
+  <data key="name">Adaptive AI Server</data>
+  <data key="primaryThrust">useInspired/AE</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="18">
+  <data key="id">harp</data>
+  <data key="name">HARP Application Resource Predictor</data>
+  <data key="primaryThrust">core/RIISS</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="19">
+  <data key="id">tapis_jobs</data>
+  <data key="name">Tapis Jobs API</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="20">
+  <data key="id">tapis_apps</data>
+  <data key="name">Tapis Apps API</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="21">
+  <data key="id">tapis_systems</data>
+  <data key="name">Tapis Systems API</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="22">
+  <data key="id">int_plane</data>
+  <data key="name">Intelligence Plane</data>
+  <data key="primaryThrust">core/RIISS</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="23">
+  <data key="id">Tapis_HPC_middelware</data>
+  <data key="name">Tapis HPC Middelware</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="24">
+  <data key="id">ml_host_middleware</data>
+  <data key="name">ICICLE ML Hosting Middleware</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="25">
+  <data key="id">tapis_pods</data>
+  <data key="name">Tapis Pods API</data>
+  <data key="description">Hosted Knowledge Graphs, Inference Servers, and related containers</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="26">
+  <data key="id">illuvar</data>
+  <data key="name">Illuvar functions-as-a-service (FaaS) (RIISS)</data>
+  <data key="primaryThrust">core/RIISS</data>
+  <data key="description">Hosted Knowledge Graphs, Inference Servers, and related containers</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="28">
+  <data key="id">ml_edge_to_center_middleware</data>
+  <data key="name">ICICLE ML Edge-to-Center Middleware</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="29">
+  <data key="id">mon_plane</data>
+  <data key="name">Monitoring Plane</data>
+  <data key="primaryThrust">core/RIISS</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="34">
+  <data key="id">red_edge</data>
+  <data key="name">RED Edge Placement Planner</data>
+  <data key="primaryThrust">useInspired/AE</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="35">
+  <data key="id">edge_hardware_prov</data>
+  <data key="name">Dynamic Edge Hardware Provisioning Service</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="37">
+  <data key="id">edge_app_deploy</data>
+  <data key="name">Edge Application Deployment Service</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="30">
+  <data key="id">ckn_kb</data>
+  <data key="name">CKN Knowledge Base (datacenter)</data>
+  <data key="primaryThrust">core/RIISS</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="31">
+  <data key="id">ckn_cep</data>
+  <data key="name">CKN CEP Engine (datacenter)</data>
+  <data key="primaryThrust">core/RIISS</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="32">
+  <data key="id">ckn_cap</data>
+  <data key="name">CKN Capture Daemon (edge)</data>
+  <data key="primaryThrust">core/RIISS</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="33">
+  <data key="id">ckn_actuator</data>
+  <data key="name">CKN Actuator (edge)</data>
+  <data key="primaryThrust">core/RIISS</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="36">
+  <data key="id">ae_edge_hardware_prov</data>
+  <data key="name">Camera Traps Hardware Provisioning Service</data>
+  <data key="primaryThrust">useInspired/AE</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="38">
+  <data key="id">ae_edge_app_deploy</data>
+  <data key="name">ECamera Traps Control Software</data>
+  <data key="primaryThrust">useInspired/AE</data>
+  <data key="labels">:Component</data>
+</node>
+<edge source="1" target="3">
+  <data key="label">contains</data>
+</edge>
+<edge source="2" target="3">
+  <data key="label">contains</data>
+</edge>
+<edge source="3" target="4">
+  <data key="label">contains</data>
+</edge>
+<edge source="3" target="7">
+  <data key="label">contains</data>
+</edge>
+<edge source="3" target="8">
+  <data key="label">contains</data>
+</edge>
+<edge source="3" target="9">
+  <data key="label">contains</data>
+</edge>
+<edge source="3" target="12">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="3" target="15">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="4" target="5">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="7" target="15">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="8" target="15">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="12" target="10">
+  <data key="label">contains</data>
+</edge>
+<edge source="12" target="11">
+  <data key="label">contains</data>
+</edge>
+<edge source="12" target="15">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="12" target="22">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="12" target="23">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="12" target="24">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="12" target="28">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="12" target="29">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="15" target="13">
+  <data key="label">contains</data>
+</edge>
+<edge source="15" target="14">
+  <data key="label">contains</data>
+</edge>
+<edge source="15" target="16">
+  <data key="label">isInstance</data>
+</edge>
+<edge source="15" target="22">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="5" target="6">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="5" target="27">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="27" target="24">
+  <data key="label">contains</data>
+</edge>
+<edge source="17" target="22">
+  <data key="label">contains</data>
+</edge>
+<edge source="18" target="22">
+  <data key="label">contains</data>
+</edge>
+<edge source="19" target="23">
+  <data key="label">contains</data>
+</edge>
+<edge source="20" target="23">
+  <data key="label">contains</data>
+</edge>
+<edge source="21" target="23">
+  <data key="label">contains</data>
+</edge>
+<edge source="22" target="23">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="24" target="25">
+  <data key="label">contains</data>
+</edge>
+<edge source="24" target="26">
+  <data key="label">contains</data>
+</edge>
+<edge source="28" target="29">
+  <data key="label">contains</data>
+</edge>
+<edge source="28" target="34">
+  <data key="label">contains</data>
+</edge>
+<edge source="28" target="35">
+  <data key="label">contains</data>
+</edge>
+<edge source="28" target="37">
+  <data key="label">contains</data>
+</edge>
+<edge source="29" target="30">
+  <data key="label">contains</data>
+</edge>
+<edge source="29" target="31">
+  <data key="label">contains</data>
+</edge>
+<edge source="29" target="32">
+  <data key="label">contains</data>
+</edge>
+<edge source="29" target="33">
+  <data key="label">contains</data>
+</edge>
+<edge source="35" target="36">
+  <data key="label">isInstance</data>
+</edge>
+<edge source="37" target="38">
+  <data key="label">isInstance</data>
+</edge>
+</graph></graphml>
