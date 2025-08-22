@@ -2058,6 +2058,29 @@ components:
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-compiler-2
    
+
+ -  id: FoodFlowGNN:1.5.0
+    name: Food Flow Prediction GNN
+    owner: Qianheng Zhang
+    primaryThrust: useInspired/SF
+    status: PrototypeRelease
+    description: Graph Neural Network models for predicting food flow between FAF zones using GAT and GCN architectures
+    componentVersion: 1.5.0
+    hasDependentComponents:
+      - related_to: FoodFlowGNN:1.0.0
+        relationship_type: DependsOn
+    targetIcicleRelease: 2025-08
+    licenseUrl: https://github.com/GeoDS/GNNFoodFlow/blob/master/LICENSE
+    website: https://github.com/GeoDS/GNNFoodFlow
+    sourceCodeUrl: https://github.com/GeoDS/GNNFoodFlow
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/GeoDS/GNNFoodFlow/blob/master/README.md
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/GeoDS/GNNFoodFlow/blob/master/README.md
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/multi-scale-food-flow-prediction-using-graph-neural-networks-2
+    usageMetricsCollected: false
+
    
   - id: FoodFlowPortal:1.0.0
     name: Food Flow Prediction Portal
@@ -2080,29 +2103,6 @@ components:
     developerDocumentationUrl: https://github.com/ICICLE-ai/GNNFoodFlowPortal/blob/main/README.md
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/gnnfoodflowportal-2
-   
-   
-  - id: FoodFlowGNN:1.5.0
-    name: Food Flow Prediction GNN
-    owner: Qianheng Zhang
-    primaryThrust: useInspired/SF
-    status: PrototypeRelease
-    description: Graph Neural Network models for predicting food flow between FAF zones using GAT and GCN architectures
-    componentVersion: 1.5.0
-    hasDependentComponents:
-      - related_to: FoodFlowGNN:1.0.0
-        relationship_type: DependsOn
-    targetIcicleRelease: 2025-08
-    licenseUrl: https://github.com/GeoDS/GNNFoodFlow/blob/master/LICENSE
-    website: https://github.com/GeoDS/GNNFoodFlow
-    sourceCodeUrl: https://github.com/GeoDS/GNNFoodFlow
-    usageDocumentationAvailable: true
-    usageDocumentationUrl: https://github.com/GeoDS/GNNFoodFlow/blob/master/README.md
-    developerDocumentationAvailable: true
-    developerDocumentationUrl: https://github.com/GeoDS/GNNFoodFlow/blob/master/README.md
-    trainingTutorialsAvailable: true
-    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/multi-scale-food-flow-prediction-using-graph-neural-networks-2
-    usageMetricsCollected: false
    
   - id: OpenPass:2.0.0
     owner: Christopher Stewart
