@@ -2056,7 +2056,7 @@ components:
     publicAccess: true
     restrictedToRole: false
     trainingTutorialsAvailable: true
-    trainingTutorialsUrl:https://icicle-ai.github.io/training-catalog/docs/category/smart-compiler-2
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-compiler-2
     publicAccess: true
    
    
