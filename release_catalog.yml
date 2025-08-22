@@ -1998,7 +1998,7 @@ components:
   #
   # 2025-08 Release
 
-- id: VARe-ID:0.3.0
+- id: VAReID:0.3.0
   name: VARe-ID
   status: AlphaRelease
   description: A modular software pipeline and end-to-end workflow for video-based animal re-identification, which assigns consistent individual IDs by clustering multiview spatio-temporal tracks with minimal human intervention.
@@ -2018,7 +2018,7 @@ components:
   trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/vare-id-2
   publicAccess: true
  
-- id: icicle-playgrounds-sdk:0.1.5.5
+- id: icicleplaygroundssdk:0.1.5.5
   owner: Carlos Guzman
   primaryThrust: core/FoundationAI
   name: ICICLE-Playgrounds-SDK
