@@ -2057,7 +2057,6 @@ components:
     restrictedToRole: false
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-compiler-2
-    publicAccess: true
    
    
   - id: FoodFlowPortal:1.0.0
