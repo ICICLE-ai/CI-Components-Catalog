@@ -2059,7 +2059,7 @@ components:
     trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-compiler-2
    
 
- -  id: FoodFlowGNN:1.5.0
+  - id: FoodFlowGNN:1.5.0
     name: Food Flow Prediction GNN
     owner: Qianheng Zhang
     primaryThrust: useInspired/SF
