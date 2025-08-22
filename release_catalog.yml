@@ -2042,10 +2042,9 @@ components:
     description: This Smart Compiler uses AI models and traditional compiler techniques
       to enhance the performance scalability of C programs and Python programs
       by profiling and identifying optimization approaches.  
-   
-      **New in this release (MCP Features):**
-      - **MCP Server**: Added a server component exposing profiling tools for C and Python code, enabling detailed performance insights.  
-      - **MCP Client**: Included a basic client for testing and interacting with the MCP server, facilitating early adoption and feedback.  
+      New in this release (MCP Features)
+      MCP Server, Added a server component exposing profiling tools for C and Python code, enabling detailed performance insights.  
+      MCP Client, Included a basic client for testing and interacting with the MCP server, facilitating early adoption and feedback.  
     owner: Miguel Rosas, Miguel Torres
     primaryThrust: core/AI4CI
     targetIcicleRelease: 2025-08
