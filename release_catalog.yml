@@ -2017,7 +2017,6 @@ components:
   trainingTutorialsAvailable: true
   trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/vare-id-2
   publicAccess: true
-  
  
 - id: icicle-playgrounds-sdk:0.1.5.5
   owner: Carlos Guzman
