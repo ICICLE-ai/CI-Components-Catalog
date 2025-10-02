@@ -2455,7 +2455,7 @@ components:
     licenseUrl: https://github.com/COS-IN/iluvatar-faas/blob/master/LICENSE
     releaseNotesUrl: https://github.com/COS-IN/iluvatar-faas/blob/master/Release-notes.md
     doi: https://doi.org/10.1145/3588195.3592995
-    citation: Alexander Fuerst, Abdul Rehman, and Prateek Sharma. 2023. Ilúvatar: A Fast Control Plane for Serverless Computing. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC ’23), June 16–23, 2023, Orlando, FL, USA. ACM, New York, NY, USA, 14 pages.
+    citation: Alexander Fuerst, Abdul Rehman, and Prateek Sharma. 2023. Ilúvatar, A Fast Control Plane for Serverless Computing. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC ’23), June 16–23, 2023, Orlando, FL, USA. ACM, New York, NY, USA, 14 pages.
     usageDocumentationAvailable: true 
     hasDependentComponents:
         - related_to: Iluvatar:1.0.0
