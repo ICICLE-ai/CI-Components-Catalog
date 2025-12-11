@@ -1826,7 +1826,7 @@ components:
     publicAccess: true
   
   - id: PatraKG:0.2.0
-    name: Patra Model Card Toolkit
+    name: Patra Model Card Knowledge Graph
     status: ProductionRelease
     website: https://github.com/Data-to-Insight-Center/patra-kg
     description: Knowledge Graph to capture AI/ML model lifecycle from creation through deployments.
