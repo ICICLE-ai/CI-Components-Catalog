@@ -2574,7 +2574,7 @@
   <data key="id">MLFieldPlanner:0.1.0</data>
   <data key="owner">Joe Stubbs</data>
   <data key="name">ML Field Planner</data>
-  <data key="primaryThrust">useInspired/AE</data>
+  <data key="primaryThrust">core/Software</data>
   <data key="status">Prototype</data>
   <data key="website"></data>
   <data key="description">A framework for analyzing ML pipelines and edge-to-center tradeoffs from a graphical user interface</data>
@@ -2594,7 +2594,7 @@
 <node id="114">
   <data key="id">SmartfieldBackpack:1.0.0</data>
   <data key="owner">ICICLE-AI</data>
-  <data key="primaryThrust">core/Software</data>
+  <data key="primaryThrust">useInspired/AE</data>
   <data key="name">Smartfield Backpack</data>
   <data key="status">ProductionRelease</data>
   <data key="website"></data>
