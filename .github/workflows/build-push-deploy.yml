@@ -63,7 +63,7 @@ jobs:
     - name: Restart dev pod
       uses: fjogeleit/http-request-action@v1
       with:
-        url: 'https://icicle.tapis.io/v3/pods/${{ vars.DEV_POD_ID }}/restart'
+        url: 'https://icicleai.tapis.io/v3/pods/${{ vars.DEV_POD_ID }}/restart'
         method: 'GET'
         customHeaders: '{"Content-Type": "application/json", "X-Tapis-Token": "${{ secrets.TAPIS_ICICLE_PROD_TOKEN }}"}'
 
@@ -76,6 +76,6 @@ jobs:
     - name: Restart pod
       uses: fjogeleit/http-request-action@v1
       with:
-        url: 'https://icicle.tapis.io/v3/pods/${{ vars.POD_ID }}/restart'
+        url: 'https://icicleai.tapis.io/v3/pods/${{ vars.POD_ID }}/restart'
         method: 'GET'
         customHeaders: '{"Content-Type": "application/json", "X-Tapis-Token": "${{ secrets.TAPIS_ICICLE_PROD_TOKEN }}"}'
