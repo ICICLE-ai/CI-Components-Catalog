@@ -2528,7 +2528,7 @@ components:
     targetIcicleRelease: 2025-12
     componentVersion: 0.4
     hasDependentComponents:
-      - related_to: FASS:0.3
+      - related_to: FEAST:0.3
         relationship_type: DependsOn
     licenseUrl: https://opensource.org/license/bsd-3-clause
     description: Agent-based simulation model to evaluate food accessibility scores
