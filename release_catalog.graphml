@@ -1868,7 +1868,7 @@
 </node>
 <node id="81">
   <data key="id">PatraKG:0.2.0</data>
-  <data key="name">Patra Model Card Toolkit</data>
+  <data key="name">Patra Model Card Knowledge Graph</data>
   <data key="status">ProductionRelease</data>
   <data key="website">https://github.com/Data-to-Insight-Center/patra-kg</data>
   <data key="description">Knowledge Graph to capture AI/ML model lifecycle from creation through deployments.</data>
