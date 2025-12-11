@@ -953,6 +953,9 @@ components:
     primaryThrust: useInspired/DA
     sourceCodeUrl: https://go.osu.edu/icicle-installopenpass
     targetIcicleRelease: 2024-09
+    hasDependentComponents:
+     - related_to: SoftwarePilot:1.2.5
+       relationship_type: DependsOn
     componentVersion: 1.0.0
     licenseUrl: https://opensource.org/license/afl-3-0-php
     releaseNotesUrl:
