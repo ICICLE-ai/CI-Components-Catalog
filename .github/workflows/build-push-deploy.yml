@@ -65,7 +65,7 @@ jobs:
       with:
         url: 'https://icicleai.tapis.io/v3/pods/${{ vars.DEV_POD_ID }}/restart'
         method: 'GET'
-        customHeaders: '{"Content-Type": "application/json", "X-Tapis-Token": "${{ secrets.TAPIS_ICICLE_PROD_TOKEN }}"}'
+        customHeaders: '{"Content-Type": "application/json", "X-Tapis-Token": "${{ secrets.TAPIS_ICICLEAI_PROD_TOKEN }}"}'
 
   deploy-images:
     runs-on: ubuntu-latest
