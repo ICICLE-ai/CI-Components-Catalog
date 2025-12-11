@@ -2562,7 +2562,7 @@ components:
   - id: MLFieldPlanner:0.1.0
     owner: Joe Stubbs
     name: ML Field Planner
-    primaryThrust: useInspired/AE
+    primaryThrust: core/Software
     status: Prototype
     website:
     description: A framework for analyzing ML pipelines and edge-to-center tradeoffs from a graphical user interface
@@ -2603,7 +2603,7 @@ components:
   
   - id: SmartfieldBackpack:1.0.0
     owner: ICICLE-AI
-    primaryThrust: core/Software
+    primaryThrust: useInspired/AE
     name: Smartfield Backpack
     status:  ProductionRelease
     website:
