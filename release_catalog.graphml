@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="label" for="edge" attr.name="label" attr.type="string"/>
+<key id="developerDocumentationAvailable" for="node" attr.name="developerDocumentationAvailable" attr.type="string"/>
 <key id="usageMetricsCollected" for="node" attr.name="usageMetricsCollected" attr.type="string"/>
 <key id="usageDocumentationAvailable" for="node" attr.name="usageDocumentationAvailable" attr.type="string"/>
 <key id="securityReviewConducted" for="node" attr.name="securityReviewConducted" attr.type="string"/>
@@ -2508,6 +2509,116 @@
   <data key="status">AlphaRelease</data>
   <data key="labels">:Component</data>
 </node>
+<node id="110">
+  <data key="id">UASOE:0.1</data>
+  <data key="owner">Lucas Waltz</data>
+  <data key="name">Orchestration Engine for Unmanned Aerial Systems Imagery</data>
+  <data key="primaryThrust">useInspired/DA</data>
+  <data key="description">An open-source orchestration engine designed to automate and scale the transformation of raw Unmanned Aerial Systems (UAS) imagery into structured, AI-ready datasets for agricultural research.</data>
+  <data key="status">AlphaRelease</data>
+  <data key="targetIcicleRelease">2025-12</data>
+  <data key="publicAccess">True</data>
+  <data key="componentVersion">v0.1</data>
+  <data key="licenseUrl">Unknown</data>
+  <data key="releaseNotesUrl"></data>
+  <data key="citation">Lucas Waltz, Sarikaa Sridhar, Ryan Waltz, Paul Rodriguez, Chaeun Hong, Armeen Ghoorkhanian, Nicole DiMarco, Raghu Machiraju, and Sami Khanal. 2025. An Orchestration Engine for Scalable, On-Demand AI Phenotyping from UAS Imagery in Agriculture. In The 33rd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL ’25), November 3–6, 2025, Minneapolis, MN, USA. ACM, New York, NY, USA, 11 pages.</data>
+  <data key="codeReviewConducted">True</data>
+  <data key="testsWritten">True</data>
+  <data key="securityReviewConducted">False</data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl"></data>
+  <data key="developerDocumentationAvailable"></data>
+  <data key="developerDocumentationUrl"></data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/UAS-Orchestration-Engine</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="111">
+  <data key="id">FEAST:0.4</data>
+  <data key="name">Food Equity Access Simulation Technology (FEAST)</data>
+  <data key="owner">Alfonso Morales</data>
+  <data key="status">AlphaRelease</data>
+  <data key="website">https://feast.pods.icicleai.tapis.io</data>
+  <data key="primaryThrust">useInspired/SF</data>
+  <data key="targetIcicleRelease">2025-12</data>
+  <data key="componentVersion">0.4</data>
+  <data key="licenseUrl">https://opensource.org/license/bsd-3-clause</data>
+  <data key="description">Agent-based simulation model to evaluate food accessibility scores</data>
+  <data key="sourceCodeUrl">https://github.com/ICICLE-ai/Food-Access-Model, https://github.com/ICICLE-ai/FASS-Frontend</data>
+  <data key="containerImage">ghcr.io/icicle-ai/fass-front, ghcr.io/icicle-ai/fass-back</data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/FEAST</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="112">
+  <data key="id">HARVEST:1.3</data>
+  <data key="name">HARVEST</data>
+  <data key="owner">Hari Subramoni</data>
+  <data key="primaryThrust">useInspired/DA</data>
+  <data key="targetIcicleRelease">2025-12</data>
+  <data key="componentVersion">1.3</data>
+  <data key="licenseUrl">https://icicle.osu.edu/media/document/2024-09-12/license.txt</data>
+  <data key="releaseNotesUrl"></data>
+  <data key="publicAccess">True</data>
+  <data key="doi">10.1109/BigData59044.2023.10386339</data>
+  <data key="citation">N. Alnaasan, M. Lieber, A. Shafi, H. Subramoni, S. Shearer, and DK Panda, 'HARVEST: High-Performance Artificial Vision Framework for Expert Labeling using Semi-Supervised Training,' 2023 IEEE International Conference on Big Data (BigData), Sorrento, Italy, 2023, pp. 139-148</data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl">https://icicle.osu.edu/media/document/2025-12-03/harvest_user_guide.pdf</data>
+  <data key="developerDocumentationAvailable">False</data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/Harvest</data>
+  <data key="status">AlphaRelease</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="113">
+  <data key="id">MLFieldPlanner:0.1.0</data>
+  <data key="owner">Joe Stubbs</data>
+  <data key="name">ML Field Planner</data>
+  <data key="primaryThrust">useInspired/AE</data>
+  <data key="status">Prototype</data>
+  <data key="website"></data>
+  <data key="description">A framework for analyzing ML pipelines and edge-to-center tradeoffs from a graphical user interface</data>
+  <data key="targetIcicleRelease">2025-12</data>
+  <data key="componentVersion">0.1.0</data>
+  <data key="licenseUrl">https://github.com/ICICLE-ai/mlfieldplanner/blob/0.1.0/RELEASE_NOTES.md</data>
+  <data key="publicAccess">True</data>
+  <data key="sourceCodeUrl">https://github.com/ICICLE-ai/mlfieldplanner</data>
+  <data key="releaseNotesUrl">https://github.com/ICICLE-ai/mlfieldplanner/blob/0.1.0/RELEASE_NOTES.md</data>
+  <data key="citation"></data>
+  <data key="usageDocumentationAvailable">False</data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/ML%20Field%20Planner</data>
+  <data key="usageMetricsCollected">False</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="114">
+  <data key="id">SmartfieldBackpack:1.0.0</data>
+  <data key="owner">ICICLE-AI</data>
+  <data key="primaryThrust">core/Software</data>
+  <data key="name">Smartfield Backpack</data>
+  <data key="status">ProductionRelease</data>
+  <data key="website"></data>
+  <data key="description">Field-deployable Smart Backpack system that addresses critical data acquisition challenges in animal ecology research.</data>
+  <data key="componentVersion">1.0.0</data>
+  <data key="targetIcicleRelease">2025-12</data>
+  <data key="licenseUrl">https://github.com/ICICLE-ai/Smartfield-Backpack/blob/master/LICENSE.md</data>
+  <data key="publicAccess">True</data>
+  <data key="sourceCodeUrl">https://github.com/ICICLE-ai/Smartfield-Backpack/tree/master</data>
+  <data key="releaseNotesUrl">NA</data>
+  <data key="citation"></data>
+  <data key="containerImage"></data>
+  <data key="codeReviewConducted"></data>
+  <data key="testsWritten"></data>
+  <data key="securityReviewConducted"></data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl">https://github.com/ICICLE-ai/Smartfield-Backpack/tree/master</data>
+  <data key="developerDocumentationAvailable">True</data>
+  <data key="developerDocumentationUrl">https://github.com/ICICLE-ai/Smartfield-Backpack/blob/master/README.md</data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/Smartfield-Backpack</data>
+  <data key="usageMetricsCollected">False</data>
+  <data key="labels">:Component</data>
+</node>
 <edge source="1" target="3">
   <data key="label">DependsOn</data>
 </edge>
@@ -2580,6 +2691,9 @@
 <edge source="2" target="106">
   <data key="label">DependsOn</data>
 </edge>
+<edge source="2" target="113">
+  <data key="label">DependsOn</data>
+</edge>
 <edge source="4" target="9">
   <data key="label">DependsOn</data>
 </edge>
@@ -2625,6 +2739,9 @@
 <edge source="28" target="69">
   <data key="label">DependsOn</data>
 </edge>
+<edge source="34" target="113">
+  <data key="label">DependsOn</data>
+</edge>
 <edge source="35" target="108">
   <data key="label">DependsOn</data>
 </edge>
@@ -2658,6 +2775,9 @@
 <edge source="48" target="52">
   <data key="label">DependsOn</data>
 </edge>
+<edge source="48" target="113">
+  <data key="label">DependsOn</data>
+</edge>
 <edge source="49" target="50">
   <data key="label">DependsOn</data>
 </edge>
@@ -2670,6 +2790,9 @@
 <edge source="51" target="52">
   <data key="label">DependsOn</data>
 </edge>
+<edge source="52" target="113">
+  <data key="label">DependsOn</data>
+</edge>
 <edge source="63" target="97">
   <data key="label">DependsOn</data>
 </edge>
@@ -2679,6 +2802,9 @@
 <edge source="70" target="91">
   <data key="label">DependsOn</data>
 </edge>
+<edge source="71" target="113">
+  <data key="label">DependsOn</data>
+</edge>
 <edge source="73" target="75">
   <data key="label">DependsOn</data>
 </edge>
@@ -2686,6 +2812,15 @@
   <data key="label">DependsOn</data>
 </edge>
 <edge source="75" target="106">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="77" target="113">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="80" target="113">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="81" target="113">
   <data key="label">DependsOn</data>
 </edge>
 <edge source="88" target="99">
@@ -2715,13 +2850,34 @@
 <edge source="95" target="107">
   <data key="label">DependsOn</data>
 </edge>
+<edge source="95" target="113">
+  <data key="label">DependsOn</data>
+</edge>
 <edge source="97" target="100">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="100" target="111">
   <data key="label">DependsOn</data>
 </edge>
 <edge source="102" target="103">
   <data key="label">DependsOn</data>
 </edge>
+<edge source="105" target="114">
+  <data key="label">DependsOn</data>
+</edge>
 <edge source="106" target="107">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="106" target="113">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="107" target="113">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="107" target="114">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="109" target="112">
   <data key="label">DependsOn</data>
 </edge>
 </graph></graphml>
