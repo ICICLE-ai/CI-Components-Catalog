@@ -2618,8 +2618,8 @@ components:
     hasDependentComponents:
       - related_to: ctcontroller:0.3
         relationship_type: DependsOn
-      - related_to: wildwing:1.0
-        relationship_type: SoftwarePilot:1.2.5 
+      - related_to: SoftwarePilot:1.2.5
+        relationship_type: DependsOn
       - related_to: wildwing:1.0
         relationship_type: DependsOn 
     containerImage:
