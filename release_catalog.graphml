@@ -2619,6 +2619,103 @@
   <data key="usageMetricsCollected">False</data>
   <data key="labels">:Component</data>
 </node>
+<node id="115">
+  <data key="id">HARVEST:1.4</data>
+  <data key="name">HARVEST</data>
+  <data key="owner">Hari Subramoni</data>
+  <data key="primaryThrust">useInspired/DA</data>
+  <data key="targetIcicleRelease">2026-03</data>
+  <data key="componentVersion">1.4</data>
+  <data key="licenseUrl">https://icicle.osu.edu/media/document/2024-09-12/license.txt</data>
+  <data key="releaseNotesUrl"></data>
+  <data key="publicAccess">True</data>
+  <data key="doi">10.1109/BigData59044.2023.10386339</data>
+  <data key="citation">N. Alnaasan, M. Lieber, A. Shafi, H. Subramoni, S. Shearer, and DK Panda, 'HARVEST: High-Performance Artificial Vision Framework for Expert Labeling using Semi-Supervised Training,' 2023 IEEE International Conference on Big Data (BigData), Sorrento, Italy, 2023, pp. 139-148</data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl">https://icicle.osu.edu/media/document/2025-12-03/harvest_user_guide.pdf</data>
+  <data key="developerDocumentationAvailable">False</data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/Harvest</data>
+  <data key="status">AlphaRelease</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="116">
+  <data key="id">ProofOfThought:1.0.1</data>
+  <data key="owner">Debargha Ganguly</data>
+  <data key="primaryThrust">core/AI4CI</data>
+  <data key="name">Proof of Thought</data>
+  <data key="status">BetaRelease</data>
+  <data key="website">https://debarghag.github.io/proofofthought/</data>
+  <data key="description">LLM-based reasoning using Z3 theorem proving with multiple backend support (SMT2 and JSON). Provides a high-level Python API for neurosymbolic reasoning tasks with postprocessing techniques for enhanced quality.</data>
+  <data key="componentVersion">1.0.1</data>
+  <data key="targetIcicleRelease">2026-03</data>
+  <data key="licenseUrl">https://github.com/debarghaG/proofofthought/blob/main/LICENSE</data>
+  <data key="publicAccess">True</data>
+  <data key="sourceCodeUrl">https://github.com/debarghaG/proofofthought</data>
+  <data key="releaseNotesUrl">https://github.com/debarghaG/proofofthought/releases</data>
+  <data key="citation">Debargha Ganguly, Srinivasan Iyengar, Vipin Chaudhary, Shivkumar Kalyanaraman. (2024) PROOF OF THOUGHT: Neurosymbolic Program Synthesis allows Robust and Interpretable Reasoning. The First Workshop on System-2 Reasoning at Scale, NeurIPS'24. https://openreview.net/forum?id=Pxx3r14j3U</data>
+  <data key="pypiPackage">proofofthought:1.0.1</data>
+  <data key="codeReviewConducted">True</data>
+  <data key="testsWritten">True</data>
+  <data key="securityReviewConducted">False</data>
+  <data key="biasAssessmentConducted">False</data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl">https://debarghag.github.io/proofofthought/</data>
+  <data key="developerDocumentationAvailable">True</data>
+  <data key="developerDocumentationUrl">https://github.com/debarghaG/proofofthought/blob/main/README.md</data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/proof-of-thought-2</data>
+  <data key="usageMetricsCollected">False</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="117">
+  <data key="id">AutoSDT:1.0.0</data>
+  <data key="owner">Yifei Li</data>
+  <data key="name">AutoSDT-Scaling Data-Driven Discovery Tasks Toward Open Co-Scientists</data>
+  <data key="primaryThrust">core/AI4CI</data>
+  <data key="status">PrototypeRelease</data>
+  <data key="website">https://osu-nlp-group.github.io/AutoSDT/</data>
+  <data key="description">Automated pipeline for mining, adapting, and packaging real-world data-driven scientific discovery workflows into independently executable coding tasks (AutoSDT-5K) for training and evaluating AI co-scientists.</data>
+  <data key="targetIcicleRelease">2026-03</data>
+  <data key="componentVersion">1.0</data>
+  <data key="publicAccess">True</data>
+  <data key="sourceCodeUrl">https://github.com/ICICLE-ai/AutoSDT</data>
+  <data key="releaseNotesUrl">https://github.com/ICICLE-ai/AutoSDT/releases</data>
+  <data key="licenseUrl">https://github.com/ICICLE-ai/AutoSDT/blob/main/LICENSE</data>
+  <data key="citation">Li, Y., Moussa, H. N., Chen, Z., Chen, S., Yu, B., Xue, M., ... &amp; Sun, H. (2025, November). Autosdt: Scaling data-driven discovery tasks toward open co-scientists. In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (pp. 30384-30406).</data>
+  <data key="containerImage"></data>
+  <data key="codeReviewConducted">False</data>
+  <data key="testsWritten">True</data>
+  <data key="securityReviewConducted">False</data>
+  <data key="biasAssessmentConducted">False</data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl">https://github.com/ICICLE-ai/AutoSDT#readme</data>
+  <data key="developerDocumentationAvailable">True</data>
+  <data key="developerDocumentationUrl">https://github.com/ICICLE-ai/AutoSDT#readme</data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/autosdt-2</data>
+  <data key="usageMetricsCollected">False</data>
+  <data key="labels">:Component</data>
+</node>
+<node id="118">
+  <data key="id">ComponentMCP:1.0.0</data>
+  <data key="name">ICICLE AI Component MCP</data>
+  <data key="owner">Amit Vyas</data>
+  <data key="primaryThrust">core/Software</data>
+  <data key="targetIcicleRelease">2026-03</data>
+  <data key="componentVersion">1.0</data>
+  <data key="licenseUrl">https://github.com/ICICLE-ai/catalog_mcp/blob/main/LICENSE</data>
+  <data key="releaseNotesUrl"></data>
+  <data key="publicAccess">True</data>
+  <data key="usageDocumentationAvailable">True</data>
+  <data key="usageDocumentationUrl">https://github.com/ICICLE-ai/catalog_mcp/blob/main/README.md</data>
+  <data key="developerDocumentationAvailable">True</data>
+  <data key="developerDocumentationUrl">https://github.com/ICICLE-ai/catalog_mcp/blob/main/README.md</data>
+  <data key="trainingTutorialsAvailable">True</data>
+  <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/icicle-ai-component-mcp-2</data>
+  <data key="status">AlphaRelease</data>
+  <data key="labels">:Component</data>
+</node>
 <edge source="1" target="3">
   <data key="label">DependsOn</data>
 </edge>
@@ -2826,6 +2923,9 @@
 <edge source="81" target="113">
   <data key="label">DependsOn</data>
 </edge>
+<edge source="87" target="118">
+  <data key="label">DependsOn</data>
+</edge>
 <edge source="88" target="99">
   <data key="label">DependsOn</data>
 </edge>
@@ -2881,6 +2981,9 @@
   <data key="label">DependsOn</data>
 </edge>
 <edge source="109" target="112">
+  <data key="label">DependsOn</data>
+</edge>
+<edge source="112" target="115">
   <data key="label">DependsOn</data>
 </edge>
 </graph></graphml>
