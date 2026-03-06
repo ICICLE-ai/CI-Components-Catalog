@@ -2633,3 +2633,101 @@ components:
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Smartfield-Backpack
     usageMetricsCollected: false
+
+  #
+  # Release 2026-03
+
+  - id: HARVEST:1.4
+    name: HARVEST
+    owner: Hari Subramoni
+    primaryThrust: useInspired/DA
+    targetIcicleRelease: 2026-03
+    componentVersion: 1.4
+    licenseUrl: https://icicle.osu.edu/media/document/2024-09-12/license.txt
+    releaseNotesUrl:
+    hasDependentComponents:
+      - related_to: HARVEST:1.3
+        relationship_type: DependsOn
+    publicAccess: true
+    doi: 10.1109/BigData59044.2023.10386339
+    citation: "N. Alnaasan, M. Lieber, A. Shafi, H. Subramoni, S. Shearer, and DK Panda, 'HARVEST: High-Performance Artificial Vision Framework for Expert Labeling using Semi-Supervised Training,' 2023 IEEE International Conference on Big Data (BigData), Sorrento, Italy, 2023, pp. 139-148"
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://icicle.osu.edu/media/document/2025-12-03/harvest_user_guide.pdf
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: true 
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/Harvest
+    status: AlphaRelease
+
+  - id: ProofOfThought:1.0.1
+    owner: Debargha Ganguly
+    primaryThrust: core/AI4CI
+    name: Proof of Thought
+    status: BetaRelease
+    website: https://debarghag.github.io/proofofthought/
+    description: LLM-based reasoning using Z3 theorem proving with multiple backend support (SMT2 and JSON). Provides a high-level Python API for neurosymbolic reasoning tasks with postprocessing techniques for enhanced quality.
+    componentVersion: 1.0.1
+    targetIcicleRelease: 2026-03
+    licenseUrl: https://github.com/debarghaG/proofofthought/blob/main/LICENSE
+    publicAccess: true
+    sourceCodeUrl: https://github.com/debarghaG/proofofthought
+    releaseNotesUrl: https://github.com/debarghaG/proofofthought/releases
+    citation: "Debargha Ganguly, Srinivasan Iyengar, Vipin Chaudhary, Shivkumar Kalyanaraman. (2024) PROOF OF THOUGHT: Neurosymbolic Program Synthesis allows Robust and Interpretable Reasoning. The First Workshop on System-2 Reasoning at Scale, NeurIPS'24. https://openreview.net/forum?id=Pxx3r14j3U"
+    pypiPackage: proofofthought:1.0.1
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://debarghag.github.io/proofofthought/
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/debarghaG/proofofthought/blob/main/README.md
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/proof-of-thought-2
+    usageMetricsCollected: false
+  
+  - id: AutoSDT:1.0.0
+    owner: Yifei Li
+    name: AutoSDT-Scaling Data-Driven Discovery Tasks Toward Open Co-Scientists
+    primaryThrust: core/AI4CI
+    status: PrototypeRelease
+    website: https://osu-nlp-group.github.io/AutoSDT/
+    description: Automated pipeline for mining, adapting, and packaging real-world data-driven scientific discovery workflows into independently executable coding tasks (AutoSDT-5K) for training and evaluating AI co-scientists.
+    targetIcicleRelease: 2026-03
+    componentVersion: 1.0
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/AutoSDT
+    releaseNotesUrl: https://github.com/ICICLE-ai/AutoSDT/releases
+    licenseUrl: https://github.com/ICICLE-ai/AutoSDT/blob/main/LICENSE
+    citation: "Li, Y., Moussa, H. N., Chen, Z., Chen, S., Yu, B., Xue, M., ... & Sun, H. (2025, November). Autosdt: Scaling data-driven discovery tasks toward open co-scientists. In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (pp. 30384-30406)."
+    containerImage:
+    codeReviewConducted: false
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/AutoSDT#readme
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/ICICLE-ai/AutoSDT#readme
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/autosdt-2
+    usageMetricsCollected: false
+  
+  - id: ComponentMCP:1.0.0
+    name: ICICLE AI Component MCP
+    owner: Amit Vyas
+    primaryThrust: core/Software
+    targetIcicleRelease: 2026-03
+    componentVersion: 1.0
+    licenseUrl: https://github.com/ICICLE-ai/catalog_mcp/blob/main/LICENSE
+    hasDependentComponents:
+      - related_to: ComponentCatalog:0.2.0
+        relationship_type: DependsOn
+    releaseNotesUrl:
+    publicAccess: true
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/catalog_mcp/blob/main/README.md
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/ICICLE-ai/catalog_mcp/blob/main/README.md
+    trainingTutorialsAvailable: true 
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/icicle-ai-component-mcp-2
+    status: AlphaRelease
