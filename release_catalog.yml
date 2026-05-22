@@ -2738,7 +2738,7 @@ components:
   - id: SmartLabeler:0.1.0
     name: Smart Labeler
     owner: Hari Subramoni
-    primaryThrust: core/Software
+    primaryThrust: core/AI4CI
     targetIcicleRelease: 2026-05
     hasDependentComponents:
       - related_to: icicleai-tapisui-extension:0.1.0
