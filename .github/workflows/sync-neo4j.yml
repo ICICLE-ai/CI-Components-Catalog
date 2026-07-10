@@ -1,0 +1,51 @@
+name: Sync Catalog to Neo4j
+
+on:
+  push:
+    branches: [dev]
+    paths: [release_catalog.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-graphml:
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - run: uv run python scripts/build_graphml.py
+      - id: commit
+        # Commit the regenerated graphml back so Neo4j can fetch it; output its SHA.
+        run: |
+          if git diff --quiet -- release_catalog.graphml; then
+            echo "sha=${GITHUB_SHA}" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add release_catalog.graphml
+            git commit -m "chore: regenerate release_catalog.graphml [skip ci]"
+            git push origin HEAD:${GITHUB_REF_NAME}
+            echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          fi
+
+  load-neo4j:
+    runs-on: ubuntu-latest
+    needs: build-graphml
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - run: uv run python scripts/load_neo4j.py
+        env:
+          NEO4J_URI: ${{ secrets.NEO4J_URI }}
+          NEO4J_USER: ${{ secrets.NEO4J_USER }}
+          NEO4J_PASSWORD: ${{ secrets.NEO4J_PASSWORD }}
+          # Commit-pinned so the DB imports the exact file just pushed, not a cached one.
+          GRAPHML_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ needs.build-graphml.outputs.sha }}/release_catalog.graphml

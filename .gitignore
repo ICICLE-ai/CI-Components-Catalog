@@ -110,3 +110,9 @@ testing.ipynb
 
 # For Mac users
 .DS_Store
+
+# Claude Code local config
+.claude/
+
+# Source notebook (converted to scripts/build_graphml.py + scripts/load_neo4j.py)
+components-graphml.ipynb

@@ -1,0 +1,18 @@
+[project]
+name = "ci-components-catalog-graph"
+version = "0.1.0"
+description = "Convert the CI Components Catalog (LinkML YAML) to GraphML and load it into Neo4j."
+requires-python = ">=3.9"
+dependencies = [
+    "networkx>=3.0",
+    "pyyaml>=6.0",
+    "requests>=2.31",
+    "neo4j>=5.28",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = []
+
+[tool.uv]
+package = false
