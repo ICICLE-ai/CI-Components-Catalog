@@ -2735,8 +2735,8 @@ components:
   #
   # Release 2026-05
 
-  - id: SmartLabeler:0.1.0
-    name: Smart Labeler
+  - id: SmartLabelingServiceForObjectDetection:0.1.0
+    name: Smart Labeling Service for Object Detection
     owner: Hari Subramoni
     primaryThrust: core/AI4CI
     targetIcicleRelease: 2026-05
@@ -2746,10 +2746,10 @@ components:
     componentVersion: 0.1.0
     publicAccess: true
     usageDocumentationAvailable: true
-    usageDocumentationUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-labeler-2
+    usageDocumentationUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-labeling-service-for-object-detection
     developerDocumentationAvailable: false
     trainingTutorialsAvailable: true 
-    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-labeler-2
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-labeling-service-for-object-detection
     status: AlphaRelease
   
   - id: ICICLEAIEmbedService:0.1.0
@@ -2850,7 +2850,7 @@ components:
     name: Intelligent Semantic Segmentation & Annotation
     owner: Hari Subramoni
     primaryThrust: core/AI4CI
-    targetIcicleRelease: 2026-05
+    targetIcicleRelease: 2026-07
     hasDependentComponents:
       - related_to: icicleai-tapisui-extension:0.1.0
         relationship_type: DependsOn
@@ -2873,7 +2873,7 @@ components:
       devices. Provides a web dashboard, device agent orchestration over MQTT,
       model-card deployments, heartbeat monitoring, and TapisUI portal integration.
     componentVersion: "0.1.0"
-    targetIcicleRelease: None
+    targetIcicleRelease: 2026-07
 
     hasDependentComponents:
       - related_to: "Patra:0.1.0"
