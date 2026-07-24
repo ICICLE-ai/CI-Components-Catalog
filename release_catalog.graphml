@@ -2817,7 +2817,7 @@
       <data key="name">Intelligent Semantic Segmentation &amp; Annotation</data>
       <data key="owner">Hari Subramoni</data>
       <data key="primaryThrust">core/AI4CI</data>
-      <data key="targetIcicleRelease">2026-07</data>
+      <data key="targetIcicleRelease">2026-07A</data>
       <data key="componentVersion">0.1.0</data>
       <data key="publicAccess">True</data>
       <data key="usageDocumentationAvailable">True</data>
@@ -2837,7 +2837,7 @@
       <data key="description">Fleet control plane for deploying and managing AI applications on ICICLE edge devices. Provides a web dashboard, device agent orchestration over MQTT, model-card deployments, heartbeat monitoring, and TapisUI portal integration.
 </data>
       <data key="componentVersion">0.1.0</data>
-      <data key="targetIcicleRelease">2026-07</data>
+      <data key="targetIcicleRelease">2026-07A</data>
       <data key="licenseUrl">https://github.com/ICICLE-ai/intelligent-edge-management-service?tab=BSD-3-Clause-1-ov-file</data>
       <data key="publicAccess">True</data>
       <data key="sourceCodeUrl">https://github.com/ICICLE-ai/intelligent-edge-management-service</data>
@@ -2856,10 +2856,29 @@
       <data key="status">ProductionRelease</data>
       <data key="description">FlexServ is an OpenAI-compatible inference stack with a Rust gateway in front of Python serving backends, providing a unified interface for serving multiple ML models across different inference engines.</data>
       <data key="componentVersion">1.4.0</data>
-      <data key="targetIcicleRelease">2026-07</data>
+      <data key="targetIcicleRelease">2026-07A</data>
       <data key="publicAccess">True</data>
       <data key="trainingTutorialsAvailable">True</data>
       <data key="trainingTutorialsUrl">https://zhangwei217245.github.io/FlexServ/</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="127">
+      <data key="id">NoCodeImageLab:0.1.0</data>
+      <data key="owner">Hari Subramoni</data>
+      <data key="primaryThrust">core/CI4AI</data>
+      <data key="name">No-Code Image Lab</data>
+      <data key="status">AlphaRelease</data>
+      <data key="description">A browser-based OpenCV pipeline builder: build an image pre-processing pipeline in an interactive editor with live preview, then run it at scale as a Tapis batch job over every image in a folder tree — or standalone via CLI or container.</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="targetIcicleRelease">2026-07B</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/opencv-image-playground?tab=MIT-1-ov-file</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/opencv-image-playground</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/no-code-image-lab</data>
       <data key="labels">:Component</data>
     </node>
     <edge source="1" target="3">
@@ -3067,6 +3086,9 @@
       <data key="label">DependsOn</data>
     </edge>
     <edge source="71" target="125">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="71" target="127">
       <data key="label">DependsOn</data>
     </edge>
     <edge source="73" target="75">
