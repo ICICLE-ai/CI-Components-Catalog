@@ -2844,12 +2844,12 @@ components:
     trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/gnnfoodflowportal-2
 
 
-  # 2026-07 Release
+  # 2026-07A Release
   - id: SmartSegmentor:0.1.0
     name: Intelligent Semantic Segmentation & Annotation
     owner: Hari Subramoni
     primaryThrust: core/AI4CI
-    targetIcicleRelease: 2026-07
+    targetIcicleRelease: 2026-07A
     hasDependentComponents:
       - related_to: icicleai-tapisui-extension:0.1.0
         relationship_type: DependsOn
@@ -2872,7 +2872,7 @@ components:
       devices. Provides a web dashboard, device agent orchestration over MQTT,
       model-card deployments, heartbeat monitoring, and TapisUI portal integration.
     componentVersion: "0.1.0"
-    targetIcicleRelease: 2026-07
+    targetIcicleRelease: 2026-07A
 
     hasDependentComponents:
       - related_to: "PatraToolkit:0.2.0"
@@ -2896,10 +2896,32 @@ components:
     status: ProductionRelease
     description: FlexServ is an OpenAI-compatible inference stack with a Rust gateway in front of Python serving backends, providing a unified interface for serving multiple ML models across different inference engines.
     componentVersion: 1.4.0
-    targetIcicleRelease: 2026-07
+    targetIcicleRelease: 2026-07A
     hasDependentComponents:
       - related_to: TapisBase:1.9.0
         relationship_type: DependsOn
     publicAccess: true
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: https://zhangwei217245.github.io/FlexServ/
+
+
+   # 2026-07B Release
+  - id: "NoCodeImageLab:0.1.0"
+    owner: "Hari Subramoni"
+    primaryThrust: "core/CI4AI"
+    name: "No-Code Image Lab"
+    status: "AlphaRelease"
+    description: "A browser-based OpenCV pipeline builder: build an image pre-processing pipeline in an interactive editor with live preview, then run it at scale as a Tapis batch job over every image in a folder tree — or standalone via CLI or container."
+    componentVersion: "0.1.0"
+    targetIcicleRelease: "2026-07B"
+    hasDependentComponents:
+      - related_to: "icicleai-tapisui-extension:0.1.0"
+        relationship_type: "DependsOn"
+    licenseUrl: "https://github.com/ICICLE-ai/opencv-image-playground?tab=MIT-1-ov-file"
+    publicAccess: true
+    sourceCodeUrl: "https://github.com/ICICLE-ai/opencv-image-playground"
+    codeReviewConducted: false
+    testsWritten: false
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: "https://icicle-ai.github.io/training-catalog/docs/category/no-code-image-lab"
