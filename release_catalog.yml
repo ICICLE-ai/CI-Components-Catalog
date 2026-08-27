@@ -2925,3 +2925,250 @@ components:
     developerDocumentationAvailable: false
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: "https://icicle-ai.github.io/training-catalog/docs/category/no-code-image-lab"
+
+  # 2026-08 Release
+
+  - id: SmartCurriculumDesigner:0.1.0
+    name: Smart Curriculum Designer
+    description: An AI-driven educational framework that integrates automated curriculum generation with an end-to-end computer vision pipeline, enabling experiential AI literacy learning for K-12 and undergraduate education through real-world datasets.
+    owner: Hari Subramoni
+    primaryThrust: core/AI4CI
+    targetIcicleRelease: 2026-08
+    componentVersion: 0.1.0
+    publicAccess: true
+    licenseUrl: https://opensource.org/licenses/MIT
+    sourceCodeUrl: https://github.com/ICICLE-ai/curriculum-generator
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-curriculum-designer
+    developerDocumentationAvailable: false
+    status: AlphaRelease
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-curriculum-designer
+
+  - id: NoCodeWorkflowStudio:0.1.0
+    name: No-Code Workflow Studio
+    owner: Hari Subramoni
+    primaryThrust: core/AI4CI
+    targetIcicleRelease: 2026-08
+    hasDependentComponents:
+      - related_to: icicleai-tapisui-extension:0.1.0
+        relationship_type: DependsOn
+    componentVersion: 0.1.0
+    publicAccess: true
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://icicle-ai.github.io/training-catalog/docs/category/no-code-workflow-studio
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/ICICLE-ai/workflow-orchestrator/tree/main/docs
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/no-code-workflow-studio
+    status: AlphaRelease
+    description:
+      The No-Code Workflow Studio is a web-based application that allows users to create, manage, and execute workflows without writing any code. It provides a visual interface for designing workflows, integrating various services, and automating tasks. The studio supports drag-and-drop functionality, making it accessible to users with varying levels of technical expertise.
+    licenseUrl: https://github.com/ICICLE-ai/workflow-orchestrator/blob/main/LICENSE
+    sourceCodeUrl: https://github.com/ICICLE-ai/workflow-orchestrator
+
+  - id: EarthDataHub:0.1.0
+    name: Earth Data Hub
+    owner: Hari
+    primaryThrust: core/CI4AI
+    targetIcicleRelease: 2026-08
+    hasDependentComponents:
+      - related_to: icicleai-tapisui-extension:0.1.0
+        relationship_type: DependsOn
+    componentVersion: 0.1.0
+    publicAccess: true
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/geoharmonizer-ui/blob/main/HOW_TO_USE.md
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/earth-data-hub
+    status: AlphaRelease
+    description: A browser-based interface for uploading geospatial boundaries, previewing them on a map, and submitting data collection and harmonization jobs to Tapis-managed HPC execution systems.
+    licenseUrl: https://github.com/ICICLE-ai/geoharmonizer-ui/blob/main/LICENSE
+    sourceCodeUrl: https://github.com/ICICLE-ai/geoharmonizer-ui
+
+  - id: PatraAICardsFrontend:1.0.0
+    owner: Beth Plale
+    primaryThrust: core/AI4CI
+    name: Patra AI Cards Frontend
+    status: ProductionRelease
+    description: Vue 3 web interface for browsing, searching, submitting, and editing Patra model cards and datasheets.
+    componentVersion: 1.0.0
+    targetIcicleRelease: 2026-08
+    hasDependentComponents:
+      - related_to: PatraAICardsKnowledgeBase:1.0.0
+        relationship_type: DependsOn
+    licenseUrl: https://github.com/ICICLE-ai/patra-frontend?tab=BSD-3-Clause-1-ov-file
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/patra-frontend
+    codeReviewConducted: true
+    testsWritten: true
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/patra-frontend
+    website: https://github.com/ICICLE-ai/patra-frontend
+    releaseNotesUrl: https://github.com/ICICLE-ai/patra-frontend/releases/tag/v1.0.0
+    doi: https://doi.org/10.1109/e-Science62913.2024.10678710
+    citation: S. Withana and B. Plale, Patra ModelCards':' AI/ML Accountability in the Edge-Cloud Continuum
+    pypiPackage:
+    containerImage:
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/patra-frontend/blob/main/README.md
+    usageMetricsCollected: false
+
+  - id: CyberinfrastructureKnowledgeNetwork:1.0.0
+    owner: Beth Plale
+    primaryThrust: core/AI4CI
+    name: Cyberinfrastructure Knowledge Network
+    status: ProductionRelease
+    description: The Cyberinfrastructure Knowledge Network is a distributed framework designed to optimize AI at the edge.
+    componentVersion: 1.0.0
+    targetIcicleRelease: 2026-08
+    hasDependentComponents:
+      - related_to: PatraAICardsKnowledgeBase:1.0.0
+        relationship_type: DependsOn
+    licenseUrl: https://github.com/ICICLE-ai/cyberinfrastructure-knowledge-network?tab=BSD-3-Clause-1-ov-file
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/cyberinfrastructure-knowledge-network
+    codeReviewConducted: true
+    testsWritten: true
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://cyberinfrastructure-knowledge-network.readthedocs.io/en/latest/
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/cyberinfrastructure-knowledge-network
+    website: https://github.com/ICICLE-ai/cyberinfrastructure-knowledge-network
+    releaseNotesUrl: https://github.com/ICICLE-ai/cyberinfrastructure-knowledge-network/releases/tag/v1.0.0
+    doi: https://doi.org/10.1109/e-Science58273.2023.10254827
+    citation: S. Withana and B. Plale, CKN':' An Edge AI Distributed Framework
+    pypiPackage:
+    containerImage: https://hub.docker.com/u/plalelab
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/cyberinfrastructure-knowledge-network/blob/main/README.md
+    usageMetricsCollected: false
+
+  - id: arraymorph:1.3
+    owner: Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas
+    name: ArrayMorph for Cloud HDF5
+    primaryThrust: core/CI4AI
+    description: >
+      ArrayMorph enables efficient storage and retrieval of array data from cloud object stores,
+      supporting platforms including AWS S3, Azure Blob Storage, and S3-compatible storage.
+      It is designed to accelerate scientific and AI workloads that rely on partial array access.
+    componentVersion: 1.3
+    status: PrototypeRelease
+    targetIcicleRelease: 2026-08
+    hasDependentComponents:
+      - related_to: arraymorph:1.2
+        relationship_type: DependsOn
+    publicAccess: true
+    licenseUrl: https://github.com/ICICLE-ai/ArrayMorph?tab=MIT-1-ov-file
+    sourceCodeUrl: https://github.com/ICICLE-ai/ArrayMorph
+    developerDocumentationAvailable: true
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/arraymorph
+
+  - id: PatraAICardsToolkit:1.0.0
+    owner: Beth Plale
+    primaryThrust: core/AI4CI
+    name: Patra AI Cards Toolkit
+    status: ProductionRelease
+    description: Toolkit for semi-automated modelcard creation for AI/ML models.
+    componentVersion: 1.0.0
+    targetIcicleRelease: 2026-08
+    hasDependentComponents:
+      - related_to: PatraAICardsKnowledgeBase:1.0.0
+        relationship_type: DependsOn
+    licenseUrl: https://github.com/ICICLE-ai/patra-toolkit?tab=BSD-3-Clause-1-ov-file
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/patra-toolkit
+    codeReviewConducted: true
+    testsWritten: true
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://patra-toolkit.readthedocs.io/en/latest/
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/patra-ai-cards-toolkit
+    website: https://github.com/ICICLE-ai/patra-toolkit
+    releaseNotesUrl: https://github.com/ICICLE-ai/patra-toolkit/releases/tag/v1.0.0
+    doi: https://doi.org/10.1109/e-Science62913.2024.10678710
+    citation: S. Withana and B. Plale, Patra ModelCards':' AI/ML Accountability in the Edge-Cloud Continuum
+    pypiPackage: patra-toolkit:1.0.0
+    containerImage:
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/patra-toolkit/blob/main/README.md
+    usageMetricsCollected: false
+
+  - id: PatraAICardsKnowledgeBase:1.0.0
+    owner: Beth Plale
+    primaryThrust: core/AI4CI
+    name: Patra AI Cards Knowledge Base
+    status: ProductionRelease
+    description: Knowledge Graph to capture AI/ML model lifecycle from creation through deployments.
+    componentVersion: 1.0.0
+    targetIcicleRelease: 2026-08
+    licenseUrl: https://github.com/ICICLE-ai/patra-knowledge-base?tab=BSD-3-Clause-1-ov-file
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/patra-knowledge-base
+    codeReviewConducted: true
+    testsWritten: true
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/patra-knowledge-base
+    website: https://github.com/ICICLE-ai/patra-knowledge-base
+    releaseNotesUrl: https://github.com/ICICLE-ai/patra-knowledge-base/releases/tag/v1.0.0
+    doi: https://doi.org/10.1109/e-Science62913.2024.10678710
+    citation: S. Withana and B. Plale, Patra ModelCards':' AI/ML Accountability in the Edge-Cloud Continuum
+    pypiPackage:
+    containerImage: https://hub.docker.com/r/plalelab/patra-server
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/patra-knowledge-base/blob/main/README.md
+    usageMetricsCollected: false
+
+  - id: "I-SAWPortal:0.1.0"
+    owner: "Xixian Wang"
+    primaryThrust: "useInspired/AE"
+    name: "I-SAW Portal"
+    status: "AlphaRelease"
+    description: "A public-facing web portal for I-SAW (Infrastructure for Sensing and Analytics on Wildlife), a plug-and-play edge-networked wildlife sensing platform for K-12 camps, citizen scientists, and field researchers. The portal presents the project vision, an interactive Smart Honeypot data sandbox with analytics dashboards, and an onboarding hub for deployment scripts, device configuration files, and field-kit requests."
+    componentVersion: "0.1.0"
+    targetIcicleRelease: 2026-08
+    licenseUrl: "https://github.com/ICICLE-ai/I-SAW_Portal/blob/main/LICENSE"
+    publicAccess: true
+    sourceCodeUrl: "https://github.com/ICICLE-ai/I-SAW_Portal"
+    codeReviewConducted: false
+    testsWritten: false
+    developerDocumentationAvailable: true
+    trainingTutorialsAvailable: false
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/i-saw-portal
+
+  - id: "YieldEstimationTransformer:0.1.0"
+    owner: "Sarikaa Sridhar"
+    primaryThrust: "useInspired/DA"
+    name: "Yield Estimation Transformer"
+    status: "AlphaRelease"
+    description: >
+      A transformer-based model for county-level corn yield estimation using
+      multi-temporal weekly weather observations and 66 static soil properties.
+      It produces yield estimates in bushels per acre at seasonal cutoffs from
+      week 20 through week 52, and is packaged as a Hugging Face model for
+      deployment through FlexServ.
+    componentVersion: "0.1.0"
+    targetIcicleRelease: 2026-08
+
+    hasDependentComponents:
+      - related_to: "FlexServInference:1.4.0"
+        relationship_type: "DependsOn"
+
+    licenseUrl: "https://huggingface.co/ICICLE-AI/yield-estimation/blob/main/LICENSE"
+    publicAccess: true
+    sourceCodeUrl: "https://huggingface.co/ICICLE-AI/yield-estimation"
+    testsWritten: false
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/yield-estimation
