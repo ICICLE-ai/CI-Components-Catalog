@@ -2881,6 +2881,241 @@
       <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/no-code-image-lab</data>
       <data key="labels">:Component</data>
     </node>
+    <node id="128">
+      <data key="id">SmartCurriculumDesigner:0.1.0</data>
+      <data key="name">Smart Curriculum Designer</data>
+      <data key="description">An AI-driven educational framework that integrates automated curriculum generation with an end-to-end computer vision pipeline, enabling experiential AI literacy learning for K-12 and undergraduate education through real-world datasets.</data>
+      <data key="owner">Hari Subramoni</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="targetIcicleRelease">2026-08</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="publicAccess">True</data>
+      <data key="licenseUrl">https://opensource.org/licenses/MIT</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/curriculum-generator</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://icicle-ai.github.io/training-catalog/docs/category/smart-curriculum-designer</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="status">AlphaRelease</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/smart-curriculum-designer</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="129">
+      <data key="id">NoCodeWorkflowStudio:0.1.0</data>
+      <data key="name">No-Code Workflow Studio</data>
+      <data key="owner">Hari Subramoni</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="targetIcicleRelease">2026-08</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="publicAccess">True</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://icicle-ai.github.io/training-catalog/docs/category/no-code-workflow-studio</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/ICICLE-ai/workflow-orchestrator/tree/main/docs</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/no-code-workflow-studio</data>
+      <data key="status">AlphaRelease</data>
+      <data key="description">The No-Code Workflow Studio is a web-based application that allows users to create, manage, and execute workflows without writing any code. It provides a visual interface for designing workflows, integrating various services, and automating tasks. The studio supports drag-and-drop functionality, making it accessible to users with varying levels of technical expertise.</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/workflow-orchestrator/blob/main/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/workflow-orchestrator</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="130">
+      <data key="id">EarthDataHub:0.1.0</data>
+      <data key="name">Earth Data Hub</data>
+      <data key="owner">Hari</data>
+      <data key="primaryThrust">core/CI4AI</data>
+      <data key="targetIcicleRelease">2026-08</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="publicAccess">True</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/ICICLE-ai/geoharmonizer-ui/blob/main/HOW_TO_USE.md</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/earth-data-hub</data>
+      <data key="status">AlphaRelease</data>
+      <data key="description">A browser-based interface for uploading geospatial boundaries, previewing them on a map, and submitting data collection and harmonization jobs to Tapis-managed HPC execution systems.</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/geoharmonizer-ui/blob/main/LICENSE</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/geoharmonizer-ui</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="131">
+      <data key="id">PatraAICardsFrontend:1.0.0</data>
+      <data key="owner">Beth Plale</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="name">Patra AI Cards Frontend</data>
+      <data key="status">ProductionRelease</data>
+      <data key="description">Vue 3 web interface for browsing, searching, submitting, and editing Patra model cards and datasheets.</data>
+      <data key="componentVersion">1.0.0</data>
+      <data key="targetIcicleRelease">2026-08</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/patra-frontend?tab=BSD-3-Clause-1-ov-file</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/patra-frontend</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/patra-frontend</data>
+      <data key="website">https://github.com/ICICLE-ai/patra-frontend</data>
+      <data key="releaseNotesUrl">https://github.com/ICICLE-ai/patra-frontend/releases/tag/v1.0.0</data>
+      <data key="doi">https://doi.org/10.1109/e-Science62913.2024.10678710</data>
+      <data key="citation">S. Withana and B. Plale, Patra ModelCards':' AI/ML Accountability in the Edge-Cloud Continuum</data>
+      <data key="pypiPackage" />
+      <data key="containerImage" />
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/ICICLE-ai/patra-frontend/blob/main/README.md</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="132">
+      <data key="id">CyberinfrastructureKnowledgeNetwork:1.0.0</data>
+      <data key="owner">Beth Plale</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="name">Cyberinfrastructure Knowledge Network</data>
+      <data key="status">ProductionRelease</data>
+      <data key="description">The Cyberinfrastructure Knowledge Network is a distributed framework designed to optimize AI at the edge.</data>
+      <data key="componentVersion">1.0.0</data>
+      <data key="targetIcicleRelease">2026-08</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/cyberinfrastructure-knowledge-network?tab=BSD-3-Clause-1-ov-file</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/cyberinfrastructure-knowledge-network</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://cyberinfrastructure-knowledge-network.readthedocs.io/en/latest/</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/cyberinfrastructure-knowledge-network</data>
+      <data key="website">https://github.com/ICICLE-ai/cyberinfrastructure-knowledge-network</data>
+      <data key="releaseNotesUrl">https://github.com/ICICLE-ai/cyberinfrastructure-knowledge-network/releases/tag/v1.0.0</data>
+      <data key="doi">https://doi.org/10.1109/e-Science58273.2023.10254827</data>
+      <data key="citation">S. Withana and B. Plale, CKN':' An Edge AI Distributed Framework</data>
+      <data key="pypiPackage" />
+      <data key="containerImage">https://hub.docker.com/u/plalelab</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/ICICLE-ai/cyberinfrastructure-knowledge-network/blob/main/README.md</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="133">
+      <data key="id">arraymorph:1.3</data>
+      <data key="owner">Ruochen Jiang, Rakesh Rajeev, Tinggang Wang, Spyros Blanas</data>
+      <data key="name">ArrayMorph for Cloud HDF5</data>
+      <data key="primaryThrust">core/CI4AI</data>
+      <data key="description">ArrayMorph enables efficient storage and retrieval of array data from cloud object stores, supporting platforms including AWS S3, Azure Blob Storage, and S3-compatible storage. It is designed to accelerate scientific and AI workloads that rely on partial array access.
+</data>
+      <data key="componentVersion">1.3</data>
+      <data key="status">PrototypeRelease</data>
+      <data key="targetIcicleRelease">2026-08</data>
+      <data key="publicAccess">True</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/ArrayMorph?tab=MIT-1-ov-file</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/ArrayMorph</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/arraymorph</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="134">
+      <data key="id">PatraAICardsToolkit:1.0.0</data>
+      <data key="owner">Beth Plale</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="name">Patra AI Cards Toolkit</data>
+      <data key="status">ProductionRelease</data>
+      <data key="description">Toolkit for semi-automated modelcard creation for AI/ML models.</data>
+      <data key="componentVersion">1.0.0</data>
+      <data key="targetIcicleRelease">2026-08</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/patra-toolkit?tab=BSD-3-Clause-1-ov-file</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/patra-toolkit</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://patra-toolkit.readthedocs.io/en/latest/</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/patra-ai-cards-toolkit</data>
+      <data key="website">https://github.com/ICICLE-ai/patra-toolkit</data>
+      <data key="releaseNotesUrl">https://github.com/ICICLE-ai/patra-toolkit/releases/tag/v1.0.0</data>
+      <data key="doi">https://doi.org/10.1109/e-Science62913.2024.10678710</data>
+      <data key="citation">S. Withana and B. Plale, Patra ModelCards':' AI/ML Accountability in the Edge-Cloud Continuum</data>
+      <data key="pypiPackage">patra-toolkit:1.0.0</data>
+      <data key="containerImage" />
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/ICICLE-ai/patra-toolkit/blob/main/README.md</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="135">
+      <data key="id">PatraAICardsKnowledgeBase:1.0.0</data>
+      <data key="owner">Beth Plale</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="name">Patra AI Cards Knowledge Base</data>
+      <data key="status">ProductionRelease</data>
+      <data key="description">Knowledge Graph to capture AI/ML model lifecycle from creation through deployments.</data>
+      <data key="componentVersion">1.0.0</data>
+      <data key="targetIcicleRelease">2026-08</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/patra-knowledge-base?tab=BSD-3-Clause-1-ov-file</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/patra-knowledge-base</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/patra-knowledge-base</data>
+      <data key="website">https://github.com/ICICLE-ai/patra-knowledge-base</data>
+      <data key="releaseNotesUrl">https://github.com/ICICLE-ai/patra-knowledge-base/releases/tag/v1.0.0</data>
+      <data key="doi">https://doi.org/10.1109/e-Science62913.2024.10678710</data>
+      <data key="citation">S. Withana and B. Plale, Patra ModelCards':' AI/ML Accountability in the Edge-Cloud Continuum</data>
+      <data key="pypiPackage" />
+      <data key="containerImage">https://hub.docker.com/r/plalelab/patra-server</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/ICICLE-ai/patra-knowledge-base/blob/main/README.md</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="136">
+      <data key="id">I-SAWPortal:0.1.0</data>
+      <data key="owner">Xixian Wang</data>
+      <data key="primaryThrust">useInspired/AE</data>
+      <data key="name">I-SAW Portal</data>
+      <data key="status">AlphaRelease</data>
+      <data key="description">A public-facing web portal for I-SAW (Infrastructure for Sensing and Analytics on Wildlife), a plug-and-play edge-networked wildlife sensing platform for K-12 camps, citizen scientists, and field researchers. The portal presents the project vision, an interactive Smart Honeypot data sandbox with analytics dashboards, and an onboarding hub for deployment scripts, device configuration files, and field-kit requests.</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="targetIcicleRelease">2026-08</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/I-SAW_Portal/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/I-SAW_Portal</data>
+      <data key="codeReviewConducted">False</data>
+      <data key="testsWritten">False</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="trainingTutorialsAvailable">False</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/i-saw-portal</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="137">
+      <data key="id">YieldEstimationTransformer:0.1.0</data>
+      <data key="owner">Sarikaa Sridhar</data>
+      <data key="primaryThrust">useInspired/DA</data>
+      <data key="name">Yield Estimation Transformer</data>
+      <data key="status">AlphaRelease</data>
+      <data key="description">A transformer-based model for county-level corn yield estimation using multi-temporal weekly weather observations and 66 static soil properties. It produces yield estimates in bushels per acre at seasonal cutoffs from week 20 through week 52, and is packaged as a Hugging Face model for deployment through FlexServ.
+</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="targetIcicleRelease">2026-08</data>
+      <data key="licenseUrl">https://huggingface.co/ICICLE-AI/yield-estimation/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://huggingface.co/ICICLE-AI/yield-estimation</data>
+      <data key="testsWritten">False</data>
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/yield-estimation</data>
+      <data key="labels">:Component</data>
+    </node>
     <edge source="1" target="3">
       <data key="label">DependsOn</data>
     </edge>
@@ -3091,6 +3326,12 @@
     <edge source="71" target="127">
       <data key="label">DependsOn</data>
     </edge>
+    <edge source="71" target="129">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="71" target="130">
+      <data key="label">DependsOn</data>
+    </edge>
     <edge source="73" target="75">
       <data key="label">DependsOn</data>
     </edge>
@@ -3110,6 +3351,9 @@
       <data key="label">DependsOn</data>
     </edge>
     <edge source="81" target="113">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="82" target="133">
       <data key="label">DependsOn</data>
     </edge>
     <edge source="87" target="118">
@@ -3188,6 +3432,18 @@
       <data key="label">DependsOn</data>
     </edge>
     <edge source="121" target="122">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="126" target="137">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="131" target="135">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="132" target="135">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="134" target="135">
       <data key="label">DependsOn</data>
     </edge>
   </graph>
