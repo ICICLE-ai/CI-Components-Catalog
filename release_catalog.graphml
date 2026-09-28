@@ -3116,6 +3116,136 @@
       <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/yield-estimation</data>
       <data key="labels">:Component</data>
     </node>
+    <node id="138">
+      <data key="id">HPCMCPServerCPU:0.1.0</data>
+      <data key="owner">Molang Wu</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="name">HPC MCP Server CPU</data>
+      <data key="status">ProductionRelease</data>
+      <data key="website">https://hpcmcpservercpu.pods.icicleai.tapis.io/about</data>
+      <data key="description">HPC-MCP is a service-based ICICLE software component that gives HPC users a natural-language interface to backend HPC utilities. The current release provides distributed LLM training-time prediction for Vista and Perlmutter through HTTP endpoints and MCP clients.</data>
+      <data key="componentVersion">0.1.0</data>
+      <data key="targetIcicleRelease">2026-09</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/hpc-mcp-server/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/hpc-mcp-server</data>
+      <data key="containerImage">docker://ghcr.io/icicle-ai/hpc-mcp-server-cpu:0.1.0</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">True</data>
+      <data key="usageDocumentationUrl">https://github.com/ICICLE-ai/hpc-mcp-server/blob/main/README.md</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://github.com/ICICLE-ai/hpc-mcp-server/tree/main/docs</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/hpc-mcp</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="139">
+      <data key="id">ICICLEAIEmbedService:0.2.0</data>
+      <data key="owner">Amit Vyas</data>
+      <data key="primaryThrust">core/CI4AI</data>
+      <data key="name">ICICLE AI Embedding Service</data>
+      <data key="status">BetaRelease</data>
+      <data key="description">FastAPI service that turns text into embedding vectors using Qwen3-Embedding-0.6B (GGUF quantized) via llama-cpp-python, designed for the ICICLE AI Tapis tenant.</data>
+      <data key="componentVersion">0.2.0</data>
+      <data key="targetIcicleRelease">2026-09</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/icicle-ai-embed-service?tab=GPL-3.0-1-ov-file</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/icicle-ai-embed-service</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://icicle-ai.github.io/training-catalog/api/ICICLE%20Embedding%20Service/icicle-ai-embed-service</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/icicle-embedding-service</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="140">
+      <data key="id">ICICLEAIVectorDBService:1.0.0</data>
+      <data key="owner">Amit Vyas</data>
+      <data key="primaryThrust">core/CI4AI</data>
+      <data key="name">ICICLE AI Vector DB Service</data>
+      <data key="status">ProductionRelease</data>
+      <data key="description">FastAPI + Qdrant vector storage and retrieval service for the ICICLE AI Tapis tenant. This service handles storage, search, and reranking.</data>
+      <data key="componentVersion">1.0.0</data>
+      <data key="targetIcicleRelease">2026-09</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/icicle-ai-vector-service?tab=GPL-3.0-1-ov-file</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/icicle-ai-vector-service</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="developerDocumentationAvailable">True</data>
+      <data key="developerDocumentationUrl">https://icicle-ai.github.io/training-catalog/api/ICICLE%20Vector%20DB%20Service/icicle-ai-vector-service</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/icicle-vector-db-service</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="141">
+      <data key="id">ICICLEAIChatbook:1.0.1</data>
+      <data key="owner">Amit Vyas</data>
+      <data key="primaryThrust">core/AI4CI</data>
+      <data key="name">ICICLE AI Chatbook</data>
+      <data key="status">ProductionRelease</data>
+      <data key="description">An interactive marimo notebook that turns the ICICLE AI Tapis services into a hands-on RAG (retrieval-augmented generation) playground.</data>
+      <data key="componentVersion">1.0.1</data>
+      <data key="targetIcicleRelease">2026-09</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/icicle-chatbook?tab=GPL-3.0-1-ov-file</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/icicle-chatbook</data>
+      <data key="codeReviewConducted">True</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/icicle-chatbook</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="142">
+      <data key="id">CameraTrapsEdgeSoftware:0.7.0</data>
+      <data key="owner">Joe Stubbs</data>
+      <data key="name">Camera Traps Edge Software</data>
+      <data key="primaryThrust">useInspired/AE</data>
+      <data key="status">Prototype</data>
+      <data key="website" />
+      <data key="description">Command-line program for both analyzing edge-to-center tradeoffs within the Camera Traps project and deploying in the field</data>
+      <data key="targetIcicleRelease">2026-09</data>
+      <data key="componentVersion">0.7.0</data>
+      <data key="licenseUrl">https://github.com/tapis-project/camera-traps/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/tapis-project/camera-traps</data>
+      <data key="containerImage">https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general</data>
+      <data key="releaseNotesUrl">https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md</data>
+      <data key="citation" />
+      <data key="codeReviewConducted">True</data>
+      <data key="testsWritten">True</data>
+      <data key="securityReviewConducted">False</data>
+      <data key="biasAssessmentConducted">False</data>
+      <data key="usageDocumentationAvailable">False</data>
+      <data key="usageDocumentationUrl" />
+      <data key="developerDocumentationAvailable">False</data>
+      <data key="developerDocumentationUrl" />
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/camera-traps-edge-software</data>
+      <data key="usageMetricsCollected">False</data>
+      <data key="labels">:Component</data>
+    </node>
+    <node id="143">
+      <data key="id">ctcontroller:0.4</data>
+      <data key="owner">Samuel Khuvis</data>
+      <data key="primaryThrust">core/Software</data>
+      <data key="name">Hardware &amp; Software Provisioning Service</data>
+      <data key="status">BetaRelease</data>
+      <data key="description">The ctcontroller tool can be used to manage the provisioning and releasing of edge hardware as well as running and shutting down the camera-traps application.</data>
+      <data key="componentVersion">0.4</data>
+      <data key="targetIcicleRelease">2026-09</data>
+      <data key="licenseUrl">https://github.com/ICICLE-ai/ct-controller/blob/main/LICENSE</data>
+      <data key="publicAccess">True</data>
+      <data key="sourceCodeUrl">https://github.com/ICICLE-ai/ct-controller.git</data>
+      <data key="containerImage">https://hub.docker.com/r/tapis/ctcontroller</data>
+      <data key="trainingTutorialsAvailable">True</data>
+      <data key="trainingTutorialsUrl">https://icicle-ai.github.io/training-catalog/docs/category/ct-controller</data>
+      <data key="labels">:Component</data>
+    </node>
     <edge source="1" target="3">
       <data key="label">DependsOn</data>
     </edge>
@@ -3189,6 +3319,9 @@
       <data key="label">DependsOn</data>
     </edge>
     <edge source="2" target="113">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="2" target="142">
       <data key="label">DependsOn</data>
     </edge>
     <edge source="4" target="9">
@@ -3341,6 +3474,9 @@
     <edge source="75" target="106">
       <data key="label">DependsOn</data>
     </edge>
+    <edge source="76" target="138">
+      <data key="label">DependsOn</data>
+    </edge>
     <edge source="77" target="113">
       <data key="label">DependsOn</data>
     </edge>
@@ -3395,6 +3531,12 @@
     <edge source="95" target="126">
       <data key="label">DependsOn</data>
     </edge>
+    <edge source="95" target="142">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="95" target="143">
+      <data key="label">DependsOn</data>
+    </edge>
     <edge source="97" target="100">
       <data key="label">DependsOn</data>
     </edge>
@@ -3431,7 +3573,16 @@
     <edge source="120" target="122">
       <data key="label">DependsOn</data>
     </edge>
+    <edge source="120" target="139">
+      <data key="label">DependsOn</data>
+    </edge>
     <edge source="121" target="122">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="121" target="140">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="122" target="141">
       <data key="label">DependsOn</data>
     </edge>
     <edge source="126" target="137">
@@ -3444,6 +3595,15 @@
       <data key="label">DependsOn</data>
     </edge>
     <edge source="134" target="135">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="135" target="142">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="135" target="143">
+      <data key="label">DependsOn</data>
+    </edge>
+    <edge source="142" target="143">
       <data key="label">DependsOn</data>
     </edge>
   </graph>
