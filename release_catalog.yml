@@ -3172,3 +3172,149 @@ components:
     developerDocumentationAvailable: false
     trainingTutorialsAvailable: true
     trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/yield-estimation
+
+  - id: HPCMCPServerCPU:0.1.0
+    owner: Molang Wu
+    primaryThrust: core/AI4CI
+    name: HPC MCP Server CPU
+    status: ProductionRelease
+    website: https://hpcmcpservercpu.pods.icicleai.tapis.io/about
+    description: HPC-MCP is a service-based ICICLE software component that gives HPC users a natural-language interface to backend HPC utilities. The current release provides distributed LLM training-time prediction for Vista and Perlmutter through HTTP endpoints and MCP clients.
+    componentVersion: 0.1.0
+    targetIcicleRelease: 2026-09
+    licenseUrl: https://github.com/ICICLE-ai/hpc-mcp-server/blob/main/LICENSE
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/hpc-mcp-server
+    containerImage: docker://ghcr.io/icicle-ai/hpc-mcp-server-cpu:0.1.0
+    hasDependentComponents:
+        - related_to: "LLMTrainingCostEstimator:0.0.1"
+          relationship_type: "DependsOn"
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://github.com/ICICLE-ai/hpc-mcp-server/blob/main/README.md
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/ICICLE-ai/hpc-mcp-server/tree/main/docs
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/hpc-mcp
+    usageMetricsCollected: false
+
+  - id: "ICICLEAIEmbedService:0.2.0"
+    owner: "Amit Vyas"
+    primaryThrust: "core/CI4AI"
+    name: "ICICLE AI Embedding Service"
+    status: "BetaRelease"
+    description: "FastAPI service that turns text into embedding vectors using Qwen3-Embedding-0.6B (GGUF quantized) via llama-cpp-python, designed for the ICICLE AI Tapis tenant."
+    componentVersion: "0.2.0"
+    targetIcicleRelease: 2026-09
+    hasDependentComponents:
+      - related_to: "ICICLEAIEmbedService:0.1.0"
+        relationship_type: "DependsOn"
+    licenseUrl: "https://github.com/ICICLE-ai/icicle-ai-embed-service?tab=GPL-3.0-1-ov-file"
+    publicAccess: true
+    sourceCodeUrl: "https://github.com/ICICLE-ai/icicle-ai-embed-service"
+    codeReviewConducted: true
+    testsWritten: true
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: "https://icicle-ai.github.io/training-catalog/api/ICICLE%20Embedding%20Service/icicle-ai-embed-service"
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/icicle-embedding-service
+
+  - id: "ICICLEAIVectorDBService:1.0.0"
+    owner: "Amit Vyas"
+    primaryThrust: "core/CI4AI"
+    name: "ICICLE AI Vector DB Service"
+    status: "ProductionRelease"
+    description: "FastAPI + Qdrant vector storage and retrieval service for the ICICLE AI Tapis tenant. This service handles storage, search, and reranking."
+    componentVersion: "1.0.0"
+    targetIcicleRelease: 2026-09
+
+    hasDependentComponents:
+      - related_to: "ICICLEAIVectorDBService:0.1.0"
+        relationship_type: "DependsOn"
+
+    licenseUrl: "https://github.com/ICICLE-ai/icicle-ai-vector-service?tab=GPL-3.0-1-ov-file"
+    publicAccess: true
+    sourceCodeUrl: "https://github.com/ICICLE-ai/icicle-ai-vector-service"
+    codeReviewConducted: true
+    testsWritten: true
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: "https://icicle-ai.github.io/training-catalog/api/ICICLE%20Vector%20DB%20Service/icicle-ai-vector-service"
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/icicle-vector-db-service
+
+  - id: "ICICLEAIChatbook:1.0.1"
+    owner: "Amit Vyas"
+    primaryThrust: "core/AI4CI"
+    name: "ICICLE AI Chatbook"
+    status: "ProductionRelease"
+    description: "An interactive marimo notebook that turns the ICICLE AI Tapis services into a hands-on RAG (retrieval-augmented generation) playground."
+    componentVersion: "1.0.1"
+    targetIcicleRelease: 2026-09
+    hasDependentComponents:
+      - related_to: "ICICLEAIChatbook:0.1.0"
+        relationship_type: "DependsOn"
+    licenseUrl: "https://github.com/ICICLE-ai/icicle-chatbook?tab=GPL-3.0-1-ov-file"
+    publicAccess: true
+    sourceCodeUrl: "https://github.com/ICICLE-ai/icicle-chatbook"
+    codeReviewConducted: true
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/icicle-chatbook
+
+  - id: "CameraTrapsEdgeSoftware:0.7.0"
+    owner: "Joe Stubbs"
+    name: "Camera Traps Edge Software"
+    primaryThrust: "useInspired/AE"
+    status: "Prototype"
+    website:
+    description: "Command-line program for both analyzing edge-to-center tradeoffs within the Camera Traps project and deploying in the field"
+    targetIcicleRelease: 2026-09
+    componentVersion: "0.7.0"
+    licenseUrl: "https://github.com/tapis-project/camera-traps/blob/main/LICENSE"
+    publicAccess: true
+    sourceCodeUrl: "https://github.com/tapis-project/camera-traps"
+    containerImage: "https://hub.docker.com/repository/docker/tapis/camera_traps_engine/general"
+    hasDependentComponents:
+      - related_to: "EventEngine:0.2.0"
+        relationship_type: "DependsOn"
+      - related_to: "TapisBase:1.9.0"
+        relationship_type: "DependsOn"
+      - related_to: "PatraAICardsKnowledgeBase:1.0.0"
+        relationship_type: "DependsOn"
+    releaseNotesUrl: "https://github.com/tapis-project/camera-traps/blob/main/RELEASE_NOTES.md"
+    citation:
+    codeReviewConducted: true
+    testsWritten: true
+    securityReviewConducted: false
+    biasAssessmentConducted: false
+    usageDocumentationAvailable: false
+    usageDocumentationUrl:
+    developerDocumentationAvailable: false
+    developerDocumentationUrl:
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/camera-traps-edge-software
+    usageMetricsCollected: false
+
+  - id: "ctcontroller:0.4"
+    owner: "Samuel Khuvis"
+    primaryThrust: "core/Software"
+    name: "Hardware & Software Provisioning Service"
+    status: "BetaRelease"
+    description: "The ctcontroller tool can be used to manage the provisioning and releasing of edge hardware as well as running and shutting down the camera-traps application."
+    componentVersion: "0.4"
+    targetIcicleRelease: 2026-09
+    licenseUrl: "https://github.com/ICICLE-ai/ct-controller/blob/main/LICENSE"
+    publicAccess: true
+    sourceCodeUrl: "https://github.com/ICICLE-ai/ct-controller.git"
+    containerImage: "https://hub.docker.com/r/tapis/ctcontroller"
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/ct-controller
+    hasDependentComponents:
+      - related_to: "CameraTrapsEdgeSoftware:0.7.0"
+        relationship_type: "DependsOn"
+      - related_to: "TapisBase:1.9.0"
+        relationship_type: "DependsOn"
+      - related_to: "PatraAICardsKnowledgeBase:1.0.0"
+        relationship_type: "DependsOn"
