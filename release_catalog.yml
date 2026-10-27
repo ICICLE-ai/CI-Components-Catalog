@@ -3318,3 +3318,189 @@ components:
         relationship_type: "DependsOn"
       - related_to: "PatraAICardsKnowledgeBase:1.0.0"
         relationship_type: "DependsOn"
+
+  # 2026-10 Release
+
+  - id: "CascadeConfigurationService:0.1.0"
+    owner: "Isuru Gamage"
+
+    primaryThrust: "core/Software"
+
+    name: "Cascade Configuration Service"
+
+    status: "AlphaRelease"
+
+    description: >
+      The Cascade Configuration Service provides a Streamlit-based interface
+      for selecting a model cascade configuration based on user-defined cost
+      and error constraints.
+
+    componentVersion: "0.1.0"
+
+    targetIcicleRelease: 2026-10
+
+    licenseUrl: "https://github.com/ICICLE-ai/Cascade-Configuration-Service?tab=BSD-3-Clause-1-ov-file"
+
+    publicAccess: true
+
+    sourceCodeUrl: "https://github.com/ICICLE-ai/Cascade-Configuration-Service"
+
+    codeReviewConducted: false
+
+    testsWritten: false
+
+    developerDocumentationAvailable: true
+
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/cascade-configuration-service
+
+  - id: "KaiAir:1.0.0"
+    owner: "WiCI, Iowa State University"
+    primaryThrust: "core/CI4AI"
+    name: "KaiAir"
+    status: "AlphaRelease"
+    description: "Predictable per-packet power control and scheduling for 5G RAN,
+                  implemented in the OCUDU stack with a companion OAI nrUE patch set.
+                  Provides per-packet Cantelli power control,
+                  GRK interference modeling with K-adaptation, and multi-cell coordination
+                  over Xn-AP with ONAMA slot scheduling, validated on the ARA wireless living lab."
+    componentVersion: "1.0.0"
+    targetIcicleRelease: 2026-10
+    licenseUrl: "https://github.com/ICICLE-ai/kaiair?tab=BSD-3-Clause-1-ov-file"
+    publicAccess: true
+    sourceCodeUrl: "https://github.com/ICICLE-ai/kaiair"
+    codeReviewConducted: false
+    testsWritten: true
+    developerDocumentationAvailable: true
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/kaiair
+
+  - id: SmartLabelingServiceForObjectDetection:0.2.0
+    name: Smart Labeling Service for Object Detection
+    owner: Hari Subramoni
+    primaryThrust: core/AI4CI
+    status: AlphaRelease
+    description: >
+      A 7-step HPC-backed pipeline for few-shot object detection, from interactive
+      image annotation through class support generation, proposal visualization, and
+      Tapis-powered job execution. Also includes a Semantic Segmentation pipeline for
+      polygon and pixel-mask annotation with SAM3-assisted labeling.
+    componentVersion: 0.2.0
+    targetIcicleRelease: 2026-10
+    hasDependentComponents:
+      - related_to: icicleai-tapisui-extension:0.1.0
+        relationship_type: DependsOn
+    licenseUrl: https://github.com/ICICLE-ai/smart_labeler?tab=BSD-3-Clause-1-ov-file
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/smart_labeler
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-labeling-service-for-object-detection
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-labeling-service-for-object-detection
+
+  - id: NoCodeWorkflowStudio:0.2.0
+    name: No-Code Workflow Studio
+    owner: Hari Subramoni
+    primaryThrust: core/AI4CI
+    targetIcicleRelease: 2026-10
+    hasDependentComponents:
+      - related_to: icicleai-tapisui-extension:0.1.0
+        relationship_type: DependsOn
+    componentVersion: 0.2.0
+    publicAccess: true
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://icicle-ai.github.io/training-catalog/docs/category/no-code-workflow-studio
+    developerDocumentationAvailable: true
+    developerDocumentationUrl: https://github.com/ICICLE-ai/workflow-orchestrator/tree/main/docs
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/no-code-workflow-studio
+    status: AlphaRelease
+    description:
+      The No-Code Workflow Studio is a web-based application that allows users to create, manage, and execute workflows without writing any code. It provides a visual interface for designing workflows, integrating various services, and automating tasks. The studio supports drag-and-drop functionality, making it accessible to users with varying levels of technical expertise.
+    licenseUrl: https://github.com/ICICLE-ai/workflow-orchestrator?tab=BSD-3-Clause-1-ov-file
+    sourceCodeUrl: https://github.com/ICICLE-ai/workflow-orchestrator
+
+  - id: SmartCompiler:3.0.0
+    name: Smart Compiler
+    status: AlphaRelease
+    description: >
+      This Smart Compiler combines AI-assisted profiling with Cetus-backed
+      optimization for C programs and performance profiling for C and Python.
+
+      **New in release 3.0:**
+      - **PAW tiling:** Adds parallel-aware, cache-oriented tiling through NT,
+        LRW/FindB, and fixed-size tile profiles.
+      - **Loop interchange:** Adds legality-checked loop reordering guided by
+        reuse analysis, including support for symbolic loop bounds.
+      - **Subscripted-subscript analysis:** Supports indirect accesses such as
+        `A[B[i]]` to help identify additional parallelization opportunities.
+      - **Cetus optimization profiles:** Exposes parallelization, reuse analysis,
+        tiling, and loop interchange through SMART's MCP and REST interfaces.
+    owner: Miguel Rosas, Miguel Torres
+    primaryThrust: core/CI4AI
+    targetIcicleRelease: 2026-10
+    componentVersion: "3.0.0"
+    licenseUrl: https://github.com/ICICLE-ai/SMART-COMPILER?tab=BSD-3-Clause-1-ov-file
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/SMART-COMPILER
+    developerDocumentationAvailable: true
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-compiler
+    usageDocumentationUrl: https://icicle-ai.github.io/training-catalog/docs/category/smart-compiler
+
+  - id: VideoSegmentationTracking:0.1.0
+    name: Video Segmentation & Tracking
+    owner: Hari Subramoni
+    primaryThrust: core/AI4CI
+    status: AlphaRelease
+    description: >
+      Segment objects in a video by annotating a few keyframes, then track every object
+      through the whole video with the SAM3 Video Service running on a GPU node. Results
+      export as an annotated MP4, COCO JSON, or a full frames-and-masks dataset written
+      straight to HPC storage via Tapis.
+    componentVersion: 0.1.0
+    targetIcicleRelease: 2026-10
+    hasDependentComponents:
+      - related_to: icicleai-tapisui-extension:0.1.0
+        relationship_type: DependsOn
+    licenseUrl: https://github.com/ICICLE-ai/smart_labeler?tab=BSD-3-Clause-1-ov-file
+    publicAccess: true
+    sourceCodeUrl: https://github.com/ICICLE-ai/smart_labeler
+    usageDocumentationAvailable: true
+    usageDocumentationUrl: https://icicle-ai.github.io/training-catalog/docs/category/video-segmentation-and-tracking
+    developerDocumentationAvailable: false
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/video-segmentation-and-tracking
+
+  - id: "IntelligentEdgeManagementService:0.2.0"
+    owner: "Harikesh Byrandurga Gopinath"
+    primaryThrust: "core/CI4AI"
+    name: "Intelligent Edge Management Service"
+    status: "BetaRelease"
+    description: >
+      Fleet control plane for deploying and managing AI applications on ICICLE edge
+      devices. Provides a web dashboard, device agent orchestration over MQTT,
+      model-card deployments, heartbeat monitoring, deploy-time hardware checks,
+      deployment verification, and TapisUI portal integration.
+    componentVersion: "0.2.0"
+    targetIcicleRelease: 2026-10
+
+    hasDependentComponents:
+      - related_to: "IntelligentEdgeManagementService:0.1.0"
+        relationship_type: "DependsOn"
+      - related_to: "PatraToolkit:0.2.0"
+        relationship_type: "DependsOn"
+      - related_to: "PatraKG:0.2.0"
+        relationship_type: "DependsOn"
+      - related_to: "icicleai-tapisui-extension:0.1.0"
+        relationship_type: "DependsOn"
+
+    licenseUrl: "https://github.com/ICICLE-ai/intelligent-edge-management-service?tab=BSD-3-Clause-1-ov-file"
+    publicAccess: true
+    sourceCodeUrl: "https://github.com/ICICLE-ai/intelligent-edge-management-service"
+    codeReviewConducted: false
+    testsWritten: true
+    developerDocumentationAvailable: true
+    trainingTutorialsAvailable: true
+    trainingTutorialsUrl: https://icicle-ai.github.io/training-catalog/docs/category/intelligent-edge-management

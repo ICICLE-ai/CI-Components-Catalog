@@ -9,8 +9,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: sync-neo4j-dev
+  cancel-in-progress: false
+
 jobs:
   build-graphml:
+
+    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
     outputs:
       sha: ${{ steps.commit.outputs.sha }}
@@ -36,6 +42,10 @@ jobs:
           fi
 
   load-neo4j:
+    # Redundant with `needs:` (a skipped dependency skips this too), but stated
+    # explicitly so nothing can ingest into the production database from a
+    # non-dev branch.
+    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
     needs: build-graphml
     steps:
